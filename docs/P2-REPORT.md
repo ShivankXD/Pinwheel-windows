@@ -124,6 +124,13 @@ compile and 1688 production frames regenerate with identical RGBA hashes to
 the previous run. `numeric-follow-up-runtime-checks.txt` and
 `production-frame-hash-check.txt` retain that validation. No diagnostic output
 was substituted for a production frame.
+Follow-up runtime commit `a295510` passed hosted Windows/JDK 17 CI
+[run 37004350849](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37004350849),
+including all clean checks, default shader/frame generation, storage/dither
+probes, source/class audits, debug guard and real-window smoke. The current
+`ci-result.json` records that exact commit and all successful steps. The float
+comparison task uses owner inputs and ran locally; hosted CI does not certify
+mobile pixel acceptance.
 
 ## 3. Screenshots
 

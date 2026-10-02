@@ -1,9 +1,9 @@
 {
-  "runtimeCommit": "3654d8264cb505086cbba03a02d1d77f9ccef468",
+  "runtimeCommit": "a2955108a50defeb4209fd24eaeb2b35efc92792",
   "status": "completed",
   "conclusion": "success",
-  "url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36999180247",
-  "scope": "Windows/JDK 17 clean runtime checks, frames, numeric probes, source audits, debug guards and window smoke. Owner mobile golden acceptance runs locally.",
+  "url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37004350849",
+  "scope": "Windows/JDK 17 clean runtime checks, default frames, numeric storage/dither probes, source audits, debug guards and window smoke. Mobile goldens and experimental float comparisons run locally.",
   "checks": [
     {
       "name": "Set up job",
@@ -83,9 +83,9 @@
   ],
   "artifacts": [
     {
-      "id": 11222674638,
+      "id": 11225402559,
       "name": "p2-evidence",
-      "size_in_bytes": 109598720,
+      "size_in_bytes": 111187778,
       "expired": false
     }
   ]
