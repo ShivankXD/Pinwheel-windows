@@ -28,3 +28,7 @@ Update: the owner supplied the complete reference folder at mobile commit
 2a417fd. Its README was read first. P1 is closed with four passing JSON/package
 inputs. P2 rendered all 1688 frames; 1411 pass and 277 fail the fixed golden
 limits. P2 visual acceptance remains open; see P2-REPORT.md.
+
+Later owner amendment: noise-driven specs receive Gaussian/histogram/mean review
+with shared shaders preserved. Deterministic specs retain strict pixel limits.
+See P2-NOISE-CLASS.md, STRUCTURAL-REPORT.md and provisional p2-noise-policy.json.

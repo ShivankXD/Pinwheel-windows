@@ -32,6 +32,10 @@ private data class LabFrame(val actual: ImageBitmap, val mobile: ImageBitmap?, v
     val root = Path.of(System.getProperty("pinwheel.home", System.getProperty("user.dir")))
     val refs = Path.of(System.getProperty("pinwheel.refs", "D:/Pinwheel-Windows-refs"))
     val specs = remember { PreviewTileRenderer.catalogSpecs() }
+    val noiseIds = remember { org.json.JSONArray(Files.readString(root.resolve("docs/p2-noise-classification.json"))).let { rows ->
+        (0 until rows.length()).map { rows.getJSONObject(it) }.filter { it.getString("class") == "noise-driven" }.map { it.getString("id") }.toSet()
+    } }
+    val noisePolicy = remember { org.json.JSONObject(Files.readString(root.resolve("docs/p2-noise-policy.json"))) }
     var index by remember { mutableIntStateOf(specs.indexOfFirst { it.id == "fx-ct-scene-cut" }) }
     var time by remember { mutableFloatStateOf(.9f) }
     var search by remember { mutableStateOf("") }
@@ -62,9 +66,14 @@ private data class LabFrame(val actual: ImageBitmap, val mobile: ImageBitmap?, v
                 val reference = path?.takeIf(Files::isRegularFile)?.let { requireNotNull(ImageIO.read(it.toFile())) }
                 val diff = root.resolve("evidence/p2/lab/${spec.id}/${t ?: "loop"}.png")
                 val result = reference?.let { GoldenImages.compare(it, FrameImages.buffered(actual), diff) }
-                val metrics = result?.let { r -> (if (r.passed) "PASS" else "FAIL") + "  " +
+                val strictMetrics = result?.let { r -> (if (r.passed) "STRICT PASS" else "STRICT FAIL") + "  " +
                     r.channels.mapIndexed { c, metric -> "${"RGBA"[c]} MAE=%.3f p99=%d".format(java.util.Locale.ROOT, metric.meanAbsoluteError, metric.percentile99) }.joinToString("  ") }
                     ?: "Mobile reference unavailable for this time. Golden comparisons use the four fixed times."
+                val structural = if (spec.id in noiseIds && reference != null) StructuralGoldens.compare(reference, FrameImages.buffered(actual)) else null
+                val limits = StructuralGoldens.Limits(noisePolicy.getDouble("perChannelBlurredMae8Max"), noisePolicy.getDouble("perChannelHistogramWasserstein8Max"),
+                    noisePolicy.getDouble("perChannelMeanError8Max"), noisePolicy.getDouble("meanLuminanceError8Max"))
+                val metrics = strictMetrics + (structural?.let { s -> "\nNOISE STRUCTURE ${if (s.passes(limits)) "PROVISIONAL PASS" else "FAIL"}  " +
+                    s.channels.mapIndexed { c, m -> "${"RGBA"[c]} blur=%.3f hist=%.3f mean=%.3f".format(java.util.Locale.ROOT, m.blurredMae8, m.histogramWasserstein8, m.meanError8) }.joinToString("  ") } ?: "")
                 fun bitmap(image: java.awt.image.BufferedImage): ImageBitmap {
                     val stream = java.io.ByteArrayOutputStream(); check(ImageIO.write(image, "png", stream))
                     return org.jetbrains.skia.Image.makeFromEncoded(stream.toByteArray()).toComposeImageBitmap()
@@ -78,7 +87,7 @@ private data class LabFrame(val actual: ImageBitmap, val mobile: ImageBitmap?, v
             Surface(Modifier.fillMaxSize()) {
                 Column(Modifier.padding(24.dp).verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                     Text("Effect Lab", style = MaterialTheme.typography.headlineMedium)
-                    Text("${spec.name}  •  ${spec.id}  •  ${spec.category}")
+                    Text("${spec.name}  •  ${spec.id}  •  ${spec.category}  •  ${if (spec.id in noiseIds) "noise-driven" else "deterministic"}")
                     Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         OutlinedTextField(search, { search = it }, label = { Text("Search catalog") }, singleLine = true)
                         Box {
@@ -100,10 +109,10 @@ private data class LabFrame(val actual: ImageBitmap, val mobile: ImageBitmap?, v
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(20.dp)) {
                         Comparison("Mobile reference", frame?.mobile, Modifier.weight(1f))
                         Comparison("Desktop ANGLE", frame?.actual, Modifier.weight(1f))
-                        Comparison("Difference ×16", frame?.diff, Modifier.weight(1f))
+                        Comparison("Strict pixel difference ×16", frame?.diff, Modifier.weight(1f))
                     }
                     Text(frame?.metrics ?: "Rendering…")
-                    Text("Fixed limits: per-channel MAE ≤ 2/255 and p99 ≤ 8/255. Custom sliders are exploratory and do not change golden files.")
+                    Text("Deterministic limits: MAE ≤ 2/255, p99 ≤ 8/255. Noise: Gaussian sigma 8 px, histogram and mean metrics for owner review. Custom sliders do not change golden files.")
                     failure?.let { Text(it, color = MaterialTheme.colorScheme.error) }
                     spec.params.forEach { param ->
                         Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {

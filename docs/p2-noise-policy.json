@@ -1,0 +1,13 @@
+{
+  "ownerAmendment": "Use structural metrics for noise-driven specs; keep strict per-pixel limits for deterministic specs and preserve shared shaders.",
+  "limitsStatus": "PROVISIONAL_OWNER_REVIEW",
+  "gaussianSigmaPx": 8.0,
+  "gaussianRadiusPx": 24,
+  "boundary": "clamp",
+  "perChannelBlurredMae8Max": 2.0,
+  "perChannelHistogramWasserstein8Max": 2.0,
+  "perChannelMeanError8Max": 2.0,
+  "meanLuminanceError8Max": 2.0,
+  "strictDeterministicMae8Max": 2.0,
+  "strictDeterministicP99Max": 8
+}

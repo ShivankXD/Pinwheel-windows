@@ -19,7 +19,8 @@ fun referenceTask(name: String, mode: String) = tasks.register<JavaExec>(name) {
     args(rootDir.absolutePath, providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"), mode)
 }
 referenceTask("p1References", "inventory")
-referenceTask("goldenCheck", "golden")
+referenceTask("strictGoldenCheck", "golden")
+referenceTask("goldenAudit", "golden-audit")
 referenceTask("mobilePackagesCheck", "projects")
 referenceTask("p1ProjectInventory", "project-inventory")
 
@@ -36,4 +37,22 @@ tasks.register<JavaExec>("p2MathProbe") {
     mainClass.set("com.pinwheel.render.qa.P2MathProbeKt")
     args(rootDir.absolutePath, providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"))
     workingDir = rootDir
+}
+tasks.register<JavaExec>("p2NoiseSources") {
+    dependsOn("classes")
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("com.pinwheel.render.qa.P2NoiseSourcesKt")
+    args(rootDir.absolutePath)
+}
+tasks.register<JavaExec>("p2StructuralReview") {
+    dependsOn("classes", "goldenAudit")
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("com.pinwheel.render.qa.P2StructuralEvidenceKt")
+    args(rootDir.absolutePath, providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"))
+}
+tasks.register<JavaExec>("goldenCheck") {
+    dependsOn("classes", "goldenAudit")
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("com.pinwheel.render.qa.P2StructuralEvidenceKt")
+    args(rootDir.absolutePath, providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"), "check")
 }

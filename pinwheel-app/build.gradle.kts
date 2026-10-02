@@ -7,6 +7,7 @@ dependencies {
     implementation(project(":pinwheel-render"))
     implementation(project(":pinwheel-media"))
     implementation(project(":pinwheel-photo"))
+    implementation("org.json:json:20240303")
     implementation(compose.desktop.currentOs)
     implementation("org.jetbrains.compose.material3:material3:1.9.0-beta03")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")

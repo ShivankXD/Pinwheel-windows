@@ -1,8 +1,9 @@
 # P1 closeout and P2 runtime report
 
 P1 is closed with four passing real mobile inputs. P2 runtime implementation is
-available, but P2 visual acceptance fails: 277 of 1688 frames fail the fixed
-golden limits. P3 has not started. References are from the owner's mobile
+available, but P2 visual acceptance remains open. The original strict audit has 277
+failures. Under the later owner noise amendment, 69 deterministic frames and
+86 noise structural frames still fail; 686 noise structure passes are provisional. P3 has not started. References are from the owner's mobile
 `WindowsReferenceExport`, commit `2a417fd`, as described in the read-only README.
 
 ## 1. What was built
@@ -24,8 +25,8 @@ original mobile effect list, including catalog positions.
 ## 2. Tests and results
 
 ```text
-Desktop unit tests: 230 passed, 0 failures, 0 errors, 0 skipped
-  core 205; platform 2; media 3; render 20
+Desktop unit tests: 233 passed, 0 failures, 0 errors, 0 skipped
+  core 205; platform 2; media 3; render 23
 Catalog shaders: 422 passed, 0 failed
 P2 frames: 1688 rendered, 0 failures
 Real mobile projects: 4 passed, 0 failed, provided
@@ -40,7 +41,12 @@ history and the exact 250 ms seek boundary, cut windows, overlay intensity,
 orphan target routing, layer coverage/compositing, legacy effects, context
 lifetime/thread ownership, constructor failure recovery, animation and cache
 behaviour. See `evidence/p2/test-summary.json`, `final-clean-build.txt`,
-`final-runtime-checks.txt` and `shader-compile.json`.
+`final-runtime-checks.txt`, `final-structural-tests.txt` and `shader-compile.json`.
+The clean build covered 230 tests; the later three structural tests bring the
+aggregate to 233. A debug compile failure caused by a missing direct JSON dependency
+was fixed and the real Lab smoke/project checks then passed; full initial output
+is in `noise-lab-and-project-checks.txt`, final output in
+`final-noise-lab-and-project-checks.txt` and `final-noise-lab-smoke.txt`.
 
 The latest strict check deliberately exits nonzero because provided images
 fail. **Full failing output:** `evidence/p2/final-reference-checks.txt`.
@@ -50,10 +56,10 @@ fixture used an inactive burst time; its corrected active-time assertion passes.
 An initial project-mode harness erroneously included golden failures; modes
 now compare independently. Neither repair changed mobile shaders or limits.
 
-MAE8 must be <= 2 and p99 <= 8 in **each RGBA channel**, equivalent to
+For deterministic specs, MAE8 must be <= 2 and p99 <= 8 in **each RGBA channel**, equivalent to
 2/255 and 8/255 in normalized sRGB error. 175 failing frames exceed MAE;
 another 102 pass MAE but fail p99, including 76 whose maximum p99 is 9.
-None is waived. The worst frame is Scene Cut at 0.9 s: R 94.902/156,
+This is the preserved strict audit. The owner later authorized structural review for noise-driven specs, as detailed below. The worst frame is Scene Cut at 0.9 s: R 94.902/156,
 G 96.400/158, B 95.838/157, A 0/0 (MAE8/p99).
 
 - [All 422 per-spec metrics](../evidence/p2/per-spec-metrics.csv): each channel's maximum MAE and p99 over four times, plus spec status.
@@ -63,8 +69,27 @@ G 96.400/158, B 95.838/157, A 0/0 (MAE8/p99).
 
 Runtime commit `76337f3` passed hosted Windows CI:
 [run 36989939920](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36989939920).
-Follow-up lifetime/audit fixes receive a separate CI run recorded in
-`evidence/p2/ci-result.json` when available.
+Follow-up lifetime/audit commit `f1e7425` also passed hosted CI [run 36992291621](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36992291621). The noise-review follow-up receives a separate CI run in `evidence/p2/ci-result.json` when available.
+
+The current owner-policy goldenCheck uses 193 source-classified noise specs and
+229 deterministic specs. Unused noise locals in shared preludes are excluded.
+It reports 847 deterministic frame passes and 69 failures; 686 noise provisional
+passes and 86 structural failures. 194 deterministic specs pass all times;
+159 noise specs pass every proposed metric at all times. P2 is not accepted.
+
+Noise metrics use Gaussian sigma 8 px, radius 24, edge clamping and float sRGB8;
+channel histogram Wasserstein-1 distance and channel mean error; Rec.709 mean
+luminance error. Proposed limits are 2/255 for each metric, pending owner review.
+Shared shaders are unchanged. Fine noise can pass structural metrics while strict
+pixels differ; global Scene Cut differences still fail. Three tests verify this
+distinction, histogram units and rejection of dimension changes.
+
+[Every noise spec and metric pass/fail](../evidence/p2/STRUCTURAL-REPORT.md),
+[full channel CSV](../evidence/p2/noise-spec-metrics.csv),
+[worst 20 structural heatmaps](../evidence/p2/noise-worst-20.html).
+Current failing output is `evidence/p2/owner-policy-check-output.txt`. The earlier
+strict failure output remains attached. `strictGoldenCheck` preserves the original
+pixel gate; `goldenCheck` applies the owner class policy and still exits nonzero.
 
 ## 3. Screenshots
 
@@ -91,7 +116,7 @@ JSONs under `projects/device-library` were not supplied and are not included
 in the four passing input checks. OAuth client ID and verified shared Plus
 backend remain P7 inputs, as agreed.
 
-The phone model/GPU and a small mobile math/neutral-tile probe would help
+The exact phone GL_RENDERER/GL_VERSION (owner pending) and a small mobile math/neutral-tile probe would help
 resolve the remaining precision/sampling bugs. A proposed owner-run source
 and its limitations are in `tools/mobile/P2ParityProbe.kt` and its README.
 It has not been compiled for Android or copied/run on the phone. Existing

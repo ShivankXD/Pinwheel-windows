@@ -52843,7 +52843,7 @@
   "referenceRoot": "D:\\Pinwheel-Windows-refs",
   "transitions": 46,
   "projectsFailed": 0,
-  "mode": "golden",
+  "mode": "golden-audit",
   "effects": 277,
   "overlays": 99,
   "goldenPassed": 1411,

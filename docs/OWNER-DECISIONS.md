@@ -34,3 +34,9 @@ These decisions amend the original brief and take precedence where they differ.
    worst 20 with heatmaps. Read the reference README first. Export settings
    use VideoExportScreens.kt because the supplied export screen is the sign-in
    gate. Media-picker gallery thumbnails are layout references only.
+10. Noise-class amendment: preserve shared GLSL; flag specs driven by hash/sin
+    noise and review Gaussian-blurred MAE plus channel histogram/mean-luminance
+    metrics instead of strict per-pixel p99. Keep the strict pixel thresholds for
+    deterministic specs. List every noise spec, metric result and heatmap for
+    owner review. Exact phone GL_RENDERER/GL_VERSION will be added to the
+    reference manifest later. Structural limits are currently provisional.

@@ -1,0 +1,66 @@
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-platform:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-photo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-photo:processResources NO-SOURCE
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-platform:processResources NO-SOURCE
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-app:convertXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForMain NO-SOURCE
+> Task :pinwheel-app:generateResourceAccessorsForMain SKIPPED
+> Task :pinwheel-app:generateActualResourceCollectorsForMain SKIPPED
+> Task :pinwheel-app:generateComposeResClass SKIPPED
+> Task :pinwheel-app:assembleMainResources UP-TO-DATE
+> Task :pinwheel-app:processResources UP-TO-DATE
+> Task :pinwheel-app:convertXmlValueResourcesForTest NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForTest NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForTest NO-SOURCE
+> Task :pinwheel-app:generateResourceAccessorsForTest SKIPPED
+> Task :pinwheel-app:assembleTestResources UP-TO-DATE
+> Task :pinwheel-app:processTestResources UP-TO-DATE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-photo:compileKotlin NO-SOURCE
+> Task :pinwheel-photo:compileJava NO-SOURCE
+> Task :pinwheel-photo:classes UP-TO-DATE
+> Task :pinwheel-photo:jar UP-TO-DATE
+> Task :pinwheel-media:compileKotlin UP-TO-DATE
+> Task :pinwheel-media:compileJava NO-SOURCE
+> Task :pinwheel-media:classes UP-TO-DATE
+> Task :pinwheel-render:compileKotlin UP-TO-DATE
+> Task :pinwheel-media:jar UP-TO-DATE
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+> Task :pinwheel-platform:compileKotlin UP-TO-DATE
+> Task :pinwheel-platform:compileJava NO-SOURCE
+> Task :pinwheel-platform:classes UP-TO-DATE
+> Task :pinwheel-render:jar UP-TO-DATE
+> Task :pinwheel-platform:jar UP-TO-DATE
+> Task :pinwheel-app:compileKotlin
+> Task :pinwheel-app:compileJava NO-SOURCE
+> Task :pinwheel-app:classes UP-TO-DATE
+
+> Task :pinwheel-app:debugCheck
+PASS debug Plus toggle drives the shared core/export entitlement and sign-in gate
+
+> Task :pinwheel-app:jar
+> Task :pinwheel-app:compileTestKotlin NO-SOURCE
+> Task :pinwheel-app:compileTestJava NO-SOURCE
+> Task :pinwheel-app:testClasses UP-TO-DATE
+> Task :pinwheel-app:test NO-SOURCE
+
+> Task :pinwheel-app:verifyBuildVariant
+PASS debug includes debug entitlement controls
+
+> Task :pinwheel-app:check
+> Task :pinwheel-app:p2LabSmoke
+
+BUILD SUCCESSFUL in 12s
+18 actionable tasks: 5 executed, 13 up-to-date

@@ -23,7 +23,10 @@ jobs:
           python scripts/verify-p2-port.py --desktop-only
       - name: Compile catalog shaders and render all P2 frames
         shell: pwsh
-        run: ./scripts/build.ps1 -Tasks ':pinwheel-render:p2Frames'
+        run: ./scripts/build.ps1 -Tasks ':pinwheel-render:p2Frames',':pinwheel-render:p2NoiseSources'
+      - name: Verify noise classes from unchanged active shaders
+        shell: pwsh
+        run: python scripts/classify-p2-noise.py --check
       - name: Verify debug entitlement controls
         shell: pwsh
         run: ./scripts/build.ps1 -Tasks ':pinwheel-app:check','-Ppinwheel.debug=true'

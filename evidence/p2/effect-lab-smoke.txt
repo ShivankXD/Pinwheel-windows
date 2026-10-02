@@ -1,2 +1,3 @@
 PASS real Effect Lab window, mobile/desktop/heatmap panels, fixed metrics
-FAIL  R MAE=94.902 p99=156  G MAE=96.400 p99=158  B MAE=95.838 p99=157  A MAE=0.000 p99=0
+STRICT FAIL  R MAE=94.902 p99=156  G MAE=96.400 p99=158  B MAE=95.838 p99=157  A MAE=0.000 p99=0
+NOISE STRUCTURE FAIL  R blur=93.971 hist=94.305 mean=94.305  G blur=95.538 hist=95.867 mean=95.867  B blur=94.923 hist=95.251 mean=95.251  A blur=0.000 hist=0.000 mean=0.000

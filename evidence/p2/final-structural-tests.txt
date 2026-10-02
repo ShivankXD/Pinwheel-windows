@@ -1,0 +1,70 @@
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-render:processTestResources NO-SOURCE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+> Task :pinwheel-render:jar
+> Task :pinwheel-render:compileTestKotlin
+> Task :pinwheel-render:compileTestJava NO-SOURCE
+> Task :pinwheel-render:testClasses UP-TO-DATE
+
+> Task :pinwheel-render:test
+
+AngleTriangleTest > freshContextCanRenderAfterRelease() PASSED
+
+AngleTriangleTest > d3d11TriangleHasColourAndTopDownOrientation() STANDARD_OUT
+    PASS ANGLE D3D11 triangle, shader compile/link, RGBA readback and Y orientation: ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.8186)
+
+AngleTriangleTest > d3d11TriangleHasColourAndTopDownOrientation() PASSED
+
+EffectRuntimeTest > legacyLimitCountsOriginalEntriesAndConstructorFailureAllowsRetry() PASSED
+
+EffectRuntimeTest > textureCopyKeepsAsymmetricTopDownRowsAndExactPixels() PASSED
+
+EffectRuntimeTest > transitionsUseClipDurationsSpeedAndClippedHalfWindows() PASSED
+
+EffectRuntimeTest > activeChainUsesListOrderAndStartInclusiveEndExclusive() PASSED
+
+EffectRuntimeTest > overlayIntensityAndOrphanTargetMatchMobileGraph() PASSED
+
+EffectRuntimeTest > contextRejectsOtherThreadsAndOneContextClosingDoesNotTerminateAnother() PASSED
+
+EffectRuntimeTest > layerFadeChangesCoverageAndLeavesBlueMainUntouched() PASSED
+
+EffectRuntimeTest > allLegacyKindsDrawAndAnimateWithCompositionTime() PASSED
+
+EffectRuntimeTest > historyResetsOnBackwardSeekAndJumpsOver250ms() PASSED
+
+PreviewTileRendererTest > everyShaderCompilesAndEveryCatalogEffectDrawsAPictureAndMoves() PASSED
+
+PreviewTileRendererTest > paramsAffectPixelsLoopSlotsCacheAndLruStaysBounded() PASSED
+
+StructuralGoldensTest > blurCannotHideAGlobalColourOrBranchError() PASSED
+
+StructuralGoldensTest > histogramTransportUsesChannelUnitsAndDimensionsStayStrict() PASSED
+
+StructuralGoldensTest > relocatedFineNoiseCanPassStructureWhileStrictPixelsFail() PASSED
+
+CatalogContractTest > pinnedCatalogCountsIdsDefaultsAndLegacyLookupsStayStable() PASSED
+
+CatalogContractTest > previewRecipeKeepsThirdHeightCropAndTransitionSwitch() PASSED
+
+CatalogContractTest > captionFontsImportedPackagesAndHomeTemplatesHaveAssetsAndNotices() PASSED
+
+CatalogContractTest > everyLibraryCategoryResolvesItsLookAndStickerCards() PASSED
+
+GoldenImagesTest > exactToleranceBoundaryPassesAndLargerMeanFails() PASSED
+
+GoldenImagesTest > orientationAndDimensionsCannotBeSilentlyAligned() PASSED
+
+GoldenImagesTest > percentileIsPerChannelAndCannotHideBehindLowMean() PASSED
+
+BUILD SUCCESSFUL in 55s
+6 actionable tasks: 4 executed, 2 up-to-date

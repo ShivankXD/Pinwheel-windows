@@ -1,8 +1,8 @@
 # Parity checklist
 
-P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/package inputs. P2 runtime and Effect Lab are implemented, but visual acceptance fails on 277 of 1688 frames. Mobile editing and visual parity are incomplete. Windows target: 10 22H2+ and 11, x64.
+P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/package inputs. P2 runtime and Effect Lab are implemented, but the strict pixel audit has 277 failures. Under the owner noise amendment, 69 deterministic frames and 86 noise structural frames still fail; 686 noise passes remain provisional for owner review. Mobile editing and visual parity are incomplete. Windows target: 10 22H2+ and 11, x64.
 
-✅ means the stated check has evidence; ⚠️ means partial implementation or missing comparison evidence; ❌ means unimplemented. P1 contract checks below have evidence; full features remain partial until rendering/UI and mobile comparisons pass. Golden acceptance requires sRGB per-channel mean absolute error <= 2/255 and 99th percentile <= 8/255 at 0.3, 0.9, 1.5 and 2.1 s.
+✅ means the stated check has evidence; ⚠️ means partial implementation or missing comparison evidence; ❌ means unimplemented. P1 contract checks below have evidence; full features remain partial until rendering/UI and mobile comparisons pass. Deterministic golden acceptance requires sRGB per-channel mean absolute error <= 2/255 and 99th percentile <= 8/255 at 0.3, 0.9, 1.5 and 2.1 s. The owner amended noise-driven specs to Gaussian/histogram/mean-luminance structural review; proposed limits in docs/p2-noise-policy.json require owner review.
 
 ## P0 foundation checks
 
@@ -45,7 +45,7 @@ P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/
 | All catalog GLSL compiles | ✅ | 422 compiled, 0 failures; `evidence/p2/shader-compile.json` |
 | Sample/SWAY preview recipe, history inputs, params, loop/cache | ✅ | `PreviewTileRendererTest`, 1688 generated frames; recipe/runtime assertions do not imply every mobile pixel passes |
 | Debug Effect Lab and release exclusion | ✅ | `evidence/p2/effect-lab.png`, actual-window smoke and jar variant guard |
-| Mobile effect pixels | ⚠️ | 1411 pass / 277 fail / 0 missing; 321 of 422 specs pass all times; `evidence/p2/GOLDEN-REPORT.md`, full CSVs and worst 20 heatmaps; acceptance fails |
+| Mobile effect pixels | ⚠️ | Strict audit: 1411 pass / 277 fail / 0 missing. Owner class policy: 847 deterministic passes / 69 failures, 686 noise provisional passes / 86 failures. `evidence/p2/STRUCTURAL-REPORT.md`, both metric CSV sets and worst 20 galleries; acceptance remains open |
 | P2 read-only source/reference provenance | ✅ | 404 P1 hashes, 7 P2 mobile source hashes, 8 legacy/layer shader literals, 1715 reference input hashes unchanged |
 | Hosted Windows/JDK 17 runtime build | ✅ | [Run 36989939920](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36989939920), runtime 76337f3; follow-up CI in `evidence/p2/ci-result.json` |
 
@@ -61,7 +61,7 @@ P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/
 | Plan badge and Plus page | Free pill, gold Plus crown and subscription page | ⚠️ | Debug-only entitlement toggle and release guard tested; production page/backend P7 |
 | Multi-track timeline | Mixed clips, effects, overlays/stickers/text, audio, captions, ruler, filmstrips, trim/move/zoom; 64 lanes | ⚠️ | Models, drag/trim/lane/snapping math and JVM assertions ported; engine/UI P3/P4 |
 | Clip tools | Split, Extract audio, Volume, Speed 0.25-4x, Delete, Duplicate, Replace, Crop/zoom, Rotate/mirror, grade, Looks, Motion and transitions | ⚠️ | Commands cover clip edits, extraction, split/trim/duplicate/move and apply-all; render/UI P3/P4 |
-| GPU effects | 277 effects, parameters, animated previews, search, Adjust and layer targeting | ⚠️ | 277 catalog contracts/GLSL preserved; command placement/swap/Free tests pass; P2 shaders/tiles/targeted layer runtime implemented; 277 frame failures remain; effects UI P4 |
+| GPU effects | 277 effects, parameters, animated previews, search, Adjust and layer targeting | ⚠️ | 277 catalog contracts/GLSL preserved; command placement/swap/Free tests pass; P2 shaders/tiles/targeted layer runtime implemented; 69 deterministic and 86 structural frame failures remain; effects UI P4 |
 | Overlay library | 90 timed full-frame looks with opacity and timing | ⚠️ | 80 active and 19 legacy looks preserved; pending picker swaps tested; P2 timed-look runtime implemented; strict golden report has failures; UI P4 |
 | File overlays and PIP | Photo/video layers, masks, border, shadow, opacity, transforms and in/out animation | ⚠️ | Models/codecs/timing/commands tested; PIP rendering/UI P3/P4 |
 | Animated stickers | Time-based vector stickers; settled paused pose and animated playback/export | ⚠️ | IDs/categories/metadata ported; deterministic drawing and paused pose P2/P4 |
@@ -163,6 +163,206 @@ All groups below have ported IDs, defaults and assets verified by CatalogContrac
 | Photo looks: Travel | Same look parameters and rendering | ⚠️ | CatalogContractTest + source/asset hashes; render/UI/mobile goldens pending |
 | Photo looks: Vintage | Same look parameters and rendering | ⚠️ | CatalogContractTest + source/asset hashes; render/UI/mobile goldens pending |
 
+## Noise-driven specs under the owner amendment
+
+193 specs are flagged from active shader branches and reachable noise helpers. Unused pure noise variables are excluded. Classification is independent of image failures. The original strict audit remains available. Each row lists provisional metric checks over every RGBA channel and all four times; parity remains partial until owner review and remaining bugs are resolved. Ordinary sin/cos movement without noise stays deterministic.
+
+| Spec | Class | Parity | Provisional metric checks | Evidence |
+|---|---|---|---|---|
+| fx-shake | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-slash-reveal | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-diamond-zoom | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-error-quake | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-explosion | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-scene-cut | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-shiny-stack | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-glass-breaking | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-negative-panels | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-fireplace | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-vignette-noir | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-lightning-crack | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-vignette | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-offset-slice | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-feverish | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-tension-zoom | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-cut-shift | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-move-cloud | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-chaotic-heat | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-magical-tome | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-grim-reaper | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ct-phone-zoom | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-retro-flicker | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-handheld | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-wiggle-flicker | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-hex-split | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-heart-ascent | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-butterfly | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-butterfly-dream | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-leak-warm | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-leak-neon | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-falling-petals | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-smoky-focus | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-vintage-film | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-stellar | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-ink-spill | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-exploding-love | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-damaged-vignette | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-firefly | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-misty-tint | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-sepia-cool | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-snow-night | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-rain | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-rose-bloom | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-sparkle-shine | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-pixel-blocks | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-pixel-mutant | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cc-pixel-universe | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-pb-pixel-scan | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-pb-flip-phone | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-pb-pixel-breakdown | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-pb-sweet-party | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-pb-misty-tint | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-pb-bead-art | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-pb-pixel-rain | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-st-polaroid | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-st-retro-tv | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-st-billboard | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-st-film-strip | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ne-frame | noise-driven | ⚠️ | blur PASS, histogram FAIL, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ne-ring | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ne-heart | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ne-lightning | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ne-stars | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cr-sparkle-burst | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cr-glitter-rain | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cr-matrix | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cr-signal-lost | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cr-slice-drift | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cr-projector | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cr-flash-cut | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cr-aurora | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cr-twinkle-sky | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-cr-tri-split | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-mt-photo-snap | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-mt-zoom-shake | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-globe | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-hyperspace | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-star-rush | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-camera-shake | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-film-grain | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-glitch-in | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-film-burn | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-torn-reveal | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-mirror-ball | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-confetti | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-balloons | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-earthquake | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-light-leak | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-bokeh | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-grid-flash | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-pencil-sketch | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-marker-lines | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-spray-neon | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-chalkboard | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-scribble-frame | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-confetti-burst | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-gold-glitter | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-heart-rain | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-bubbles | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-star-pop | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-petals | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-snowfall | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-eight-bit | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-pixel-breakdown | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-pixel-glitch | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-digital-blocks | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-vhs | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-scanline-jitter | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-datamosh | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-signal-loss | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-bad-tv | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-glitch-flash | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-vhs-rewind | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-film-8mm | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-old-tv | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-film-burn-leak | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-seventies | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-dust-scratches | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-tr-slam-merge | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-tr-heat-flicks | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-tr-shake | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-tr-glitch | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-tr-flare | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-tr-film-burn | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-glitter-rain | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-gold-dust | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bokeh-gold | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bokeh-pink | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sparks | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-embers | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-smoke | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-fog-white | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-galaxy | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-fireflies | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-magic-dust | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sparkle-white | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-glitter | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-hearts-pink | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-stars | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-confetti | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-snow | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-rain | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bubbles | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-leak-warm | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-leak-pink | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-leak-blue | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-light-streaks | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance FAIL | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-stage-lights | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bg-purple-smoke | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bg-pastel-ink | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bg-pink-gradient | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bg-blue-hearts | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bg-pink-bokeh | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bg-golden-band | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bg-blue-smoke | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bg-light-wall | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bg-3d-shapes | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bg-red-hearts | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sc-aurora | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sc-milky-way | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sc-sunset-sea | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sc-moon-dunes | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sc-clouds | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sc-snowy-night | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sc-ocean | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sc-shooting-stars | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-tr-shape-pop | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-tr-glow-blob | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-tr-fire-wipe | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-tr-ink | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-tr-light-burst | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-tr-scribble | noise-driven | ⚠️ | blur FAIL, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-el-speed-lines | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-el-lightning | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-el-moon | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-el-smoke-puff | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-film-dust | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-grain | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-vhs | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-paper | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-burnt-edges | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-leak-green | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-leak-purple | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-leak-red | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-lightning | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bokeh-blue | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-bokeh-rainbow | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sparkle-pink | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-sparkle-blue | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-hearts-red | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-fog-pink | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ov-fog-blue | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+
 ## Mobile quirks and regression invariants
 
 | Mobile behaviour to preserve | Desktop status | Evidence or remaining work |
@@ -185,7 +385,7 @@ All groups below have ported IDs, defaults and assets verified by CatalogContrac
 ## Pending parity evidence
 
 - Current mobile startup capture for side-by-side comparison; source inspection alone cannot prove appearance.
-- P2 has all required real mobile goldens. Resolve 277 frame failures at unchanged limits; see `docs/P2-PARITY-BUGS.md`.
+- P2 has all required real mobile goldens. Resolve 69 deterministic strict failures and 86 noise structural failures; confirm provisional structural limits. See `docs/P2-PARITY-BUGS.md`.
 - Device-library JSONs were not supplied. The four raw/package inputs pass and close P1.
 - All section 8 behaviour tests, performance budgets, fresh-machine installation and P8 owner acceptance.
 

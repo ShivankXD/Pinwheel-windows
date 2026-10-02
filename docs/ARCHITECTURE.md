@@ -68,3 +68,11 @@ Storage resolves to `%APPDATA%/Pinwheel/{projects,originals}` and
 `%LOCALAPPDATA%/Pinwheel/{cache,crash-reports}`. P0 only defines paths;
 settings persistence and crash-report writing are later-phase work. P1 file
 stores and autosave operate on an injected Windows files directory.
+
+Owner amendment: noise classification selects the active shader MODE, removes
+unused pure locals and traverses helpers from fx(). The manifest has source hashes
+and complete evidence for all 422 specs. 193 noise specs use structural review;
+229 deterministic specs retain strict pixel limits. Gaussian convolution and
+histogram transport live in render QA, never in production frame evaluation.
+The original pixel audit remains available. All structural limits are provisional
+for owner review, and the current owner-policy gate still fails on 155 frames.

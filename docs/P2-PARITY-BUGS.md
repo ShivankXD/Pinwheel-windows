@@ -1,8 +1,10 @@
 # P2 failing golden investigation
 
-Status: **open**. 277 frames from 101 specs fail. Required limits stay at
-per-channel MAE8 <= 2 and p99 <= 8. Catalog GLSL, defaults, reference PNGs and
-comparison policy are unchanged. No new backend or tolerance is accepted here.
+Status: **open**. The strict pixel audit has 277 failing frames from 101 specs.
+The owner then authorized structural review for noise-driven specs, preserving
+strict MAE8 <= 2 and p99 <= 8 for deterministic specs. With provisional noise
+metric limits of 2/255, 69 deterministic frames and 86 noise frames still fail.
+Catalog GLSL, defaults, reference PNGs and the rendering backend are unchanged.
 
 ## Confirmed observations
 
@@ -51,6 +53,22 @@ mobile files were changed and no app was installed or instrumented here.
 
 A repair must preserve the source-backed effect behaviour, make failing
 provided comparisons pass and be rechecked on the complete 1688-frame set.
-No shader approximation, reference-derived output, post-comparison filtering,
-missing-case suppression, backend substitution or threshold relaxation has
-been introduced. P2 remains below its acceptance gate and P3 has not begun.
+The only comparison change is the owner-authorized Gaussian/histogram/mean
+review for source-classified noise specs. No shader approximation, reference-derived
+output, missing-case suppression or backend substitution has been introduced. P2 remains below its acceptance gate and P3 has not begun.
+
+## Owner noise amendment results
+
+The final class list has 193 noise-driven and 229 deterministic specs. Removing
+unused shared noise locals prevents four deterministic outputs from being wrongly
+flagged. Classification is independent of golden success. Every source hash,
+active branch and helper call path is available for review.
+
+686 of 772 noise frames pass the proposed structural metrics; 86 fail. Film Grain
+and Grain overlay pass all four times with blur/histogram/mean errors below 1/255.
+Scene Cut still fails every time, with a histogram/mean mismatch around 96/255 at
+0.9 s. Its whole-image branch mismatch is not treated as acceptable noise.
+
+847 of 916 deterministic frames pass strict MAE/p99; 69 fail. No deterministic
+case uses blur or a relaxed p99. See STRUCTURAL-REPORT.md and per-spec metrics for
+all classes. Proposed structural limits remain subject to owner review.

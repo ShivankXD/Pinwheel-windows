@@ -1,4 +1,8 @@
-# P2 strict golden report
+# P2 strict pixel audit
+
+This preserves the original per-pixel results for every spec. The owner's later
+noise-class amendment uses structural review for noise-driven specs; see
+STRUCTURAL-REPORT.md. Deterministic specs retain the original strict limits.
 
 1411 passing frames, 277 failing frames, 0 missing frames.
 321 passing specs out of 422 (all four times must pass).

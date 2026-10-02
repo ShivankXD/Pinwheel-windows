@@ -12,8 +12,8 @@ import javax.imageio.ImageIO
 fun main(args: Array<String>) {
     val root = Path.of(args[0]); val refs = Path.of(args[1]); val mode = args.getOrElse(2) { "inventory" }
     val output = root.resolve("evidence/p1/runtime"); Files.createDirectories(output)
-    val compareGoldens = mode == "golden" || mode == "inventory"
-    val compareProjects = mode != "golden"
+    val compareGoldens = mode == "golden" || mode == "golden-audit" || mode == "inventory"
+    val compareProjects = mode != "golden" && mode != "golden-audit"
     val specs = VideoFxCatalog.effects + VideoFxCatalog.transitions + VideoFxCatalog.overlays + VideoFxCatalog.legacyOverlays
     val cases = JSONArray(); var goldenPassed = 0; var goldenFailed = 0; var missing = 0
     if (compareGoldens) for (spec in specs) for (t in VideoPreviewRecipe.goldenTimes) {

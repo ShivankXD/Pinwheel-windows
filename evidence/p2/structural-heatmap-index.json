@@ -1,0 +1,4634 @@
+[
+  {
+    "id": "fx-shake",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-shake\\0.3.png",
+    "sha256": "595944967e9837fe0bb394e785e453da95b8bdf275086e2c7cf51c3ab1991b38"
+  },
+  {
+    "id": "fx-shake",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-shake\\0.9.png",
+    "sha256": "10c4cd7a4e44c97e967b7545e9d94e45ab8be8e33a52c4c7ea0dc32ab037d642"
+  },
+  {
+    "id": "fx-shake",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-shake\\1.5.png",
+    "sha256": "ff017a15eabc54755fb2970ebcf3aca25ff4447d4b9bba9b4271a6360852b789"
+  },
+  {
+    "id": "fx-shake",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-shake\\2.1.png",
+    "sha256": "c7883d684a9acd3ec0cb5044abfd106a9d6c5d841a803ee3326d501ac7db83dd"
+  },
+  {
+    "id": "fx-cc-slash-reveal",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-slash-reveal\\0.3.png",
+    "sha256": "6abeedc8459a70ddb0566bfda3570eb4178be36da728792c6678933a30a7c877"
+  },
+  {
+    "id": "fx-cc-slash-reveal",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-slash-reveal\\0.9.png",
+    "sha256": "52c50ee5c6958cc2633abeca3fb1e396b516e524519f67d2473409d7682b98b2"
+  },
+  {
+    "id": "fx-cc-slash-reveal",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-slash-reveal\\1.5.png",
+    "sha256": "01435d19814ebc9f2fd2b8b4f54827bc83705e84b5958e37639febe93c29ce04"
+  },
+  {
+    "id": "fx-cc-slash-reveal",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-slash-reveal\\2.1.png",
+    "sha256": "37e36b1b9b4e380fb3a496b8237dcbdf9d46cd26ce9450f33a4f381e01e2bb79"
+  },
+  {
+    "id": "fx-cc-diamond-zoom",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-diamond-zoom\\0.3.png",
+    "sha256": "424494a5f3cb7e7c0923710c49611604f2ad076cff69b4d6a8ee363f742892b0"
+  },
+  {
+    "id": "fx-cc-diamond-zoom",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-diamond-zoom\\0.9.png",
+    "sha256": "e03e91ab6e8ae02e8ff05ba21d775dd014b333c48316b39ddec9ccd71579cec4"
+  },
+  {
+    "id": "fx-cc-diamond-zoom",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-diamond-zoom\\1.5.png",
+    "sha256": "47dd7c695f4d923f099f512568aa08d57c2fc64116ceddbad06ce465a188f06d"
+  },
+  {
+    "id": "fx-cc-diamond-zoom",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-diamond-zoom\\2.1.png",
+    "sha256": "46af6fa82a9e71467ca291d8a939d7626675f255c71f1fd2ad69df7cbcafbae1"
+  },
+  {
+    "id": "fx-ct-error-quake",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-error-quake\\0.3.png",
+    "sha256": "30329f1e9ed45511ac7e210d614a1499702f3ae4f10c02bd1ac0e14ecdedb5d1"
+  },
+  {
+    "id": "fx-ct-error-quake",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-error-quake\\0.9.png",
+    "sha256": "845a1f5eeb7e95763d19bb3ada29c2d6d0a4a6f2f1723eaf082871bef84dab30"
+  },
+  {
+    "id": "fx-ct-error-quake",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-error-quake\\1.5.png",
+    "sha256": "00ff3e202c2c6d240b5c313e10a6845bb3e87e6a7bd8ca93d805bced657d33e0"
+  },
+  {
+    "id": "fx-ct-error-quake",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-error-quake\\2.1.png",
+    "sha256": "656654515c315465d96a729c05889e25356c76cdf6a56dac5d189a133798ba75"
+  },
+  {
+    "id": "fx-ct-explosion",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-explosion\\0.3.png",
+    "sha256": "f166c03f05f7c0eb5e97e123a11a163e558f64911acc5f2b98d29a39c0821523"
+  },
+  {
+    "id": "fx-ct-explosion",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-explosion\\0.9.png",
+    "sha256": "c250c4310daddc75b83b02b31451a2caaa566d883257e013b7d4c222384c54ab"
+  },
+  {
+    "id": "fx-ct-explosion",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-explosion\\1.5.png",
+    "sha256": "4035b131d3e097fc632e90fac9e52d2eb884a1a3b49350b2562ae357b63ea733"
+  },
+  {
+    "id": "fx-ct-explosion",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-explosion\\2.1.png",
+    "sha256": "7a9a21710c6663c11fd6dcff275f05efa05a0e990d7c5d27101f49e3c88122d1"
+  },
+  {
+    "id": "fx-ct-scene-cut",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-scene-cut\\0.3.png",
+    "sha256": "b455157c24d0b0c1e060603b3141725bed6bce1e01ee7aa4a24fd88c5d1d0458"
+  },
+  {
+    "id": "fx-ct-scene-cut",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-scene-cut\\0.9.png",
+    "sha256": "c5ed93488be67db41ca0b85035f010071161eb327dc15dc7c373f4a55d64fa3b"
+  },
+  {
+    "id": "fx-ct-scene-cut",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-scene-cut\\1.5.png",
+    "sha256": "c5ed93488be67db41ca0b85035f010071161eb327dc15dc7c373f4a55d64fa3b"
+  },
+  {
+    "id": "fx-ct-scene-cut",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-scene-cut\\2.1.png",
+    "sha256": "c5ed93488be67db41ca0b85035f010071161eb327dc15dc7c373f4a55d64fa3b"
+  },
+  {
+    "id": "fx-cc-shiny-stack",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-shiny-stack\\0.3.png",
+    "sha256": "89324f34282e3ab1d0a8d06cf8b7d1f46f4367ebf6b2b2537d23a777a69dddeb"
+  },
+  {
+    "id": "fx-cc-shiny-stack",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-shiny-stack\\0.9.png",
+    "sha256": "502b148949921579bbf6abc4fcc9550ac9da58b5a441478d14f000d0e6ccdc67"
+  },
+  {
+    "id": "fx-cc-shiny-stack",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-shiny-stack\\1.5.png",
+    "sha256": "dfa96471bbaf6dcc645e1cdda7ed8537e03e96962413fd515c4013e1bc571e8e"
+  },
+  {
+    "id": "fx-cc-shiny-stack",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-shiny-stack\\2.1.png",
+    "sha256": "d8b7352951d21e0d877243db4aca1eb123e1bc57f2cf183983b7b56aaa7c0b6e"
+  },
+  {
+    "id": "fx-ct-glass-breaking",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-glass-breaking\\0.3.png",
+    "sha256": "c082d700ec38e356b3992acf178e184eafcbd76fc37f8a210598f1f7a214ae67"
+  },
+  {
+    "id": "fx-ct-glass-breaking",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-glass-breaking\\0.9.png",
+    "sha256": "5bdb61c38957b21b901d87f8319856b7b476f59d1e03ab2686174fc30bc82300"
+  },
+  {
+    "id": "fx-ct-glass-breaking",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-glass-breaking\\1.5.png",
+    "sha256": "30ad7eabfb0b1eb40ef17a06445ccdd97c6c05500b0263f078c9193f49b380d9"
+  },
+  {
+    "id": "fx-ct-glass-breaking",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-glass-breaking\\2.1.png",
+    "sha256": "a59f2077aca0f78f0aae3e39b3ba4e43f527c804b5b875ed217e65922773d2bf"
+  },
+  {
+    "id": "fx-ct-negative-panels",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-negative-panels\\0.3.png",
+    "sha256": "4ab884e11bca4348d91d44181880e01fd402649433c3b817284aea4562a8b9d1"
+  },
+  {
+    "id": "fx-ct-negative-panels",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-negative-panels\\0.9.png",
+    "sha256": "d6912889c68ba1dd6cb6d60cf84ecf56eb3debd0b727dedbcfaccf8aad0f0e09"
+  },
+  {
+    "id": "fx-ct-negative-panels",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-negative-panels\\1.5.png",
+    "sha256": "d3aeea38e35e883378c51a84fcfaf8e08380dd3de6d1bb0fb5fcbefc00244854"
+  },
+  {
+    "id": "fx-ct-negative-panels",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-negative-panels\\2.1.png",
+    "sha256": "a173a8234c3e6e15e269aed6d18fe5937273dc2ecbb45508af18366a4008f6a7"
+  },
+  {
+    "id": "fx-ct-fireplace",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-fireplace\\0.3.png",
+    "sha256": "b548444fe2f1e0f525ca1712a4fbeaad270b524abaf5c2e058b0fc23dfddbbc0"
+  },
+  {
+    "id": "fx-ct-fireplace",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-fireplace\\0.9.png",
+    "sha256": "fa5f5d63e256dc7933f4c4e99496f181b6c9d1b869b069c16b81cdc9071ffe59"
+  },
+  {
+    "id": "fx-ct-fireplace",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-fireplace\\1.5.png",
+    "sha256": "bc1fdc5634569d596a119df130904c5fd8141c4b7445fa3e4b0b531a480ab81e"
+  },
+  {
+    "id": "fx-ct-fireplace",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-fireplace\\2.1.png",
+    "sha256": "31885265b27abcba79f73fe3b626de40ca6acaa3da6a6bf1ee67639ed89d4567"
+  },
+  {
+    "id": "fx-ct-vignette-noir",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-vignette-noir\\0.3.png",
+    "sha256": "51edf49d135490c47257d1ae9766c3a53ea700f09a0238d76bb6e62fad0fe6b9"
+  },
+  {
+    "id": "fx-ct-vignette-noir",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-vignette-noir\\0.9.png",
+    "sha256": "00723cb8a72fe7ff6c569eed24cd052d95a6f19ad36a4ddde397485fae28a295"
+  },
+  {
+    "id": "fx-ct-vignette-noir",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-vignette-noir\\1.5.png",
+    "sha256": "1dda01336908824c39df1054d0aefe7f623f8f5b78f8a422181a7a2cf3acfe89"
+  },
+  {
+    "id": "fx-ct-vignette-noir",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-vignette-noir\\2.1.png",
+    "sha256": "c11787798d0c837fff1795d282b70c3a535a697cb223771b299f517e2a71d555"
+  },
+  {
+    "id": "fx-ct-lightning-crack",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-lightning-crack\\0.3.png",
+    "sha256": "9be92a907f5e1bbb7b27219f412a0f6df4922fba001c3fcf8c3a9f0001101a9e"
+  },
+  {
+    "id": "fx-ct-lightning-crack",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-lightning-crack\\0.9.png",
+    "sha256": "8df400ae03efde041f00792744bc680fa792145343b906d61fb3ee19803c4c80"
+  },
+  {
+    "id": "fx-ct-lightning-crack",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-lightning-crack\\1.5.png",
+    "sha256": "895c5b1bd2089a71c80e86a03ad5affcf6901e378930ce9fec9d346bb83049c0"
+  },
+  {
+    "id": "fx-ct-lightning-crack",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-lightning-crack\\2.1.png",
+    "sha256": "dba478beaca8bab52bcad8d982907bf063bf68c67b31e438ee71657498e2a6dd"
+  },
+  {
+    "id": "fx-vignette",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vignette\\0.3.png",
+    "sha256": "639c9d59b606dadc3a59a9ed96827614ce5e6d0d75424f8487549532a53f0d60"
+  },
+  {
+    "id": "fx-vignette",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vignette\\0.9.png",
+    "sha256": "97f6788c5d3e6c8042e618778fbae372eed484710582b61c2bd02c9c2a85e866"
+  },
+  {
+    "id": "fx-vignette",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vignette\\1.5.png",
+    "sha256": "614f726cce87b056c959a48e8c48c8ce79715c4b5515bf75ff53bb81951abaa8"
+  },
+  {
+    "id": "fx-vignette",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vignette\\2.1.png",
+    "sha256": "94804c7aef392db878214b2d5a68062dd7e626b57d4c40022e3138524a7807fd"
+  },
+  {
+    "id": "fx-ct-offset-slice",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-offset-slice\\0.3.png",
+    "sha256": "a78c3ecd4801df1ced215ac67f538283035d83cdf4d0786dce97297c2f5d7936"
+  },
+  {
+    "id": "fx-ct-offset-slice",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-offset-slice\\0.9.png",
+    "sha256": "06c586e87dfbccc62646cd2713e4ac03df80f3ca129aeeaeb6f76307af540a61"
+  },
+  {
+    "id": "fx-ct-offset-slice",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-offset-slice\\1.5.png",
+    "sha256": "8bbfeabcbb90b514255f7fce0d154803324041f54aa9d7f17b6175e0a4f8d724"
+  },
+  {
+    "id": "fx-ct-offset-slice",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-offset-slice\\2.1.png",
+    "sha256": "9b2c836447c4ee6d188ad92b443e77731838db940cc5a9ed3c3dccb3fffe2ba5"
+  },
+  {
+    "id": "fx-cc-feverish",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-feverish\\0.3.png",
+    "sha256": "722410c69075c9238e129931a3ad51c15fde260004d53f7c7f9af2eee4476c46"
+  },
+  {
+    "id": "fx-cc-feverish",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-feverish\\0.9.png",
+    "sha256": "d1c96db1803d83f13805a01bb32d1de2d9179ccd2f3ae291ef134c0f93a6c5ec"
+  },
+  {
+    "id": "fx-cc-feverish",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-feverish\\1.5.png",
+    "sha256": "28b1420ebbe83e5e8262831cc839a00e5dda21dbea39bd1d4ab61223e9262571"
+  },
+  {
+    "id": "fx-cc-feverish",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-feverish\\2.1.png",
+    "sha256": "42d34260b8e2393df011767888015148183e5c8c07f2470c014541ab55813ed2"
+  },
+  {
+    "id": "fx-ct-tension-zoom",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-tension-zoom\\0.3.png",
+    "sha256": "920796f7fa91f7728b26417b6274610d3a8db6c501db7a7da980ce797e587e31"
+  },
+  {
+    "id": "fx-ct-tension-zoom",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-tension-zoom\\0.9.png",
+    "sha256": "718312f7e63564c7d81150ea17a983f8f474223364ed5b0f593ce1c2e4f2c8a4"
+  },
+  {
+    "id": "fx-ct-tension-zoom",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-tension-zoom\\1.5.png",
+    "sha256": "1fb6f0597542a188a42f6c20f8e37705974e7bc51e5aa2e1a42cdbee048486b3"
+  },
+  {
+    "id": "fx-ct-tension-zoom",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-tension-zoom\\2.1.png",
+    "sha256": "df7531aeb4a401e2fb9bdc617dc41bbe67adfcf3188c31a5e9f16b41acf87085"
+  },
+  {
+    "id": "fx-ct-cut-shift",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-cut-shift\\0.3.png",
+    "sha256": "6d7d23cadd967eaaf334816efb99f7141bfeb16de4b514d32c533caafe52e872"
+  },
+  {
+    "id": "fx-ct-cut-shift",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-cut-shift\\0.9.png",
+    "sha256": "d526ffaa66551fc11f2faec08376593bf5919538c351f23a5ec357e9fd70e33d"
+  },
+  {
+    "id": "fx-ct-cut-shift",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-cut-shift\\1.5.png",
+    "sha256": "26f23e075a7c3de59388b469dd135a20525487cd13ddb8091c8ecc690acb1718"
+  },
+  {
+    "id": "fx-ct-cut-shift",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-cut-shift\\2.1.png",
+    "sha256": "c08009bde3547fbb0ca7b82841c130120e0918048f25cd485515986c92d27608"
+  },
+  {
+    "id": "fx-cc-move-cloud",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-move-cloud\\0.3.png",
+    "sha256": "dfb089c03ddb346ab8eb42c085a138c3c9f2cea49902179c08d5d93de8d14b8e"
+  },
+  {
+    "id": "fx-cc-move-cloud",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-move-cloud\\0.9.png",
+    "sha256": "d42a24ebe050ea2eb8bca0eb00edfb6aacb54174f6790123051f62ef256e03f3"
+  },
+  {
+    "id": "fx-cc-move-cloud",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-move-cloud\\1.5.png",
+    "sha256": "871267beae0d55bd58f3cb51b4a0d628e10335386b1828da9feccb8bd1732535"
+  },
+  {
+    "id": "fx-cc-move-cloud",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-move-cloud\\2.1.png",
+    "sha256": "d24c02c4a7cb7510d603119bb00b1caed41843604c311259fbb7b7792b2444e3"
+  },
+  {
+    "id": "fx-ct-chaotic-heat",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-chaotic-heat\\0.3.png",
+    "sha256": "c4594d63f4b79e47654753a84b91fff770254388d27d70878438631ad2c3fe69"
+  },
+  {
+    "id": "fx-ct-chaotic-heat",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-chaotic-heat\\0.9.png",
+    "sha256": "0bf43d0f10c4206712de846878a6cee62654b86178a6158f8c947fb1120d0b5f"
+  },
+  {
+    "id": "fx-ct-chaotic-heat",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-chaotic-heat\\1.5.png",
+    "sha256": "73682031082674283603fe249aa6ef2cd51e642c5968f3cbba3d90cbc8fe0a5d"
+  },
+  {
+    "id": "fx-ct-chaotic-heat",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-chaotic-heat\\2.1.png",
+    "sha256": "9f50e999d9bd82a28083bace4215b58148e9193b709e557ce1ee9509db36fef7"
+  },
+  {
+    "id": "fx-ct-magical-tome",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-magical-tome\\0.3.png",
+    "sha256": "8b00882597d5a4f58fb883dd3908e92523382ac29f38f80bf238a602d881b4de"
+  },
+  {
+    "id": "fx-ct-magical-tome",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-magical-tome\\0.9.png",
+    "sha256": "93d944cbe6b5841fc355bcff809d86cb7166f1fbd414e38bdc8622ff231a93ae"
+  },
+  {
+    "id": "fx-ct-magical-tome",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-magical-tome\\1.5.png",
+    "sha256": "925ee173e8983ed66683442f9d42b70f7bd9bc0a5fd4e292962a6bf7fd137af3"
+  },
+  {
+    "id": "fx-ct-magical-tome",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-magical-tome\\2.1.png",
+    "sha256": "79d5642f27636fd7979cb90975f576b0164646a29f0637020328b037c630118c"
+  },
+  {
+    "id": "fx-ct-grim-reaper",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-grim-reaper\\0.3.png",
+    "sha256": "3564551b17986e11709f2f563e33e91c6c7bc91aa61585e325e2095b4fa21eba"
+  },
+  {
+    "id": "fx-ct-grim-reaper",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-grim-reaper\\0.9.png",
+    "sha256": "6914e304a79a2d214307191900bb4df6b11f90bef4eaf667230785bf6a55bc8c"
+  },
+  {
+    "id": "fx-ct-grim-reaper",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-grim-reaper\\1.5.png",
+    "sha256": "de0e435b1001acfa0ac146ca644597348ae35abb1a5799a849dd18eb07eae538"
+  },
+  {
+    "id": "fx-ct-grim-reaper",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-grim-reaper\\2.1.png",
+    "sha256": "726ba1b89a80a6d51701cd5924c29ebc6849e31605f12f789c0b975f859332d2"
+  },
+  {
+    "id": "fx-ct-phone-zoom",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-phone-zoom\\0.3.png",
+    "sha256": "7e3c7b93ade546139eb2849c9cb213a8ea38b2d4c767be1b8c74c91b2929713a"
+  },
+  {
+    "id": "fx-ct-phone-zoom",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-phone-zoom\\0.9.png",
+    "sha256": "3d7eda2008446361bce35c9815b315f722adac345231ed1c1b71fccd97909019"
+  },
+  {
+    "id": "fx-ct-phone-zoom",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-phone-zoom\\1.5.png",
+    "sha256": "a162624a2a768e4b1e7e54479d43569e846c0639e9237ae54e30fddd22f591ff"
+  },
+  {
+    "id": "fx-ct-phone-zoom",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ct-phone-zoom\\2.1.png",
+    "sha256": "5767ace2b696c9790eb717f234a655b52743fba35c1f6b202f1b9b25e581aa96"
+  },
+  {
+    "id": "fx-cc-retro-flicker",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-retro-flicker\\0.3.png",
+    "sha256": "d5bebd33e80921dc6818a50ba1f26a5f6a6510ffb6b719cbb5603cb200555b7a"
+  },
+  {
+    "id": "fx-cc-retro-flicker",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-retro-flicker\\0.9.png",
+    "sha256": "7833adc4b9a16d686b0ee4cd726ce20857c30c70265bc8bbebacab69173c485b"
+  },
+  {
+    "id": "fx-cc-retro-flicker",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-retro-flicker\\1.5.png",
+    "sha256": "158a64e2e63af116a43c55e7be77b8f93b9c2b5cb3edfbdcdafc6671f3a36cfd"
+  },
+  {
+    "id": "fx-cc-retro-flicker",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-retro-flicker\\2.1.png",
+    "sha256": "1f60ac0d089d0b9a0a283660e8ebec651f365deeec69c8f717c1eab4f9cb2347"
+  },
+  {
+    "id": "fx-cc-handheld",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-handheld\\0.3.png",
+    "sha256": "488f2f2c5dead406b26f5e190e480efb11fd86fcc7cbf9840d21c98def0ae91a"
+  },
+  {
+    "id": "fx-cc-handheld",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-handheld\\0.9.png",
+    "sha256": "6ab37e462d4b3ef0815fa99090b3671ae07b08eaa1cf6d50f1eb23b60fa2401a"
+  },
+  {
+    "id": "fx-cc-handheld",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-handheld\\1.5.png",
+    "sha256": "0f6b0df3b1d38544a627982b2f362e46be154431e1f2c5a83344cfd6fb893065"
+  },
+  {
+    "id": "fx-cc-handheld",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-handheld\\2.1.png",
+    "sha256": "3f35b153e9b6a14c550254fee37ee77246834721f791f2f73bba9e8fbd82f344"
+  },
+  {
+    "id": "fx-cc-wiggle-flicker",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-wiggle-flicker\\0.3.png",
+    "sha256": "84a77a338467d8b2885d2b015eea8efda67fb5aa99c36880d5367a3a9d97e1e5"
+  },
+  {
+    "id": "fx-cc-wiggle-flicker",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-wiggle-flicker\\0.9.png",
+    "sha256": "e2aaa305ee38d222b0e787de880bd644954af477c3fdf18729adf49eb2c0426d"
+  },
+  {
+    "id": "fx-cc-wiggle-flicker",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-wiggle-flicker\\1.5.png",
+    "sha256": "6ad8536bd96a049371fd3b13bfa1cf503b5584aacf42c5d797e9373879696b89"
+  },
+  {
+    "id": "fx-cc-wiggle-flicker",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-wiggle-flicker\\2.1.png",
+    "sha256": "b0ace3851bf02b24413801c85ba1c625b086b2a4378584d23701f3b813ddfa7d"
+  },
+  {
+    "id": "fx-cc-hex-split",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-hex-split\\0.3.png",
+    "sha256": "f11647e2d835bc8749a089afddaf356b0707d724e0281d91b307a91196a1860e"
+  },
+  {
+    "id": "fx-cc-hex-split",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-hex-split\\0.9.png",
+    "sha256": "2e9f186208ea4f52d666ae3a00300cc0db707ea42db629134cefce336ef35fed"
+  },
+  {
+    "id": "fx-cc-hex-split",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-hex-split\\1.5.png",
+    "sha256": "065170b7708e25425651b5f46d4921e99a9e97eab9f5b26fac1273f3b7b79146"
+  },
+  {
+    "id": "fx-cc-hex-split",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-hex-split\\2.1.png",
+    "sha256": "1099f26f402cc28a17e6947bf9767845ec3aced6f0c8acbcf9e3f63a88c478f8"
+  },
+  {
+    "id": "fx-cc-heart-ascent",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-heart-ascent\\0.3.png",
+    "sha256": "8695a0123b13a0ce13bfabcc6c5b9cd50303b0ce9a2e49719967102622764584"
+  },
+  {
+    "id": "fx-cc-heart-ascent",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-heart-ascent\\0.9.png",
+    "sha256": "ded68ece12a09946f2f8495a5feef9e6eaf9c0cd1aa0769289d27dee3260b1fb"
+  },
+  {
+    "id": "fx-cc-heart-ascent",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-heart-ascent\\1.5.png",
+    "sha256": "2037e40817cae8cf31440c7e45d7b58596f2b401f2d00653a73eb566993ebb23"
+  },
+  {
+    "id": "fx-cc-heart-ascent",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-heart-ascent\\2.1.png",
+    "sha256": "9ef01e981f1527607d0c9dc426173c5a8a551748b1cbfaea768cf394531aa856"
+  },
+  {
+    "id": "fx-cc-butterfly",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-butterfly\\0.3.png",
+    "sha256": "dfcc8073465d35d5df453ce25c7c99de861a9cae10c5a5e88bb2965a4091539b"
+  },
+  {
+    "id": "fx-cc-butterfly",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-butterfly\\0.9.png",
+    "sha256": "3e4ad460e8764a8d66cc73d38e4dc4f985f04574caa0fc97db190e64ea5446bd"
+  },
+  {
+    "id": "fx-cc-butterfly",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-butterfly\\1.5.png",
+    "sha256": "722353732c821b91334eb9d47d18ed341cc9aaf5c283eeab75b8821ab7f7b876"
+  },
+  {
+    "id": "fx-cc-butterfly",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-butterfly\\2.1.png",
+    "sha256": "b64a57df41279cf537fe5f60e3afc70536b8f6d1a9b63165357f9ad4649bfa4d"
+  },
+  {
+    "id": "fx-cc-butterfly-dream",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-butterfly-dream\\0.3.png",
+    "sha256": "b1326e56b0c3c13ab73565fa346cad4ca9ba59170a0cec5ebdfcbefa9b092784"
+  },
+  {
+    "id": "fx-cc-butterfly-dream",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-butterfly-dream\\0.9.png",
+    "sha256": "c25c361457bc5ac69cac664f780bee5a673c2c8a5226d5c2c810faaf01636f67"
+  },
+  {
+    "id": "fx-cc-butterfly-dream",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-butterfly-dream\\1.5.png",
+    "sha256": "70820490d167e9aab3ecb1b58e4ed316480e2dc369966bd9bf234926ee5310b7"
+  },
+  {
+    "id": "fx-cc-butterfly-dream",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-butterfly-dream\\2.1.png",
+    "sha256": "e9ab3d5b1431ba079c84611b17d7e6b90897bb0f65eaf00f203425845dfe4c2e"
+  },
+  {
+    "id": "fx-cc-leak-warm",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-leak-warm\\0.3.png",
+    "sha256": "7c6594625802c25bf65ada68cd8a76834dc56db222dbb49fed75ecbe5ce89a48"
+  },
+  {
+    "id": "fx-cc-leak-warm",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-leak-warm\\0.9.png",
+    "sha256": "c9c8643721f62f0f2ed021a7a4297b8fe1dd935bc124f6139f4ac764fa0ad065"
+  },
+  {
+    "id": "fx-cc-leak-warm",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-leak-warm\\1.5.png",
+    "sha256": "f2fc7f5eafbff6526e1a3a217dc75ec0c1c788af4fbf78e34ba8aacd988171da"
+  },
+  {
+    "id": "fx-cc-leak-warm",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-leak-warm\\2.1.png",
+    "sha256": "786831afec9c181b22cf107b59852373c69cfc67d0ad4abbef20faf02e74993a"
+  },
+  {
+    "id": "fx-cc-leak-neon",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-leak-neon\\0.3.png",
+    "sha256": "c08427c8f24b5c3228f976eaa2784de4f2735e38af3090d484eab443a717c392"
+  },
+  {
+    "id": "fx-cc-leak-neon",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-leak-neon\\0.9.png",
+    "sha256": "cf4cefcd4a930598d70838e03a2737ef11dd96b9c40981d84386e040372244f3"
+  },
+  {
+    "id": "fx-cc-leak-neon",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-leak-neon\\1.5.png",
+    "sha256": "25d959542d1ac891b2fd331a00e2a98734cd7fd01d8d72d1dede8a5f67b4c9c8"
+  },
+  {
+    "id": "fx-cc-leak-neon",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-leak-neon\\2.1.png",
+    "sha256": "be47cd52a861f187ef0f3f9ee152690dc43f84f38f8a7c6262669d8fa88e96c6"
+  },
+  {
+    "id": "fx-cc-falling-petals",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-falling-petals\\0.3.png",
+    "sha256": "89bfdd709707f3f2ad75859e676ffd6cb2670a8bddb57f945c533b703d99d5bb"
+  },
+  {
+    "id": "fx-cc-falling-petals",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-falling-petals\\0.9.png",
+    "sha256": "9d48bd70901ecc297e74adadf2f9e36856dce0934954d9e7a99e081279156c13"
+  },
+  {
+    "id": "fx-cc-falling-petals",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-falling-petals\\1.5.png",
+    "sha256": "5409f6057fc230b88164998cdae3c4ba88cae38c43f571cc51d2dde38af75b06"
+  },
+  {
+    "id": "fx-cc-falling-petals",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-falling-petals\\2.1.png",
+    "sha256": "17ee0021c416c11de726ba498e5a3ae1d7422f1126afd5fb3693425d36d4f16f"
+  },
+  {
+    "id": "fx-cc-smoky-focus",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-smoky-focus\\0.3.png",
+    "sha256": "014b8eccd6bd287027d3f5ff2c4ed8d061939777cc25114d1f6270c6836c20d6"
+  },
+  {
+    "id": "fx-cc-smoky-focus",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-smoky-focus\\0.9.png",
+    "sha256": "480e0a06fc3333124c3d1629b8ff10e990075bd8ff6a012308e705c245a07144"
+  },
+  {
+    "id": "fx-cc-smoky-focus",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-smoky-focus\\1.5.png",
+    "sha256": "a28b718136344a925cfe5936d726a76b54e82897aa882e6b44505cd12366e997"
+  },
+  {
+    "id": "fx-cc-smoky-focus",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-smoky-focus\\2.1.png",
+    "sha256": "93f0a0ecc20f566bc29794d8ff04da47dfc482bc5c0a80230a631fa6404d8b73"
+  },
+  {
+    "id": "fx-cc-vintage-film",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-vintage-film\\0.3.png",
+    "sha256": "c502735baa15e0478e05efdbd3f6604d885a1c331b1c9ef61aebf0001d255c9e"
+  },
+  {
+    "id": "fx-cc-vintage-film",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-vintage-film\\0.9.png",
+    "sha256": "e8de55ac4653617f66f6b5601560ed850ce823c757c0cf36230e366df86a9d3a"
+  },
+  {
+    "id": "fx-cc-vintage-film",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-vintage-film\\1.5.png",
+    "sha256": "b79e8bf897e97c461f5f85de4de5a60bbc996e4905ab170ec9c5f30ecb835840"
+  },
+  {
+    "id": "fx-cc-vintage-film",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-vintage-film\\2.1.png",
+    "sha256": "3002fa229166f5ee3b5b5583db4a9dc57e65b5120ef0959fe3bacd3a124f3be2"
+  },
+  {
+    "id": "fx-cc-stellar",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-stellar\\0.3.png",
+    "sha256": "8fab2534ae610915947e243aa7bdbc011fbf599bd39aeb6619cc36b85324b549"
+  },
+  {
+    "id": "fx-cc-stellar",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-stellar\\0.9.png",
+    "sha256": "cace87f448110fa58ad1ef2f075d875c0138e903224b5d481614e106387d940f"
+  },
+  {
+    "id": "fx-cc-stellar",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-stellar\\1.5.png",
+    "sha256": "0be8426486ea7bec5926f73f0c514b3b9dec78160e8f58ee581f97a77d4032fe"
+  },
+  {
+    "id": "fx-cc-stellar",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-stellar\\2.1.png",
+    "sha256": "5b5b23f8a8c548ead8ca226197afbe5c57aabb8d9412ac4fbcdc59a4b5906c1a"
+  },
+  {
+    "id": "fx-cc-ink-spill",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-ink-spill\\0.3.png",
+    "sha256": "f25413d9807a564ce623667c603ddac30a5f47a36aebc31f9ed214de6a9b22dd"
+  },
+  {
+    "id": "fx-cc-ink-spill",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-ink-spill\\0.9.png",
+    "sha256": "0b34edc9f7fa750f911d976d981583bb42ad1b9d7f8240a8b2f643d3cd62f6ac"
+  },
+  {
+    "id": "fx-cc-ink-spill",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-ink-spill\\1.5.png",
+    "sha256": "2be01319722094680db4d63a10464f9adde34fca185d55710c26253d7584fad5"
+  },
+  {
+    "id": "fx-cc-ink-spill",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-ink-spill\\2.1.png",
+    "sha256": "4a6888532d9f109be7deada62a9bd2a46107f656207ea42cad5ce5a3e9ae8c37"
+  },
+  {
+    "id": "fx-cc-exploding-love",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-exploding-love\\0.3.png",
+    "sha256": "77e6e1f79903dcb218faec09f21e832caeb24271ad9987fbd432b207eb382462"
+  },
+  {
+    "id": "fx-cc-exploding-love",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-exploding-love\\0.9.png",
+    "sha256": "4c08c0efb1b93cb6c739a376a86e95cf29ceb7f2b70a3c650cafd522b7abc8bf"
+  },
+  {
+    "id": "fx-cc-exploding-love",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-exploding-love\\1.5.png",
+    "sha256": "779a7a9cdc5b8c3095a4937e038da1294a6a66e6a3b9a772aac3cac0c185668b"
+  },
+  {
+    "id": "fx-cc-exploding-love",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-exploding-love\\2.1.png",
+    "sha256": "5cd70c6d19f4644bbdfff0e8377bcb19c69215ce372254396d1aac55e0501edd"
+  },
+  {
+    "id": "fx-cc-damaged-vignette",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-damaged-vignette\\0.3.png",
+    "sha256": "dd9d0e8992af70965ed76c8fbc866b9248d8fd6a1f480dddac17bcd73bbb69a0"
+  },
+  {
+    "id": "fx-cc-damaged-vignette",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-damaged-vignette\\0.9.png",
+    "sha256": "73ec6060bfe6b74006f600f3f3a5341a5762c0788b03ee78eb7715fd70166b8b"
+  },
+  {
+    "id": "fx-cc-damaged-vignette",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-damaged-vignette\\1.5.png",
+    "sha256": "eb94cdbd9be513199fc7011fe104d43d4953243d1274086f4b07a1f5b74235ee"
+  },
+  {
+    "id": "fx-cc-damaged-vignette",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-damaged-vignette\\2.1.png",
+    "sha256": "a3ec0997689a7e23c1298cd7eb1a1b5f2d63281890e561e639792e3a78608beb"
+  },
+  {
+    "id": "fx-cc-firefly",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-firefly\\0.3.png",
+    "sha256": "4aef6e9efb0a204c86a3c31c7425e245db267c1d9915c240fc5095bbe6a8d898"
+  },
+  {
+    "id": "fx-cc-firefly",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-firefly\\0.9.png",
+    "sha256": "fa852691f12bb493e7fe8c39f627a9fa94a4191e8f8d3cbbdd79a37e501bbdad"
+  },
+  {
+    "id": "fx-cc-firefly",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-firefly\\1.5.png",
+    "sha256": "7ffb4dd2a7767dc6b1ca06338be639bbf837af31101f4ff785d768c98880156e"
+  },
+  {
+    "id": "fx-cc-firefly",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-firefly\\2.1.png",
+    "sha256": "f2f14681e807be0a6e17315a12c37743d47ef3c0b757b3e1bb2cc98aae3b8edf"
+  },
+  {
+    "id": "fx-cc-misty-tint",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-misty-tint\\0.3.png",
+    "sha256": "a4addd9f192d3254ae2d42f223309db979fddc61b41fb6fb17228e65e303b1c0"
+  },
+  {
+    "id": "fx-cc-misty-tint",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-misty-tint\\0.9.png",
+    "sha256": "6edb584d63822ad12643876788140ce333ef00a1b0a57d008caf7e233c85c9ac"
+  },
+  {
+    "id": "fx-cc-misty-tint",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-misty-tint\\1.5.png",
+    "sha256": "acdbe58736816245319ab37e57d714dde7057efebfec4d0aaf78bd71a1172349"
+  },
+  {
+    "id": "fx-cc-misty-tint",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-misty-tint\\2.1.png",
+    "sha256": "d1787b83089f47e6f2adfabd8eca7bca8f668a146f2fb4671dcd88604ef215bd"
+  },
+  {
+    "id": "fx-cc-sepia-cool",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-sepia-cool\\0.3.png",
+    "sha256": "c5a07b859bb147d45c76e83881df36b549b7c3b03bd1b9f22d2c9b84f62692c4"
+  },
+  {
+    "id": "fx-cc-sepia-cool",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-sepia-cool\\0.9.png",
+    "sha256": "d0e658cd2bec06985c81178ef1587b935ceaeb517a72e5c9871782a56aa33e93"
+  },
+  {
+    "id": "fx-cc-sepia-cool",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-sepia-cool\\1.5.png",
+    "sha256": "3d87262eb10cb64d9e15b13f9a46310d1f291b54eb77e3f2203dbd872054518c"
+  },
+  {
+    "id": "fx-cc-sepia-cool",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-sepia-cool\\2.1.png",
+    "sha256": "b423eda64e0a54e75d7ed32ba3abff8d710d5d1c3fcb50652a4071fd980fc170"
+  },
+  {
+    "id": "fx-cc-snow-night",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-snow-night\\0.3.png",
+    "sha256": "356e64ce30316b96b18002ed1bfe909fa84d2366de28ec2f8c90e7958cdc5e36"
+  },
+  {
+    "id": "fx-cc-snow-night",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-snow-night\\0.9.png",
+    "sha256": "e71ff2022208d482cb46438a52504b4c32ee876dc3ee6a6a3ff72e15e9509d4e"
+  },
+  {
+    "id": "fx-cc-snow-night",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-snow-night\\1.5.png",
+    "sha256": "fcb6b216684a644e541f59027f53640299acd6aa2fbad1436d8ae0b1921f2e99"
+  },
+  {
+    "id": "fx-cc-snow-night",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-snow-night\\2.1.png",
+    "sha256": "e091225df0c638cf45bbe36d0521da2645fe8e604263fb4955e899a084de4c9e"
+  },
+  {
+    "id": "fx-cc-rain",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-rain\\0.3.png",
+    "sha256": "c986d8425a066d729dd827dee4a352966353e076ce64dfb3e2d1a0a3274c1575"
+  },
+  {
+    "id": "fx-cc-rain",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-rain\\0.9.png",
+    "sha256": "1e102f255388b1839880cd76cc345b8bceba99d69a766216f8e7cd875d41cfe7"
+  },
+  {
+    "id": "fx-cc-rain",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-rain\\1.5.png",
+    "sha256": "a9e18642910f1953cd78d6d9aa38fa7776e2f99a2d90c03729d5058518527821"
+  },
+  {
+    "id": "fx-cc-rain",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-rain\\2.1.png",
+    "sha256": "2cbb21fa84c0fdddd73669b17722a3da6262ce0afd5a39988d8b3bad982f8b7f"
+  },
+  {
+    "id": "fx-cc-rose-bloom",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-rose-bloom\\0.3.png",
+    "sha256": "f23f8f835411ecc60deebec9274f22b59f159bbfec7e2791a6e72b6ba9ba0741"
+  },
+  {
+    "id": "fx-cc-rose-bloom",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-rose-bloom\\0.9.png",
+    "sha256": "175eaa49dea51fa91e92adeb4efe56c7de321f7e9c257f3eddeafa2b86b0ca1a"
+  },
+  {
+    "id": "fx-cc-rose-bloom",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-rose-bloom\\1.5.png",
+    "sha256": "429ebd8b935cdb66e74faf535944d2c7939f53828efd616568ae82f3a045d77d"
+  },
+  {
+    "id": "fx-cc-rose-bloom",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-rose-bloom\\2.1.png",
+    "sha256": "b803a5410d5ccd2840715572a08d100c2badc2f3f29a4aa77c98ab97a751d19c"
+  },
+  {
+    "id": "fx-cc-sparkle-shine",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-sparkle-shine\\0.3.png",
+    "sha256": "d6a38d1e6ffbbe585825590048a2f67ba48025568619d6119c6a2da87a277086"
+  },
+  {
+    "id": "fx-cc-sparkle-shine",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-sparkle-shine\\0.9.png",
+    "sha256": "eeb3eb3a62d5f77f62f17faff76cd30abb414d21c140fe8c3208453f2ada900f"
+  },
+  {
+    "id": "fx-cc-sparkle-shine",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-sparkle-shine\\1.5.png",
+    "sha256": "b16de69c166b3073aa07b6f1d675ab0530acf586e4db146f1d02db0f4f35c77c"
+  },
+  {
+    "id": "fx-cc-sparkle-shine",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-sparkle-shine\\2.1.png",
+    "sha256": "8999439a7da54628d311b49eb34750ba4dbc5dfa8bbe448f71732ff1dbc49db2"
+  },
+  {
+    "id": "fx-cc-pixel-blocks",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-blocks\\0.3.png",
+    "sha256": "ee51a66dee4c5bd8ced250216c9cb73b81f2cc1e3e6eb9f5fe1955d451bf0969"
+  },
+  {
+    "id": "fx-cc-pixel-blocks",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-blocks\\0.9.png",
+    "sha256": "a3a64fbaea8a756183e2a21a9b4579d97fa1f5099e41b7a89d6e56c8c2e0a81f"
+  },
+  {
+    "id": "fx-cc-pixel-blocks",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-blocks\\1.5.png",
+    "sha256": "be0ca6ccc4505e02e1e5376975572f5f36297f8d5bb6224c3b33de1cb44aa1cd"
+  },
+  {
+    "id": "fx-cc-pixel-blocks",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-blocks\\2.1.png",
+    "sha256": "1888e16b1a96e451c5836b480901a8837848144a6af82335ad6a3fdc704bef27"
+  },
+  {
+    "id": "fx-cc-pixel-mutant",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-mutant\\0.3.png",
+    "sha256": "59fac9c2628b8e5e003180574a91c1c49997da86b6c10fb9d28bcde1bb2ea21f"
+  },
+  {
+    "id": "fx-cc-pixel-mutant",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-mutant\\0.9.png",
+    "sha256": "84dac59060296d2e278725aba5637e909f1aa290ee259256b6e9643b4dbbb970"
+  },
+  {
+    "id": "fx-cc-pixel-mutant",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-mutant\\1.5.png",
+    "sha256": "f6cfe21659d35330929aa454ece790fad7aa5f87cbb48fc8fe63787ebb0b3e0b"
+  },
+  {
+    "id": "fx-cc-pixel-mutant",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-mutant\\2.1.png",
+    "sha256": "ff51705fff74af46e3240b2cb42c90ebc7172eb83414736494c568856408cdfe"
+  },
+  {
+    "id": "fx-cc-pixel-universe",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-universe\\0.3.png",
+    "sha256": "6aa063a2a5c4352d4ecc4c24f36c83171052fbb7ba27460b9c32e0bd040da81d"
+  },
+  {
+    "id": "fx-cc-pixel-universe",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-universe\\0.9.png",
+    "sha256": "9f1f2df594ca9bda027252bdb234095e04a9c8dcf557a8a2fec59fc0c73e6580"
+  },
+  {
+    "id": "fx-cc-pixel-universe",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-universe\\1.5.png",
+    "sha256": "0eb27d36d9c27013b1348a61e80f77d86ee21a62b50d83b3f1a16eee57992d76"
+  },
+  {
+    "id": "fx-cc-pixel-universe",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cc-pixel-universe\\2.1.png",
+    "sha256": "4b8a8e0bfca7ba0303be52034066895b3cf0f7a9319dde068a50b7f57b7f37b7"
+  },
+  {
+    "id": "fx-pb-pixel-scan",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-scan\\0.3.png",
+    "sha256": "318007481213d5317d802b35dc2345ed1f6ff8767ce9424d19f22f2f0610c200"
+  },
+  {
+    "id": "fx-pb-pixel-scan",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-scan\\0.9.png",
+    "sha256": "1c8206d9fb3da6ed7a9b0532466c26d7c13c0d51865b8a1f5a848b9d6a338f5b"
+  },
+  {
+    "id": "fx-pb-pixel-scan",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-scan\\1.5.png",
+    "sha256": "41aeeaef46f8735581a7d5f7d779633c1507037a794d4439cef9e2b5838c3867"
+  },
+  {
+    "id": "fx-pb-pixel-scan",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-scan\\2.1.png",
+    "sha256": "e7c40f0764745446cf7df36ccc79953a6a846b841c157e884acccc3892ba444c"
+  },
+  {
+    "id": "fx-pb-flip-phone",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-flip-phone\\0.3.png",
+    "sha256": "54931958228b06ff18b1c7993c33c75ecaceecf45d92df12a3732de934fc3cbf"
+  },
+  {
+    "id": "fx-pb-flip-phone",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-flip-phone\\0.9.png",
+    "sha256": "1178be6220efc39db629ac475bf560f1e4735832a94a93f7bb6ccc1619ec02b7"
+  },
+  {
+    "id": "fx-pb-flip-phone",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-flip-phone\\1.5.png",
+    "sha256": "19bca0de544cd0c733c33ffde5bc536892cc3b66d37e7eba9bdebf4772e97b53"
+  },
+  {
+    "id": "fx-pb-flip-phone",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-flip-phone\\2.1.png",
+    "sha256": "2528476d6a2870022699f2d92bd59d1c456719d9d0bda510c2c53d5cf4b85230"
+  },
+  {
+    "id": "fx-pb-pixel-breakdown",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-breakdown\\0.3.png",
+    "sha256": "ba0cef804802d32d683d0f67e65360034542b34c2a7a7ad1e738c675cc1c0ad3"
+  },
+  {
+    "id": "fx-pb-pixel-breakdown",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-breakdown\\0.9.png",
+    "sha256": "af306e2796f1b7049af2d9881e3fc1fabfb2216f49ee6ab16ad97acd5585ed83"
+  },
+  {
+    "id": "fx-pb-pixel-breakdown",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-breakdown\\1.5.png",
+    "sha256": "61322367cf9fc335e3d4a1ac79d089f62b48be737e7aa3d23dc41d52fb8d10cc"
+  },
+  {
+    "id": "fx-pb-pixel-breakdown",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-breakdown\\2.1.png",
+    "sha256": "0d1050d113caaa9dee1753abaf5e519ad9b41680f54f28567a2cb29457a453c8"
+  },
+  {
+    "id": "fx-pb-sweet-party",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-sweet-party\\0.3.png",
+    "sha256": "e1dad358a007de18c800739666b809b27a6662666502d1df902362eb277dcf74"
+  },
+  {
+    "id": "fx-pb-sweet-party",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-sweet-party\\0.9.png",
+    "sha256": "e3b0f9ca274c14bd5d12b96fb022a351632d84bd9e54930c5eaf26c2915a6508"
+  },
+  {
+    "id": "fx-pb-sweet-party",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-sweet-party\\1.5.png",
+    "sha256": "0da13de3aea9d119c29181d1ded74a1fbea29dfeb6dd244e0c600c085fc94470"
+  },
+  {
+    "id": "fx-pb-sweet-party",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-sweet-party\\2.1.png",
+    "sha256": "8b1110baa54670aaa19f3f03f9e3667d142fd5f0e12663ac2299932ceda02988"
+  },
+  {
+    "id": "fx-pb-misty-tint",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-misty-tint\\0.3.png",
+    "sha256": "20f67cf937890ffe0d993f384ea94845774e97b68a644fbd21e505129076e2aa"
+  },
+  {
+    "id": "fx-pb-misty-tint",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-misty-tint\\0.9.png",
+    "sha256": "ccadeab2259a2c74eaf78f58e27e50beeebc9eb212cde59588ed56dced5381a1"
+  },
+  {
+    "id": "fx-pb-misty-tint",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-misty-tint\\1.5.png",
+    "sha256": "2c2de5dc7d29dc182c87f394601e285b03f9a3794424752b4ea11036a522d8ec"
+  },
+  {
+    "id": "fx-pb-misty-tint",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-misty-tint\\2.1.png",
+    "sha256": "6582f3ef17b11c49c30286ab659f4054b77b28cc36b1bd0f95aa0b9745110d5d"
+  },
+  {
+    "id": "fx-pb-bead-art",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-bead-art\\0.3.png",
+    "sha256": "9b750e677d07acee7c8b288f06e12fada9e556cd8fb041be9975b17ff3236215"
+  },
+  {
+    "id": "fx-pb-bead-art",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-bead-art\\0.9.png",
+    "sha256": "a6fae099ff263d0f8ca1b2db2df78269e719383d21edbf7dbb99f20a8ee6863c"
+  },
+  {
+    "id": "fx-pb-bead-art",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-bead-art\\1.5.png",
+    "sha256": "e50c43a611538da2f0ea0960e162a54e991e4c9aeb7d262a5a919cf6db4c2f41"
+  },
+  {
+    "id": "fx-pb-bead-art",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-bead-art\\2.1.png",
+    "sha256": "a844310571cd1b36ac964158a9caa0c1fbd33b69e7ed47e2681126c3a743e2da"
+  },
+  {
+    "id": "fx-pb-pixel-rain",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-rain\\0.3.png",
+    "sha256": "c36aedce5592bd955b01ba4628cdc0f8d15b3077419e03b3334ad5ad5f17f458"
+  },
+  {
+    "id": "fx-pb-pixel-rain",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-rain\\0.9.png",
+    "sha256": "fe203b4aabc89808bdfc75d2426bef8fd0fa27c35b503b4c8d9aec984f95e9d2"
+  },
+  {
+    "id": "fx-pb-pixel-rain",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-rain\\1.5.png",
+    "sha256": "e021e9c95baebda6fb01622b6fb700df01088075b8169fde73d70a4d0b69abfe"
+  },
+  {
+    "id": "fx-pb-pixel-rain",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pb-pixel-rain\\2.1.png",
+    "sha256": "52531d189dca78ab8986414c6e77b0e2d7ddcf331fed6a85b737badb7f25de0c"
+  },
+  {
+    "id": "fx-st-polaroid",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-polaroid\\0.3.png",
+    "sha256": "5e056de1ea9df3577f98132914e9ce5bc12c940d963e627bad9d4d518ef593b4"
+  },
+  {
+    "id": "fx-st-polaroid",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-polaroid\\0.9.png",
+    "sha256": "ead5009bc96eff3c47b85f72e90c1761c634db7b9a52146604a10f9fab10adec"
+  },
+  {
+    "id": "fx-st-polaroid",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-polaroid\\1.5.png",
+    "sha256": "f384dd9a742679a4532af86a15c3401d721d4e4d6bfa5542d6a0a3b0f0e036a1"
+  },
+  {
+    "id": "fx-st-polaroid",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-polaroid\\2.1.png",
+    "sha256": "4a25c8df0c67fb8b9de4faeb6b871a7b2d172ee0671004d61139e2d3ba732d2f"
+  },
+  {
+    "id": "fx-st-retro-tv",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-retro-tv\\0.3.png",
+    "sha256": "cf165487a29d30650728ac800c4c481b982e5be786b0e1f2bbfcfa2c1a9310b0"
+  },
+  {
+    "id": "fx-st-retro-tv",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-retro-tv\\0.9.png",
+    "sha256": "f8ce41bbe9e8d4af4285384e6844f663d5d897537719b7d49edaedbc22b14235"
+  },
+  {
+    "id": "fx-st-retro-tv",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-retro-tv\\1.5.png",
+    "sha256": "410a3b70442dfc32eb2be04c955dba0af066a661c46ab8a480c7b79f08baa779"
+  },
+  {
+    "id": "fx-st-retro-tv",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-retro-tv\\2.1.png",
+    "sha256": "7303253f8b4a608fc84aaf4258ae0d282d3ccf87a9f282d650e2435822376c83"
+  },
+  {
+    "id": "fx-st-billboard",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-billboard\\0.3.png",
+    "sha256": "4baecc57a51a67df86ccbabb6c5484f15c57834f1e77d0202def128ffc170f4f"
+  },
+  {
+    "id": "fx-st-billboard",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-billboard\\0.9.png",
+    "sha256": "9e88c4a4b83114846ccaabba98e0fb7278776950d3f680c1224e38117a4ddfe0"
+  },
+  {
+    "id": "fx-st-billboard",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-billboard\\1.5.png",
+    "sha256": "8a82ba11787a6ced50106f3523138d3797666cb0c83c71bb7aca94818130e760"
+  },
+  {
+    "id": "fx-st-billboard",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-billboard\\2.1.png",
+    "sha256": "375e7308cb7256e0f0b07702942894fa778e63c994ef501eea53a1c4a6580905"
+  },
+  {
+    "id": "fx-st-film-strip",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-film-strip\\0.3.png",
+    "sha256": "d1e1f5e4cd6d9f53626db92a69ed71fb36fb4690090ade1897a96bfccd163599"
+  },
+  {
+    "id": "fx-st-film-strip",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-film-strip\\0.9.png",
+    "sha256": "890af0e24f93d2efd8437396b6f0b68a5a723443e05bdd8bed480a5bf914683d"
+  },
+  {
+    "id": "fx-st-film-strip",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-film-strip\\1.5.png",
+    "sha256": "77c6ef033ef013ffc8f1ff92dca3ae22ba0dc414850103cef0432a95ce0d141b"
+  },
+  {
+    "id": "fx-st-film-strip",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-st-film-strip\\2.1.png",
+    "sha256": "f6ff056c28b66e7775174f7643bd8eb7f78b7367202df71ad43cc1e456c290f2"
+  },
+  {
+    "id": "fx-ne-frame",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-frame\\0.3.png",
+    "sha256": "5b59689b441753231c45a6ad7413ba0b7eb677f9470076d86f9396e9d575c0dd"
+  },
+  {
+    "id": "fx-ne-frame",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-frame\\0.9.png",
+    "sha256": "fe29a9bb857db4a1afd58700c30f162cda248a937db4e18899f3cba467065f2a"
+  },
+  {
+    "id": "fx-ne-frame",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-frame\\1.5.png",
+    "sha256": "f966e7e34351b649ebd03bf6c82b228b895a8cf84cdb3e57d282d40a1f305f25"
+  },
+  {
+    "id": "fx-ne-frame",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-frame\\2.1.png",
+    "sha256": "1b3602399b9778e06aa632402708fdd95b2048b666f386470e099dfbc9ee9400"
+  },
+  {
+    "id": "fx-ne-ring",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-ring\\0.3.png",
+    "sha256": "cb82d91c1d58cd8bb5fda3fbf35243b94d4f17fa173e1ecb953d8e5bd096c8c9"
+  },
+  {
+    "id": "fx-ne-ring",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-ring\\0.9.png",
+    "sha256": "e189bf278f4a4bf7693a6e9df78f5a06b17b6424f9c477a3b4f4e559fa81988f"
+  },
+  {
+    "id": "fx-ne-ring",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-ring\\1.5.png",
+    "sha256": "9ecacfd61e28e9c95d969755f3c2b232eac192fd1aee99faa441c1d5a4325760"
+  },
+  {
+    "id": "fx-ne-ring",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-ring\\2.1.png",
+    "sha256": "73d5415e8e81168caf5d190f8bf491becdfcaf2ff98d3ff22ef9814fe5c1e35c"
+  },
+  {
+    "id": "fx-ne-heart",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-heart\\0.3.png",
+    "sha256": "200ab939c29f1f0619ef25cb9b7698082e46d1e273c65a024a8962e8d73857cd"
+  },
+  {
+    "id": "fx-ne-heart",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-heart\\0.9.png",
+    "sha256": "79f0e24626319404f8d42b3800a146d8f5a08f6d13a832ccf896e438eaa4c9a8"
+  },
+  {
+    "id": "fx-ne-heart",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-heart\\1.5.png",
+    "sha256": "9fb8abbdfe5b65ac0f7ae513f06268e2385d04210fffd73154ef3f5dcfc5b2be"
+  },
+  {
+    "id": "fx-ne-heart",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-heart\\2.1.png",
+    "sha256": "258435d244ca8026e8283ef1d26fe35543215c5b8ad47d5200ece98cefd24bea"
+  },
+  {
+    "id": "fx-ne-lightning",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-lightning\\0.3.png",
+    "sha256": "ce591839e1fad63c04a537229d7e9725bc63fa4ac8896fd78cf70c1e92461787"
+  },
+  {
+    "id": "fx-ne-lightning",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-lightning\\0.9.png",
+    "sha256": "5fc4d897c3b32677ccf45eab31a18de677d9beaa7503f3f967707545ea8558ac"
+  },
+  {
+    "id": "fx-ne-lightning",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-lightning\\1.5.png",
+    "sha256": "ed870c34b99d2796580ff8c8d5463bdef00d734f12146d0080e69629723bb6cb"
+  },
+  {
+    "id": "fx-ne-lightning",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-lightning\\2.1.png",
+    "sha256": "f86394e73c729822d3873609e54f5cab28c21d88606e8c6a06e9b53812990893"
+  },
+  {
+    "id": "fx-ne-stars",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-stars\\0.3.png",
+    "sha256": "adc9daed743630726172f7d7f5bc9d63eb50383409e3ddf403fdaea951d190cc"
+  },
+  {
+    "id": "fx-ne-stars",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-stars\\0.9.png",
+    "sha256": "d833c07412341f13898ad30eea23f1af2232c59742ef8ad0b19f780f33619025"
+  },
+  {
+    "id": "fx-ne-stars",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-stars\\1.5.png",
+    "sha256": "4a3f57874419163188ef97ebcef396f5e78f6ebacbbdec17b394168f7a24bd18"
+  },
+  {
+    "id": "fx-ne-stars",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ne-stars\\2.1.png",
+    "sha256": "0eee38fd84ce140b2c32bffcbaadea2da680900d425a7179f691df69f3db0a2d"
+  },
+  {
+    "id": "fx-cr-sparkle-burst",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-sparkle-burst\\0.3.png",
+    "sha256": "06d8ad7419791f7d6e55c3c5d4e2570ef28719106fd4e13c53b1d90b10487ede"
+  },
+  {
+    "id": "fx-cr-sparkle-burst",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-sparkle-burst\\0.9.png",
+    "sha256": "1ae3db9c0fa608f79bdcdb896f7086878df106836883fb5214c43c90f1a131f4"
+  },
+  {
+    "id": "fx-cr-sparkle-burst",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-sparkle-burst\\1.5.png",
+    "sha256": "23fe54bcaccc4be03f6743cd5f3685a1d03256c6dfdf324b55f9bfb3672a961a"
+  },
+  {
+    "id": "fx-cr-sparkle-burst",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-sparkle-burst\\2.1.png",
+    "sha256": "484869f1495310c7802cb8b74cabcad0af4eb34dc89109bcaf4e2b642736c34b"
+  },
+  {
+    "id": "fx-cr-glitter-rain",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-glitter-rain\\0.3.png",
+    "sha256": "f5a20a63597bc89b09efc3d015a52fc34634ce043223a1f9c5a23f589ea228b1"
+  },
+  {
+    "id": "fx-cr-glitter-rain",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-glitter-rain\\0.9.png",
+    "sha256": "cb066ea72d6da6214ccbdf2847dd821d15bf28eeac0946c601aa0135f5bdb195"
+  },
+  {
+    "id": "fx-cr-glitter-rain",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-glitter-rain\\1.5.png",
+    "sha256": "0a828c5fc92ef36b68f5a03dcd0da9b4d79c9fc757eff2cb54446f3dc737716c"
+  },
+  {
+    "id": "fx-cr-glitter-rain",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-glitter-rain\\2.1.png",
+    "sha256": "8bf3834bae32bc9cbdf7f7c3815ef5973c494d5cb0b54b1fa175deee2dbe7bf3"
+  },
+  {
+    "id": "fx-cr-matrix",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-matrix\\0.3.png",
+    "sha256": "1f9d52be785677c41bfd3dca478fe39b6d6844b4184242fe160618f402a329fc"
+  },
+  {
+    "id": "fx-cr-matrix",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-matrix\\0.9.png",
+    "sha256": "a139875170e5bc31e4fea22f863b309a1173451120d851a4d72dc90b7df4fe38"
+  },
+  {
+    "id": "fx-cr-matrix",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-matrix\\1.5.png",
+    "sha256": "72871cbdb580d5f78708bc95bd1a3789500e64101efe2747fc91f556b08ddca2"
+  },
+  {
+    "id": "fx-cr-matrix",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-matrix\\2.1.png",
+    "sha256": "57a34b5724c9dab33841cb94a6ead84c6e043ef4dbfbf6869f7d76d79d20d175"
+  },
+  {
+    "id": "fx-cr-signal-lost",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-signal-lost\\0.3.png",
+    "sha256": "7542a46541f1758aef6c948670bcd25fae09e612a0fa85261dde4b5901c10f91"
+  },
+  {
+    "id": "fx-cr-signal-lost",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-signal-lost\\0.9.png",
+    "sha256": "d826685ee31c68cfc65ebcf362971229c5c5f9ebd6d4296c3bf379c67f7f13c7"
+  },
+  {
+    "id": "fx-cr-signal-lost",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-signal-lost\\1.5.png",
+    "sha256": "02ad5b426ada4a6725bf1f5a66a9729bda503100174babc8fa4de2b4b70f71f7"
+  },
+  {
+    "id": "fx-cr-signal-lost",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-signal-lost\\2.1.png",
+    "sha256": "84546c549dbb53dc3bd9b1f1bad589a883cd7945a80385d84827f615f59357c5"
+  },
+  {
+    "id": "fx-cr-slice-drift",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-slice-drift\\0.3.png",
+    "sha256": "a7b63811fb071fe25e9cd0de4edc6b7fa51c70178d9e47ea7eb48336f3429cd8"
+  },
+  {
+    "id": "fx-cr-slice-drift",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-slice-drift\\0.9.png",
+    "sha256": "69510845bcb785eab8fd656799a686c1f07b814e05951584ef77dec79796fd2c"
+  },
+  {
+    "id": "fx-cr-slice-drift",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-slice-drift\\1.5.png",
+    "sha256": "3cefd1ea5ef16025f6bdfded43b5c9ef44729d267fdde5479b36d75738c333e9"
+  },
+  {
+    "id": "fx-cr-slice-drift",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-slice-drift\\2.1.png",
+    "sha256": "b02a75391de8ab209a8fa175d74db3e622096bba96c7e03b773694fa69b0c574"
+  },
+  {
+    "id": "fx-cr-projector",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-projector\\0.3.png",
+    "sha256": "83a3dbcc4c59d22361066b81295f7f9aba8c79bdcaf3687c82bacf4542dd2d33"
+  },
+  {
+    "id": "fx-cr-projector",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-projector\\0.9.png",
+    "sha256": "a473cfe8d2f15daf20563bdce545e25c10a1814b63df2b067f950460061cfd70"
+  },
+  {
+    "id": "fx-cr-projector",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-projector\\1.5.png",
+    "sha256": "faac532087ad702abf747e8aca0c8f4e79edb1ece2a72eebe8de7f64a4dab4e2"
+  },
+  {
+    "id": "fx-cr-projector",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-projector\\2.1.png",
+    "sha256": "500cfbceb36a056e4a54febc69d83e07797cc1c8040bd446ed60f2cbe44c2ee6"
+  },
+  {
+    "id": "fx-cr-flash-cut",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-flash-cut\\0.3.png",
+    "sha256": "cc8432983e1b83129ad68ac1d3f97a82b8b5fd633850383119eeef38aad056a0"
+  },
+  {
+    "id": "fx-cr-flash-cut",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-flash-cut\\0.9.png",
+    "sha256": "2889e35226d3e329772928a9cc130029c5e02fe38729ace1ebf01b50a39ae9ea"
+  },
+  {
+    "id": "fx-cr-flash-cut",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-flash-cut\\1.5.png",
+    "sha256": "f81455c1811534c6d29aad4abc3da0a52abc45243586db5e2b6c1d5df8b206a8"
+  },
+  {
+    "id": "fx-cr-flash-cut",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-flash-cut\\2.1.png",
+    "sha256": "11255420d1074d9fbbba1989d76199799ed342e8b45db27fb8aee8d264aeeacf"
+  },
+  {
+    "id": "fx-cr-aurora",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-aurora\\0.3.png",
+    "sha256": "7d70369c88ac160c4c96e03645f3311c7e110acb7d47ae88b8db4ffbe845fa37"
+  },
+  {
+    "id": "fx-cr-aurora",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-aurora\\0.9.png",
+    "sha256": "886c3cc43b3b176f393470722fa37083a5160b6acb432812ce3f0dfb458bdbb2"
+  },
+  {
+    "id": "fx-cr-aurora",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-aurora\\1.5.png",
+    "sha256": "cff26b272062149b940ffd5f5376a9ba3c20009d4aec8a48b881f4678690248b"
+  },
+  {
+    "id": "fx-cr-aurora",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-aurora\\2.1.png",
+    "sha256": "a1610642c833e934a54abcef88b84c0de5dfd7c010b82f32b18f90fe3e11706e"
+  },
+  {
+    "id": "fx-cr-twinkle-sky",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-twinkle-sky\\0.3.png",
+    "sha256": "eb3f0e445586745202d33a3cc339545b3dc15a4a0814f8963eafbc87225a15eb"
+  },
+  {
+    "id": "fx-cr-twinkle-sky",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-twinkle-sky\\0.9.png",
+    "sha256": "f119f814300fcb40638bc4cd5679744ee3dee3b1502f89edd6eec86497f3bc28"
+  },
+  {
+    "id": "fx-cr-twinkle-sky",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-twinkle-sky\\1.5.png",
+    "sha256": "50e26b1a5d1475933460265b4ddc480a183529860f1abfa393e4ffd2ebab855a"
+  },
+  {
+    "id": "fx-cr-twinkle-sky",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-twinkle-sky\\2.1.png",
+    "sha256": "d92f743e68a0694b4ba5332b58100f52d0e4f49223741465adaabe4bc86dd46e"
+  },
+  {
+    "id": "fx-cr-tri-split",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-tri-split\\0.3.png",
+    "sha256": "a5dfe3279e3e76bfc90f2ad71ad055f4cb4ace31beea52fba201175b00de84af"
+  },
+  {
+    "id": "fx-cr-tri-split",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-tri-split\\0.9.png",
+    "sha256": "c4b3636b5dc85281a2b02059c92716ad9b27f30a80968a05e56f2dbe3cbb37e5"
+  },
+  {
+    "id": "fx-cr-tri-split",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-tri-split\\1.5.png",
+    "sha256": "cfd8c3b2ce6b589655732d0f4922b9fa37fbfbee1e46a67398641a48106df550"
+  },
+  {
+    "id": "fx-cr-tri-split",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-cr-tri-split\\2.1.png",
+    "sha256": "75b5943cfd530e76f1e419a5e942855b3e75478fc0e4a26ac74990737da40854"
+  },
+  {
+    "id": "fx-mt-photo-snap",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mt-photo-snap\\0.3.png",
+    "sha256": "3125d186cd3b2078285bec69ceb6324d061d2d8c997c578b5bd62318d7710926"
+  },
+  {
+    "id": "fx-mt-photo-snap",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mt-photo-snap\\0.9.png",
+    "sha256": "f789b9fff5954639a390c5f164da4ddc2c6efaa6b28bc4aebb6647779d76ebcf"
+  },
+  {
+    "id": "fx-mt-photo-snap",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mt-photo-snap\\1.5.png",
+    "sha256": "438cea3f001210650744a132032238629fc799f63365161aa67ef7ddb724da37"
+  },
+  {
+    "id": "fx-mt-photo-snap",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mt-photo-snap\\2.1.png",
+    "sha256": "30bc24c6473ee9562f87ccffbc6833d9c228579594d4ccadecc5d24abc97399b"
+  },
+  {
+    "id": "fx-mt-zoom-shake",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mt-zoom-shake\\0.3.png",
+    "sha256": "63e70f96cd2fc956d02bb9d65e80549a8406a715ca93220470624b09fe5bc352"
+  },
+  {
+    "id": "fx-mt-zoom-shake",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mt-zoom-shake\\0.9.png",
+    "sha256": "5b5004800e24c612bdc32bc0675f144ea8df176b5c6183b27a3b64415ed2600c"
+  },
+  {
+    "id": "fx-mt-zoom-shake",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mt-zoom-shake\\1.5.png",
+    "sha256": "0d62562fa8befdd7fa759bee4b677999143e3a943c94277011b115e2820084f7"
+  },
+  {
+    "id": "fx-mt-zoom-shake",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mt-zoom-shake\\2.1.png",
+    "sha256": "00575ebf46d5c4f24d799a2ea043a9c47e841361a455c8428590e68e7dcf785b"
+  },
+  {
+    "id": "fx-globe",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-globe\\0.3.png",
+    "sha256": "19ea9c2b43db6af3ca6073be0a39a87d7becc7e5c5bd68766b6d0064c8a562d8"
+  },
+  {
+    "id": "fx-globe",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-globe\\0.9.png",
+    "sha256": "0f5bc80cef8e014895331ddb106bcf5b4bb3408a75f306da0df540b45ac05caa"
+  },
+  {
+    "id": "fx-globe",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-globe\\1.5.png",
+    "sha256": "37de7517fa1af5307fbbadf2c7b298f5f70353008e54bfb26128dc782fa29b46"
+  },
+  {
+    "id": "fx-globe",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-globe\\2.1.png",
+    "sha256": "3db69d9b5c368f0fff70b02c53b35fda9a5f96f5ad7d9b112cabb497feffebd9"
+  },
+  {
+    "id": "fx-hyperspace",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-hyperspace\\0.3.png",
+    "sha256": "3313234f29f085dcb3461d8dfe2b4dd0273c2a21c0bb8dd861cbb937ffbd8749"
+  },
+  {
+    "id": "fx-hyperspace",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-hyperspace\\0.9.png",
+    "sha256": "b71d3ab8d0070bbe4d6cde0261a90e593b46ca97350e29660eb92853053597b3"
+  },
+  {
+    "id": "fx-hyperspace",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-hyperspace\\1.5.png",
+    "sha256": "85432f36745d7caf0e35009031c8524149a9f554b86776db65f22eb4d232f9a7"
+  },
+  {
+    "id": "fx-hyperspace",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-hyperspace\\2.1.png",
+    "sha256": "f4f5975c9057d6013ada9105e40d519f7af580a1dba162d24178f4ee68db9286"
+  },
+  {
+    "id": "fx-star-rush",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-star-rush\\0.3.png",
+    "sha256": "ec395a2fae8c5faeebfe1f2804aa1f0a3c0d775fea6430fbce720803d7dd1e92"
+  },
+  {
+    "id": "fx-star-rush",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-star-rush\\0.9.png",
+    "sha256": "2e6e417ee360e18fac0466cfa85f79250bb00fb789631959afcd8a62eb295eec"
+  },
+  {
+    "id": "fx-star-rush",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-star-rush\\1.5.png",
+    "sha256": "1e6d0de659dcd71b5818ef2bf0b6eeb35902d899b932bd6eb96180d6b0b2613d"
+  },
+  {
+    "id": "fx-star-rush",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-star-rush\\2.1.png",
+    "sha256": "9deee17d19a167d25072ab317e5c7a78f2deaf2d80e896235658c636ae5dd757"
+  },
+  {
+    "id": "fx-camera-shake",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-camera-shake\\0.3.png",
+    "sha256": "b512d88550c5578acad773adf5ad04e5c5aa909b1ed8847b7a360cfa6b439241"
+  },
+  {
+    "id": "fx-camera-shake",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-camera-shake\\0.9.png",
+    "sha256": "1e92742acbdda62a5b4302e54552cb8bdfc0244bb6027939beaec6b44d02b2d6"
+  },
+  {
+    "id": "fx-camera-shake",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-camera-shake\\1.5.png",
+    "sha256": "bf63858906479df61dfd9818c71a12e0c08698818cc50144861e9f6c92644bd0"
+  },
+  {
+    "id": "fx-camera-shake",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-camera-shake\\2.1.png",
+    "sha256": "9417abcb5029b5c23803afbb81e4a2fa69eabc96c06a22a2384825e9cce57048"
+  },
+  {
+    "id": "fx-film-grain",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-grain\\0.3.png",
+    "sha256": "308cf1e9688b1a9330585e0674e07f0eb2620b2e45e1152c2eccbac75ecfa4b2"
+  },
+  {
+    "id": "fx-film-grain",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-grain\\0.9.png",
+    "sha256": "dee04a75c1a97f1d135cf063184a9134ac7ecac3972d607a9ca519916b7b9639"
+  },
+  {
+    "id": "fx-film-grain",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-grain\\1.5.png",
+    "sha256": "f9aea2a027f82ae7c369e697e8c0de9f10d93a56fbc1bed3de46bf1524e667b8"
+  },
+  {
+    "id": "fx-film-grain",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-grain\\2.1.png",
+    "sha256": "68ec4d3b3cf024447caa9bf8f5f0d603424383717e3c0b4fc0a0450023f3ebf6"
+  },
+  {
+    "id": "fx-glitch-in",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-glitch-in\\0.3.png",
+    "sha256": "d46d3ca57aa271ebaed5bc23049a8c7496e4e51c874846a9f9ecb49555060b1c"
+  },
+  {
+    "id": "fx-glitch-in",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-glitch-in\\0.9.png",
+    "sha256": "03a731a59d7316bf73207624df356a4742db7f4d9371d542d4f11fea409d8066"
+  },
+  {
+    "id": "fx-glitch-in",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-glitch-in\\1.5.png",
+    "sha256": "5b4c2bca348307fec959f281c8e4b686c9ac232d573bd0f96d3814e4e78ef188"
+  },
+  {
+    "id": "fx-glitch-in",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-glitch-in\\2.1.png",
+    "sha256": "a6217f32055985c1cd5b2c1304c550c09213a53257394c817bba2c3443f28494"
+  },
+  {
+    "id": "fx-film-burn",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-burn\\0.3.png",
+    "sha256": "acf4eaad728d52a791ca0fcfce6ca7e6e211daf660effd29e859eec80b5da519"
+  },
+  {
+    "id": "fx-film-burn",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-burn\\0.9.png",
+    "sha256": "8b842218d8704694a88e07b81b3ca9d039567f32bb704ce73475ffa91f44ff01"
+  },
+  {
+    "id": "fx-film-burn",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-burn\\1.5.png",
+    "sha256": "a87da0580beec06d01348ddd289c3f759e6d0ba757eab68263143825bc38a77b"
+  },
+  {
+    "id": "fx-film-burn",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-burn\\2.1.png",
+    "sha256": "ab00e98ff0ceb02b581ed2e9893e41472acc5cd1dc54c276861293a4ea3f8bf4"
+  },
+  {
+    "id": "fx-torn-reveal",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-torn-reveal\\0.3.png",
+    "sha256": "ce413689f56e8bef464e533c2c12a7497c9f5c1022be3eac6f237d94784ac7ff"
+  },
+  {
+    "id": "fx-torn-reveal",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-torn-reveal\\0.9.png",
+    "sha256": "5a725d137819b5e0b98147c475e2658a709642fc764a9fa7ff864c69c28cda2e"
+  },
+  {
+    "id": "fx-torn-reveal",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-torn-reveal\\1.5.png",
+    "sha256": "76fa1d78491bb0fe7a21287166ffbad90747749881d2f493f730a28d667cd6ba"
+  },
+  {
+    "id": "fx-torn-reveal",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-torn-reveal\\2.1.png",
+    "sha256": "5f985ab00f0551e29326b81b3cb9d75c2b8c84073182067ee7955cb58dfa4911"
+  },
+  {
+    "id": "fx-mirror-ball",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mirror-ball\\0.3.png",
+    "sha256": "45e8c23863f16ce4ea8557bace7e633d074bcb83a9d99535b646b122ea5c0e0d"
+  },
+  {
+    "id": "fx-mirror-ball",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mirror-ball\\0.9.png",
+    "sha256": "72abccd61925f6aea1d9cee73fb54be6512f57a33ec9565dfd5cbad97911c39d"
+  },
+  {
+    "id": "fx-mirror-ball",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mirror-ball\\1.5.png",
+    "sha256": "729615022f0f7f698a10567598774d473e126af6a34a9fe7f8656bbd129050d3"
+  },
+  {
+    "id": "fx-mirror-ball",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-mirror-ball\\2.1.png",
+    "sha256": "7b44ebbf50a9cd29d4da5a8b688d9507fe893153cbb1369130f4b5ca492e47ce"
+  },
+  {
+    "id": "fx-confetti",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-confetti\\0.3.png",
+    "sha256": "804cd2fb9e348ddd6b3b48ddd7a1d7cf227bb66b807aeba154546a4dff8b6522"
+  },
+  {
+    "id": "fx-confetti",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-confetti\\0.9.png",
+    "sha256": "e2fd66a67ae2428f43c1c0ccc4773d78e3183bc79d49c686f04bf809fb3ffe74"
+  },
+  {
+    "id": "fx-confetti",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-confetti\\1.5.png",
+    "sha256": "a47b4ad64a4457f2abdabd8130688741b975264ad3981cf10b9918bb4ca8ef47"
+  },
+  {
+    "id": "fx-confetti",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-confetti\\2.1.png",
+    "sha256": "844729a5e54de299d091efafd41566ef2d4c38c71f86ed4e16e0028993eecaee"
+  },
+  {
+    "id": "fx-balloons",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-balloons\\0.3.png",
+    "sha256": "3df97214af40874c1c1715651adb0e4eecf156681099d5f0df413d01cf96f4a3"
+  },
+  {
+    "id": "fx-balloons",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-balloons\\0.9.png",
+    "sha256": "b9ef00dd27a01400093b49c127fd90d20352fe752deb174d38a77d2b6eea14fe"
+  },
+  {
+    "id": "fx-balloons",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-balloons\\1.5.png",
+    "sha256": "c63210fa0283d36094394adac1a63c581fdeca290eb1cb4ab8e9f2bdb60ad659"
+  },
+  {
+    "id": "fx-balloons",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-balloons\\2.1.png",
+    "sha256": "2e1b18ca83b5f705a15c79843d34d4be05212acfdb03af3713271c192323e552"
+  },
+  {
+    "id": "fx-earthquake",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-earthquake\\0.3.png",
+    "sha256": "043fa203ac47a161e41a754a1cb16d8b508120ac0b364bc9ae122f51783d2c2e"
+  },
+  {
+    "id": "fx-earthquake",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-earthquake\\0.9.png",
+    "sha256": "8bf1d85d78d9fa2d7e22e21e6a06c9311d8910aa8d429aa2f0f6ecd71b54572c"
+  },
+  {
+    "id": "fx-earthquake",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-earthquake\\1.5.png",
+    "sha256": "a83b7a8c09a4789ffaab7c930c19ba554b344b630b6527042d8d672a261f35d0"
+  },
+  {
+    "id": "fx-earthquake",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-earthquake\\2.1.png",
+    "sha256": "29471eed500c3e3a6b31b0ebee977cdeeb65626017a5b89b551363c87eb4f724"
+  },
+  {
+    "id": "fx-light-leak",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-light-leak\\0.3.png",
+    "sha256": "10e5448be5a4d36adc4a524a9622e200b28bb4a3a255835d278a1b3ba4943126"
+  },
+  {
+    "id": "fx-light-leak",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-light-leak\\0.9.png",
+    "sha256": "1c6e3189fdacb3614738c3cc6e02363d70195c4ad2fe329cecd31f012d13fa11"
+  },
+  {
+    "id": "fx-light-leak",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-light-leak\\1.5.png",
+    "sha256": "22dcf22547c32270188616034f99f53a7ffb07226d0a4ac6a22579a3e8ea339a"
+  },
+  {
+    "id": "fx-light-leak",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-light-leak\\2.1.png",
+    "sha256": "0fce10e41f12bb35b125203ecfd4ba4324576d2514cd4d975c35a8320c101160"
+  },
+  {
+    "id": "fx-bokeh",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bokeh\\0.3.png",
+    "sha256": "b32f120aa4a83c1bf1332dbb61e4831e58307da9f8eacde0f9f3d0602a27fda7"
+  },
+  {
+    "id": "fx-bokeh",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bokeh\\0.9.png",
+    "sha256": "728f8642ae86e3057eced0df741a0bb43ee0b94a45fde91c202542d4b7aaca9a"
+  },
+  {
+    "id": "fx-bokeh",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bokeh\\1.5.png",
+    "sha256": "b089eedcdfeb36e1b6391581676998242b05b54e3c30136070feb8f7567d0c6b"
+  },
+  {
+    "id": "fx-bokeh",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bokeh\\2.1.png",
+    "sha256": "1b274ea7fece161a976f966ea8290451a0f7996a40f9e3472905f986aaa96f99"
+  },
+  {
+    "id": "fx-grid-flash",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-grid-flash\\0.3.png",
+    "sha256": "d8f3c2fb3afe9ecda2be5478362e9b70d689a772d636fed58afe2b4b59c148aa"
+  },
+  {
+    "id": "fx-grid-flash",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-grid-flash\\0.9.png",
+    "sha256": "26e968971faf33a3d56ca9d52a8795f74cec45b80eb42af0a2f229610498457b"
+  },
+  {
+    "id": "fx-grid-flash",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-grid-flash\\1.5.png",
+    "sha256": "72650fd5cf3186b8dae1a75e3f886be6cee04c322aa282258e587bd5465ae620"
+  },
+  {
+    "id": "fx-grid-flash",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-grid-flash\\2.1.png",
+    "sha256": "651fc734a34f06a2804ad7fbda7d246056a00dbd3986de242c3066d04a69da75"
+  },
+  {
+    "id": "fx-pencil-sketch",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pencil-sketch\\0.3.png",
+    "sha256": "b06a119b2a3904aae9b0332fc93074fbfd1ea4a4dcdb7915dcf90fb112ff412a"
+  },
+  {
+    "id": "fx-pencil-sketch",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pencil-sketch\\0.9.png",
+    "sha256": "3388c4ef77c5508f0c279261d52bfa2ac29e4eab3a065167b6cb67f3bfbae5c2"
+  },
+  {
+    "id": "fx-pencil-sketch",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pencil-sketch\\1.5.png",
+    "sha256": "b033a4f72c10d1ad2d715e921a455200eda51a592c37143f09f87e861db54457"
+  },
+  {
+    "id": "fx-pencil-sketch",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pencil-sketch\\2.1.png",
+    "sha256": "abda6383a1bf02c81b489fc060a1b7c8de9c88f6c854698535398fb6322e7d78"
+  },
+  {
+    "id": "fx-marker-lines",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-marker-lines\\0.3.png",
+    "sha256": "b7ec749ce1c4f0f1274f779196c693cbef54b974406a2aa0132151b1173f3807"
+  },
+  {
+    "id": "fx-marker-lines",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-marker-lines\\0.9.png",
+    "sha256": "f9bdbb15f9c94faac434f9ea1e035e3b7b76c4927e79a9ad3c5ffe1e8be45fce"
+  },
+  {
+    "id": "fx-marker-lines",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-marker-lines\\1.5.png",
+    "sha256": "a5dce9657a92441a7060567f65fa89f9017e608ca60851f63bb662fb7e63b890"
+  },
+  {
+    "id": "fx-marker-lines",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-marker-lines\\2.1.png",
+    "sha256": "bf391243aee842b4ebf6e9f7126735e14c861d5a97680e433943ef93daa5cfe5"
+  },
+  {
+    "id": "fx-spray-neon",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-spray-neon\\0.3.png",
+    "sha256": "9495cb2e0dc673fb22d3f52548fb9298d9e2b22dba0a1977cc45cdc47509470c"
+  },
+  {
+    "id": "fx-spray-neon",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-spray-neon\\0.9.png",
+    "sha256": "306df75446f1829206ed5ea1211f6e62601ba091301d74d460eb68bcc70fc0eb"
+  },
+  {
+    "id": "fx-spray-neon",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-spray-neon\\1.5.png",
+    "sha256": "3d8658a6483af4fdb1f8f0d27d57c60a94706d92ccea34247b9239c1d5fe329c"
+  },
+  {
+    "id": "fx-spray-neon",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-spray-neon\\2.1.png",
+    "sha256": "8c06434ec7ce0b563532562eb7f0ac6c9343a0137a7501ccd046508fcd0750e9"
+  },
+  {
+    "id": "fx-chalkboard",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-chalkboard\\0.3.png",
+    "sha256": "c932b8e1f399ca53e216a04338e77dd4fd4cbe5fe3fba926b9a59b89dd1d2a92"
+  },
+  {
+    "id": "fx-chalkboard",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-chalkboard\\0.9.png",
+    "sha256": "0317ca51ad21d9315170d1c003cb1065306968d0461ad1e8b4dfa4503b7db4bd"
+  },
+  {
+    "id": "fx-chalkboard",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-chalkboard\\1.5.png",
+    "sha256": "50133cbf75baa95e58b2fa93f1ef4179ef049d106371ffddb3a93ef3e72454b9"
+  },
+  {
+    "id": "fx-chalkboard",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-chalkboard\\2.1.png",
+    "sha256": "7afe66aae346b592f609ece647ab5c7a4fa0c071cc4629d1d373bc555ad755fa"
+  },
+  {
+    "id": "fx-scribble-frame",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-scribble-frame\\0.3.png",
+    "sha256": "dba0904514b492a44c263f1a56444dd115e02b96ff57564a52792cb3b7e2b42d"
+  },
+  {
+    "id": "fx-scribble-frame",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-scribble-frame\\0.9.png",
+    "sha256": "4b9881721c2178c3ac6b660925a467d4cf34e92eabfa7f79c4b9376633d502b4"
+  },
+  {
+    "id": "fx-scribble-frame",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-scribble-frame\\1.5.png",
+    "sha256": "f988f4f11fe6f201d7043a914de4d547ea997f193fd35284b73c70780dbfc036"
+  },
+  {
+    "id": "fx-scribble-frame",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-scribble-frame\\2.1.png",
+    "sha256": "cb02b46771c3483efbf14bfe2cd5f5e2ea359d205fd6a121d353d51f36d9991c"
+  },
+  {
+    "id": "fx-confetti-burst",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-confetti-burst\\0.3.png",
+    "sha256": "9a5139934487479e4b1402420236f1a035f2d9eb2decc612c93d6e49a0962a44"
+  },
+  {
+    "id": "fx-confetti-burst",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-confetti-burst\\0.9.png",
+    "sha256": "677c02a79f13feafc5ae264e7362bd10d7c1ed88900c9db9b36d5e8bca0774d1"
+  },
+  {
+    "id": "fx-confetti-burst",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-confetti-burst\\1.5.png",
+    "sha256": "21635e5c53e5868fb06014aafd9790cb2dbfd9991562d628eb6c72110360ca2a"
+  },
+  {
+    "id": "fx-confetti-burst",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-confetti-burst\\2.1.png",
+    "sha256": "9b7f1e03589f11b552759ee3383dc13a0469ecc33ac476cdb97354967cd67683"
+  },
+  {
+    "id": "fx-gold-glitter",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-gold-glitter\\0.3.png",
+    "sha256": "55f6a712898ba1c23a908c4d7e907a981a5e2dcd3a2b29afae1cc6544113fbcc"
+  },
+  {
+    "id": "fx-gold-glitter",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-gold-glitter\\0.9.png",
+    "sha256": "8fc8eaa7cb6d7d0dcff4eed206f63343ac4409da5c780eb4d4979c62d0346132"
+  },
+  {
+    "id": "fx-gold-glitter",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-gold-glitter\\1.5.png",
+    "sha256": "ca2e50b0470525c38ff46d4a2be0316ec9fc481895da75f051fa26f983bc0212"
+  },
+  {
+    "id": "fx-gold-glitter",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-gold-glitter\\2.1.png",
+    "sha256": "8554eca41d1b26de6c9774932337611ac3fda99fcd44c438ed98d00159182652"
+  },
+  {
+    "id": "fx-heart-rain",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-heart-rain\\0.3.png",
+    "sha256": "d5c382a2eb4d5f59639951523416b25b9799aa81a5b37346bc01ec615089320a"
+  },
+  {
+    "id": "fx-heart-rain",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-heart-rain\\0.9.png",
+    "sha256": "3c074a2561a0cb1f40eb8029effeb3ff4b580dbf255fa1da0a5f180c6837c9c6"
+  },
+  {
+    "id": "fx-heart-rain",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-heart-rain\\1.5.png",
+    "sha256": "25a04374856b4749b04bac553e4af9dc2f3d95af2ab34dfdc3cf27216010c28c"
+  },
+  {
+    "id": "fx-heart-rain",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-heart-rain\\2.1.png",
+    "sha256": "fa87dd3bf0389cb22a39657ca3bc5d0ad2ad1e78961258e322d002dd042f78cd"
+  },
+  {
+    "id": "fx-bubbles",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bubbles\\0.3.png",
+    "sha256": "29134c146b2e04bbea76c5e8cf6cd45f906ccb17bb26514fba9272aab39e3043"
+  },
+  {
+    "id": "fx-bubbles",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bubbles\\0.9.png",
+    "sha256": "86d07236e4f3a5c3143a03888fd366837fa53c990bae8add2ddffc183257aac7"
+  },
+  {
+    "id": "fx-bubbles",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bubbles\\1.5.png",
+    "sha256": "1fd7c1ef6fd3bc9d7c205dac43fd6b95f17613df40dee2d5104b6b5c20ff9224"
+  },
+  {
+    "id": "fx-bubbles",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bubbles\\2.1.png",
+    "sha256": "c937bb33472420055c2c1de090c9794c7f113c8476b50af6d823720e6a885f29"
+  },
+  {
+    "id": "fx-star-pop",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-star-pop\\0.3.png",
+    "sha256": "d67eede2689fae837603adda081aced29b59c5886160291cbb98ab6ba1c013c8"
+  },
+  {
+    "id": "fx-star-pop",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-star-pop\\0.9.png",
+    "sha256": "c15df40c2ead63463af65dbb42e4ebc4148bb0575522df14aee6df42f2485bb4"
+  },
+  {
+    "id": "fx-star-pop",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-star-pop\\1.5.png",
+    "sha256": "915517ad2e48f78dcfc845dc92c13f7c9aa6c8cb31ede93f4d291ba98fb9fdb2"
+  },
+  {
+    "id": "fx-star-pop",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-star-pop\\2.1.png",
+    "sha256": "e9e6451711400c1e7d0ac8ec2effeb3828658e4590682369e47ba937b62b618b"
+  },
+  {
+    "id": "fx-petals",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-petals\\0.3.png",
+    "sha256": "296d820674405fac0dc36d3d920a4b063d3a22fbd23e95f037eb16be36de6ed1"
+  },
+  {
+    "id": "fx-petals",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-petals\\0.9.png",
+    "sha256": "e3bb92453611f4c425f3279d259e074d3e6375ea0c9f2020ee1e85f9f062bf24"
+  },
+  {
+    "id": "fx-petals",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-petals\\1.5.png",
+    "sha256": "807e0319f7a11452d7174b1ea76575ac0047ab01ff4b5ac7c21189034fc6d7e0"
+  },
+  {
+    "id": "fx-petals",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-petals\\2.1.png",
+    "sha256": "98309172e2aa68d105d393ee1e652146f59153cdb3dbd52205067aadfc5bfe2e"
+  },
+  {
+    "id": "fx-snowfall",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-snowfall\\0.3.png",
+    "sha256": "1785810315ff350c7109531dc58bcfea9568e1324d58b340047be888798a7a39"
+  },
+  {
+    "id": "fx-snowfall",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-snowfall\\0.9.png",
+    "sha256": "ef10a46d3565924592c4b4e5379193c8dc270964d1ce1915bfab190fecc26beb"
+  },
+  {
+    "id": "fx-snowfall",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-snowfall\\1.5.png",
+    "sha256": "363b7fac434712b9ed1c5de0e87244896ada710a56e27f200a0cc2ac557fd371"
+  },
+  {
+    "id": "fx-snowfall",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-snowfall\\2.1.png",
+    "sha256": "71132a93eb4e75131dd3396b7597ded62e7b29acebf30a2b26fb88fe1f580167"
+  },
+  {
+    "id": "fx-eight-bit",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-eight-bit\\0.3.png",
+    "sha256": "a3d1c3e531ca4f3f01a55fef16c03de7a14f720a87dbad082d6a56806eef5a75"
+  },
+  {
+    "id": "fx-eight-bit",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-eight-bit\\0.9.png",
+    "sha256": "63514b19c96ad4ce628fea9d9959f21292f2083cb993788323b79bec4637c412"
+  },
+  {
+    "id": "fx-eight-bit",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-eight-bit\\1.5.png",
+    "sha256": "bdaec6edca90de91f2d5390e9cc3c4f7863fc37d85e013174232b452045693de"
+  },
+  {
+    "id": "fx-eight-bit",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-eight-bit\\2.1.png",
+    "sha256": "0e1c7ef4e5af766ab883cca279cca27199ea109405dd22350eb99a6cc7ee11e0"
+  },
+  {
+    "id": "fx-pixel-breakdown",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pixel-breakdown\\0.3.png",
+    "sha256": "7427b2c8dc856cf592b6d0ed5d91a850844a1810ee653e2006015978e864dea4"
+  },
+  {
+    "id": "fx-pixel-breakdown",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pixel-breakdown\\0.9.png",
+    "sha256": "2131a78f114b97313a8f2afd440cb882f2bf2188096cfc02c529470e17af8800"
+  },
+  {
+    "id": "fx-pixel-breakdown",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pixel-breakdown\\1.5.png",
+    "sha256": "e26a2c39b6286cb0d21b5bf84c96e36f7a01f82f35e025415d4c214972ce7f45"
+  },
+  {
+    "id": "fx-pixel-breakdown",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pixel-breakdown\\2.1.png",
+    "sha256": "16eb4f79f9ca7a4d03f821e38033986f667118a806b1a49e2afd2c35b57c518e"
+  },
+  {
+    "id": "fx-pixel-glitch",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pixel-glitch\\0.3.png",
+    "sha256": "e3d09742332a81f6c8c6036ffc6604262366e8dbddc8626a0947ff1b473b3f7a"
+  },
+  {
+    "id": "fx-pixel-glitch",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pixel-glitch\\0.9.png",
+    "sha256": "8bcc3291eca84b90ea4ae493f419c1222b44d8449d815fa160bde242d8ffd745"
+  },
+  {
+    "id": "fx-pixel-glitch",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pixel-glitch\\1.5.png",
+    "sha256": "613ad4ecfca1da7e231e3d9e2270158b3a944207f6ccbfb49c78d0f2c036b8f1"
+  },
+  {
+    "id": "fx-pixel-glitch",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-pixel-glitch\\2.1.png",
+    "sha256": "dd62e232f69708162fe54618a6251627b944b9f8b2fb53dcc1d7eb3938159e2b"
+  },
+  {
+    "id": "fx-digital-blocks",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-digital-blocks\\0.3.png",
+    "sha256": "9df45c2bab951c5ac0a3edfea6143f9a9eccbf055e72f504ec78806742330dbf"
+  },
+  {
+    "id": "fx-digital-blocks",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-digital-blocks\\0.9.png",
+    "sha256": "70561e79186e38a0326ea8a82e6914372bd85336f69f0f9bebedf55e98d59e56"
+  },
+  {
+    "id": "fx-digital-blocks",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-digital-blocks\\1.5.png",
+    "sha256": "ea301bb9e4e39394ec9c248ecc9e55578967d39f66dfec9a0076e6918a926bc7"
+  },
+  {
+    "id": "fx-digital-blocks",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-digital-blocks\\2.1.png",
+    "sha256": "fbc12755a5cdd6827a13c37a83ef2ce74d7f81313bbb1b8f7fb16348c14dc794"
+  },
+  {
+    "id": "fx-vhs",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vhs\\0.3.png",
+    "sha256": "db6aae344331507f0112494421da72ea3f1bd6ecb98e4136755c900e5785137e"
+  },
+  {
+    "id": "fx-vhs",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vhs\\0.9.png",
+    "sha256": "b087ddd799993af001f097a78846a784f0dc04e7f65786836b4501f0444d011e"
+  },
+  {
+    "id": "fx-vhs",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vhs\\1.5.png",
+    "sha256": "056d3ca762bdaec70da9a0d20219a873037d9219d927b74f85768aee46666733"
+  },
+  {
+    "id": "fx-vhs",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vhs\\2.1.png",
+    "sha256": "773d0886c3c4a375306b3d4fe00bcad48b4e2a95c659d07a1f94499a15faaf26"
+  },
+  {
+    "id": "fx-scanline-jitter",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-scanline-jitter\\0.3.png",
+    "sha256": "79ff42fbd319cb747966bb8d6456f095e7487dacea9d5c1e6a97e7e6efc9be8f"
+  },
+  {
+    "id": "fx-scanline-jitter",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-scanline-jitter\\0.9.png",
+    "sha256": "79b5170025a22b1d762491f876cfa8ed013b2412744ffc3388041118157c1a60"
+  },
+  {
+    "id": "fx-scanline-jitter",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-scanline-jitter\\1.5.png",
+    "sha256": "a7d49c06899752a68bf0c7a14223815dbf7f8e0c7248b5180c557037b6d17e8c"
+  },
+  {
+    "id": "fx-scanline-jitter",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-scanline-jitter\\2.1.png",
+    "sha256": "d70ecabee1ca923fbfd8fb1e8e41732611115362f28316c3037eecafb30487e2"
+  },
+  {
+    "id": "fx-datamosh",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-datamosh\\0.3.png",
+    "sha256": "b95ac8635df04773434a67673de5ae688f833e6eb355710d9c51555dd2d50485"
+  },
+  {
+    "id": "fx-datamosh",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-datamosh\\0.9.png",
+    "sha256": "7ee37036a781c941ff9d9c9ce224fd758ca9a6367b545bb941d9560ad3ee0b6b"
+  },
+  {
+    "id": "fx-datamosh",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-datamosh\\1.5.png",
+    "sha256": "5a9db084cd8a1b30c606db07d4705a2b726d7e5620d6c7dd7a0489339ba8fe47"
+  },
+  {
+    "id": "fx-datamosh",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-datamosh\\2.1.png",
+    "sha256": "40af02940eba6d57c839b3e10e9d09e894b27f0b60ebce1d665b4e53595e5ade"
+  },
+  {
+    "id": "fx-signal-loss",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-signal-loss\\0.3.png",
+    "sha256": "acf4eaad728d52a791ca0fcfce6ca7e6e211daf660effd29e859eec80b5da519"
+  },
+  {
+    "id": "fx-signal-loss",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-signal-loss\\0.9.png",
+    "sha256": "93ede5f2a8ae07518e74c984e090e99127f731c5fa18be5d91f1bdc5107f06fd"
+  },
+  {
+    "id": "fx-signal-loss",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-signal-loss\\1.5.png",
+    "sha256": "76fa1d78491bb0fe7a21287166ffbad90747749881d2f493f730a28d667cd6ba"
+  },
+  {
+    "id": "fx-signal-loss",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-signal-loss\\2.1.png",
+    "sha256": "d7e7123f6929848d4ae2a5654e4c281be8e43a8d511f8fd917fb1b604dc412b7"
+  },
+  {
+    "id": "fx-bad-tv",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bad-tv\\0.3.png",
+    "sha256": "fb571a14721864fa220b8a81ea95c7b8d9dd19f42f863534256a7296dd2f84be"
+  },
+  {
+    "id": "fx-bad-tv",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bad-tv\\0.9.png",
+    "sha256": "8e490f28cd9d207a35fe02a06e122b37666b6ae8bfa9934e55af577a734581a5"
+  },
+  {
+    "id": "fx-bad-tv",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bad-tv\\1.5.png",
+    "sha256": "028799c3cde21a459b5efa116c87697bde2a8f5d0ab4bdd53b26135abafc6b01"
+  },
+  {
+    "id": "fx-bad-tv",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-bad-tv\\2.1.png",
+    "sha256": "4f946f794847628737bd4cace350f4699f40271d3d8980b2e4a69d40926f79d5"
+  },
+  {
+    "id": "fx-glitch-flash",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-glitch-flash\\0.3.png",
+    "sha256": "027c4288bb9bbf3ea1f1c07ff7abfa2fba0d677dba8a46a8430d459c98c5f87b"
+  },
+  {
+    "id": "fx-glitch-flash",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-glitch-flash\\0.9.png",
+    "sha256": "17494ad57fc4091bfbf304000ea1155a8d989b5e6023cc540bc6fc394b712aeb"
+  },
+  {
+    "id": "fx-glitch-flash",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-glitch-flash\\1.5.png",
+    "sha256": "08c8b10d1d17c3507adac250a2a130629a7229687e1531b602a9ab1ec01f467d"
+  },
+  {
+    "id": "fx-glitch-flash",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-glitch-flash\\2.1.png",
+    "sha256": "38755513750f73db0b0b3c4c99028b455edd3ad5c3dfb3375d7cd58348dc1220"
+  },
+  {
+    "id": "fx-vhs-rewind",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vhs-rewind\\0.3.png",
+    "sha256": "3cb0083cb0dc11af30c387c98d0031303721f957dc698fcb2832d1e6571645e8"
+  },
+  {
+    "id": "fx-vhs-rewind",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vhs-rewind\\0.9.png",
+    "sha256": "c424a74f982cdf3c99acdbd703d98af960c76f95455d17415455e2be8f321f52"
+  },
+  {
+    "id": "fx-vhs-rewind",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vhs-rewind\\1.5.png",
+    "sha256": "2594d4237748141022ffda0758c7b4e464ba53b6de93b4848eecfa72102304e7"
+  },
+  {
+    "id": "fx-vhs-rewind",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-vhs-rewind\\2.1.png",
+    "sha256": "3cfd06974792ccfa5cd9eef2acb6a79e09a3ebec7fb0ac7d76e41a1f747fb6f1"
+  },
+  {
+    "id": "fx-film-8mm",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-8mm\\0.3.png",
+    "sha256": "1947c6b4ab1ab4b499bcf5dbf39f14e6a3aa62cbdfee987d2965d9ca4d88e5ff"
+  },
+  {
+    "id": "fx-film-8mm",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-8mm\\0.9.png",
+    "sha256": "0ef763d36afbb0320869539f38f56f09a5edd832277ad23cea9a24d608e3bea3"
+  },
+  {
+    "id": "fx-film-8mm",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-8mm\\1.5.png",
+    "sha256": "80eafd012928bdd21c65d14733e6c282cc51404514bff2c5172d54a6e64b5870"
+  },
+  {
+    "id": "fx-film-8mm",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-8mm\\2.1.png",
+    "sha256": "446c24da9a784adcfe60f7f789fc2ea3a59b8cf61c0dcc05b1277344a6b3783d"
+  },
+  {
+    "id": "fx-old-tv",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-old-tv\\0.3.png",
+    "sha256": "6bf1e795ce830b66dfd014768418a57186dea61b0ae47b2587d024caeff57c96"
+  },
+  {
+    "id": "fx-old-tv",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-old-tv\\0.9.png",
+    "sha256": "a64bbb66d47f3bb4156a45ae594a50b6dba414c3f976800f7e92c9fbd9bba876"
+  },
+  {
+    "id": "fx-old-tv",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-old-tv\\1.5.png",
+    "sha256": "d7d4d81968647b609d79b3f437b760c266ab7902eca3eed5990d9c20045c36a4"
+  },
+  {
+    "id": "fx-old-tv",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-old-tv\\2.1.png",
+    "sha256": "8de647bbdacfe184da0b16a49b85fd6b357203b8b4d0c3a7693022d9d72dd49e"
+  },
+  {
+    "id": "fx-film-burn-leak",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-burn-leak\\0.3.png",
+    "sha256": "11914b14342d7c0b01f41babc456d581bbc324b036719a16da97686806116d03"
+  },
+  {
+    "id": "fx-film-burn-leak",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-burn-leak\\0.9.png",
+    "sha256": "d4a0ee09a8234059aff9c2291193f95767e17eee5bd3daac1a636c3c549e5d0d"
+  },
+  {
+    "id": "fx-film-burn-leak",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-burn-leak\\1.5.png",
+    "sha256": "01495b856209320c586da13418391faa5f9560b52043f80f9cdd4f3e90725cb2"
+  },
+  {
+    "id": "fx-film-burn-leak",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-film-burn-leak\\2.1.png",
+    "sha256": "50f3a98e83f34a4c55ccd62d1d17a29e50a580669ee3686300a11efa588d722e"
+  },
+  {
+    "id": "fx-seventies",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-seventies\\0.3.png",
+    "sha256": "909bd4fc68449fd0a8ef6dda56cd504fc362160bffa786823976449043188f95"
+  },
+  {
+    "id": "fx-seventies",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-seventies\\0.9.png",
+    "sha256": "c0daeafa185ff25a294a652182419c7120383cdc5622b4c9650fa81e01c5b931"
+  },
+  {
+    "id": "fx-seventies",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-seventies\\1.5.png",
+    "sha256": "67fbb800a150480aeaebc634e97f82bcb66bdaa1e9f821c6530de10c1487a0d4"
+  },
+  {
+    "id": "fx-seventies",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-seventies\\2.1.png",
+    "sha256": "df35ef1ff8a5160fdfc11edfd08e90f81fd36ac2a9cbe210a7345df65c160071"
+  },
+  {
+    "id": "fx-dust-scratches",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-dust-scratches\\0.3.png",
+    "sha256": "da85df29d0769a60321c0cf0f4975c207345835ef0570841dafa2d8004303662"
+  },
+  {
+    "id": "fx-dust-scratches",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-dust-scratches\\0.9.png",
+    "sha256": "1a1e0860b75eebf6c83ad9448d4aced7ef2f81ec70da6c6f943245dad244da50"
+  },
+  {
+    "id": "fx-dust-scratches",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-dust-scratches\\1.5.png",
+    "sha256": "284e56c2eec65eff34b2d0b5f35584eac1b2363d6f6b476f18c908b3d85dbacc"
+  },
+  {
+    "id": "fx-dust-scratches",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-dust-scratches\\2.1.png",
+    "sha256": "187e6549c8b9fb33fc0b41eabb33b17d38ff0835cf47fc57738e4850fdcd93cf"
+  },
+  {
+    "id": "fx-tr-slam-merge",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-slam-merge\\0.3.png",
+    "sha256": "1749beea42726905f554c98e4cd8d29b75e943659f864ea1d7ed8f3d2fcbd9fb"
+  },
+  {
+    "id": "fx-tr-slam-merge",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-slam-merge\\0.9.png",
+    "sha256": "057ea39fc1ceedbe769d09b4ac693bd000d21aa7558b57eea6154d6fac042567"
+  },
+  {
+    "id": "fx-tr-slam-merge",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-slam-merge\\1.5.png",
+    "sha256": "24aaa82ff4177c66c98c84292067089c27801fc07ad911b01ecea5923d25dddc"
+  },
+  {
+    "id": "fx-tr-slam-merge",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-slam-merge\\2.1.png",
+    "sha256": "b47313c755b792e88f71fcdaddc200b37adf7fe866abc4cb5ce1ac36edcb11a2"
+  },
+  {
+    "id": "fx-tr-heat-flicks",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-heat-flicks\\0.3.png",
+    "sha256": "da6e3852c2e6559ab4c2187c951a3e5bf36e7d4202ed5ce66f9e4a1be0ee9b9f"
+  },
+  {
+    "id": "fx-tr-heat-flicks",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-heat-flicks\\0.9.png",
+    "sha256": "a29f93f9d7fa3cb8da2cd959cbebbfbbf32be1a8ad85808c5d9465277d494efe"
+  },
+  {
+    "id": "fx-tr-heat-flicks",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-heat-flicks\\1.5.png",
+    "sha256": "57dc73a904d133ff39ba3b74e44bfa35032f6265e7c9d1cba71327630ff2fcd2"
+  },
+  {
+    "id": "fx-tr-heat-flicks",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-heat-flicks\\2.1.png",
+    "sha256": "c20b0e2ce490b4d3dce973d2ba1393a40f84d566a13a6a59f1e8eef0a0f5a118"
+  },
+  {
+    "id": "fx-tr-shake",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-shake\\0.3.png",
+    "sha256": "2b2d623dbf318932bcebdb25a971e49a142d844c7814352814460cdb86914140"
+  },
+  {
+    "id": "fx-tr-shake",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-shake\\0.9.png",
+    "sha256": "c899423f3abf1238d17375442b16874601a0fb3f5c452601b2d3865a2e6dedf1"
+  },
+  {
+    "id": "fx-tr-shake",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-shake\\1.5.png",
+    "sha256": "a1520e8b851025b425535bb1b82987eb12e311f9c5fe0685e110eef80356a275"
+  },
+  {
+    "id": "fx-tr-shake",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-shake\\2.1.png",
+    "sha256": "658ba6b06cb66b7f5a17e8798e3f1836945b3eac501656bf31ef0108be2df20a"
+  },
+  {
+    "id": "fx-tr-glitch",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-glitch\\0.3.png",
+    "sha256": "ff9fbe8c9e3fabf1c6cbdaba0ef7a31fec29246df35421385d50afbed66bd38d"
+  },
+  {
+    "id": "fx-tr-glitch",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-glitch\\0.9.png",
+    "sha256": "dff9e3282fe77d346dd0eddf3510ce1dad85f498e942b561f83b9f723b812a7b"
+  },
+  {
+    "id": "fx-tr-glitch",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-glitch\\1.5.png",
+    "sha256": "2b260ab1ef3a53de325c04b68d2e673700dddb2c84ecbbf6ede9b239f9804e36"
+  },
+  {
+    "id": "fx-tr-glitch",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-glitch\\2.1.png",
+    "sha256": "2145b9ac5dcb9186e7f3b393ce12ae8238e0604a18bd64f40c796e17764f60f1"
+  },
+  {
+    "id": "fx-tr-flare",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-flare\\0.3.png",
+    "sha256": "c3e621ddebb38875d0a5c5d0f87ecf16e3fae217e2ccb613b78fbdc624e1a830"
+  },
+  {
+    "id": "fx-tr-flare",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-flare\\0.9.png",
+    "sha256": "5fea470efc66d12989c8de058b0945e252ce5e486aa9306b24749932dac7c20f"
+  },
+  {
+    "id": "fx-tr-flare",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-flare\\1.5.png",
+    "sha256": "1334f7518d0eba93f3c5e2220051701fd41b02884f52c520e6bcd12489e6db9b"
+  },
+  {
+    "id": "fx-tr-flare",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-flare\\2.1.png",
+    "sha256": "bba253b3a901515d6f69260e536eff79cb86bdec0913df0e93efe751bf082ee7"
+  },
+  {
+    "id": "fx-tr-film-burn",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-film-burn\\0.3.png",
+    "sha256": "4e1562c92ecb85299fa83bfa32af81f4e01cd87fee6f83ea826faf87d8841e18"
+  },
+  {
+    "id": "fx-tr-film-burn",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-film-burn\\0.9.png",
+    "sha256": "ef68a7b653caf660a3c3c48863a45a441f6d0689be8fe6e7f44dc3fb2a843401"
+  },
+  {
+    "id": "fx-tr-film-burn",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-film-burn\\1.5.png",
+    "sha256": "1c1b0a3f6dbe5a198cdde69e833ff34fb6f0dfbef8b2ef95225d7d1c2853972c"
+  },
+  {
+    "id": "fx-tr-film-burn",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-tr-film-burn\\2.1.png",
+    "sha256": "38755513750f73db0b0b3c4c99028b455edd3ad5c3dfb3375d7cd58348dc1220"
+  },
+  {
+    "id": "fx-ov-glitter-rain",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-glitter-rain\\0.3.png",
+    "sha256": "36e4435ed63e4dc4b24b068c2ee63cac2aea0dbdaf02a2bfd76b936ac6db7b4c"
+  },
+  {
+    "id": "fx-ov-glitter-rain",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-glitter-rain\\0.9.png",
+    "sha256": "e8c0277277bc0eaf41a9d95854b267730b5292068fd0cfbe03d51cb5837025bc"
+  },
+  {
+    "id": "fx-ov-glitter-rain",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-glitter-rain\\1.5.png",
+    "sha256": "b78dc499854db4e01539f2b41376418efb9fa0ffa755b744d8af9063fdb28fd6"
+  },
+  {
+    "id": "fx-ov-glitter-rain",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-glitter-rain\\2.1.png",
+    "sha256": "c3037ef387e77cd10a2795623879e1b38a3b678962658f797e7d2bc9b2e73998"
+  },
+  {
+    "id": "fx-ov-gold-dust",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-gold-dust\\0.3.png",
+    "sha256": "8c07724243d35c47554309e26f4dfe37678a671acd4bd3013306618d96828db3"
+  },
+  {
+    "id": "fx-ov-gold-dust",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-gold-dust\\0.9.png",
+    "sha256": "59b05ed8d0d4db41a0375a7604392b4d0f8ed089f5b3d5b56b1f0604a1a10cdc"
+  },
+  {
+    "id": "fx-ov-gold-dust",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-gold-dust\\1.5.png",
+    "sha256": "198cd2fd8e2657febfbc4e75a0b8e8405b92b319ed7b2cbd95b8ebcc13b8898f"
+  },
+  {
+    "id": "fx-ov-gold-dust",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-gold-dust\\2.1.png",
+    "sha256": "7de24562c41d2037df652e9ebbb8ae1140ac7b39f5bbeb80698f7c3e481a11b8"
+  },
+  {
+    "id": "fx-ov-bokeh-gold",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-gold\\0.3.png",
+    "sha256": "c01c2f8c5327b8625dd642996ae2059a5e6ff88456db8560a6c4bc3fec95b3fb"
+  },
+  {
+    "id": "fx-ov-bokeh-gold",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-gold\\0.9.png",
+    "sha256": "f70636ebe1f876e7c415cd7410ffbf687e00c9c2ec7bedbd317f183ed6dd7f3c"
+  },
+  {
+    "id": "fx-ov-bokeh-gold",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-gold\\1.5.png",
+    "sha256": "a711a6e29c8db1e850207defe181ef201028e15a4a9b185365adf9021408184e"
+  },
+  {
+    "id": "fx-ov-bokeh-gold",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-gold\\2.1.png",
+    "sha256": "4ddeaf469300d551779f896fe55d51c8f69e5a4e68ae325e99dbe30eb5d2bf7d"
+  },
+  {
+    "id": "fx-ov-bokeh-pink",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-pink\\0.3.png",
+    "sha256": "edd41b3edacc07ba08b9a098e2b88f744df2d426954a64b5f0ccc49cd550d011"
+  },
+  {
+    "id": "fx-ov-bokeh-pink",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-pink\\0.9.png",
+    "sha256": "8269044614b91218ae6a1671aeb1aaf5b23652f695bfb1b380da2930ad5c930c"
+  },
+  {
+    "id": "fx-ov-bokeh-pink",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-pink\\1.5.png",
+    "sha256": "31b4b66dc8738efd676fbed52839c1c5084390bfa8cb56c9f09dfeba426377b6"
+  },
+  {
+    "id": "fx-ov-bokeh-pink",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-pink\\2.1.png",
+    "sha256": "b77b404877e5dfaca5134e458bba99b5fe29af2b0b45a417c6604ace2096e921"
+  },
+  {
+    "id": "fx-ov-sparks",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparks\\0.3.png",
+    "sha256": "0e7bc9742d2f4fc8acab06b225f2b84e08f8fb6a296c3dd9e360e3d60b43aee4"
+  },
+  {
+    "id": "fx-ov-sparks",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparks\\0.9.png",
+    "sha256": "9ef979e77e70566e1b81dd27541d976bff4ff99fdeaee2aa9c40a037b0be40ac"
+  },
+  {
+    "id": "fx-ov-sparks",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparks\\1.5.png",
+    "sha256": "9ca39021b4d975d3f86e1f0dbb7feb31b960e81eb72280bf8f9c9d31e59496ae"
+  },
+  {
+    "id": "fx-ov-sparks",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparks\\2.1.png",
+    "sha256": "237f833d60d9564689bfa98b2bae16d5c75484272edca2d94b93f6c61bb3e822"
+  },
+  {
+    "id": "fx-ov-embers",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-embers\\0.3.png",
+    "sha256": "bcaad573b00d5f806a1a8083acab51858b534a59838d0f2254828ca8a445abef"
+  },
+  {
+    "id": "fx-ov-embers",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-embers\\0.9.png",
+    "sha256": "e62bc281349f4f33e52bde92c21a215913979f5f14eb186e6fc994a0f8e4da65"
+  },
+  {
+    "id": "fx-ov-embers",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-embers\\1.5.png",
+    "sha256": "3c5d227a3b84f4266be8cea7975c3560ab0e3adc9d1385dcbc2d943c25e0deed"
+  },
+  {
+    "id": "fx-ov-embers",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-embers\\2.1.png",
+    "sha256": "a9391b83b71a9514a6754886efe8dab5cb5fd305c0cd693b4a23b6e83db0488c"
+  },
+  {
+    "id": "fx-ov-smoke",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-smoke\\0.3.png",
+    "sha256": "684f011fc0eac073b5ceee1852cc23076d4a1530ce553897438f74363cbff95b"
+  },
+  {
+    "id": "fx-ov-smoke",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-smoke\\0.9.png",
+    "sha256": "bd01d11f51a77d38ce186378e6f9c694d307e4019536090bf6eb055fc327c6f4"
+  },
+  {
+    "id": "fx-ov-smoke",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-smoke\\1.5.png",
+    "sha256": "182848178426adaab71cb49ccfc7d6d76d3c931c14f124ca45cde0a86579d521"
+  },
+  {
+    "id": "fx-ov-smoke",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-smoke\\2.1.png",
+    "sha256": "1a36f20c0127c93e005998ff0f17d49bdacbe22a6f3ad240e5914ef53cbfcb1b"
+  },
+  {
+    "id": "fx-ov-fog-white",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-white\\0.3.png",
+    "sha256": "fc229a7a44fa114d4c7fb135daa138b6f97ef4c990f55e5f0c2ed8d4925eff96"
+  },
+  {
+    "id": "fx-ov-fog-white",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-white\\0.9.png",
+    "sha256": "593706749c3dc0f8f015d55c4d0b12b879b2855075c4048baa8ba9294ffa1cb1"
+  },
+  {
+    "id": "fx-ov-fog-white",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-white\\1.5.png",
+    "sha256": "ab59f6cef39f3a7113efb1b81ad16e21caf8a33e3d671cd2b0f72ccd1ea9b6aa"
+  },
+  {
+    "id": "fx-ov-fog-white",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-white\\2.1.png",
+    "sha256": "c90d32ebbc71aa4b274ff4fcfa0d95cc7be8a5e31709a7efe84790bbd3e7bd62"
+  },
+  {
+    "id": "fx-ov-galaxy",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-galaxy\\0.3.png",
+    "sha256": "e8b5574b666bd79974063fcc81fcf32d10e754166ac56d9d60e152e5db8e5a07"
+  },
+  {
+    "id": "fx-ov-galaxy",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-galaxy\\0.9.png",
+    "sha256": "3e75b2fe5491fce5f4da2a90af2873a679993c9fbb4644241fbbbe0e6db3f1fe"
+  },
+  {
+    "id": "fx-ov-galaxy",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-galaxy\\1.5.png",
+    "sha256": "abc791a37245339a46f9bea6cc56d9ffa9719b77d2ddf49d151419aea3d8e1c1"
+  },
+  {
+    "id": "fx-ov-galaxy",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-galaxy\\2.1.png",
+    "sha256": "702cbc550e4cdc29ccd1402e1ba2c7973f93f3a381a573a2ad51cc6a484fb324"
+  },
+  {
+    "id": "fx-ov-fireflies",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fireflies\\0.3.png",
+    "sha256": "044a8ae0b875492f66ef73f610ecab52ad26b9ec9c07cf3f3490624cd30ec2a0"
+  },
+  {
+    "id": "fx-ov-fireflies",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fireflies\\0.9.png",
+    "sha256": "2c078148ad576ff6a98ba8cc75c26bfbc69f81487541807f5dbe0b38b29d97cb"
+  },
+  {
+    "id": "fx-ov-fireflies",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fireflies\\1.5.png",
+    "sha256": "fd3c3bba65382d2853c81603be5d1daaec04336b34aef5f2406bcf175b6780a5"
+  },
+  {
+    "id": "fx-ov-fireflies",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fireflies\\2.1.png",
+    "sha256": "644604b397dda7179faeab54a546027694e50289973679dc0acacba4bd2354d6"
+  },
+  {
+    "id": "fx-ov-magic-dust",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-magic-dust\\0.3.png",
+    "sha256": "b1f837c242c2abbc67b73004f3eafa987f0748125340197b4761d615f8e480ea"
+  },
+  {
+    "id": "fx-ov-magic-dust",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-magic-dust\\0.9.png",
+    "sha256": "3dfcd86a3071df5bc902123dd4bbe0a2883a4b4e849049f9d929663755daf3c0"
+  },
+  {
+    "id": "fx-ov-magic-dust",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-magic-dust\\1.5.png",
+    "sha256": "3d5d65d07f1c382309c9c9b88cb3f2336e400035fd4d3e7b1883ac71486b059e"
+  },
+  {
+    "id": "fx-ov-magic-dust",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-magic-dust\\2.1.png",
+    "sha256": "68601c0b6a2b49a35bef33e1cf73a1cb3028cc89ad7f44493c10a8ad41ad3cef"
+  },
+  {
+    "id": "fx-ov-sparkle-white",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-white\\0.3.png",
+    "sha256": "6d40cadb6dc6ebd931b4a8783855b1fd642957cc542f1b0a1e87758cf975fc25"
+  },
+  {
+    "id": "fx-ov-sparkle-white",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-white\\0.9.png",
+    "sha256": "54e93820fefb5e488cf22153568a51c7e2c36e38dcd0feb9b3771028b870ac37"
+  },
+  {
+    "id": "fx-ov-sparkle-white",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-white\\1.5.png",
+    "sha256": "c5050a44a54761f7fb78f690db0cbd5ee8eee52ede010ec951da2dd604103316"
+  },
+  {
+    "id": "fx-ov-sparkle-white",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-white\\2.1.png",
+    "sha256": "b470e2da1696dbf52e050e50e2ade724d48e4092c34259777843a25e7ae06579"
+  },
+  {
+    "id": "fx-ov-glitter",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-glitter\\0.3.png",
+    "sha256": "2ebad618f36a86523d35339647c9ec86ca5713762d02f081cc8b707ec56eab85"
+  },
+  {
+    "id": "fx-ov-glitter",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-glitter\\0.9.png",
+    "sha256": "9582e4fb89d063ac1f46f23220e3a6345eae7d65ef9c078578e13139288a1ff4"
+  },
+  {
+    "id": "fx-ov-glitter",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-glitter\\1.5.png",
+    "sha256": "07dd04af55bb448d808f70c745187488bb1375018bd46e8c889be3ee9168320c"
+  },
+  {
+    "id": "fx-ov-glitter",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-glitter\\2.1.png",
+    "sha256": "8daa71c222295ef0d478351841a073291e78b820081b12ef656f2e7922f4715d"
+  },
+  {
+    "id": "fx-ov-hearts-pink",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-hearts-pink\\0.3.png",
+    "sha256": "3a320c78c28dd0296819bbe3145fc27a7575709756d5dd4faf817e2503d62523"
+  },
+  {
+    "id": "fx-ov-hearts-pink",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-hearts-pink\\0.9.png",
+    "sha256": "1d15954a424520c0884ef1e8ffe1e51761d434a0d267b77d01c8ca53e255add8"
+  },
+  {
+    "id": "fx-ov-hearts-pink",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-hearts-pink\\1.5.png",
+    "sha256": "2b3c1910d1c7bd67cfc513a3e5a0add83a97873959675b72ccb9f9dfcc0ede17"
+  },
+  {
+    "id": "fx-ov-hearts-pink",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-hearts-pink\\2.1.png",
+    "sha256": "710e0983687d6956029bc977b25c2ef47794b67f9a34a646e3b164d6dcc68779"
+  },
+  {
+    "id": "fx-ov-stars",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-stars\\0.3.png",
+    "sha256": "ed1ce2f2251ec2c1adb26f78840737c04136f2bd95a89faf0482687cd669de4e"
+  },
+  {
+    "id": "fx-ov-stars",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-stars\\0.9.png",
+    "sha256": "ed1f74983406fa869c13253686110810f433e9f1420a62d5dcf21bdb5468c6de"
+  },
+  {
+    "id": "fx-ov-stars",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-stars\\1.5.png",
+    "sha256": "b65eb4781626137fc60e1eecfe1e9790b966fd099c3fe9a352d0d794f6a97cef"
+  },
+  {
+    "id": "fx-ov-stars",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-stars\\2.1.png",
+    "sha256": "99a0788e05ad525019cc692b44719a19b1929a38aef7086bd4304d7a1221f668"
+  },
+  {
+    "id": "fx-ov-confetti",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-confetti\\0.3.png",
+    "sha256": "37a30d6ecbe2aaeb475e61fa6dd27d0b737cd3460b28cce29a6e73f01466fb95"
+  },
+  {
+    "id": "fx-ov-confetti",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-confetti\\0.9.png",
+    "sha256": "b993f7d8be5c4f5fa64cd230f29002845b708426bb6407d79ed303cb3097644a"
+  },
+  {
+    "id": "fx-ov-confetti",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-confetti\\1.5.png",
+    "sha256": "12539be6751862ca2e25ab0c6807464fa18eceedd046247cc9fe95eebb422cdf"
+  },
+  {
+    "id": "fx-ov-confetti",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-confetti\\2.1.png",
+    "sha256": "f97e256bb05f4f34fe2ea354447c2f3d52629aab64cf0077a4428bce25aef51d"
+  },
+  {
+    "id": "fx-ov-snow",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-snow\\0.3.png",
+    "sha256": "12139b047baa722f2abbfd16537a66a9977448753a64f88afd5c8d80e31cb8ee"
+  },
+  {
+    "id": "fx-ov-snow",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-snow\\0.9.png",
+    "sha256": "4f7f1ad14b4cb5ab10f045c8329b565c844d1e7bcede060d248300bf0ed2bc64"
+  },
+  {
+    "id": "fx-ov-snow",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-snow\\1.5.png",
+    "sha256": "59ac5f5a932b28c2b2f7cf5e43318439fc1750747816f1a6af1f57d4d8c7e45c"
+  },
+  {
+    "id": "fx-ov-snow",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-snow\\2.1.png",
+    "sha256": "805cfe5554a22e1aa5c5604d0b983081765b4cb31a635246dff0da01760a77ba"
+  },
+  {
+    "id": "fx-ov-rain",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-rain\\0.3.png",
+    "sha256": "12bf2d2a3b2bd2700bec770fd8966aeaece1952187199241ca621fdb4135c19f"
+  },
+  {
+    "id": "fx-ov-rain",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-rain\\0.9.png",
+    "sha256": "bf37f0be06af9ca7efaf4e88014a4dc27b3e27571e02a90b811104ed12b135f4"
+  },
+  {
+    "id": "fx-ov-rain",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-rain\\1.5.png",
+    "sha256": "84f7c5a191e305ac7e7b197e731591b2b451bb6fe047f3724f20093adfd532a6"
+  },
+  {
+    "id": "fx-ov-rain",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-rain\\2.1.png",
+    "sha256": "89f29463c97d8e8b7b1fc25199a0f3acf280b430906142f6a5aecff66a2548a8"
+  },
+  {
+    "id": "fx-ov-bubbles",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bubbles\\0.3.png",
+    "sha256": "da15cf0e32c81311e1c836086bad56f1620a3a1fbd0abc03c1b18bcb88b09d4a"
+  },
+  {
+    "id": "fx-ov-bubbles",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bubbles\\0.9.png",
+    "sha256": "566baaeb153ecc266b8b8c820dd797d9caa7cfe6b906bf420a233ad024c9528f"
+  },
+  {
+    "id": "fx-ov-bubbles",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bubbles\\1.5.png",
+    "sha256": "7af0b16e755cca8d49d66dbe8ac635c364d286540a9d2558b2cf5c6f6f521ad5"
+  },
+  {
+    "id": "fx-ov-bubbles",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bubbles\\2.1.png",
+    "sha256": "7b84678321fedbd3f8b614067bcb48703ef0f06bdfa36ac9b7e8f43ea95fea68"
+  },
+  {
+    "id": "fx-ov-leak-warm",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-warm\\0.3.png",
+    "sha256": "70464d02b80090d6c6ecab8bcb2a79ba8e42b8438a3e59c52f2e5a56f02e5686"
+  },
+  {
+    "id": "fx-ov-leak-warm",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-warm\\0.9.png",
+    "sha256": "9c3131e8e6fe0456adba142eef4618bdde3b5d88346b78ed9465ff9e0aa4b5c2"
+  },
+  {
+    "id": "fx-ov-leak-warm",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-warm\\1.5.png",
+    "sha256": "8f424768fa5084487ce1d485edc70a8834ae756c6367b538ffaf3079407854a8"
+  },
+  {
+    "id": "fx-ov-leak-warm",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-warm\\2.1.png",
+    "sha256": "ead9b1d367b274de1b052073c0b22bf3fc1ba82782cee3fe80693bca34689b7f"
+  },
+  {
+    "id": "fx-ov-leak-pink",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-pink\\0.3.png",
+    "sha256": "e95b784b451dcbb2758cb4f260e5f1e830aaee9b4339e2a50a667a19a784b1df"
+  },
+  {
+    "id": "fx-ov-leak-pink",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-pink\\0.9.png",
+    "sha256": "4ce61fabb42f9830b0d1dccbcf7741a4c00c6c906e0ce4e9bcabce550cd40ebf"
+  },
+  {
+    "id": "fx-ov-leak-pink",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-pink\\1.5.png",
+    "sha256": "0858768bc5d47befec3a3aea899f4169cff4254e9b41a4013bc25b715beba6cf"
+  },
+  {
+    "id": "fx-ov-leak-pink",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-pink\\2.1.png",
+    "sha256": "76da9361374d7108ef50029681e0bb4ec6c19c7f41583e5d9aa2a8b8e89f5055"
+  },
+  {
+    "id": "fx-ov-leak-blue",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-blue\\0.3.png",
+    "sha256": "fdc7787d3922f000624aa005f1cf2295c916f6f6bf4fb1262bed2d1807c136e3"
+  },
+  {
+    "id": "fx-ov-leak-blue",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-blue\\0.9.png",
+    "sha256": "d4218847e8c07a90b6bb9062156aba7b146ab656b96395a47060c79df49e1caf"
+  },
+  {
+    "id": "fx-ov-leak-blue",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-blue\\1.5.png",
+    "sha256": "cd8fea5ac005a527130e10a331925cea0b14f4346e6796b1404bbb9441073e5f"
+  },
+  {
+    "id": "fx-ov-leak-blue",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-blue\\2.1.png",
+    "sha256": "832b363d7ce9ba9ef6fa2f5ea4b9feaca3d57e3bb8580acb9c0882fa32084c03"
+  },
+  {
+    "id": "fx-ov-light-streaks",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-light-streaks\\0.3.png",
+    "sha256": "bfa1e9a6fef387b53a8bf6733636ef62d3536892b0e8278d65c4399b94c9d93e"
+  },
+  {
+    "id": "fx-ov-light-streaks",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-light-streaks\\0.9.png",
+    "sha256": "0fdf8a88f4d039e76fd0d1e07abad8141eaefe28a21602389edb26b970fc8bd4"
+  },
+  {
+    "id": "fx-ov-light-streaks",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-light-streaks\\1.5.png",
+    "sha256": "21ad3f0b2ba9610c1da988f7a387b5ea15a9ffddd3ab1735ce9b03329753c002"
+  },
+  {
+    "id": "fx-ov-light-streaks",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-light-streaks\\2.1.png",
+    "sha256": "f6ab0ba976791c0be7769702565eb18d3bfaa7b27a3d123d6a46cb4168269bcc"
+  },
+  {
+    "id": "fx-ov-stage-lights",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-stage-lights\\0.3.png",
+    "sha256": "85d2a7ed1a57cbadc5ef3275471efb5b61d369324c94641fcefc50af32c7b006"
+  },
+  {
+    "id": "fx-ov-stage-lights",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-stage-lights\\0.9.png",
+    "sha256": "316b6ec7d4bbc9d067f19c1bfcaaab176620cbbaefdb50b57490befb2354ae50"
+  },
+  {
+    "id": "fx-ov-stage-lights",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-stage-lights\\1.5.png",
+    "sha256": "761aefff07c372b1b2b7a8f9cd179d3b7652106853d03a87af1ca4ff3c6b58e3"
+  },
+  {
+    "id": "fx-ov-stage-lights",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-stage-lights\\2.1.png",
+    "sha256": "27b43455ce1d01092ac185fa345ed2ad4f0c639b4213c17f04676b1543b49cd1"
+  },
+  {
+    "id": "fx-ov-bg-purple-smoke",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-purple-smoke\\0.3.png",
+    "sha256": "33c4f75378b9ccaeba8595ef0deaf311cf27c533f7f6974d6091416e48e21164"
+  },
+  {
+    "id": "fx-ov-bg-purple-smoke",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-purple-smoke\\0.9.png",
+    "sha256": "b666ba24b11dbdbcb22ae2cbec2f26063694f3c11473889acd32cdf8a855a6a7"
+  },
+  {
+    "id": "fx-ov-bg-purple-smoke",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-purple-smoke\\1.5.png",
+    "sha256": "d537610025404bdf465e8768e652e8a26be34ae4269fe65fd4cf30dd2f8ef42a"
+  },
+  {
+    "id": "fx-ov-bg-purple-smoke",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-purple-smoke\\2.1.png",
+    "sha256": "a453059c81318bbd8a11818a053dcdb90625f3d719f73b21c0261a5c69828de3"
+  },
+  {
+    "id": "fx-ov-bg-pastel-ink",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pastel-ink\\0.3.png",
+    "sha256": "e8021228158699d61f487abfc578c3ab4cf5575baa419315ebb92c42d13730ff"
+  },
+  {
+    "id": "fx-ov-bg-pastel-ink",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pastel-ink\\0.9.png",
+    "sha256": "7215ba460f308ad0fcc392805e5366a68d57e15db63e5049b68b1d0597c44c75"
+  },
+  {
+    "id": "fx-ov-bg-pastel-ink",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pastel-ink\\1.5.png",
+    "sha256": "be612edc6e1b7a84ffce64cc6b11c0a2b04b2b99c6163d2a466d328c562db202"
+  },
+  {
+    "id": "fx-ov-bg-pastel-ink",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pastel-ink\\2.1.png",
+    "sha256": "7739fbdbfe1233d2acd8cf9f2a05ab33af3e840eb1f44d434d19abaabb3993ea"
+  },
+  {
+    "id": "fx-ov-bg-pink-gradient",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pink-gradient\\0.3.png",
+    "sha256": "78933272b7bb5aafad27230121b22411982633584643cb60a60f7563dd2584dc"
+  },
+  {
+    "id": "fx-ov-bg-pink-gradient",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pink-gradient\\0.9.png",
+    "sha256": "924b242d0c8f870560aaf506a71710b1ca1ac2ab4228a15140171fa582798460"
+  },
+  {
+    "id": "fx-ov-bg-pink-gradient",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pink-gradient\\1.5.png",
+    "sha256": "ef210aae43700ae11ebc3170d1e3f977e116370932c7d829eb10b6321a0ecd15"
+  },
+  {
+    "id": "fx-ov-bg-pink-gradient",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pink-gradient\\2.1.png",
+    "sha256": "4d61a0110a7814653a99aa09e51c84da4ece2bca3527d3d0777ddb166c281172"
+  },
+  {
+    "id": "fx-ov-bg-blue-hearts",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-blue-hearts\\0.3.png",
+    "sha256": "145a58fcceddbe5c3f6e0b4d88b09506303a8a4e1c9b376ad17b292e088b8439"
+  },
+  {
+    "id": "fx-ov-bg-blue-hearts",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-blue-hearts\\0.9.png",
+    "sha256": "39a60b6a78198d093e9656a251be742c2093e3ac99f9fa8c7285ac5ca7276312"
+  },
+  {
+    "id": "fx-ov-bg-blue-hearts",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-blue-hearts\\1.5.png",
+    "sha256": "fbd3ec16bbb9316538f3aa47b858848fc58a8bb498c2c8eea5767cb155c112ce"
+  },
+  {
+    "id": "fx-ov-bg-blue-hearts",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-blue-hearts\\2.1.png",
+    "sha256": "b67718ae3032b7c5328c5198f5f037a44eac000696e958ccee5680f539b9fccc"
+  },
+  {
+    "id": "fx-ov-bg-pink-bokeh",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pink-bokeh\\0.3.png",
+    "sha256": "deb8e6d45771480c7a4c4768e928c684ec37d04b1c3f4791650432f4d3d463f0"
+  },
+  {
+    "id": "fx-ov-bg-pink-bokeh",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pink-bokeh\\0.9.png",
+    "sha256": "9833d6e74ea1cfb1f44beb454b96d11808ce50078561be70399a5249ae137fb7"
+  },
+  {
+    "id": "fx-ov-bg-pink-bokeh",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pink-bokeh\\1.5.png",
+    "sha256": "5122343517a14851e66a39573b4524f873542ea364ea391f78dad6b6834b2599"
+  },
+  {
+    "id": "fx-ov-bg-pink-bokeh",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-pink-bokeh\\2.1.png",
+    "sha256": "5f9841837cc811e599cdbdb1169b6fe3d61bd88647939ab4d4f78eec11fef90e"
+  },
+  {
+    "id": "fx-ov-bg-golden-band",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-golden-band\\0.3.png",
+    "sha256": "5dcc3b3687f6c5c0988d25dab495565288c2f9ae8625cd1f25bbdaa03044c809"
+  },
+  {
+    "id": "fx-ov-bg-golden-band",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-golden-band\\0.9.png",
+    "sha256": "08dd64196aa9b87963aead40c83106acd29d228d486cb6d53e8370b8aff62cd9"
+  },
+  {
+    "id": "fx-ov-bg-golden-band",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-golden-band\\1.5.png",
+    "sha256": "73f96a23212d8748663aa6c89c5ba7e37169f4c9ae6c4c5180ea914bf1417f38"
+  },
+  {
+    "id": "fx-ov-bg-golden-band",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-golden-band\\2.1.png",
+    "sha256": "7221517c177eca87ca067b52f9b53347008584ffe43727c80f9b5975b21445ea"
+  },
+  {
+    "id": "fx-ov-bg-blue-smoke",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-blue-smoke\\0.3.png",
+    "sha256": "e40b428af59491ee6e6a74e23f6fbdf56277ef82c1dc30ec0876626cf9c2f13f"
+  },
+  {
+    "id": "fx-ov-bg-blue-smoke",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-blue-smoke\\0.9.png",
+    "sha256": "6173803499bda4020b0ceea55f74a64ec9fdd40e9b4575bf593217bebebdbb4c"
+  },
+  {
+    "id": "fx-ov-bg-blue-smoke",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-blue-smoke\\1.5.png",
+    "sha256": "7a7ad5aa1a80987712ca41c53ac438eed5ef136c141e87c1c3f82074c39b678b"
+  },
+  {
+    "id": "fx-ov-bg-blue-smoke",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-blue-smoke\\2.1.png",
+    "sha256": "ac3acf69d2aac1ce366a311ed3d18b130cbfa727eff2a307e947530c33acac13"
+  },
+  {
+    "id": "fx-ov-bg-light-wall",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-light-wall\\0.3.png",
+    "sha256": "35b6b90ee910adc98823509b9e9f0a272f686dc30bd50c0a79598d1a1cdcc270"
+  },
+  {
+    "id": "fx-ov-bg-light-wall",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-light-wall\\0.9.png",
+    "sha256": "ac319c14fdb3413d9b99877561092c24660ff6a88f04f32ee2e5bfc2fd4d7d49"
+  },
+  {
+    "id": "fx-ov-bg-light-wall",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-light-wall\\1.5.png",
+    "sha256": "515f264d754ce345f257317c57bb5b25cc0fbfdf190b2d371f609cb0c02921f7"
+  },
+  {
+    "id": "fx-ov-bg-light-wall",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-light-wall\\2.1.png",
+    "sha256": "ea3035eb38383bd7987bdc32d58e35e5acac7867620c927bc3f74e8588415db0"
+  },
+  {
+    "id": "fx-ov-bg-3d-shapes",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-3d-shapes\\0.3.png",
+    "sha256": "a7c0e3c66099c984b77d106af8aa5aa6614ab50394a1f64eb08ef17c756c8185"
+  },
+  {
+    "id": "fx-ov-bg-3d-shapes",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-3d-shapes\\0.9.png",
+    "sha256": "e72b557b4f45ae8679fff0ce53b307ab9a32aefe617b3cea82f2c16e993094bd"
+  },
+  {
+    "id": "fx-ov-bg-3d-shapes",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-3d-shapes\\1.5.png",
+    "sha256": "339b92f673c5b96c91bb1adbce4de32af882050924f73ca7f1cac6890e8d9c70"
+  },
+  {
+    "id": "fx-ov-bg-3d-shapes",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-3d-shapes\\2.1.png",
+    "sha256": "315253cf50dd7b1ffa0b9b960d893876c13afbbaf80018cc484dc72bbde8cfe7"
+  },
+  {
+    "id": "fx-ov-bg-red-hearts",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-red-hearts\\0.3.png",
+    "sha256": "54d862e0b25329a7ce3b9802918ea6a471918656798ab377e7c86ea9fec4cad3"
+  },
+  {
+    "id": "fx-ov-bg-red-hearts",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-red-hearts\\0.9.png",
+    "sha256": "3cc838b9bd53a0acd5f1c02c6abe665d5e7b8fd78e0a36d634704a8407880020"
+  },
+  {
+    "id": "fx-ov-bg-red-hearts",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-red-hearts\\1.5.png",
+    "sha256": "9a5596a233bf64f228e51a857be3fd556f41d2de49e1f6cfd936aa828872781b"
+  },
+  {
+    "id": "fx-ov-bg-red-hearts",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bg-red-hearts\\2.1.png",
+    "sha256": "e50bcf5f68412a5b48e7e9049a083652f24d51a30faec04e949caac3f2b0c215"
+  },
+  {
+    "id": "fx-ov-sc-aurora",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-aurora\\0.3.png",
+    "sha256": "ec6ed814b7698f76055a196bd91651ae9ba85420e4dffeb30e32c28278d40f9f"
+  },
+  {
+    "id": "fx-ov-sc-aurora",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-aurora\\0.9.png",
+    "sha256": "ec3912940960b2cb1618f293847b3ba673f70dd75247bffebd5d07e07928241b"
+  },
+  {
+    "id": "fx-ov-sc-aurora",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-aurora\\1.5.png",
+    "sha256": "df6fd985b20a2afffc9b4479292a3007a58d135821bca5a828d8dab5640c92a4"
+  },
+  {
+    "id": "fx-ov-sc-aurora",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-aurora\\2.1.png",
+    "sha256": "9d1333d40062647cc457186ad2349ee7d5c7372f851430303ffba9bc555c6f9b"
+  },
+  {
+    "id": "fx-ov-sc-milky-way",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-milky-way\\0.3.png",
+    "sha256": "b49c04d4ec29961c845ef584402a9a034ab4145f59d2651ecf696895154dcadb"
+  },
+  {
+    "id": "fx-ov-sc-milky-way",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-milky-way\\0.9.png",
+    "sha256": "824b83ed5331bbc2ceaa1a3238ed451f0685c65f1a0921b60a780a1fb3bcfe0a"
+  },
+  {
+    "id": "fx-ov-sc-milky-way",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-milky-way\\1.5.png",
+    "sha256": "8afea2db8aff9bed79ab0842fe394faf100867503ddd053236c73f39ceaaca65"
+  },
+  {
+    "id": "fx-ov-sc-milky-way",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-milky-way\\2.1.png",
+    "sha256": "1e341c6cf408bbfb1b229bb6cd00938016da73c7896815d6785d78a78b76125c"
+  },
+  {
+    "id": "fx-ov-sc-sunset-sea",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-sunset-sea\\0.3.png",
+    "sha256": "c60a2952081e16614c3c0692490fce958352230e40c52f7a08ff55f2c1690b17"
+  },
+  {
+    "id": "fx-ov-sc-sunset-sea",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-sunset-sea\\0.9.png",
+    "sha256": "5be5e681e992d6c4d0c59b70d4f66cfb0dc06a5715cf6ca816d30fca9a8600aa"
+  },
+  {
+    "id": "fx-ov-sc-sunset-sea",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-sunset-sea\\1.5.png",
+    "sha256": "edf7f96bc667d7fe6d4320a3788d3a531fb2452035d96fd064b6a1541c49d731"
+  },
+  {
+    "id": "fx-ov-sc-sunset-sea",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-sunset-sea\\2.1.png",
+    "sha256": "d2e998b651014c31e790e77d68b6f966d3269e46c988101f1a63bdac5673756e"
+  },
+  {
+    "id": "fx-ov-sc-moon-dunes",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-moon-dunes\\0.3.png",
+    "sha256": "62d35ce5fe27f32967ddac1ed84502d75ad6058403a98c59ff671aef3ff81650"
+  },
+  {
+    "id": "fx-ov-sc-moon-dunes",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-moon-dunes\\0.9.png",
+    "sha256": "6f7b674bac93e3b05d7f1873715f9b9a909506578e8f6d8173bd3a764090ab5d"
+  },
+  {
+    "id": "fx-ov-sc-moon-dunes",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-moon-dunes\\1.5.png",
+    "sha256": "166982b29f33fb9767c756a594b628a6127b31c556e56e702f3ea0e0885ef4e0"
+  },
+  {
+    "id": "fx-ov-sc-moon-dunes",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-moon-dunes\\2.1.png",
+    "sha256": "f8463c8bc5de84546990fe7ae22c906edfdf1236bdf09969fa168d37ab6dc4d3"
+  },
+  {
+    "id": "fx-ov-sc-clouds",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-clouds\\0.3.png",
+    "sha256": "550d24cf889e4c54a7baa00fb67d28646cc7d6606fc2f5a8ff01479c00a3c1ac"
+  },
+  {
+    "id": "fx-ov-sc-clouds",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-clouds\\0.9.png",
+    "sha256": "02a836f4f1e47bd31bb63e32013fee162db2204f06a3cd76b207fa191de1b3cc"
+  },
+  {
+    "id": "fx-ov-sc-clouds",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-clouds\\1.5.png",
+    "sha256": "7339b8f5cd305efc8be17a1d13d10e3478698130ee04b6b39b3c687d74d246bb"
+  },
+  {
+    "id": "fx-ov-sc-clouds",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-clouds\\2.1.png",
+    "sha256": "291cab1be494a68d1c6d9739af3c2511d522fe177bf9255c6ee048a199daf259"
+  },
+  {
+    "id": "fx-ov-sc-snowy-night",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-snowy-night\\0.3.png",
+    "sha256": "24d4b82f8b252db6f8c8eb0e01c8dbce4522de126abd62a9682c9d7aa87e9a6c"
+  },
+  {
+    "id": "fx-ov-sc-snowy-night",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-snowy-night\\0.9.png",
+    "sha256": "846cb28db448e9fbf5ec70c3fada3fa1f2973e06f2d63eb4fc26c9e6b09026b9"
+  },
+  {
+    "id": "fx-ov-sc-snowy-night",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-snowy-night\\1.5.png",
+    "sha256": "06bd3a13842a034a7c00d04103ee0f759dbdbf8277996418fb50f6b88ca459c4"
+  },
+  {
+    "id": "fx-ov-sc-snowy-night",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-snowy-night\\2.1.png",
+    "sha256": "0707f80b994aa3abde71daff1eb7e20d8bb77b0d759955379b41b74ca571f820"
+  },
+  {
+    "id": "fx-ov-sc-ocean",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-ocean\\0.3.png",
+    "sha256": "b6183b33b0b4e51ba465bdd0f1f97c7ee36a48b8dc0cc7ff4b75ebad71b8ff6c"
+  },
+  {
+    "id": "fx-ov-sc-ocean",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-ocean\\0.9.png",
+    "sha256": "f46ff687166b1b27c54089352f848ab3aa951a1d26cdf8d509e7fccd852ec3ad"
+  },
+  {
+    "id": "fx-ov-sc-ocean",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-ocean\\1.5.png",
+    "sha256": "2db718625db132b7666f5629cc198a0773ddf6ebb22908ee2cf152d6be492268"
+  },
+  {
+    "id": "fx-ov-sc-ocean",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-ocean\\2.1.png",
+    "sha256": "5e8956f05049920be44b9d2e9fe0b3d3af361d908761e6b1881223ecf49f04e6"
+  },
+  {
+    "id": "fx-ov-sc-shooting-stars",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-shooting-stars\\0.3.png",
+    "sha256": "b71a0b7587d1d6753ae81e1a71a812a5906947c80554d498bd26734d7a6b0f59"
+  },
+  {
+    "id": "fx-ov-sc-shooting-stars",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-shooting-stars\\0.9.png",
+    "sha256": "6817bdd4d3d5ff0b25eb39d06e76ed1ef87eb123b866aa71b112107ac4d97c81"
+  },
+  {
+    "id": "fx-ov-sc-shooting-stars",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-shooting-stars\\1.5.png",
+    "sha256": "5503ac679dde4d841903a43a5d9f0c69728b07c8d9c68c045b8578b046c905ff"
+  },
+  {
+    "id": "fx-ov-sc-shooting-stars",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sc-shooting-stars\\2.1.png",
+    "sha256": "d6490a534708f9d24596caa02c4f6300359085c527d11d1f2283af275176a765"
+  },
+  {
+    "id": "fx-ov-tr-shape-pop",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-shape-pop\\0.3.png",
+    "sha256": "f4d87c004ffc095ba197a8c2946a475f94caef757693d0906b1f068ed5f88656"
+  },
+  {
+    "id": "fx-ov-tr-shape-pop",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-shape-pop\\0.9.png",
+    "sha256": "6e42786e05e611d43c17df968d57c9a688dea2e21d829dd461c61a3a50678541"
+  },
+  {
+    "id": "fx-ov-tr-shape-pop",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-shape-pop\\1.5.png",
+    "sha256": "86889150cf4c15a6afacf71dc2d0f7e103f3809852e0c847f58ff7a524e13ba8"
+  },
+  {
+    "id": "fx-ov-tr-shape-pop",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-shape-pop\\2.1.png",
+    "sha256": "e39f7e5097a11157a8dbb3eaf553bb0ed8e94f11b0036080c43d56d280e23175"
+  },
+  {
+    "id": "fx-ov-tr-glow-blob",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-glow-blob\\0.3.png",
+    "sha256": "adf01ec4ff14c88095b9c150957fc3ae670c2efe46b232b5ed79f9cd3d9e5ac8"
+  },
+  {
+    "id": "fx-ov-tr-glow-blob",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-glow-blob\\0.9.png",
+    "sha256": "777f4740fa32b3303a7d99696c5c9c83006502e2ac02d67683a78fe6721b664f"
+  },
+  {
+    "id": "fx-ov-tr-glow-blob",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-glow-blob\\1.5.png",
+    "sha256": "d6fa0bf2b0346a88acb821865997106f348a2f8218d7c93551cead6b3c86cb94"
+  },
+  {
+    "id": "fx-ov-tr-glow-blob",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-glow-blob\\2.1.png",
+    "sha256": "0775932946c9e36a71000da6ff43dca963eec6a5a9dedccfb90c21013cfa9069"
+  },
+  {
+    "id": "fx-ov-tr-fire-wipe",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-fire-wipe\\0.3.png",
+    "sha256": "59bdb5d142a18a711a6ec7b75868305abd4f433d03076bf60dafc27387db5627"
+  },
+  {
+    "id": "fx-ov-tr-fire-wipe",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-fire-wipe\\0.9.png",
+    "sha256": "d998194f72f4b7769cfdb9dd263576d8a9ad410d43726681ea68e232579966fd"
+  },
+  {
+    "id": "fx-ov-tr-fire-wipe",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-fire-wipe\\1.5.png",
+    "sha256": "b04f5cc86f1bf2d5d48eee36bbed8828cc2c3c0451cfe0ab3be228e622b986ae"
+  },
+  {
+    "id": "fx-ov-tr-fire-wipe",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-fire-wipe\\2.1.png",
+    "sha256": "404844dfd41a78a53ef409a1af2a89a061d618f562345c3e8ba564b6b8da4ac0"
+  },
+  {
+    "id": "fx-ov-tr-ink",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-ink\\0.3.png",
+    "sha256": "be1ad603099a720448354386f35c25851c129cf1a1f4568b9dc7cc88380eac9e"
+  },
+  {
+    "id": "fx-ov-tr-ink",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-ink\\0.9.png",
+    "sha256": "6145a63ce431a19aa979dc6f94f171b7b76084a24f7ef05fc775b46f36c9d21b"
+  },
+  {
+    "id": "fx-ov-tr-ink",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-ink\\1.5.png",
+    "sha256": "d0162fb9b328d847359e28ef2246d010940e1adf78003bd1651655f0173f8106"
+  },
+  {
+    "id": "fx-ov-tr-ink",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-ink\\2.1.png",
+    "sha256": "775cc50c8e4c8f3c4e48d639a4272965b7a914b5bbb255d40b0925c6b4635715"
+  },
+  {
+    "id": "fx-ov-tr-light-burst",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-light-burst\\0.3.png",
+    "sha256": "1e4c2ef83cdb053663398e97954c5483ba1edd2d0aac4d35c0cd4cb89387b6da"
+  },
+  {
+    "id": "fx-ov-tr-light-burst",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-light-burst\\0.9.png",
+    "sha256": "9934750f8ef04567318e2e9a6af3c303a8073113e820d3de0c5180dcabec1c6a"
+  },
+  {
+    "id": "fx-ov-tr-light-burst",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-light-burst\\1.5.png",
+    "sha256": "8a6bb295a7bfa4992a76dfdd7f6e4ae141dd035b0847b2095575af805b61d4e2"
+  },
+  {
+    "id": "fx-ov-tr-light-burst",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-light-burst\\2.1.png",
+    "sha256": "0a7e2c9f0e46217680b2f81d6efa66f923db4b5d8f8b39f5baf473f64fc02a3d"
+  },
+  {
+    "id": "fx-ov-tr-scribble",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-scribble\\0.3.png",
+    "sha256": "199157d925783eddefd5d626b28dcd459d514b78be37a6b0bf94e54a8f4c7148"
+  },
+  {
+    "id": "fx-ov-tr-scribble",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-scribble\\0.9.png",
+    "sha256": "79e329760f416e9181d9b7d5f6c96f9309a0cc54f11bfe23a2e69a51bd2cc74b"
+  },
+  {
+    "id": "fx-ov-tr-scribble",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-scribble\\1.5.png",
+    "sha256": "b4fd701b9b7caf6318a183fad2f992526e297aec10f1378cc1f7dfd3ecfa0607"
+  },
+  {
+    "id": "fx-ov-tr-scribble",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-tr-scribble\\2.1.png",
+    "sha256": "b0afc0481615a0687bc7a35f19f9da28279aa158cbe3d92b118bcf01c04b8e3f"
+  },
+  {
+    "id": "fx-ov-el-speed-lines",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-speed-lines\\0.3.png",
+    "sha256": "30745c6c7ade8375fbf07fe192c58a5562dc7c56b25aee52249c0e4aa9d16e16"
+  },
+  {
+    "id": "fx-ov-el-speed-lines",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-speed-lines\\0.9.png",
+    "sha256": "a80ee5a5b4a39bbca72522d6755947fecc98509fd1ecd7490876be3fb32e139e"
+  },
+  {
+    "id": "fx-ov-el-speed-lines",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-speed-lines\\1.5.png",
+    "sha256": "7b490fd74a7673f4a81279316d887d0fdcfafc9ea45d06fe7ef358c5ece79f24"
+  },
+  {
+    "id": "fx-ov-el-speed-lines",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-speed-lines\\2.1.png",
+    "sha256": "f69baa5ab170d34149a96598f2e0022583a3f371dfe126a8baab69ef1b4284fb"
+  },
+  {
+    "id": "fx-ov-el-lightning",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-lightning\\0.3.png",
+    "sha256": "2d987361fab6e5855a4e074c6ea6e692c234f626d5fd0b00477562021819dc50"
+  },
+  {
+    "id": "fx-ov-el-lightning",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-lightning\\0.9.png",
+    "sha256": "cd78fb41f5aba7219a3a0da37cc175a503385cfb15c5e00ac558626579c76768"
+  },
+  {
+    "id": "fx-ov-el-lightning",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-lightning\\1.5.png",
+    "sha256": "d0d7c83360dd49baf1c650d6cabee2d25b22ee71a3e32f013227dbd096d8f6c9"
+  },
+  {
+    "id": "fx-ov-el-lightning",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-lightning\\2.1.png",
+    "sha256": "0199a247ad5403d2e443a4d32d761d6745f2993ca3afb5dc33c321a8db75d689"
+  },
+  {
+    "id": "fx-ov-el-moon",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-moon\\0.3.png",
+    "sha256": "835bb0c42c1a15b804e4a477767a1938a39c3b9b260f95f2d228fad9ca1333ee"
+  },
+  {
+    "id": "fx-ov-el-moon",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-moon\\0.9.png",
+    "sha256": "c002c06d65feaf10f0d85c1cff2ae442725e6de9f4083bb55ed14d9dd4682e1f"
+  },
+  {
+    "id": "fx-ov-el-moon",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-moon\\1.5.png",
+    "sha256": "ec59741c98c14287bc73d482efac31959c8f92d143c436f0388ba8e8aaf19358"
+  },
+  {
+    "id": "fx-ov-el-moon",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-moon\\2.1.png",
+    "sha256": "04350dc0d429601d496490f08370dcb65c9e532c72ff3f5a57857b78081203e1"
+  },
+  {
+    "id": "fx-ov-el-smoke-puff",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-smoke-puff\\0.3.png",
+    "sha256": "77cec76cfff0bed42b486fabcd88a35f43332317ed0ad5c9520c40fdb39a34aa"
+  },
+  {
+    "id": "fx-ov-el-smoke-puff",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-smoke-puff\\0.9.png",
+    "sha256": "f5f85d3f4e29f66e3c0d0b56b34366652684f1dc7264440548a10a918068fcba"
+  },
+  {
+    "id": "fx-ov-el-smoke-puff",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-smoke-puff\\1.5.png",
+    "sha256": "3128ff9aba552599b48909c07818a8184830e173346b9f0d9309cda263e17caf"
+  },
+  {
+    "id": "fx-ov-el-smoke-puff",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-el-smoke-puff\\2.1.png",
+    "sha256": "23351f9a4b176c30f202d2ea02dfcaaa4d1ab79bc4c2d8a66b64236bf65b44b5"
+  },
+  {
+    "id": "fx-ov-film-dust",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-film-dust\\0.3.png",
+    "sha256": "04635a7cffbe9cbdf5cae34c2acbb08098dc5ea8f8bf31109f3701a39edc7766"
+  },
+  {
+    "id": "fx-ov-film-dust",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-film-dust\\0.9.png",
+    "sha256": "04b89b71f9b5aab369e6571fa9a7218355e5497e03102d29ab2e31420ff74bf6"
+  },
+  {
+    "id": "fx-ov-film-dust",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-film-dust\\1.5.png",
+    "sha256": "24d14639f16df4dd2a702481f999fdb9b7060acea6004be93ea18fc89f448d38"
+  },
+  {
+    "id": "fx-ov-film-dust",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-film-dust\\2.1.png",
+    "sha256": "791e426056dcd5059fd6d88b66d4a27fa8f129cd1b5ba4f1cd3f7fbb96badd1d"
+  },
+  {
+    "id": "fx-ov-grain",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-grain\\0.3.png",
+    "sha256": "e0cd85bceb0f3ff55be824cc40a40103b56844242e3cd4f3efb52a7a75da35cd"
+  },
+  {
+    "id": "fx-ov-grain",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-grain\\0.9.png",
+    "sha256": "d6da421bdb632d71bc5d73b138720b33200a93913289aadca6d9adef48fbb100"
+  },
+  {
+    "id": "fx-ov-grain",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-grain\\1.5.png",
+    "sha256": "daa6d5339aaec57d384d622b36633ce9ad42f534f713a53548b477ab3aa43736"
+  },
+  {
+    "id": "fx-ov-grain",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-grain\\2.1.png",
+    "sha256": "627782a9c08dc8743c872ce125f5476ed6a95dfa3147f1dbbb8096f4917d9b53"
+  },
+  {
+    "id": "fx-ov-vhs",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-vhs\\0.3.png",
+    "sha256": "736669fb2064822ac0eb721aaa07b9e6de01cdf6a8115cc6ea1adf51de1e58b6"
+  },
+  {
+    "id": "fx-ov-vhs",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-vhs\\0.9.png",
+    "sha256": "563327becb74e2bbbf38c1d7bedf1d620fcaa859e5575a84a10ed782ded77616"
+  },
+  {
+    "id": "fx-ov-vhs",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-vhs\\1.5.png",
+    "sha256": "9697e0dc566239891007d6609758d1cc30f60c189335597c196b1cd610e55466"
+  },
+  {
+    "id": "fx-ov-vhs",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-vhs\\2.1.png",
+    "sha256": "2a3e6ae59bc89e4bce4f4a41d7483d369eb20959de3b793c3b9c0d3bf5cb1e32"
+  },
+  {
+    "id": "fx-ov-paper",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-paper\\0.3.png",
+    "sha256": "3f994f2dc335ccd3439347f551b9bde0433dc85a316f5d14f14eadb696f13111"
+  },
+  {
+    "id": "fx-ov-paper",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-paper\\0.9.png",
+    "sha256": "62400fa4a06e643017078df34fb9075b9e7919cf16b07de27ffea1813c614b30"
+  },
+  {
+    "id": "fx-ov-paper",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-paper\\1.5.png",
+    "sha256": "536072d24ba99db46c9a6c8ddfbd08eb04fa7d41b67ba64874ac0cb826231012"
+  },
+  {
+    "id": "fx-ov-paper",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-paper\\2.1.png",
+    "sha256": "4bb89cada45efe082e80ac2117c9bc2aa35922f661261faef767b936de527f9d"
+  },
+  {
+    "id": "fx-ov-burnt-edges",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-burnt-edges\\0.3.png",
+    "sha256": "dcfe61f3fd6fadc32eb92c9333eb15a1d6769bc8fca6fbb4239bc95d1f0d95c1"
+  },
+  {
+    "id": "fx-ov-burnt-edges",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-burnt-edges\\0.9.png",
+    "sha256": "59484e009d5c2b81960cf74bc036fddf0b1530c70dd6f56ab5a5cd2f481ce52f"
+  },
+  {
+    "id": "fx-ov-burnt-edges",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-burnt-edges\\1.5.png",
+    "sha256": "7a593a8da06f73f58aebd68c6380049ae4318de92d254d6d27ddead4fc2d7ad1"
+  },
+  {
+    "id": "fx-ov-burnt-edges",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-burnt-edges\\2.1.png",
+    "sha256": "79b64146e37f5ae91201c96c0d6f276f00b5a1eace025520bfb46f82b561874e"
+  },
+  {
+    "id": "fx-ov-leak-green",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-green\\0.3.png",
+    "sha256": "b34df66c4a831cdae02cc53995793f7a013356b51df68e4a6281488a11ecbffb"
+  },
+  {
+    "id": "fx-ov-leak-green",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-green\\0.9.png",
+    "sha256": "4b47b322540d6ea6220f3eb34691fa518c8e9b38f56f678ff6885bcdf017c667"
+  },
+  {
+    "id": "fx-ov-leak-green",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-green\\1.5.png",
+    "sha256": "759cced746a468bdbf2e45bc386963f70bdd07859a9fd827dd9ed0589a4a2c28"
+  },
+  {
+    "id": "fx-ov-leak-green",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-green\\2.1.png",
+    "sha256": "b68660c0a7e241a20e46553bceccd91bd48947c35a9b5d700bbe339a82a7b592"
+  },
+  {
+    "id": "fx-ov-leak-purple",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-purple\\0.3.png",
+    "sha256": "a45b24ae37a97a27dd310be768ae2f24c921557e6a549c2a658d7d7193dce9c1"
+  },
+  {
+    "id": "fx-ov-leak-purple",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-purple\\0.9.png",
+    "sha256": "b121843947235ccaad3d8d4042b0cfe302611363aec9874005bd41ef98b8854f"
+  },
+  {
+    "id": "fx-ov-leak-purple",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-purple\\1.5.png",
+    "sha256": "5be970c85fbacabca547e4062fbdd535e0bedae3e719e206afdf89b3db4d8a0e"
+  },
+  {
+    "id": "fx-ov-leak-purple",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-purple\\2.1.png",
+    "sha256": "5ddc4badc943db69dea763d123286bdb02f62b25a8e38ed8b15283f1f74f2884"
+  },
+  {
+    "id": "fx-ov-leak-red",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-red\\0.3.png",
+    "sha256": "577717b4d0d5a0b01c28ec2aee622b821b621c1d0617780b5f196901bd05e874"
+  },
+  {
+    "id": "fx-ov-leak-red",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-red\\0.9.png",
+    "sha256": "a8627c8f499f647159f47e40eecece5e478cddac3bc68f8505a370bb1066745f"
+  },
+  {
+    "id": "fx-ov-leak-red",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-red\\1.5.png",
+    "sha256": "c7ff6dfc25ed7e23e49f0fb6d7d90d20956c2b68b695800698e3efec9160fc14"
+  },
+  {
+    "id": "fx-ov-leak-red",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-leak-red\\2.1.png",
+    "sha256": "8579e554c497795d5840dc8d7fe9c781378d0ce310c3fb65df1c78b3a3259fd0"
+  },
+  {
+    "id": "fx-ov-lightning",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-lightning\\0.3.png",
+    "sha256": "29584b1b48648222fd2c07411abfa647c782797962b86f5e802ae02500624537"
+  },
+  {
+    "id": "fx-ov-lightning",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-lightning\\0.9.png",
+    "sha256": "5a511baa0413ed40523e2692cc5f2920b537f2a1825ff08e07be5936ac8f22cf"
+  },
+  {
+    "id": "fx-ov-lightning",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-lightning\\1.5.png",
+    "sha256": "2af84288547be82ed66b9aaf511623f9c19c78d64f55532ed64d001c6adcfe98"
+  },
+  {
+    "id": "fx-ov-lightning",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-lightning\\2.1.png",
+    "sha256": "196ab778e28d5a63a5458dc5971868c7d0fcc39fb1eba1452e29a8c3a9ed5c52"
+  },
+  {
+    "id": "fx-ov-bokeh-blue",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-blue\\0.3.png",
+    "sha256": "49321db4fba59ab6c843929de3a24cf55bc1e8b8ae383fefd638ae2b0d21105a"
+  },
+  {
+    "id": "fx-ov-bokeh-blue",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-blue\\0.9.png",
+    "sha256": "46312fe9827a78e08daf8f7c90b0e091fe9788f74cc5b3640b0ecc6c8652e239"
+  },
+  {
+    "id": "fx-ov-bokeh-blue",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-blue\\1.5.png",
+    "sha256": "e39c2131430a81188a862c852c0d4d09af6eb59970863cdfbfaef0ebe021da5e"
+  },
+  {
+    "id": "fx-ov-bokeh-blue",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-blue\\2.1.png",
+    "sha256": "37383ffa059f01000833bea07701032890c99f726463e0c77a8536fb31bf600f"
+  },
+  {
+    "id": "fx-ov-bokeh-rainbow",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-rainbow\\0.3.png",
+    "sha256": "2347cdc0654ed0eae6850b156f5d4082a8784a9b98674efbb2da449adbdfff46"
+  },
+  {
+    "id": "fx-ov-bokeh-rainbow",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-rainbow\\0.9.png",
+    "sha256": "0789816ae7ebb458ae77242f861fe7819a540c00403fa421ca19bb13eb219d0b"
+  },
+  {
+    "id": "fx-ov-bokeh-rainbow",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-rainbow\\1.5.png",
+    "sha256": "be302904826cabb4aa2a3759475626bf0c248d74d9b0904c8ee45345b927dfe9"
+  },
+  {
+    "id": "fx-ov-bokeh-rainbow",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-bokeh-rainbow\\2.1.png",
+    "sha256": "dc21f74c95f12d9d7ce0e4d502022a2065a129d5562b98de227b6fbc419c68be"
+  },
+  {
+    "id": "fx-ov-sparkle-pink",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-pink\\0.3.png",
+    "sha256": "0061cebbe200d4d549b62c57b14eb22fc11917125ae9fc54ec8f2f4c8b771797"
+  },
+  {
+    "id": "fx-ov-sparkle-pink",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-pink\\0.9.png",
+    "sha256": "a0ff69ef0c2a690acea2795f0e0757cda399bfa34ab2f1a446fed92fdfb66d47"
+  },
+  {
+    "id": "fx-ov-sparkle-pink",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-pink\\1.5.png",
+    "sha256": "536ddb58d9f97018411c4e495f6205ccb69634a9aa7a674cd9bd39b5ea236c05"
+  },
+  {
+    "id": "fx-ov-sparkle-pink",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-pink\\2.1.png",
+    "sha256": "23e7bf9aa67322d1b775f1acf50bb535af3018bc8c53248900cc84dbee6314b1"
+  },
+  {
+    "id": "fx-ov-sparkle-blue",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-blue\\0.3.png",
+    "sha256": "4b58cd366c9c15b22d35af60754d318df53f7599f65e4a4c50f0aadcb57a2a7d"
+  },
+  {
+    "id": "fx-ov-sparkle-blue",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-blue\\0.9.png",
+    "sha256": "991e7419002c54f05e86177c6f832567b6e9909b0435b7c6f960f71022bdf058"
+  },
+  {
+    "id": "fx-ov-sparkle-blue",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-blue\\1.5.png",
+    "sha256": "c9c7f7fa8bb5c07ee5fb8fd8876cb1fc341f643d3ef891514e0a126c8e5aa539"
+  },
+  {
+    "id": "fx-ov-sparkle-blue",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-sparkle-blue\\2.1.png",
+    "sha256": "712b28fb609851da0efd9aef28863c2189066f6fd6df2a42a6b93c92c56d35fd"
+  },
+  {
+    "id": "fx-ov-hearts-red",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-hearts-red\\0.3.png",
+    "sha256": "9772ec773ab59258832e5a4860274224fd7c875d25267c77abf45bd87a1502e7"
+  },
+  {
+    "id": "fx-ov-hearts-red",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-hearts-red\\0.9.png",
+    "sha256": "8390bbf34ddf441398c38e10863fc68454698324eb8dc25683d31a2528383bfe"
+  },
+  {
+    "id": "fx-ov-hearts-red",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-hearts-red\\1.5.png",
+    "sha256": "2a010e53091c6e7fb0f05a09bc97c4305beee5e412b67252fb87ccf18cd2e5c6"
+  },
+  {
+    "id": "fx-ov-hearts-red",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-hearts-red\\2.1.png",
+    "sha256": "49cf43f7dcdfc082d4d05af091a3f29f175eed723f994a118d4d8957882a7797"
+  },
+  {
+    "id": "fx-ov-fog-pink",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-pink\\0.3.png",
+    "sha256": "abc9019b248e3eaba4aaac444fcf4f438644f57568441ad891c06aebf0459769"
+  },
+  {
+    "id": "fx-ov-fog-pink",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-pink\\0.9.png",
+    "sha256": "ab7c986da1cf24a85800291b55cc2939c4ac8d790b42cd3d09ad75e939569851"
+  },
+  {
+    "id": "fx-ov-fog-pink",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-pink\\1.5.png",
+    "sha256": "a24d47be7d8e9608c5bdc514d224923f85d83e35d9db3e5eb472c03e0852378a"
+  },
+  {
+    "id": "fx-ov-fog-pink",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-pink\\2.1.png",
+    "sha256": "c2614b0d1c5340019c2f1266039cd377ee8cd0b46838a76e3600a0ff758387d1"
+  },
+  {
+    "id": "fx-ov-fog-blue",
+    "time": 0.3,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-blue\\0.3.png",
+    "sha256": "a0a8c55dd0f67d8a41b45375380612b266f952f3781d93b649125e53d929be2e"
+  },
+  {
+    "id": "fx-ov-fog-blue",
+    "time": 0.9,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-blue\\0.9.png",
+    "sha256": "a3cfc42d2047cb4f2ca1c2aee6cf47cb8cc14189e332a2465870d174bcbd916f"
+  },
+  {
+    "id": "fx-ov-fog-blue",
+    "time": 1.5,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-blue\\1.5.png",
+    "sha256": "63429fc7b1cec8505f245852c2b17b1b61493fff18f277629467f17de3109a19"
+  },
+  {
+    "id": "fx-ov-fog-blue",
+    "time": 2.1,
+    "heatmap": "D:\\Pinwheel-Windows\\evidence\\p2\\structural-heatmaps\\fx-ov-fog-blue\\2.1.png",
+    "sha256": "14a58bdfb123341558b34bb7e9ac568a25aa56a5af291e05007e7f9bb2690a6b"
+  }
+]

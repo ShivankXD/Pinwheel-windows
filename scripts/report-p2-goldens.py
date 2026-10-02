@@ -9,7 +9,7 @@ import shutil
 import sys
 
 root = Path(__file__).resolve().parents[1]
-source = Path(sys.argv[1]) if len(sys.argv) > 1 else root / 'evidence/p1/runtime/golden-status.json'
+source = Path(sys.argv[1]) if len(sys.argv) > 1 else root / 'evidence/p1/runtime/golden-audit-status.json'
 report = json.loads(source.read_text(encoding='utf-8-sig'))
 output = root / 'evidence/p2'
 output.mkdir(parents=True, exist_ok=True)
@@ -56,7 +56,11 @@ for rank, (row, case) in enumerate(ranked, 1):
     sections.append(f'<section><h2>{rank}. {html.escape(id_)} at {t} s</h2><p>RGBA MAE8/p99: {metrics}</p><div class="images">' +
         ''.join(f'<figure><img src="worst-20/{p.name}" width="192" height="240"><figcaption>{kind}</figcaption></figure>' for kind, p in paths.items()) + '</div></section>')
 
-text = f'''# P2 strict golden report
+text = f'''# P2 strict pixel audit
+
+This preserves the original per-pixel results for every spec. The owner's later
+noise-class amendment uses structural review for noise-driven specs; see
+STRUCTURAL-REPORT.md. Deterministic specs retain the original strict limits.
 
 {report['goldenPassed']} passing frames, {report['goldenFailed']} failing frames, {report['goldenMissing']} missing frames.
 {sum(row['status'] == 'PASS' for row, _ in specs)} passing specs out of {len(specs)} (all four times must pass).

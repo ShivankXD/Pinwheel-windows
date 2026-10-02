@@ -61,3 +61,13 @@ individual time/channel. `GOLDEN-REPORT.md` and `worst-20.html` show the 20 wors
 distinct specs with copied mobile/desktop/heatmap triplets. No personal gallery
 thumbnails are copied. The reference manifest records 1715 read-only input
 hashes, verified unchanged at handoff. Device-library JSONs were not supplied.
+
+Owner noise amendment: `goldenCheck` now uses strict MAE/p99 for 229 deterministic
+specs and Gaussian/histogram/mean-luminance review for 193 noise-driven specs.
+The proposed structural limits are marked PROVISIONAL_OWNER_REVIEW. The current
+owner-policy gate fails: 69 deterministic and 86 structural frames fail.
+`strictGoldenCheck` keeps the original all-spec pixel audit (277 failures).
+Run `python scripts/report-p2-structure.py` for the full noise-spec list, metrics
+and worst 20 structural heatmaps. `goldenAudit` writes strict measurements without
+asserting the old all-spec gate; the owner-policy check applies the new class gate.
+No frame, mobile reference or shader is edited by these comparisons.
