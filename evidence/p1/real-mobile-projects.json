@@ -1,0 +1,46 @@
+{
+  "referenceRoot": "D:\\Pinwheel-Windows-refs",
+  "mobileCommit": "2a417fd29ef43a8792eb4d58cbe4d102327b11c9",
+  "projectsPassed": 4,
+  "projectsFailed": 0,
+  "projects": [
+    {
+      "source": "D:\\Pinwheel-Windows-refs\\projects\\photo-project.json",
+      "id": "356c00eb-80ee-45c7-917e-ff4e46320294",
+      "status": "PASS"
+    },
+    {
+      "source": "D:\\Pinwheel-Windows-refs\\projects\\photo-project.pinwheel",
+      "id": "356c00eb-80ee-45c7-917e-ff4e46320294",
+      "status": "PASS"
+    },
+    {
+      "source": "D:\\Pinwheel-Windows-refs\\projects\\video-project.json",
+      "id": "c05134e8-a6ed-4d71-9fb2-8ed1b2de11a1",
+      "status": "PASS"
+    },
+    {
+      "source": "D:\\Pinwheel-Windows-refs\\projects\\video-project.pinwheel",
+      "id": "c05134e8-a6ed-4d71-9fb2-8ed1b2de11a1",
+      "status": "PASS"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "projects/photo-project.json",
+      "sha256": "b97bb5dae09e6e94495a435fa679b74650ca9e5d9d56011e49aa03ee008c3633"
+    },
+    {
+      "path": "projects/photo-project.pinwheel",
+      "sha256": "c816295b5ef21207efdb8fbdab09e0e583726505037231129d4a823a62d6ddd4"
+    },
+    {
+      "path": "projects/video-project.json",
+      "sha256": "2ba3141fdca1cb96e643143f85a5f721e511e4bfd065e07cec0fc862e06f3f8c"
+    },
+    {
+      "path": "projects/video-project.pinwheel",
+      "sha256": "44c299d5669b74b8e7f0687ccf2c3d56340bb2b446e314c330efa88071e69737"
+    }
+  ]
+}
