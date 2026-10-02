@@ -1,0 +1,12 @@
+{
+  "source": "https://api.github.com/repos/ShivankXD/Pinwheel-windows/contributors",
+  "verifiedRuntimeCommit": "3654d8264cb505086cbba03a02d1d77f9ccef468",
+  "contributors": [
+    {
+      "login": "ShivankXD",
+      "type": "User",
+      "contributions": 18
+    }
+  ],
+  "ownerOnly": true
+}

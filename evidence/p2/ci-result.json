@@ -1,8 +1,9 @@
 {
-  "runtimeCommit": "2e233ee59a95bce70726f8c5483277720cc123ed",
+  "runtimeCommit": "3654d8264cb505086cbba03a02d1d77f9ccef468",
   "status": "completed",
   "conclusion": "success",
-  "url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36995074569",
+  "url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36999180247",
+  "scope": "Windows/JDK 17 clean runtime checks, frames, numeric probes, source audits, debug guards and window smoke. Owner mobile golden acceptance runs locally.",
   "checks": [
     {
       "name": "Set up job",
@@ -35,7 +36,7 @@
       "conclusion": "success"
     },
     {
-      "name": "Compile catalog shaders and render all P2 frames",
+      "name": "Compile catalog shaders and render P2 frames and numeric probes",
       "status": "completed",
       "conclusion": "success"
     },
@@ -78,6 +79,14 @@
       "name": "Complete job",
       "status": "completed",
       "conclusion": "success"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 11222674638,
+      "name": "p2-evidence",
+      "size_in_bytes": 109598720,
+      "expired": false
     }
   ]
 }

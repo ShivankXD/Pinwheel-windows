@@ -118,6 +118,11 @@ At 0.3 s this field has the same 43,112 pixels. The mobile PNG field is
 remaining 9-level blue error to raw RGBA8 readback, independent of input decoding,
 SWAY or effect geometry. It still fails strict MAE/p99 at three times.
 
+These are measured portability differences, not proof of a driver conformance
+violation. [OpenGL ES 2.0 sections 2.1.2 and 4.1.7](https://registry.khronos.org/OpenGL/specs/es/2.0/es_full_spec_2.0.pdf)
+describe fixed-point conversion and implementation-dependent dithering. The
+Windows/mobile compatibility bug remains open under the owner's strict gate.
+
 The unchanged mobile vertex shader and quad also show pixel-cell floor
 sensitivity. For grid [51.2f,64f], NVIDIA disagrees with an exact rational
 pixel-center calculation at 3,120 pixels in columns 7,22,37,...,187. WARP
@@ -138,3 +143,33 @@ uncompiled and unexecuted on Android, stored only under `tools/mobile` here.
 The 22 failing deterministic specs and every time/channel measurement remain
 in the current CSV reports. No deterministic failure has been reclassified
 as noise to remove it from the strict gate.
+
+## Current deterministic failures
+
+Every listed spec keeps strict per-channel MAE8 <= 2 and p99 <= 8. Maxima
+are taken independently over RGBA and all four times. The [full channel CSV](../evidence/p2/deterministic-failures.csv) retains each channel.
+
+| Spec | Failing times (s) | Max MAE8 | Max p99 |
+|---|---|---:|---:|
+| fx-ov-tr-diamond | 0.3,0.9,2.1 | 8.467969 | 9 |
+| fx-cmyk-print | 0.3,0.9,1.5,2.1 | 2.112782 | 49 |
+| fx-mosaic-pulse | 2.1 | 1.750543 | 49 |
+| fx-pb-pixel-creation | 1.5 | 1.547808 | 49 |
+| fx-carousel | 0.3,0.9,1.5,2.1 | 0.961523 | 12 |
+| fx-cc-dance-flash | 0.3,0.9,1.5,2.1 | 0.591385 | 9 |
+| fx-tr-black-fade | 0.3,2.1 | 0.536176 | 9 |
+| fx-tr-ripple | 1.5,2.1 | 0.487695 | 9 |
+| fx-split-3 | 0.3,0.9,1.5,2.1 | 0.471332 | 9 |
+| fx-chroma-wave | 0.3,0.9,1.5,2.1 | 0.463108 | 9 |
+| fx-tr-blink | 0.3 | 0.448937 | 9 |
+| fx-tr-cutout-scan | 2.1 | 0.446636 | 9 |
+| fx-tr-kaleido | 0.3,0.9 | 0.445399 | 9 |
+| fx-tr-panel-clasp | 0.3 | 0.445052 | 9 |
+| fx-tr-clock | 0.3 | 0.443533 | 9 |
+| fx-ne-edges | 0.3,0.9,1.5,2.1 | 0.431163 | 9 |
+| fx-tr-heart | 2.1 | 0.426866 | 9 |
+| fx-tr-whip-left | 0.3,2.1 | 0.415755 | 9 |
+| fx-tr-whip-down | 0.3 | 0.366884 | 9 |
+| fx-cc-cut-twist | 0.9 | 0.314366 | 9 |
+| fx-tr-slide-left | 2.1 | 0.291189 | 9 |
+| fx-tr-white-flash | 0.3 | 0.267144 | 9 |

@@ -65,11 +65,11 @@ G 96.124/157, B 95.707/157, A 0/0 (MAE8/p99).
 - [All 422 per-spec metrics](../evidence/p2/per-spec-metrics.csv): each channel's maximum MAE and p99 over four times, plus spec status.
 - [All 1688 per-time metrics](../evidence/p2/golden-metrics.csv): exact channel metrics at every required time.
 - [Worst 20 report](../evidence/p2/GOLDEN-REPORT.md), [mobile/desktop/heatmap gallery](../evidence/p2/worst-20.html) and [contact sheet](../evidence/p2/worst-20-contact-sheet.png).
-- [Parity bug investigation](P2-PARITY-BUGS.md): measured diagnostics and unresolved causes.
+- [Parity bug investigation](P2-PARITY-BUGS.md): measured diagnostics, all 22 remaining deterministic specs and unresolved causes. [Deterministic per-channel failures](../evidence/p2/deterministic-failures.csv) retain every channel maximum.
 
 Runtime commit `76337f3` passed hosted Windows CI:
 [run 36989939920](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36989939920).
-Follow-up lifetime/audit commit `f1e7425` also passed hosted CI [run 36992291621](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36992291621). Noise-review runtime `2e233ee` passed [run 36995074569](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36995074569), including clean checks, shader/frame generation, source-based class verification and actual-window smoke. Details are in `evidence/p2/ci-result.json`. Hosted CI does not have the owner reference folder; local golden acceptance still fails.
+Follow-up lifetime/audit commit `f1e7425` also passed hosted CI [run 36992291621](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36992291621). Noise-review runtime `2e233ee` passed [run 36995074569](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36995074569), including clean checks, shader/frame generation, source-based class verification and actual-window smoke. Details are in `evidence/p2/ci-result.json`. Hosted CI does not have the owner reference folder; local golden acceptance still fails. RGB565 runtime commit `3654d82` passed [run 36999180247](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36999180247), including the new numeric probes and all runtime/source/variant/smoke checks. The current CI evidence names that exact runtime commit.
 
 The current owner-policy goldenCheck uses 193 source-classified noise specs and
 229 deterministic specs. Unused noise locals in shared preludes are excluded.

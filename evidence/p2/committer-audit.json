@@ -1,6 +1,6 @@
 {
-  "auditedThrough": "2e233ee59a95bce70726f8c5483277720cc123ed",
-  "commits": 16,
+  "auditedThrough": "3654d8264cb505086cbba03a02d1d77f9ccef468",
+  "commits": 18,
   "authors": [
     {
       "name": "ShivankXD",
@@ -13,6 +13,6 @@
       "email": "shivankprabhudessai@gmail.com"
     }
   ],
-  "emDashMessages": 0,
-  "attributionTrailers": 0
+  "forbiddenTrailers": 0,
+  "emDashesInMessages": 0
 }
