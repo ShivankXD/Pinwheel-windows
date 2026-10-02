@@ -133,3 +133,26 @@ The owner committed the reference test while P2 was running. Mobile HEAD moved
 from ae5ed52 to 2a417fd; status returned to exactly `?? output/`. These are
 owner changes, not Windows-build writes. References and mobile files stayed
 read-only throughout. Device-library project inputs are not present yet.
+
+## P1 closeout with real mobile inputs
+
+The owner supplied README.txt, all 1688 golden PNGs, four project inputs and
+21 screenshots from Android 0.31.0 on a Xiaomi phone. Mobile reference test
+commit: 2a417fd29ef43a8792eb4d58cbe4d102327b11c9. Both raw v10 JSONs retain
+the phone's file URIs through a normalized codec round trip. Both .pinwheel
+packages import into temporary Windows libraries, remap media and round trip.
+
+```text
+Real mobile projects: 4 passed, 0 failed
+BUILD SUCCESSFUL in 17s
+```
+
+Full evidence: `evidence/p1/real-mobile-projects.json` (input hashes and case
+results) and `real-mobile-project-check.txt` (full output). A harness bug made
+project checks inherit unrelated golden failures; task acceptance is now scoped
+to its own mode. P2 goldens remain strict and are reported separately.
+
+The owner committed the reference test while P2 was running. Mobile HEAD moved
+from ae5ed52 to 2a417fd; status returned to exactly `?? output/`. These are
+owner changes, not Windows-build writes. References and mobile files stayed
+read-only throughout. Device-library project inputs are not present yet.

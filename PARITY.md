@@ -1,6 +1,6 @@
 # Parity checklist
 
-P0 is owner-approved. P1 core implementation passes local checks; acceptance awaits real mobile projects. Mobile editing and visual parity are incomplete. Windows target: 10 22H2+ and 11, x64.
+P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/package inputs. Mobile editing and visual parity are incomplete. Windows target: 10 22H2+ and 11, x64.
 
 ✅ means the stated check has evidence; ⚠️ means partial implementation or missing comparison evidence; ❌ means unimplemented. P1 contract checks below have evidence; full features remain partial until rendering/UI and mobile comparisons pass. Golden acceptance requires sRGB per-channel mean absolute error <= 2/255 and 99th percentile <= 8/255 at 0.3, 0.9, 1.5 and 2.1 s.
 
@@ -23,15 +23,15 @@ P0 is owner-approved. P1 core implementation passes local checks; acceptance awa
 
 | Check | Status | Evidence |
 |---|---|---|
-| Models, codecs, atomic stores, synthetic v1..10 normalization | ✅ | `StorageContractTest`, `evidence/p1/clean-build-output.txt`; real mobile packages remain pending |
+| Models, codecs, atomic stores, synthetic v1..10 normalization | ✅ | `StorageContractTest`, `evidence/p1/clean-build-output.txt`; four real mobile inputs also pass |
 | All 44 mobile JVM test classes ported | ✅ | 219 total desktop tests, no failures/skips; `evidence/p1/test-summary.txt`, source/test manifest |
 | Command JSON, autosave failures, persisted undo, one-step drafts | ✅ | `EditCommandCodecTest`, `ProjectSessionTest` |
 | Free/Plus core/export limits and account gate | ✅ | `ExportPolicyTest`, Free bypass tests; production encoder is P5 |
 | Debug toggle excluded from release and shared with core policy | ✅ | `verifyBuildVariant`, `debugCheck`, `evidence/p1/debug-build-output.txt`, debug screenshot |
 | Catalog IDs/defaults/assets and GLSL source preservation | ✅ | `CatalogContractTest`, `scripts/verify-p1-port.py`, 404 provenance hashes |
 | Golden metrics, dimensions, per-channel p99 and strict missing gates | ✅ | `GoldenImagesTest`, expected-missing logs; no rendered parity claim |
-| Real mobile project round trips | ⚠️ | Input absent; `evidence/p1/reference-status.json`, strict gate fails |
-| Mobile effect pixels and screenshots | ⚠️ | 1688 cases missing; P2 runtime and owner references pending |
+| Real mobile project round trips | ✅ | 4 passed, 0 failed; `evidence/p1/real-mobile-projects.json`, `real-mobile-project-check.txt`; device-library projects not yet supplied |
+| Mobile effect pixels and screenshots | ⚠️ | All 1688 PNGs and 21 screenshots supplied; first P2 comparison: 1411 passed, 277 failed, 0 missing |
 | Hosted Windows/JDK 17 P1 build and smoke | ✅ | [Run 36981850747](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36981850747), runtime ca92d2b, `evidence/p1/ci-result.json` |
 | Mobile repository unchanged | ✅ | `evidence/p1/mobile-status.txt`: exactly `?? output/` |
 
@@ -70,7 +70,7 @@ P0 is owner-approved. P1 core implementation passes local checks; acceptance awa
 | Free plan | All effects blocked with Plus dialog; enforced 1080p/30 fps/8 Mbps, ending always on | ⚠️ | Core rejects effect injection; policy caps 1080p/30fps/8Mbps and forces ending; UI/encoder P4/P5 |
 | Plus plan | 4K/60 fps/100 Mbps; optional ending off by default | ⚠️ | Policy allows 4K/60fps/100Mbps and optional ending; debug provider tested; backend P7 |
 | Subscription offers | Mobile monthly/yearly plans and first-month offer; desktop entitlement policy to be chosen | ⚠️ | Owner chose Google-account shared phone/PC Plus, later backend; no production billing yet |
-| Project interoperability | Version 10, read 1-10, same keys/defaults/clamps/IDs; package media remapping | ⚠️ | v10 codecs, relative-media packages and synthetic round trips pass; real mobile inputs pending |
+| Project interoperability | Version 10, read 1-10, same keys/defaults/clamps/IDs; package media remapping | ⚠️ | v10 codecs, relative-media packages and synthetic round trips pass; four real mobile JSON/package inputs pass; device-library inputs pending |
 | Desktop affordances | Shortcuts, wheel zoom, file drop, context menus, DPI, saved window position, fullscreen/Esc | ❌ | P4/P7; no editor affordance claim |
 | Platform distribution | Storage/settings, crash reports, MSIX/MSI and update channel | ❌ | P7; paths defined but services/installers absent |
 
