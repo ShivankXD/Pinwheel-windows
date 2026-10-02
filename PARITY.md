@@ -47,7 +47,7 @@ P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/
 | Debug Effect Lab and release exclusion | ✅ | `evidence/p2/effect-lab.png`, actual-window smoke and jar variant guard |
 | Mobile effect pixels | ⚠️ | Strict audit: 1411 pass / 277 fail / 0 missing. Owner class policy: 847 deterministic passes / 69 failures, 686 noise provisional passes / 86 failures. `evidence/p2/STRUCTURAL-REPORT.md`, both metric CSV sets and worst 20 galleries; acceptance remains open |
 | P2 read-only source/reference provenance | ✅ | 404 P1 hashes, 7 P2 mobile source hashes, 8 legacy/layer shader literals, 1715 reference input hashes unchanged |
-| Hosted Windows/JDK 17 runtime build | ✅ | [Run 36989939920](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36989939920), runtime 76337f3; follow-up CI in `evidence/p2/ci-result.json` |
+| Hosted Windows/JDK 17 runtime build | ✅ | [Run 36995074569](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36995074569), runtime 2e233ee; clean checks, frame generation, class verification and smoke; `evidence/p2/ci-result.json`; mobile goldens are local only |
 
 ## Feature inventory from brief section 1.1
 

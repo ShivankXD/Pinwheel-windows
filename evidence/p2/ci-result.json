@@ -1,0 +1,83 @@
+{
+  "runtimeCommit": "2e233ee59a95bce70726f8c5483277720cc123ed",
+  "status": "completed",
+  "conclusion": "success",
+  "url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36995074569",
+  "checks": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run actions/setup-java@v4",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Download and verify native dependencies",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Clean build and checks",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Verify pinned desktop source and asset hashes",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Compile catalog shaders and render all P2 frames",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Verify noise classes from unchanged active shaders",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Verify debug entitlement controls",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Launch real Compose window and capture evidence",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Verify app failure exits with a nonzero code",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run actions/upload-artifact@v4",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Post Run actions/setup-java@v4",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Post Run actions/checkout@v4",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
+}

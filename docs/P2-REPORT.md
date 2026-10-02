@@ -69,7 +69,7 @@ G 96.400/158, B 95.838/157, A 0/0 (MAE8/p99).
 
 Runtime commit `76337f3` passed hosted Windows CI:
 [run 36989939920](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36989939920).
-Follow-up lifetime/audit commit `f1e7425` also passed hosted CI [run 36992291621](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36992291621). The noise-review follow-up receives a separate CI run in `evidence/p2/ci-result.json` when available.
+Follow-up lifetime/audit commit `f1e7425` also passed hosted CI [run 36992291621](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36992291621). Noise-review runtime `2e233ee` passed [run 36995074569](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36995074569), including clean checks, shader/frame generation, source-based class verification and actual-window smoke. Details are in `evidence/p2/ci-result.json`. Hosted CI does not have the owner reference folder; local golden acceptance still fails.
 
 The current owner-policy goldenCheck uses 193 source-classified noise specs and
 229 deterministic specs. Unused noise locals in shared preludes are excluded.
