@@ -50,7 +50,7 @@ P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/
 | Debug Effect Lab and release exclusion | ✅ | `evidence/p2/effect-lab.png`, actual-window smoke and jar variant guard |
 | Mobile effect pixels | ⚠️ | Strict audit: 1473 pass / 215 fail / 0 missing. Owner class policy: 898 deterministic passes / 18 failures, 688 noise provisional passes / 84 failures. `evidence/p2/STRUCTURAL-REPORT.md`, both metric CSV sets and worst 20 galleries; acceptance remains open |
 | P2 read-only source/reference provenance | ✅ | 404 P1 hashes, 7 P2 mobile source hashes, 8 legacy/layer shader literals, 1715 reference input hashes unchanged |
-| Hosted Windows/JDK 17 runtime build | ✅ | [Run 37004350849](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37004350849), runtime a295510; clean checks, frame generation, storage/dither probes, class verification and smoke; `evidence/p2/ci-result.json`; mobile goldens and experimental float comparisons are local only |
+| Hosted Windows/JDK 17 runtime build | ✅ | [Run 37011571663](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37011571663), runtime 614e447; clean checks, frame generation, storage/dither probes, class verification and smoke; `evidence/p2/ci-result.json`; mobile goldens and experimental float comparisons are local only |
 
 ## Feature inventory from brief section 1.1
 
@@ -93,7 +93,7 @@ P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/
 
 ## Catalog item groups
 
-All groups below have ported IDs, defaults and assets verified by CatalogContractTest and the provenance audit. All 422 shaders compile and draw; 336 specs pass every golden time, while 86 specs fail. Full visual acceptance remains open in P2. Active overlays number 80, with 19 legacy IDs retained; the brief's 90 is stale. Trending categories contain curated subsets, not additional unique catalog IDs.
+All groups below have ported IDs, defaults and assets verified by CatalogContractTest and the provenance audit. All 422 shaders compile and draw; 354 specs pass every strict golden time, while 68 specs fail. The owner class policy separately has seven failing deterministic specs and 33 failing noise specs. Full visual acceptance remains open in P2. Active overlays number 80, with 19 legacy IDs retained; the brief's 90 is stale. Trending categories contain curated subsets, not additional unique catalog IDs.
 
 | Catalog group | Mobile behaviour | Desktop status | Evidence or remaining work |
 |---|---|---|---|

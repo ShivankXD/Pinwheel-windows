@@ -82,8 +82,9 @@ heatmaps are under `diagnostics/numeric`. Earlier RGBA32F/RGBA16F conversion
 experiments are retained under `diagnostics/framebuffer`; they used the
 pre-matrix baseline. Neither format is adopted. Production stays RGBA8.
 
-The preceding runtime a295510 passed hosted Windows/JDK 17 CI [run 37004350849](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37004350849).
-CI checks runtime, shader/frame generation, numeric probes, source/class
+Sample matrix runtime 614e447 passed hosted Windows/JDK 17 CI [run 37011571663](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37011571663).
+All 15 CI steps succeeded, including the two new sample regressions. CI checks
+runtime, shader/frame generation, numeric probes, source/class
 verification, debug guard and actual-window smoke. Owner goldens are local
 inputs; hosted CI does not certify pixel acceptance. `ci-result.json` names
 the exact tested runtime commit. Historical failures and repaired diagnostics
