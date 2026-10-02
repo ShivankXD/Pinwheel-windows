@@ -18,6 +18,9 @@ jobs:
       - name: Launch real Compose window and capture evidence
         shell: pwsh
         run: ./scripts/build.ps1 -Tasks ':pinwheel-app:p0Smoke'
+      - name: Verify app failure exits with a nonzero code
+        shell: pwsh
+        run: ./scripts/check-smoke-failure.ps1
       - uses: actions/upload-artifact@v4
         if: always()
         with:

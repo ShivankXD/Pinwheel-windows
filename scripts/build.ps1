@@ -9,3 +9,4 @@ try {
     & (Join-Path $taskRoot '.downloads\gradle-8.14.5\bin\gradle.bat') @taskArgs '--console' 'plain'
     if ($LASTEXITCODE -ne 0) { throw "Gradle exited with code $LASTEXITCODE" }
 } finally { Pop-Location }
+if ($Smoke) { & (Join-Path $PSScriptRoot 'check-smoke-failure.ps1') }

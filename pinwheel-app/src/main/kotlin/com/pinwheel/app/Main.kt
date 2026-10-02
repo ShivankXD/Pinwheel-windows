@@ -49,7 +49,8 @@ fun main(args: Array<String>) {
     val smoke = args.firstOrNull() == "--smoke"
     val evidence = if (smoke) Path.of(args[1]) else null
     var smokeFailure: Throwable? = null
-    application {
+    // Let main return so smoke failures are rethrown with a nonzero process exit.
+    application(exitProcessOnExit = false) {
         val state = rememberWindowState(width = 1100.dp, height = 760.dp)
         var intro by remember { mutableStateOf(true) }
         var probe by remember { mutableStateOf<Probe?>(null) }
@@ -86,28 +87,28 @@ fun main(args: Array<String>) {
             }
             if (smoke) LaunchedEffect(Unit) {
                 try {
-                Files.createDirectories(evidence!!)
-                withFrameNanos { }; withFrameNanos { }; delay(1_250)
-                capture(window, evidence.resolve("desktop-intro.png"))
-                withTimeout(30_000) { while (intro || probe == null) delay(50) }
-                withFrameNanos { }; withFrameNanos { }; delay(700)
-                check(window.isShowing && window.title == "Pinwheel")
-                capture(window, evidence.resolve("desktop-workspace.png"))
-                licences = true
-                withFrameNanos { }; withFrameNanos { }; delay(500)
-                capture(window, evidence.resolve("desktop-licences.png"), dimmed = true)
-                val ready = probe!!
-                saveFrame(ready.triangle.frame, evidence.resolve("angle-triangle.png"))
-                saveFrame(ready.demo, evidence.resolve("demo-frame.png"))
-                val summary = "PASS Compose window opened and intro completed\n" +
-                    "PASS ${ready.triangle.renderer}\nPASS ${ready.triangle.version}\n" +
-                    "PASS FFmpeg decoded demo.mp4 at 1.000000 s: ${ready.demo.width}x${ready.demo.height} RGBA\n" +
-                    "PASS ${ready.ffmpeg}\nPASS licences dialog opened with copied notices\n" +
-                    "PASS screenshots captured directly from the app's Skia layer\n"
-                Files.writeString(evidence.resolve("smoke-summary.txt"), summary)
-                println(summary)
+                    Files.createDirectories(evidence!!)
+                    withFrameNanos { }; withFrameNanos { }; delay(1_250)
+                    capture(window, evidence.resolve("desktop-intro.png"))
+                    withTimeout(30_000) { while (intro || probe == null) delay(50) }
+                    withFrameNanos { }; withFrameNanos { }; delay(700)
+                    check(window.isShowing && window.title == "Pinwheel")
+                    capture(window, evidence.resolve("desktop-workspace.png"))
+                    licences = true
+                    withFrameNanos { }; withFrameNanos { }; delay(500)
+                    capture(window, evidence.resolve("desktop-licences.png"), dimmed = true)
+                    val ready = probe!!
+                    saveFrame(ready.triangle.frame, evidence.resolve("angle-triangle.png"))
+                    saveFrame(ready.demo, evidence.resolve("demo-frame.png"))
+                    val summary = "PASS Compose window opened and intro completed\n" +
+                        "PASS ${ready.triangle.renderer}\nPASS ${ready.triangle.version}\n" +
+                        "PASS FFmpeg decoded demo.mp4 at 1.000000 s: ${ready.demo.width}x${ready.demo.height} RGBA\n" +
+                        "PASS ${ready.ffmpeg}\nPASS licences dialog opened with copied notices\n" +
+                        "PASS screenshots captured directly from the app's Skia layer\n"
+                    Files.writeString(evidence.resolve("smoke-summary.txt"), summary)
+                    println(summary)
                 } catch (error: Throwable) {
-                    if (error !is CancellationException) {
+                    if (error !is CancellationException || error is TimeoutCancellationException) {
                         smokeFailure = error
                         System.err.println(error.stackTraceToString())
                     }
