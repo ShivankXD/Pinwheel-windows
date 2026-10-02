@@ -12,9 +12,11 @@ import javax.imageio.ImageIO
 fun main(args: Array<String>) {
     val root = Path.of(args[0]); val refs = Path.of(args[1]); val mode = args.getOrElse(2) { "inventory" }
     val output = root.resolve("evidence/p1/runtime"); Files.createDirectories(output)
+    val compareGoldens = mode == "golden" || mode == "inventory"
+    val compareProjects = mode != "golden"
     val specs = VideoFxCatalog.effects + VideoFxCatalog.transitions + VideoFxCatalog.overlays + VideoFxCatalog.legacyOverlays
     val cases = JSONArray(); var goldenPassed = 0; var goldenFailed = 0; var missing = 0
-    for (spec in specs) for (t in VideoPreviewRecipe.goldenTimes) {
+    if (compareGoldens) for (spec in specs) for (t in VideoPreviewRecipe.goldenTimes) {
         val relative = "golden/${spec.id}/$t.png"; val reference = refs.resolve(relative)
         val actual = root.resolve("evidence/p2/frames/${spec.id}/$t.png")
         val item = JSONObject().put("id", spec.id).put("time", t).put("reference", reference.toString()).put("actual", actual.toString())
@@ -36,7 +38,7 @@ fun main(args: Array<String>) {
     }
     val projects = JSONArray(); var projectsPassed = 0; var projectsFailed = 0
     val projectFolder = refs.resolve("projects")
-    val files = if (Files.isDirectory(projectFolder)) Files.walk(projectFolder).use { paths -> paths.filter { Files.isRegularFile(it) && (it.toString().endsWith(".json") || it.toString().endsWith(".pinwheel")) }.sorted().toList() } else emptyList()
+    val files = if (compareProjects && Files.isDirectory(projectFolder)) Files.walk(projectFolder).use { paths -> paths.filter { Files.isRegularFile(it) && (it.toString().endsWith(".json") || it.toString().endsWith(".pinwheel")) }.sorted().toList() } else emptyList()
     for ((index, file) in files.withIndex()) {
         val item = JSONObject().put("source", file.toString())
         try {
@@ -50,18 +52,22 @@ fun main(args: Array<String>) {
         } catch (failure: Exception) { projectsFailed++; item.put("status", "FAIL").put("error", failure.stackTraceToString()) }
         projects.put(item)
     }
-    val report = JSONObject().put("referenceRoot", refs.toString()).put("referenceRootPresent", Files.isDirectory(refs))
+    val report = JSONObject().put("mode", mode).put("referenceRoot", refs.toString()).put("referenceRootPresent", Files.isDirectory(refs))
         .put("effects", VideoFxCatalog.effects.size).put("transitions", VideoFxCatalog.transitions.size).put("overlays", VideoFxCatalog.overlays.size + VideoFxCatalog.legacyOverlays.size)
         .put("activeOverlays", VideoFxCatalog.overlays.size).put("legacyOverlays", VideoFxCatalog.legacyOverlays.size)
         .put("goldenPassed", goldenPassed).put("goldenFailed", goldenFailed).put("goldenMissing", missing)
-        .put("projectsPassed", projectsPassed).put("projectsFailed", projectsFailed).put("projectsStatus", if (files.isEmpty()) "MISSING" else if (projectsFailed > 0) "FAIL" else "PASS")
+        .put("projectsPassed", projectsPassed).put("projectsFailed", projectsFailed).put("projectsStatus", if (!compareProjects) "NOT_CHECKED" else if (files.isEmpty()) "MISSING" else if (projectsFailed > 0) "FAIL" else "PASS")
         .put("goldenCases", cases).put("projects", projects)
     Files.writeString(output.resolve("reference-status.json"), report.toString(2))
-    println("Golden references: $goldenPassed passed, $goldenFailed failed, $missing missing")
-    println("Real mobile projects: $projectsPassed passed, $projectsFailed failed, ${if (files.isEmpty()) "MISSING" else "provided"}")
+    Files.writeString(output.resolve("$mode-status.json"), report.toString(2))
+    if (compareGoldens) println("Golden references: $goldenPassed passed, $goldenFailed failed, $missing missing")
+    if (compareProjects) println("Real mobile projects: $projectsPassed passed, $projectsFailed failed, ${if (files.isEmpty()) "MISSING" else "provided"}")
     println("Report: ${output.resolve("reference-status.json")}")
     if (mode == "inventory") check(projectsFailed == 0 && goldenFailed == 0) { "Provided references failed; inspect reference-status.json" }
     if (mode == "project-inventory") check(projectsFailed == 0) { "Provided mobile projects failed; inspect reference-status.json" }
-    if (mode == "golden") check(missing == 0 && goldenFailed == 0) { "Golden check incomplete: provide mobile PNGs in $refs/golden and P2 frames in evidence/p2/frames" }
+    if (mode == "golden") {
+        check(goldenFailed == 0) { "$goldenFailed provided golden comparisons failed; inspect golden-status.json and its heatmaps. Fixed limits: per-channel MAE8 <= 2, p99 <= 8." }
+        check(missing == 0) { "$missing golden comparisons missing: provide mobile PNGs in $refs/golden and P2 frames in evidence/p2/frames" }
+    }
     if (mode == "projects") check(files.isNotEmpty() && projectsFailed == 0) { "Real mobile package check incomplete: provide projects in $projectFolder" }
 }

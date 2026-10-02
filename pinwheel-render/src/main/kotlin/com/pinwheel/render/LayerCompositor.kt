@@ -2,8 +2,9 @@ package com.pinwheel.render
 
 /** Composites straight-alpha layer FX results over the styled main frame, preserving list order. */
 class LayerCompositor(private val device: AngleDevice, width: Int, height: Int) : AutoCloseable {
-    private val targets = Array(2) { GpuTarget(device, width, height) }
-    private val p = FxProgram("""
+    private val resources = GpuResources()
+    private val targets = Array(2) { resources.own { GpuTarget(device, width, height) } }
+    private val p = resources.own { FxProgram("""
 #ifdef GL_FRAGMENT_PRECISION_HIGH
 precision highp float;
 varying highp vec2 vUv;
@@ -20,7 +21,8 @@ void main() {
   vec3 rgb = layer.rgb * layer.a + base.rgb * base.a * (1.0 - layer.a);
   gl_FragColor = vec4(alpha > 0.0 ? rgb / alpha : vec3(0.0), alpha);
 }
-""")
+""") }
+    init { resources.initialized() }
     fun render(base: GpuTarget, layers: List<GpuTarget>): GpuTarget {
         device.checkThread(); var source = base
         layers.forEachIndexed { i, layer ->
@@ -30,5 +32,5 @@ void main() {
         }
         return source
     }
-    override fun close() { device.checkThread(); targets.forEach { it.close() }; p.close() }
+    override fun close() { device.checkThread(); resources.close() }
 }

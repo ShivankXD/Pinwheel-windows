@@ -6,17 +6,19 @@ import java.nio.file.Path
 
 /** P2 texture stages shared by later P3/P5 callers; no decode, clock or encoding is hidden here. */
 class EffectRuntime(nativeDirectory: Path, val width: Int, val height: Int, project: StudioProject) : AutoCloseable {
-    private val device = AngleDevice(nativeDirectory)
+    private val resources = GpuResources()
+    private val device = resources.own { AngleDevice(nativeDirectory) }
     val renderer get() = device.renderer
     val plan = EffectPlan.from(project)
-    private val upload = GpuTexture(device, width, height)
-    private val legacy = LegacyEffects(device, width, height, plan.legacy)
-    private val main = FxChain(device, width, height, plan.main)
-    private val transitions = FxChain(device, width, height, plan.transitions)
-    private val overlays = FxChain(device, width, height, plan.overlays)
-    private val compositor = LayerCompositor(device, width, height)
-    private val layerUploads = plan.layerEffects.keys.associateWith { val (w, h) = LayerFx.size(width, height); GpuTexture(device, w, h) }
-    private val layers = plan.layerEffects.mapValues { (layer, effects) -> val (w, h) = LayerFx.size(width, height); LayerFx(device, w, h, layer, effects) }
+    private val upload = resources.own { GpuTexture(device, width, height) }
+    private val legacy = resources.own { LegacyEffects(device, width, height, plan.legacy) }
+    private val main = resources.own { FxChain(device, width, height, plan.main) }
+    private val transitions = resources.own { FxChain(device, width, height, plan.transitions) }
+    private val overlays = resources.own { FxChain(device, width, height, plan.overlays) }
+    private val compositor = resources.own { LayerCompositor(device, width, height) }
+    private val layerUploads = plan.layerEffects.keys.associateWith { val (w, h) = LayerFx.size(width, height); resources.own { GpuTexture(device, w, h) } }
+    private val layers = plan.layerEffects.mapValues { (layer, effects) -> val (w, h) = LayerFx.size(width, height); resources.own { LayerFx(device, w, h, layer, effects) } }
+    init { resources.initialized() }
 
     /** Painted layers are straight-alpha, already transformed onto a canvas at LayerFx.size(). */
     fun render(frame: RgbaFrame, presentationTimeUs: Long, paintedLayers: Map<String, RgbaFrame> = emptyMap()): RgbaFrame {
@@ -36,7 +38,6 @@ class EffectRuntime(nativeDirectory: Path, val width: Int, val height: Int, proj
     }
     fun resetHistory() { main.resetHistory(); transitions.resetHistory(); overlays.resetHistory() }
     override fun close() {
-        device.checkThread(); layers.values.forEach { it.close() }; layerUploads.values.forEach { it.close() }; compositor.close()
-        overlays.close(); transitions.close(); main.close(); legacy.close(); upload.close(); device.close()
+        device.checkThread(); resources.close()
     }
 }

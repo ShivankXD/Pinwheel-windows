@@ -49,6 +49,11 @@ void main() {
                 }
             }
             report.getJSONObject(report.length() - 1).put("frames", frames)
+            if (!software) for (sample in 0..20) for (t in VideoPreviewRecipe.goldenTimes) {
+                val spec = VideoFxSpec("fx-diagnostic-copy-$sample", "Neutral copy $sample", "Diagnostic",
+                    "vec4 fx(vec2 uv) { return src(uv); }", "", emptyList(), sample = sample)
+                FrameImages.write(renderer.renderAt(spec, t.toFloat()), output.resolve("neutral/$sample/$t.png"))
+            }
         }
     }
     Files.writeString(output.resolve("math-probe.json"), report.toString(2)); println("P2 math diagnostic: ${output.resolve("math-probe.json")}")

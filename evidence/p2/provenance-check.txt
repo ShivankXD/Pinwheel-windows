@@ -1,0 +1,2 @@
+PASS 404 source, test and asset hashes; all GLSL literals preserved
+PASS 8 unchanged P2 legacy/glow/layer shader literals; 7 pinned mobile runtime source hashes

@@ -52838,38 +52838,18 @@
       "status": "PASS"
     }
   ],
-  "projects": [
-    {
-      "source": "D:\\Pinwheel-Windows-refs\\projects\\photo-project.json",
-      "id": "356c00eb-80ee-45c7-917e-ff4e46320294",
-      "status": "PASS"
-    },
-    {
-      "source": "D:\\Pinwheel-Windows-refs\\projects\\photo-project.pinwheel",
-      "id": "356c00eb-80ee-45c7-917e-ff4e46320294",
-      "status": "PASS"
-    },
-    {
-      "source": "D:\\Pinwheel-Windows-refs\\projects\\video-project.json",
-      "id": "c05134e8-a6ed-4d71-9fb2-8ed1b2de11a1",
-      "status": "PASS"
-    },
-    {
-      "source": "D:\\Pinwheel-Windows-refs\\projects\\video-project.pinwheel",
-      "id": "c05134e8-a6ed-4d71-9fb2-8ed1b2de11a1",
-      "status": "PASS"
-    }
-  ],
-  "projectsPassed": 4,
+  "projects": [],
+  "projectsPassed": 0,
   "referenceRoot": "D:\\Pinwheel-Windows-refs",
   "transitions": 46,
   "projectsFailed": 0,
+  "mode": "golden",
   "effects": 277,
   "overlays": 99,
   "goldenPassed": 1411,
   "legacyOverlays": 19,
   "referenceRootPresent": true,
-  "projectsStatus": "PASS",
+  "projectsStatus": "NOT_CHECKED",
   "goldenFailed": 277,
   "goldenMissing": 0
 }

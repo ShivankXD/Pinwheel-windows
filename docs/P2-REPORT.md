@@ -1,0 +1,111 @@
+# P1 closeout and P2 runtime report
+
+P1 is closed with four passing real mobile inputs. P2 runtime implementation is
+available, but P2 visual acceptance fails: 277 of 1688 frames fail the fixed
+golden limits. P3 has not started. References are from the owner's mobile
+`WindowsReferenceExport`, commit `2a417fd`, as described in the read-only README.
+
+## 1. What was built
+
+| Module | Implementation and location |
+|---|---|
+| pinwheel-core | P1 models, v10 codecs, catalogs, commands, persisted undo and core/export Free/Plus enforcement remain intact. Four owner JSON/package inputs now validate real mobile round trips. |
+| pinwheel-render | `AngleDevice`, `FxProgram`, `FxChain`, `EffectPlan`, `EffectRuntime`, `LegacyEffects`, `LayerFx` and `LayerCompositor`: persistent thread-owned ANGLE/D3D11 context; ordered active effects; ping-pong targets; previous/trail history and seek resets; cut transitions; opacity-scaled library looks; all six legacy kinds; colour/coverage layer effects. |
+| pinwheel-render | `PreviewTileRenderer`: mobile sample crop/resample, SWAY uniforms, history sample offsets, 2.4-second/16-slot loop, 40-spec cache, orientation and RGB565 readback. All 422 unchanged catalog shaders compile. |
+| pinwheel-render/qa | `P2Evidence` writes 1688 frames to `evidence/p2/frames/<id>/<t>.png`. Strict comparison measures every RGBA channel without resizing, alignment or filtering. Independent project/golden modes prevent one check from reporting the other's failures. |
+| pinwheel-app | Debug-only `EffectLab`: searchable catalog, fixed times/loop, parameter controls, mobile/desktop/heatmap panes and per-channel MAE/p99. Release jar guards exclude the Lab and local Plus toggle. |
+| pinwheel-media / platform / photo | Existing P1 boundaries remain. Production decoding, audio, frame evaluation, UI painters, encoding and photo pipeline belong to later phases. The runtime accepts decoded main frames and already-painted layer frames; it does not use subprocess playback. |
+| scripts / CI | Provenance audits, reproducible metrics/heatmap gallery, P2 clean-build/runtime checks, all shader/frame evidence, debug guard and real-window smoke on Windows/JDK 17. CI has no owner reference folder and does not claim mobile golden acceptance. |
+
+Partial GPU construction now cleans up acquired resources. Context disposal
+preserves other live renderers. Legacy effect limits count entries in the
+original mobile effect list, including catalog positions.
+
+## 2. Tests and results
+
+```text
+Desktop unit tests: 230 passed, 0 failures, 0 errors, 0 skipped
+  core 205; platform 2; media 3; render 20
+Catalog shaders: 422 passed, 0 failed
+P2 frames: 1688 rendered, 0 failures
+Real mobile projects: 4 passed, 0 failed, provided
+Golden references: 1411 passed, 277 failed, 0 missing
+Whole specs: 321 passed, 101 failed (all four times must pass)
+PASS 404 source, test and asset hashes; all GLSL literals preserved
+PASS 8 unchanged P2 legacy/glow/layer shader literals; 7 pinned mobile runtime source hashes
+```
+
+The runtime tests cover orientation, inclusive/exclusive timing, effect order,
+history and the exact 250 ms seek boundary, cut windows, overlay intensity,
+orphan target routing, layer coverage/compositing, legacy effects, context
+lifetime/thread ownership, constructor failure recovery, animation and cache
+behaviour. See `evidence/p2/test-summary.json`, `final-clean-build.txt`,
+`final-runtime-checks.txt` and `shader-compile.json`.
+
+The latest strict check deliberately exits nonzero because provided images
+fail. **Full failing output:** `evidence/p2/final-reference-checks.txt`.
+Earlier failures and their repairs remain in `first-gpu-tests.txt`,
+`runtime-and-lab-checks.txt` and `first-mobile-checks.txt`. An initial order-test
+fixture used an inactive burst time; its corrected active-time assertion passes.
+An initial project-mode harness erroneously included golden failures; modes
+now compare independently. Neither repair changed mobile shaders or limits.
+
+MAE8 must be <= 2 and p99 <= 8 in **each RGBA channel**, equivalent to
+2/255 and 8/255 in normalized sRGB error. 175 failing frames exceed MAE;
+another 102 pass MAE but fail p99, including 76 whose maximum p99 is 9.
+None is waived. The worst frame is Scene Cut at 0.9 s: R 94.902/156,
+G 96.400/158, B 95.838/157, A 0/0 (MAE8/p99).
+
+- [All 422 per-spec metrics](../evidence/p2/per-spec-metrics.csv): each channel's maximum MAE and p99 over four times, plus spec status.
+- [All 1688 per-time metrics](../evidence/p2/golden-metrics.csv): exact channel metrics at every required time.
+- [Worst 20 report](../evidence/p2/GOLDEN-REPORT.md), [mobile/desktop/heatmap gallery](../evidence/p2/worst-20.html) and [contact sheet](../evidence/p2/worst-20-contact-sheet.png).
+- [Parity bug investigation](P2-PARITY-BUGS.md): measured diagnostics and unresolved causes.
+
+Runtime commit `76337f3` passed hosted Windows CI:
+[run 36989939920](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36989939920).
+Follow-up lifetime/audit fixes receive a separate CI run recorded in
+`evidence/p2/ci-result.json` when available.
+
+## 3. Screenshots
+
+`evidence/p2/effect-lab.png` is an actual Compose-window capture showing the
+worst Scene Cut mismatch and its failing per-channel metrics.
+`evidence/p2/effect-lab-and-mobile.html` presents that capture next to the
+owner's `11-effects-page.png`. The Lab is a diagnostic screen; the mobile
+editor effects page is P4 work and has no UI parity claim. The 21 supplied
+screens remain layout references for later phases. No gallery thumbnail from
+`06-media-picker.png` is published. Export settings will use mobile
+`VideoExportScreens.kt`; `15-export-signin-gate.png` is the signed-out gate.
+
+## 4. PARITY.md
+
+`PARITY.md` now records P1 real-input acceptance, P2 runtime evidence and the
+failing pixel gate. All catalog groups retain partial visual status until
+their required frames pass. Unit-test success does not mark editing/UI or
+playback/export parity complete.
+
+## 5. Owner inputs and remaining work
+
+The original goldens, projects and screenshots are present. Device-library
+JSONs under `projects/device-library` were not supplied and are not included
+in the four passing input checks. OAuth client ID and verified shared Plus
+backend remain P7 inputs, as agreed.
+
+The phone model/GPU and a small mobile math/neutral-tile probe would help
+resolve the remaining precision/sampling bugs. A proposed owner-run source
+and its limitations are in `tools/mobile/P2ParityProbe.kt` and its README.
+It has not been compiled for Android or copied/run on the phone. Existing
+goldens remain authoritative. No approval is assumed for phone actions.
+
+## 6. Read-only confirmation
+
+The mobile handoff status is exactly `?? output/`, matching the original
+approved baseline. Mobile HEAD is the owner's reference-export commit
+`2a417fd29ef43a8792eb4d58cbe4d102327b11c9`. At P2 start, the owner's exporter
+was untracked; the owner committed it while generating these inputs.
+No Windows-agent write, mobile build or mobile Git mutation occurred.
+See `evidence/p2/mobile-status.txt` and the source provenance audit.
+
+All 1715 reference-input hashes remain unchanged, with zero additions or
+missing files: `evidence/p2/reference-read-only-check.txt`. Every generated
+frame, imported test package, log, report and diagnostic stays in the Windows repo.

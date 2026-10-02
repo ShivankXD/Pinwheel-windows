@@ -110,13 +110,15 @@ class GpuTexture(val device: AngleDevice, val width: Int, val height: Int) : Aut
     init {
         device.checkThread()
         require(width in 1..glGetInteger(GL_MAX_TEXTURE_SIZE) && height in 1..glGetInteger(GL_MAX_TEXTURE_SIZE))
-        id = glGenTextures(); glBindTexture(GL_TEXTURE_2D, id)
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR)
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR)
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE)
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE)
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, null as ByteBuffer?)
-        checkGl("texture allocation")
+        try {
+            id = glGenTextures(); glBindTexture(GL_TEXTURE_2D, id)
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR)
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR)
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE)
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE)
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, null as ByteBuffer?)
+            checkGl("texture allocation")
+        } catch (failure: Throwable) { close(); throw failure }
     }
     fun upload(frame: RgbaFrame, topDown: Boolean = true, premultiply: Boolean = false) {
         device.checkThread(); check(id != 0); require(frame.width == width && frame.height == height)

@@ -1,4 +1,4 @@
-# Desktop architecture through P1
+# Desktop architecture through P2
 
 P0 implements the brief's six module boundaries. The core has no Compose, Android,
 AWT or native dependency. Native adapters return `RgbaFrame`: straight-alpha,
@@ -31,8 +31,10 @@ There is no editor UI, production playback/export or MCP implementation yet.
 - Future MCP clients can call the same session and evaluator after P8 owner
   approval. No MCP module or tool is added before that approval.
 
-The P0 triangle allocates a new pbuffer/context for each diagnostic call and
-releases it afterward. It proves the binding and orientation, not playback speed.
+The P0 triangle uses the same context wrapper as P2 and releases its diagnostic
+context afterward. P2 keeps a context alive for each renderer, owns it on one
+thread and reference-counts shared EGL displays. It proves binding/lifetime and
+orientation, not playback speed.
 The P0 FFmpeg subprocess accurately decodes a requested demo frame but provides
 no audio playback, hardware-decode verification, frame cache or low-latency seek claim.
 It cannot implement MediaDecoder: playback factories are explicitly in-process.
@@ -41,7 +43,26 @@ byte budgets, timestamps and seek generations, persistent lifetime and audio EOS
 
 P1 golden image I/O, metrics, reports and heatmaps live in pinwheel-render/qa.
 Core remains free of AWT, Compose, Android and native bindings. See port notes for
-the preserved shader data and preview input recipe; GPU execution stays in P2.
+the preserved shader data and preview input recipe.
+
+P2 owns GLES textures/FBOs, programs, ordered ping-pong chains, previous/trail
+buffers and seek resets. EffectRuntime executes legacy effects, main catalog
+effects, Soft Glow, cut transitions, library looks and targeted layer effects
+in mobile order. Caller-supplied layer frames are already painted at the layer
+effect size, converted to premultiplied input and processed with colour/coverage
+passes before compositing. Geometry, stickers, PIP and titles/caption painters
+remain later work. Main and layer CPU boundaries are top-down straight RGBA8.
+
+Preview tiles have their own source-backed crop/resample, SWAY, history offsets,
+orientation and RGB565 conversion. Effect Lab creates a renderer on a dedicated
+worker, not the Compose UI thread. Repeated timestamps reuse deterministic
+16-slot loop entries within a 40-spec LRU cache. GPU constructors unwind partial
+allocations; closing one context leaves other live renderers usable.
+
+Catalog GLSL stays unchanged. Golden failures are recorded in P2-PARITY-BUGS.md;
+diagnostic WARP/neutral frames never replace hardware golden outputs. P2 is not
+accepted while its 277 provided frame comparisons fail. No P3 evaluator/player
+or P5 encoder has been added.
 
 Storage resolves to `%APPDATA%/Pinwheel/{projects,originals}` and
 `%LOCALAPPDATA%/Pinwheel/{cache,crash-reports}`. P0 only defines paths;

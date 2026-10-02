@@ -23,6 +23,12 @@ if (debugBuild) {
         workingDir = rootDir
     }
     tasks.named("check") { dependsOn("debugCheck") }
+    tasks.register<JavaExec>("effectLab") {
+        dependsOn("classes")
+        classpath = sourceSets.main.get().runtimeClasspath
+        mainClass.set("com.pinwheel.app.debug.EffectLabKt")
+        systemProperty("pinwheel.refs", providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"))
+    }
     tasks.register<JavaExec>("p2LabSmoke") {
         dependsOn("classes")
         classpath = sourceSets.main.get().runtimeClasspath

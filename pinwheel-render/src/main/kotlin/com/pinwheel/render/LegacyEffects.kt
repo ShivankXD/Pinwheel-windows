@@ -7,16 +7,18 @@ import kotlin.math.*
 class LegacyEffects(private val device: AngleDevice, private val width: Int, private val height: Int,
     effects: List<VideoTimedEffect>) : AutoCloseable {
     private val effects = effects.map { it.sanitized() }
-    private val legacy = FxProgram(highp(MobileLegacyShaders.LEGACY))
-    private val threshold = FxProgram(highp(MobileLegacyShaders.GLOW_THRESHOLD))
-    private val blur = FxProgram(highp(MobileLegacyShaders.GLOW_BLUR))
-    private val blend = FxProgram(highp(MobileLegacyShaders.GLOW_BLEND))
-    private val legacyOutput = GpuTarget(device, width, height)
-    private val output = GpuTarget(device, width, height)
+    private val resources = GpuResources()
+    private val legacy = resources.own { FxProgram(highp(MobileLegacyShaders.LEGACY)) }
+    private val threshold = resources.own { FxProgram(highp(MobileLegacyShaders.GLOW_THRESHOLD)) }
+    private val blur = resources.own { FxProgram(highp(MobileLegacyShaders.GLOW_BLUR)) }
+    private val blend = resources.own { FxProgram(highp(MobileLegacyShaders.GLOW_BLEND)) }
+    private val legacyOutput = resources.own { GpuTarget(device, width, height) }
+    private val output = resources.own { GpuTarget(device, width, height) }
     private val scale = min(.7f, 1024f / max(width, height))
     private val smallWidth = (width * scale).roundToInt().coerceAtLeast(1)
     private val smallHeight = (height * scale).roundToInt().coerceAtLeast(1)
-    private val glow = Array(3) { GpuTarget(device, smallWidth, smallHeight) }
+    private val glow = Array(3) { resources.own { GpuTarget(device, smallWidth, smallHeight) } }
+    init { resources.initialized() }
 
     fun beforeCatalog(input: GpuTexture, timeUs: Long): GpuTarget {
         device.checkThread(); legacyOutput.bind(); legacy.use(); legacy.float("uFlipY", 1f)
@@ -47,8 +49,7 @@ class LegacyEffects(private val device: AngleDevice, private val width: Int, pri
         target.bind(); p.use(); p.float("uFlipY", 1f); p.texture("uTexture", input, 0); p.draw()
     }
     override fun close() {
-        device.checkThread(); glow.forEach { it.close() }; output.close(); legacyOutput.close()
-        legacy.close(); threshold.close(); blur.close(); blend.close()
+        device.checkThread(); resources.close()
     }
     private fun highp(shader: String) = shader.replace("varying mediump", "varying highp")
 }

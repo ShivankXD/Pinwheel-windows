@@ -96,6 +96,12 @@ class EffectRuntimeTest {
             }
         }
     }
+    @Test fun legacyLimitCountsOriginalEntriesAndConstructorFailureAllowsRetry() {
+        val effects = List(40) { VideoTimedEffect(kind = "fx-fade-out", enabled = false) } + VideoTimedEffect(kind = "Vignette", intensity = 1f)
+        EffectRuntime(native, 64, 80, project(effects)).use { runtime -> assertContentEquals(picture().pixels, runtime.render(picture(), 0).pixels) }
+        assertFailsWith<IllegalArgumentException> { EffectRuntime(native, 16384, 0, project()) }
+        EffectRuntime(native, 64, 80, project()).use { runtime -> assertContentEquals(picture().pixels, runtime.render(picture(), 0).pixels) }
+    }
     @Test fun contextRejectsOtherThreadsAndOneContextClosingDoesNotTerminateAnother() {
         val worker = Executors.newSingleThreadExecutor()
         try {

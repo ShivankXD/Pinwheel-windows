@@ -9,7 +9,7 @@ import shutil
 import sys
 
 root = Path(__file__).resolve().parents[1]
-source = Path(sys.argv[1]) if len(sys.argv) > 1 else root / 'evidence/p1/runtime/reference-status.json'
+source = Path(sys.argv[1]) if len(sys.argv) > 1 else root / 'evidence/p1/runtime/golden-status.json'
 report = json.loads(source.read_text(encoding='utf-8-sig'))
 output = root / 'evidence/p2'
 output.mkdir(parents=True, exist_ok=True)

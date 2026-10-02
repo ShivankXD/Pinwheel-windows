@@ -1,0 +1,5 @@
+Reference read-only audit: 1715 input hashes verified; 0 changed/missing; 0 added.
+{
+  "changed": [],
+  "added": []
+}

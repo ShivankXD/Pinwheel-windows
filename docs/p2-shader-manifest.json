@@ -1,0 +1,58 @@
+[
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoCreativeEffects.kt",
+    "sourceLiteral": "EFFECT_FRAGMENT",
+    "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/MobileLegacyShaders.kt",
+    "targetLiteral": "LEGACY",
+    "shaderSha256": "2fc17d01db8adad64d64cd9eb109e9dcaa1888d30664ea6082a53b738ea0892e"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoSoftGlowEffect.kt",
+    "sourceLiteral": "PREFIX",
+    "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/MobileLegacyShaders.kt",
+    "targetLiteral": "GLOW_PREFIX",
+    "shaderSha256": "6e2bc13c0a940758cac6c138d912657ad1f9ace477aab72a2a28bc3cd41b1d92"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoSoftGlowEffect.kt",
+    "sourceLiteral": "THRESHOLD",
+    "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/MobileLegacyShaders.kt",
+    "targetLiteral": "GLOW_THRESHOLD",
+    "shaderSha256": "de5f8c78f7c16d6d531b1d212c0eecd39fd680a3eb70fcf1722669bd5168f002"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoSoftGlowEffect.kt",
+    "sourceLiteral": "BLUR",
+    "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/MobileLegacyShaders.kt",
+    "targetLiteral": "GLOW_BLUR",
+    "shaderSha256": "e6bfc1390cf185b0e1115b8999a68f070da715667e0fc785bee105f677b4b3f1"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoSoftGlowEffect.kt",
+    "sourceLiteral": "BLEND",
+    "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/MobileLegacyShaders.kt",
+    "targetLiteral": "GLOW_BLEND",
+    "shaderSha256": "2b0308a1d693b9ffd562479c8492b29478e74bb58a04c2c66082a9bce98b65c3"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoLayerFxOverlay.kt",
+    "sourceLiteral": "HEADER",
+    "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/LayerFx.kt",
+    "targetLiteral": "HEADER",
+    "shaderSha256": "60d2c5f1ef1e56ce2418b33878a88cdc2b83dd45d64c5a19ed2aa01619ee1107"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoLayerFxOverlay.kt",
+    "sourceLiteral": "SPLIT",
+    "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/LayerFx.kt",
+    "targetLiteral": "SPLIT",
+    "shaderSha256": "a3bae82b460d806a1b0dc45a0fb1bc1ef8c1516dd7c2275ac94962c5ebd34986"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoLayerFxOverlay.kt",
+    "sourceLiteral": "MERGE",
+    "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/LayerFx.kt",
+    "targetLiteral": "MERGE",
+    "shaderSha256": "e757b330c7b80f9b329f852d2b6c226d60b0c036ac4173e09fb458b644d51fdc"
+  }
+]

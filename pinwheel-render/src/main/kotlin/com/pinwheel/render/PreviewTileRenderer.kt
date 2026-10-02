@@ -8,24 +8,26 @@ import java.nio.file.Path
 
 /** Mobile's preview passes, sample crop, float timing, flip and RGB565 conversion. Thread confined. */
 class PreviewTileRenderer(nativeDirectory: Path, private val assets: Path, softwareDiagnostic: Boolean = false) : AutoCloseable {
-    private val device = AngleDevice(nativeDirectory, softwareDiagnostic)
+    private val resources = GpuResources()
+    private val device = resources.own { AngleDevice(nativeDirectory, softwareDiagnostic) }
     val renderer get() = device.renderer
     val version get() = device.version
     private val programs = HashMap<String, FxProgram>()
     private val samples = HashMap<String, GpuTexture>()
-    private val sway = FxProgram(FxProgram.SWAY)
-    private val work = Array(4) { GpuTarget(device, VideoPreviewRecipe.WIDTH, VideoPreviewRecipe.HEIGHT) }
+    private val sway = resources.own { FxProgram(FxProgram.SWAY) }
+    private val work = Array(4) { resources.own { GpuTarget(device, VideoPreviewRecipe.WIDTH, VideoPreviewRecipe.HEIGHT) } }
     private val cache = object : LinkedHashMap<String, Array<RgbaFrame?>>(32, .75f, true) {
         override fun removeEldestEntry(eldest: MutableMap.MutableEntry<String, Array<RgbaFrame?>>?) = size > 40
     }
     val cachedSpecs get() = cache.size
+    init { resources.initialized() }
 
     fun compileAll(): Map<String, String> {
         device.checkThread(); val failures = linkedMapOf<String, String>()
         catalogSpecs().forEach { spec -> try { program(spec) } catch (e: Exception) { failures[spec.id] = e.stackTraceToString() } }
         return failures
     }
-    private fun program(spec: VideoFxSpec) = programs.getOrPut(spec.id) { FxProgram(FxProgram.source(spec)) }
+    private fun program(spec: VideoFxSpec) = programs.getOrPut(spec.id) { resources.own { FxProgram(FxProgram.source(spec)) } }
     fun frame(spec: VideoFxSpec, index: Int): RgbaFrame {
         device.checkThread(); val slot = index.mod(VideoPreviewRecipe.FRAMES)
         val frames = cache.getOrPut(spec.id) { arrayOfNulls(VideoPreviewRecipe.FRAMES) }
@@ -35,7 +37,7 @@ class PreviewTileRenderer(nativeDirectory: Path, private val assets: Path, softw
     fun renderAt(spec: VideoFxSpec, seconds: Float, values: Map<String, Float> = emptyMap()): RgbaFrame {
         device.checkThread(); require(seconds.isFinite())
         val input = VideoPreviewRecipe.inputs(spec, seconds.toDouble())
-        val sample = samples.getOrPut(input.sample) { uploadSample(input.sample) }
+        val sample = samples.getOrPut(input.sample) { resources.own { uploadSample(input.sample) } }
         fun swayTo(target: Int, motion: VideoPreviewRecipe.Sway) {
             work[target].bind(); sway.use(); sway.float("uFlipY", 1f); sway.texture("uTexture", sample.id, 0)
             sway.float("uBody", motion.body); sway.float("uZoom", motion.zoom); sway.vec2("uSway", motion.x, motion.y); sway.draw()
@@ -69,15 +71,16 @@ class PreviewTileRenderer(nativeDirectory: Path, private val assets: Path, softw
                         check(pixels.allocPixels(ImageInfo(width, height, ColorType.RGBA_8888, ColorAlphaType.UNPREMUL)))
                         check(tile.readPixels(pixels))
                         val bytes = requireNotNull(pixels.readPixels(pixels.imageInfo, width * 4, 0, 0))
-                        return GpuTexture(device, width, height).also { it.upload(RgbaFrame(width, height, bytes), topDown = false) }
+                        val texture = GpuTexture(device, width, height)
+                        try { texture.upload(RgbaFrame(width, height, bytes), topDown = false); return texture }
+                        catch (failure: Throwable) { texture.close(); throw failure }
                     }
                 }
             }
         }
     }
     override fun close() {
-        device.checkThread(); cache.clear(); programs.values.forEach { it.close() }
-        samples.values.forEach { it.close() }; work.forEach { it.close() }; sway.close(); device.close()
+        device.checkThread(); cache.clear(); resources.close()
     }
     companion object {
         fun catalogSpecs() = VideoFxCatalog.effects + VideoFxCatalog.transitions + VideoFxCatalog.overlays + VideoFxCatalog.legacyOverlays

@@ -17,7 +17,10 @@ jobs:
         run: ./scripts/build.ps1
       - name: Verify pinned desktop source and asset hashes
         shell: pwsh
-        run: python scripts/verify-p1-port.py --desktop-only
+        run: |
+          python scripts/verify-p1-port.py --desktop-only
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python scripts/verify-p2-port.py --desktop-only
       - name: Compile catalog shaders and render all P2 frames
         shell: pwsh
         run: ./scripts/build.ps1 -Tasks ':pinwheel-render:p2Frames'

@@ -9,15 +9,17 @@ class FxChain(private val device: AngleDevice, private val width: Int, private v
     effects: List<VideoTimedEffect>) : AutoCloseable {
     private val effects = effects.map { it.sanitized() }.filter { it.enabled && VideoFxCatalog.find(it.kind) != null }.take(MAX_VIDEO_EFFECTS)
     private val programs = HashMap<String, FxProgram>()
-    private val copy = FxProgram(FxProgram.COPY)
-    private val trail = FxProgram(FxProgram.TRAIL)
+    private val resources = GpuResources()
+    private val copy = resources.own { FxProgram(FxProgram.COPY) }
+    private val trail = resources.own { FxProgram(FxProgram.TRAIL) }
     private val needsHistory = this.effects.any { VideoFxCatalog.find(it.kind)?.history == true }
-    private val work = Array(if (needsHistory) 5 else 2) { GpuTarget(device, width, height) }
-    private val output = GpuTarget(device, width, height)
+    private val work = Array(if (needsHistory) 5 else 2) { resources.own { GpuTarget(device, width, height) } }
+    private val output = resources.own { GpuTarget(device, width, height) }
     private var trailIndex = 3
     private var lastTimeUs = Long.MIN_VALUE
     var historyResets = 0
         private set
+    init { resources.initialized() }
 
     fun resetHistory() { device.checkThread(); lastTimeUs = Long.MIN_VALUE }
     fun render(input: GpuTexture, presentationTimeUs: Long): GpuTarget {
@@ -35,7 +37,7 @@ class FxChain(private val device: AngleDevice, private val width: Int, private v
             val spec = requireNotNull(VideoFxCatalog.find(effect.kind))
             val target = if (index == active.lastIndex) output else work[index % 2]
             target.bind()
-            val p = programs.getOrPut(spec.id) { FxProgram(FxProgram.source(spec)) }; p.use()
+            val p = programs.getOrPut(spec.id) { resources.own { FxProgram(FxProgram.source(spec)) } }; p.use()
             p.texture("uTexture", source, 0)
             p.texture("uPrev", if (needsHistory) work[2].texture.id else source, 1)
             p.texture("uTrail", if (needsHistory) work[trailIndex].texture.id else source, 2)
@@ -56,8 +58,7 @@ class FxChain(private val device: AngleDevice, private val width: Int, private v
         target.bind(); copy.use(); copy.float("uFlipY", 1f); copy.texture("uTexture", texture, 0); copy.draw()
     }
     override fun close() {
-        device.checkThread(); programs.values.forEach { it.close() }; work.forEach { it.close() }
-        output.close(); copy.close(); trail.close()
+        device.checkThread(); resources.close()
     }
 }
 

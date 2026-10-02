@@ -9,10 +9,12 @@ class LayerFx(private val device: AngleDevice, private val width: Int, private v
     private val layer: VideoImageOverlay, effects: List<VideoTimedEffect>) : AutoCloseable {
     private val effects = effects.filter { it.enabled && VideoFxCatalog.find(it.kind) != null }
     private val programs = HashMap<String, FxProgram>()
-    private val split = FxProgram(SPLIT)
-    private val merge = FxProgram(MERGE)
+    private val resources = GpuResources()
+    private val split = resources.own { FxProgram(SPLIT) }
+    private val merge = resources.own { FxProgram(MERGE) }
     // Colour ping-pong, mask ping-pong, output.
-    private val targets = Array(5) { GpuTarget(device, width, height) }
+    private val targets = Array(5) { resources.own { GpuTarget(device, width, height) } }
+    init { resources.initialized() }
     fun render(painted: GpuTexture, presentationTimeUs: Long): GpuTarget {
         device.checkThread(); require(painted.device === device && painted.width == width && painted.height == height)
         val framebuffer = glGetInteger(GL_FRAMEBUFFER_BINDING); val viewport = IntArray(4); glGetIntegerv(GL_VIEWPORT, viewport)
@@ -28,7 +30,7 @@ class LayerFx(private val device: AngleDevice, private val width: Int, private v
             var colour = 0; var mask = 2
             for (effect in effects.filter { timeMs >= it.startMs && timeMs < it.endMs }) {
                 val spec = requireNotNull(VideoFxCatalog.find(effect.kind))
-                val p = programs.getOrPut(spec.id) { FxProgram(FxProgram.source(spec)) }
+                val p = programs.getOrPut(spec.id) { resources.own { FxProgram(FxProgram.source(spec)) } }
                 for (channel in 0..1) {
                     val from = if (channel == 0) colour else mask
                     val to = if (from % 2 == 0) from + 1 else from - 1
@@ -52,7 +54,7 @@ class LayerFx(private val device: AngleDevice, private val width: Int, private v
         target.bind(); p.use(); p.float("uFlipY", 1f); setup(p); p.draw()
     }
     override fun close() {
-        device.checkThread(); targets.forEach { it.close() }; programs.values.forEach { it.close() }; split.close(); merge.close()
+        device.checkThread(); resources.close()
     }
     companion object {
         private const val HEADER = """

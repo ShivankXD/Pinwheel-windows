@@ -23,3 +23,8 @@ Read-only status at P2 start:
 The new untracked reference-export test was present before P2 work. It belongs
 to the owner's reference generation. No mobile file or Git state is changed here.
 The read-only reference folder was absent at P2 start.
+
+Update: the owner supplied the complete reference folder at mobile commit
+2a417fd. Its README was read first. P1 is closed with four passing JSON/package
+inputs. P2 rendered all 1688 frames; 1411 pass and 277 fail the fixed golden
+limits. P2 visual acceptance remains open; see P2-REPORT.md.

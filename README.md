@@ -1,8 +1,10 @@
 # Pinwheel for Windows
 
-Windows parity port of Pinwheel: Edit Photos & Videos. P0 is approved. P1 core
-implementation and local checks are ready; acceptance awaits real mobile project
-packages. Rendering, editing screens and mobile visual parity remain in later phases.
+Windows parity port of Pinwheel: Edit Photos & Videos. P0 is approved. P1 is closed
+with four passing owner-supplied mobile JSON/package inputs. P2 implements the
+effect runtime and debug Effect Lab, with all 422 shaders compiling and 1688
+frames rendered. Golden acceptance remains open: 1411 frames pass and 277 fail
+the unchanged limits. Editing screens and playback are later phases.
 The authoritative brief is [docs/Pinwheel-Windows-Build-Brief.md](docs/Pinwheel-Windows-Build-Brief.md).
 
 Requirements: Windows 10 22H2+ or Windows 11 x64, JDK 17 or newer (locally validated with JDK 23), internet
@@ -27,13 +29,17 @@ and exits after successful rendering and decoding. It captures only the app's Sk
 surface, including when another window covers it.
 It also checks that a missing native runtime makes app startup return a failing
 exit code; that deliberate failure is captured and verified separately.
-See [PARITY.md](PARITY.md), [P1 report](docs/P1-REPORT.md),
+See [PARITY.md](PARITY.md), [P1 report](docs/P1-REPORT.md), [P2 report](docs/P2-REPORT.md),
+[golden metrics and worst 20 heatmaps](evidence/p2/GOLDEN-REPORT.md),
 [reference inputs](docs/REFERENCE-INPUTS.md) and [owner decisions](docs/OWNER-DECISIONS.md).
 
 ```powershell
 ./scripts/build.ps1 -Tasks ':pinwheel-app:run','-Ppinwheel.debug=true'
 ./scripts/build.ps1 -Tasks ':pinwheel-render:p1References'
+./scripts/build.ps1 -Tasks ':pinwheel-render:p2Frames',':pinwheel-render:mobilePackagesCheck',':pinwheel-render:goldenCheck'
+./scripts/build.ps1 -Tasks ':pinwheel-app:effectLab','-Ppinwheel.debug=true'
 python scripts/verify-p1-port.py --desktop-only
+python scripts/verify-p2-port.py --desktop-only
 ```
 
 The default build excludes the developer Plus toggle. Debug/release outputs use

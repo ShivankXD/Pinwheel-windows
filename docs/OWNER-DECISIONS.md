@@ -28,3 +28,9 @@ These decisions amend the original brief and take precedence where they differ.
    at 0.3/0.9/1.5/2.1 s from VideoFxPreviewRenderer. Inputs also include raw
    projects, .pinwheel packages, device-library JSONs and mobile screenshots.
    Failures must be explained as bugs; thresholds must never be relaxed.
+9. Real references arrived from WindowsReferenceExport at mobile commit
+   2a417fd: 1688 golden PNGs, four JSON/package inputs and 21 mobile screenshots.
+   Close P1 using those inputs, continue P2 and report per-spec MAE/p99 plus the
+   worst 20 with heatmaps. Read the reference README first. Export settings
+   use VideoExportScreens.kt because the supplied export screen is the sign-in
+   gate. Media-picker gallery thumbnails are layout references only.

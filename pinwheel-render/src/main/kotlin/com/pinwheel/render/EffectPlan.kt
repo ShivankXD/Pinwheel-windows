@@ -30,7 +30,8 @@ data class EffectPlan(val legacy: List<VideoTimedEffect>, val main: List<VideoTi
             val layers = edit.images.filter { !it.uri.startsWith("overlay:") && it.video == null && it.id in byId }
                 .associateWith { byId.getValue(it.id) }
             // Legacy effects run before catalog passes; Soft Glow runs after main catalog effects.
-            return EffectPlan(edit.effects.filter { it.kind in VIDEO_EFFECT_KINDS }, main, cuts, overlays, layers)
+            // Mobile legacy math counts the first 40 entries in the original list, including catalog entries.
+            return EffectPlan(edit.effects, main, cuts, overlays, layers)
         }
     }
 }
