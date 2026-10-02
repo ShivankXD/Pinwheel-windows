@@ -59,7 +59,8 @@ class ProjectSession(initial: StudioProject, private val save: ProjectAutosave,
         require(v.images.all { it.uri.isNotBlank() } && v.audio.all { it.uri.isNotBlank() && it.sourceDurationMs > 0 && it.durationMs > 0 }) { "Invalid layer media" }
         require(v.effects.size <= MAX_VIDEO_EFFECTS && v.images.size <= MAX_VIDEO_OVERLAYS && v.texts.size <= MAX_VIDEO_OVERLAYS && v.audio.size <= MAX_VIDEO_AUDIO_TRACKS && v.captions.size <= MAX_VIDEO_CAPTIONS) { "Layer limit reached" }
         for (ids in listOf(v.effects.map { it.id }, v.images.map { it.id }, v.texts.map { it.id }, v.audio.map { it.id }, v.captions.map { it.id })) require(ids.distinct().size == ids.size) { "Duplicate layer identifier" }
-        require(v.captions.all { it.text.isNotBlank() && it.startMs >= 0 && it.endMs > it.startMs && it.endMs <= next.durationMs && !captionOverlaps(v.captions, it) }) { "Invalid or overlapping captions" }
+        require(v.captions.all { it.text.isNotBlank() && it.startMs >= 0 && it.endMs > it.startMs &&
+            (it.endMs <= next.durationMs || it in old.video.captions) && !captionOverlaps(v.captions, it) }) { "Invalid or overlapping captions" }
         require(v.effects.all { it.target.isEmpty() || v.images.any { image -> image.id == it.target } || old.video.effects.any { previous -> previous.id == it.id && previous.target == it.target } }) { "Effect target does not exist" }
         if (enforcePlan && entitlement.tier != PlanTier.PLUS) {
             val existing = old.video.effects.associateBy { it.id }

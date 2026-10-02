@@ -29,13 +29,14 @@ See `P1-PORT-NOTES.md` for adapters and retained mobile quirks.
 Local Windows x64, JDK 23, bytecode targeting JDK 17:
 
 ```text
-pinwheel-core: 204 tests, 0 failures, 0 skipped
+pinwheel-core: 205 tests, 0 failures, 0 skipped
 pinwheel-platform: 2 tests, 0 failures, 0 skipped
 pinwheel-media: 3 tests, 0 failures, 0 skipped
 pinwheel-render: 9 tests, 0 failures, 0 skipped
-TOTAL: 218 tests, 0 failures, 0 skipped
+TOTAL: 219 tests, 0 failures, 0 skipped
 BUILD SUCCESSFUL in 1m 27s
 33 actionable tasks: 33 executed
+Caption-shortening regression follow-up: BUILD SUCCESSFUL in 30s
 PASS missing-native smoke returns nonzero exit code with the expected library failure
 PASS 404 source, test and asset hashes; all GLSL literals preserved
 ```
@@ -43,11 +44,13 @@ PASS 404 source, test and asset hashes; all GLSL literals preserved
 All 44 mobile JVM test classes are ported, including photo/RAW, DSP, scheduling,
 voiceover, captions and UI helper mathematics. New checks cover autosave failures,
 history reload/branching, Free bypasses, layer limits, package media/history,
-unsafe zips, account-linked export gates and golden metric thresholds.
+unsafe zips, automatic caption trim/drop after clip shortening, account-linked export gates and golden metric thresholds.
 
 Debug checks passed: the toggle drives shared core/export entitlement, fake
 sign-out blocks export, and debug controls are included only in debug jars.
 Release checks passed: developer classes and service metadata are absent.
+Windows/JDK 17 CI passed for runtime commit 942e2ff: https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36981095085. The caption-shortening follow-up adds one passing local regression test; its hosted run is tracked separately.
+
 Real-window smoke verifies ANGLE D3D11, demo decode and notice display. Current
 hardware is RTX 4060 Laptop; later preview/seek performance budgets are untested.
 

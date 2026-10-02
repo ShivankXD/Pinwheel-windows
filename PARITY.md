@@ -24,7 +24,7 @@ P0 is owner-approved. P1 core implementation passes local checks; acceptance awa
 | Check | Status | Evidence |
 |---|---|---|
 | Models, codecs, atomic stores, synthetic v1..10 normalization | ✅ | `StorageContractTest`, `evidence/p1/clean-build-output.txt`; real mobile packages remain pending |
-| All 44 mobile JVM test classes ported | ✅ | 218 total desktop tests, no failures/skips; `evidence/p1/test-summary.txt`, source/test manifest |
+| All 44 mobile JVM test classes ported | ✅ | 219 total desktop tests, no failures/skips; `evidence/p1/test-summary.txt`, source/test manifest |
 | Command JSON, autosave failures, persisted undo, one-step drafts | ✅ | `EditCommandCodecTest`, `ProjectSessionTest` |
 | Free/Plus core/export limits and account gate | ✅ | `ExportPolicyTest`, Free bypass tests; production encoder is P5 |
 | Debug toggle excluded from release and shared with core policy | ✅ | `verifyBuildVariant`, `debugCheck`, `evidence/p1/debug-build-output.txt`, debug screenshot |

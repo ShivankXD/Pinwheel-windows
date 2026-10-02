@@ -137,4 +137,15 @@ class ProjectSessionTest {
         texts.clear(); session.commitDraft()
         assertEquals("Draft", session.project.video.texts.single().text)
     }
+    @Test fun shorteningMainTrackTrimsCrossingCaptionsAndDropsThoseOutside() {
+        val p = movie().copy(clips = listOf(movie().clips.first()), video = VideoProjectEdits(captions = listOf(
+            VideoCaptionCue(id = "crossing", text = "Crossing", startMs = 2000, endMs = 5000),
+            VideoCaptionCue(id = "outside", text = "Outside", startMs = 6000, endMs = 7000))))
+        val session = ProjectSession(p, {}, plus)
+        session.apply(TrimClip("one", 0, 3000))
+        assertEquals(3000L, session.project.durationMs)
+        assertEquals(listOf("crossing"), session.project.video.captions.map { it.id })
+        assertEquals(3000L, session.project.video.captions.single().endMs)
+        session.apply(Undo); assertEquals(p.video.captions, session.project.video.captions)
+    }
 }
