@@ -1,0 +1,9 @@
+#!/bin/sh
+if LC_ALL=C grep -Eiq 'Co-authored-by:|Generated-by:|Generated with|AI-assisted|ChatGPT|OpenAI|Codex' "$1"; then
+  echo 'Commit rejected: use only the owner identity with no AI attribution.' >&2
+  exit 1
+fi
+if grep -q '—' "$1"; then
+  echo 'Commit rejected: use plain punctuation without em dashes.' >&2
+  exit 1
+fi

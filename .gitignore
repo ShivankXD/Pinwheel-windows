@@ -1,0 +1,10 @@
+.gradle/
+.gradle-user-home/
+**/build/
+.downloads/
+native/windows-x64/*
+!native/windows-x64/.gitkeep
+*.log
+.idea/
+local.properties
+evidence/p0/runtime/

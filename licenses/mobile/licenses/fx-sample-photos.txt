@@ -1,0 +1,3 @@
+Effect, transition and overlay preview photos in assets/fx_samples (tr-*.webp, ov-*.webp) were downloaded
+from picsum.photos, which serves photographs published on Unsplash under the Unsplash License
+(https://unsplash.com/license): free to use, including commercially, without attribution.
