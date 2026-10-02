@@ -6,7 +6,7 @@ dependencies {
     implementation(project(":pinwheel-media"))
     implementation(project(":pinwheel-photo"))
     implementation(compose.desktop.currentOs)
-    implementation(compose.material3)
+    implementation("org.jetbrains.compose.material3:material3:1.9.0-beta03")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
 }
 compose.desktop { application { mainClass = "com.pinwheel.app.MainKt" } }
