@@ -1,0 +1,116 @@
+{
+    "children": [
+        {
+            "anims": [
+                {
+                    "anim_resource_id": "7348695716820161026",
+                    "anim_resource_path": "",
+                    "anim_script_type": "lua",
+                    "anim_start_time": 0,
+                    "anim_type": "caption",
+                    "duration": 3,
+                    "loop_duration": 0
+                }
+            ],
+            "caption_params": {
+                "enable_keyword": true,
+                "ignore_AI_punctuation": false,
+                "keyword_alpha_overlay_mode": "over",
+                "keyword_capital": "upper",
+                "keyword_color_overlay_mode": "over",
+                "keyword_default_overlay_mode": "over",
+                "keyword_isolation": "line",
+                "keyword_isolation_supersize": 1.05,
+                "keyword_rich_text": "{\"text\":\"A\",\"styles\":[{\"range\":[0,1],\"version\":\"3.0\",\"size\":14.0,\"fill\":{\"enable\":true,\"alpha\":1.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"color\":[0.3,0.1,0.05],\"alpha\":1}}}}]}",
+                "keyword_supersize": 1.15,
+                "max_lines_per_page": 2,
+                "max_units_per_line": 12,
+                "unit_type": "word",
+                "version": "1.0.0"
+            },
+            "duration": 3,
+            "keyframe_params": {
+            },
+            "layout_params": {
+            },
+            "lineFeedKind": 1,
+            "name": "7A3A3FD4-85AB-4915-ADB9-E55DB0266E56",
+            "order_in_layer": 0,
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "start_time": 0,
+            "text_params": {
+                "boldValue": 0.008,
+                "canvas": false,
+                "canvasColor": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "canvasCustomized": false,
+                "canvasOffsetCustomized": [
+                    0,
+                    0
+                ],
+                "canvasRoundCorner": false,
+                "canvasRoundRadiusScale": 0,
+                "canvasSplitPadding": 0.1,
+                "canvasSplitThreshold": 10,
+                "canvasWHCustomized": [
+                    0.1,
+                    0.1
+                ],
+                "canvasWrapped": false,
+                "capital": "none",
+                "decorationOffset": 0.15,
+                "decorationWidth": 0.04,
+                "fallbackFontPathList": [
+                ],
+                "globalAlpha": 1,
+                "innerPadding": 0,
+                "italicDegree": 10,
+                "letterSpacing": 0,
+                "lineMaxWidth": -1,
+                "lineSpacing": 0,
+                "richText": "<effectStyle id=\"7523030814506929469\" path=\"\"><b><size=13><font id=\"7493732187766820113\" path=\"\">[input text...]</font></size></b></effectStyle>",
+                "selectedColor": [
+                    0.5,
+                    0.7,
+                    1,
+                    0.8
+                ],
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0,
+                "version": "2"
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 3,
+        "keyframe_params": {
+            "keyframes": [
+            ]
+        },
+        "layer": 0,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "subType": "caption",
+    "type": "ScriptTemplate"
+}

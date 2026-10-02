@@ -1,0 +1,115 @@
+{
+    "children": [
+        {
+            "anims": [
+                {
+                    "anim_resource_id": "7392200014295994896",
+                    "anim_resource_path": "",
+                    "anim_script_type": "lua",
+                    "anim_start_time": 0.0,
+                    "anim_type": "caption",
+                    "duration": 0.5,
+                    "loop_duration": 0.0
+                }
+            ],
+            "caption_params": {
+                "enable_keyword": true,
+                "ignore_AI_punctuation": false,
+                "keyword_rich_text": "{\"styles\":[{\"fill\":{\"alpha\":1.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"alpha\":1.0,\"color\":[1.0,1.0,1.0,1.0]}}},\"font\":{\"id\":\"7330606083335000577\"},\"range\":[0,1],\"shadows\":[{\"alpha\":0.5,\"angle\":-45.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"alpha\":1.0,\"color\":[0.0,0.0,0.0]}},\"diffuse\":0.016582906246185303,\"distance\":5.0}],\"size\":15,\"useLetterColor\":true}],\"text\":\"A\"}",
+                "version": "1.0.0"
+            },
+            "duration": 9.6,
+            "layout_params": {
+                "bottom_toBottomOf": "",
+                "fix_dimensionRatio": false,
+                "fix_height": true,
+                "fix_width": true,
+                "hCenter_toHCenterOf": "",
+                "left_toLeftOf": "",
+                "right_toRightOf": "",
+                "top_toTopOf": "",
+                "vCenter_toVCenterOf": ""
+            },
+            "lineFeedKind": 1,
+            "name": "1972F050-CF8F-44E9-BFE6-6A5EAC60DE10",
+            "order_in_layer": 1,
+            "original_size": [
+                668.4946899414063,
+                337.5
+            ],
+            "position": [
+                0.0,
+                0.0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1
+            ],
+            "start_time": 0.0,
+            "text_params": {
+                "autoAdaptDpiEnabled": false,
+                "bloomPath": "",
+                "boldValue": 0.008,
+                "canvas": false,
+                "canvasColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "canvasCustomized": true,
+                "canvasOffsetCustomized": [
+                    0.0,
+                    0.0
+                ],
+                "canvasRoundCorner": false,
+                "canvasRoundRadiusScale": 0.0,
+                "canvasSplitPadding": 0.1,
+                "canvasSplitThreshold": 1000.0,
+                "canvasWHCustomized": [
+                    1.0,
+                    1.0
+                ],
+                "canvasWrapped": false,
+                "decorationOffset": 0.22,
+                "decorationWidth": 0.05,
+                "fallbackFontPathList": [],
+                "globalAlpha": 1.0,
+                "innerPadding": 0.2,
+                "italicDegree": 10,
+                "letterSpacing": 0.0,
+                "lineMaxWidth": -1.0,
+                "lineSpacing": 0.06999999999999999,
+                "oneLineCutOff": false,
+                "richText": "<size=12><font id=\"7322744268987044354\" path=\"\">[Flexible editing,\nmagical AI tools,\nteam collaboration,\nand stock assets.\nMake video creation like never\nbefore.]</font></size>",
+                "selectedColor": [
+                    0.0,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.4000000059604645
+                ],
+                "shapeFlipX": false,
+                "shapeFlipY": false,
+                "shapePath": "",
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0,
+                "version": "2"
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 9,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "type": "ScriptTemplate"
+}

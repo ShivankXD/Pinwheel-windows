@@ -1,0 +1,108 @@
+{
+    "children": [
+        {
+            "anims": [
+                {
+                    "anim_resource_id": "7343079086530499073",
+                    "anim_resource_path": "",
+                    "anim_script_type": "lua",
+                    "anim_start_time": 0.0,
+                    "anim_type": "caption",
+                    "duration": 0.5,
+                    "loop_duration": 0.0
+                }
+            ],
+            "duration": 3.0,
+            "layout_params": {
+                "bottom_toBottomOf": "",
+                "fix_dimensionRatio": false,
+                "fix_height": true,
+                "fix_width": true,
+                "hCenter_toHCenterOf": "",
+                "left_toLeftOf": "",
+                "right_toRightOf": "",
+                "top_toTopOf": "",
+                "vCenter_toVCenterOf": ""
+            },
+            "lineFeedKind": 1,
+            "name": "A5748C68-39B8-4879-ADF0-3F1123115D5B",
+            "order_in_layer": 1,
+            "original_size": [
+                846.040283203125,
+                87.5
+            ],
+            "position": [
+                0.0,
+                0.0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1
+            ],
+            "start_time": 0.0,
+            "text_params": {
+                "autoAdaptDpiEnabled": false,
+                "boldValue": 0.008,
+                "canvas": false,
+                "canvasColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "canvasCustomized": true,
+                "canvasOffsetCustomized": [
+                    0.0,
+                    0.0
+                ],
+                "canvasRoundCorner": false,
+                "canvasRoundRadiusScale": 0.0,
+                "canvasSplitPadding": 0.1,
+                "canvasSplitThreshold": 1000.0,
+                "canvasWHCustomized": [
+                    1.0,
+                    1.0
+                ],
+                "canvasWrapped": false,
+                "decorationOffset": 0.22,
+                "decorationWidth": 0.05,
+                "fallbackFontPathList": [],
+                "globalAlpha": 1.0,
+                "innerPadding": 0.2,
+                "italicDegree": 10,
+                "letterSpacing": 0.0,
+                "lineMaxWidth": -1.0,
+                "lineSpacing": 0.02,
+                "oneLineCutOff": false,
+                "richText": "<effectStyle id=\"7343828687592100354\" path=\"\"><size=15><color=(0.87843,1,0,1)><font id=\"7324166362207621633\" path=\"\">[The quick brown fox]</font></color></size></effectStyle>",
+                "selectedColor": [
+                    0.0,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.4000000059604645
+                ],
+                "shapeFlipX": false,
+                "shapeFlipY": false,
+                "shapePath": "",
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0,
+                "version": "2"
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 3,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "type": "ScriptTemplate"
+}

@@ -1,0 +1,15 @@
+{
+    "depend_resource_list": [
+        {
+            "resource_id": "7135040682032370178",
+            "source": 1,
+            "type": "text"
+        },
+        {
+            "resource_id": "7525299386994167093",
+            "source": 1,
+            "type": "flower"
+        }
+    ],
+    "script_template_version": "1.0.0"
+}

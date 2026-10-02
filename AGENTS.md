@@ -1,9 +1,9 @@
 # Working rules
 
-Read docs/Pinwheel-Windows-Build-Brief.md before editing. The mobile repository
+Read docs/Pinwheel-Windows-Build-Brief.md before editing.
 Read docs/OWNER-DECISIONS.md for owner amendments, including the Windows target,
 debug-only entitlement control and read-only D:/Pinwheel-Windows-refs inputs.
-at D:\Nativeoffice-photo&videoeditor is read-only. Never build or change it.
+The mobile repository at D:\Nativeoffice-photo&videoeditor is read-only. Never build or change it.
 Baseline mobile status is exactly `?? output/`. Check with GIT_OPTIONAL_LOCKS=0
 before work and at handoff. Keep all Windows work in this repository.
 

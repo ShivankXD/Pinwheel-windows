@@ -1,0 +1,201 @@
+{
+    "children": [
+        {
+            "caption_params": {
+                "max_lines_per_page": 1,
+                "max_units_per_line": 0,
+                "unit_type": "word"
+            },
+            "duration": 3,
+            "lineFeedKind": 1,
+            "name": "31ABE8BE-DE2D-4A6A-8067-0493B939818E",
+            "order_in_layer": 0,
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "start_time": 0,
+            "text_params": {
+                "richText": "<size=12>[input text...]</size>",
+                "textLocale": 1,
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 3,
+        "layer": 0,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "subType": "uneven",
+    "sub_template_info": {
+        "application_mode": "sequential",
+        "application_order": [
+            1
+        ],
+        "elements": [
+            {
+                "children": [
+                    {
+                        "anims": [
+                            {
+                                "anim_resource_id": "7324601420538188289",
+                                "anim_resource_path": "",
+                                "anim_script_type": "lua",
+                                "anim_start_time": 0,
+                                "anim_type": "caption",
+                                "duration": 3,
+                                "loop_duration": 0.5
+                            }
+                        ],
+                        "caption_params": {
+                            "enable_keyword": true,
+                            "ignore_AI_punctuation": false,
+                            "keyword_alpha_overlay_mode": "over",
+                            "keyword_capital": "none",
+                            "keyword_color_overlay_mode": "over",
+                            "keyword_default_overlay_mode": "over",
+                            "keyword_isolation": "none",
+                            "keyword_isolation_supersize": 1,
+                            "keyword_rich_text": "{\"text\":\"A\",\"styles\":[{\"range\":[0,1],\"size\":12,\"fill\":{\"enable\":true,\"alpha\":1.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"color\":[0.5,1.0,0.7],\"alpha\":1.0}}}}]}",
+                            "keyword_supersize": 1.2,
+                            "max_lines_per_page": 2,
+                            "max_units_per_line": 5,
+                            "unit_type": "word",
+                            "version": "1.0.0"
+                        },
+                        "duration": 3,
+                        "keyframe_params": {
+                        },
+                        "layout_params": {
+                        },
+                        "lineFeedKind": 1,
+                        "name": "464C23A7-6831-4E70-AE80-2DA6D6717DFD",
+                        "order_in_layer": 0,
+                        "position": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "start_time": 0,
+                        "text_params": {
+                            "bloomBlurDegree": 1,
+                            "bloomColor": [
+                                1,
+                                1,
+                                1,
+                                1
+                            ],
+                            "bloomColorCustomized": false,
+                            "bloomDirX": 0,
+                            "bloomDirY": 0,
+                            "bloomId": "",
+                            "bloomPath": "",
+                            "bloomRange": 1,
+                            "bloomStrength": 1,
+                            "boldValue": 0.008,
+                            "canvas": false,
+                            "canvasAdvancedInfo": {
+                                "fill": {
+                                    "alpha": 1,
+                                    "content": {
+                                        "render_type": "solid",
+                                        "solid": {
+                                            "alpha": 1,
+                                            "color": [
+                                                1,
+                                                1,
+                                                1
+                                            ]
+                                        }
+                                    },
+                                    "enable": false
+                                },
+                                "shapeType": "bounding"
+                            },
+                            "canvasColor": [
+                                1,
+                                0,
+                                0,
+                                1
+                            ],
+                            "canvasCustomized": true,
+                            "canvasOffsetCustomized": [
+                                0,
+                                0
+                            ],
+                            "canvasRoundCorner": true,
+                            "canvasRoundRadiusScale": 0.2,
+                            "canvasSplitPadding": 0.25,
+                            "canvasSplitThreshold": 8,
+                            "canvasWHCustomized": [
+                                0.2,
+                                0.2
+                            ],
+                            "capital": "none",
+                            "decorationOffset": 0.15,
+                            "decorationWidth": 0.04,
+                            "fallbackFontPathList": [
+                            ],
+                            "globalAlpha": 1,
+                            "innerPadding": 0,
+                            "italicDegree": 10,
+                            "letterSpacing": 0,
+                            "lineMaxWidth": -1,
+                            "lineSpacing": 0,
+                            "richText": "<effectStyle id=\"local_C9AEB88E\" path=\"local/local_C9AEB88E\"><color=(0.6,1,0.9,1)><size=12><font id=\"7525275079106759953\" path=\"\"><b>[input text...]</b></font></size></color></effectStyle>",
+                            "selectedColor": [
+                                0.5,
+                                0.7,
+                                1,
+                                0.8
+                            ],
+                            "typeSettingAlign": 1,
+                            "typeSettingKind": 0,
+                            "version": "2"
+                        },
+                        "type": "text",
+                        "visible": true
+                    }
+                ],
+                "root": {
+                    "duration": 3,
+                    "keyframe_params": {
+                        "keyframes": [
+                        ]
+                    },
+                    "layer": 0,
+                    "name": "rootWidget",
+                    "preview_time": 1.5
+                },
+                "sub_template_id": 1
+            }
+        ]
+    },
+    "type": "ScriptTemplate"
+}

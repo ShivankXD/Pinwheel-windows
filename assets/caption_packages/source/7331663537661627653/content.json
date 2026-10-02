@@ -1,0 +1,111 @@
+{
+    "children": [
+        {
+            "anims": [
+                {
+                    "anim_resource_id": "7135040682032370178",
+                    "anim_resource_path": "",
+                    "anim_script_type": "lua",
+                    "anim_start_time": 0.0,
+                    "anim_type": "caption",
+                    "duration": 0.5,
+                    "loop_duration": 0.0
+                }
+            ],
+            "duration": 3.0,
+            "layout_params": {
+                "bottom_toBottomOf": "",
+                "fix_dimensionRatio": false,
+                "fix_height": true,
+                "fix_width": true,
+                "hCenter_toHCenterOf": "",
+                "left_toLeftOf": "",
+                "right_toRightOf": "",
+                "top_toTopOf": "",
+                "vCenter_toVCenterOf": ""
+            },
+            "lineFeedKind": 1,
+            "name": "EC2B7E87-6DF9-447F-9C27-0D194CF23479",
+            "order_in_layer": 1,
+            "original_size": [
+                584.944580078125,
+                87.5
+            ],
+            "position": [
+                0.0,
+                0.0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -0.0
+            ],
+            "scale": [
+                1.095949411392212,
+                1.095949411392212,
+                1
+            ],
+            "start_time": 0.0,
+            "text_params": {
+                "autoAdaptDpiEnabled": false,
+                "boldValue": 0.008,
+                "canvas": false,
+                "canvasColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "canvasCustomized": true,
+                "canvasOffsetCustomized": [
+                    0.0,
+                    0.0
+                ],
+                "canvasRoundCorner": false,
+                "canvasRoundRadiusScale": 0.0,
+                "canvasSplitPadding": 0.1,
+                "canvasSplitThreshold": 1000.0,
+                "canvasWHCustomized": [
+                    1.0,
+                    1.0
+                ],
+                "canvasWrapped": false,
+                "decorationOffset": 0.22,
+                "decorationWidth": 0.05,
+                "fallbackFontPathList": [],
+                "globalAlpha": 1.0,
+                "innerPadding": 0.2,
+                "italicDegree": 10,
+                "letterSpacing": -0.014424229527380206,
+                "lineMaxWidth": -1.0,
+                "lineSpacing": 0.02,
+                "oneLineCutOff": false,
+                "richText": "<useLetterColor><outline color=(0,0,0,1) width=0.06><size=18><color=(0,0.93725,1,1)><font id=\"7220717732658942465\" path=\"\">[The quick brown fox]</font></color></size></outline></useLetterColor>",
+                "selectedColor": [
+                    0.0,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.4000000059604645
+                ],
+                "shapeFlipX": false,
+                "shapeFlipY": false,
+                "shapePath": "",
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0,
+                "version": "2"
+            },
+            "type": "text",
+            "visible": true,
+            "caption_params": {
+                "keyword_rich_text": "{\"styles\":[{\"size\":23.4, \"fill\":{\"alpha\": 1,\"content\":{\"solid\":{\"color\":[0.9882352941176471, 1.0, 0.0]}}},\"range\":[0,19]}], \"text\":\"The quick brown fox\"}"
+            }
+        }
+    ],
+    "root": {
+        "duration": 3,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "type": "ScriptTemplate"
+}

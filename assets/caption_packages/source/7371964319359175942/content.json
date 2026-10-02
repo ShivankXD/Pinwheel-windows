@@ -1,0 +1,111 @@
+{
+    "children": [
+        {
+            "anims": [],
+            "caption_params": {
+                "enable_keyword": true,
+                "ignore_AI_punctuation": false,
+                "keyword_rich_text": "{\"styles\":[{\"bold\":false,\"effectStyle\":{\"id\":\"7371668237420859920\"},\"fill\":{\"alpha\":1.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"alpha\":1.0,\"color\":[1.0,1.0,1.0]}}},\"font\":{\"id\":\"7256628682490384898\"},\"range\":[0,1],\"size\":16.97602653503418}],\"text\":\"A\"}",
+                "max_lines_per_page": 1,
+                "max_units_per_line": 2,
+                "version": "1.0.0"
+            },
+            "duration": 9.6,
+            "keyframe_params": {
+                "keyframes": [],
+                "selectors": []
+            },
+            "layout_params": {
+                "bottom_toBottomOf": "",
+                "fix_dimensionRatio": false,
+                "fix_height": true,
+                "fix_width": true,
+                "hCenter_toHCenterOf": "",
+                "left_toLeftOf": "",
+                "right_toRightOf": "",
+                "top_toTopOf": "",
+                "vCenter_toVCenterOf": ""
+            },
+            "lineFeedKind": 1,
+            "name": "4A8585AE-B545-43DF-8948-174BBBB2AA2B",
+            "order_in_layer": 1,
+            "original_size": [
+                1337.25,
+                342.5
+            ],
+            "position": [
+                0.0,
+                0.0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1
+            ],
+            "start_time": 0.0,
+            "text_params": {
+                "autoAdaptDpiEnabled": false,
+                "bloomPath": "",
+                "boldValue": 0.008,
+                "canvas": false,
+                "canvasColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "canvasCustomized": true,
+                "canvasOffsetCustomized": [
+                    0.0,
+                    0.0
+                ],
+                "canvasRoundCorner": false,
+                "canvasRoundRadiusScale": 0.0,
+                "canvasSplitPadding": 0.1,
+                "canvasSplitThreshold": 1000.0,
+                "canvasWHCustomized": [
+                    1.0,
+                    1.0
+                ],
+                "canvasWrapped": false,
+                "decorationOffset": 0.22,
+                "decorationWidth": 0.05,
+                "fallbackFontPathList": [],
+                "globalAlpha": 1.0,
+                "innerPadding": 0.2,
+                "italicDegree": 10,
+                "letterSpacing": 0.0,
+                "lineMaxWidth": -1.0,
+                "lineSpacing": 0.02,
+                "oneLineCutOff": false,
+                "richText": "<effectStyle id=\"7374360128675385873\" path=\"\"><size=15><color=(0.15686,0.15686,0.15686,1)><font id=\"7256628682490384898\" path=\"\">[Flexible editing,\nmagical AI tools,\nteam collaboration,\nand stock assets.\nMake video creation like never before.]</font></color></size></effectStyle>",
+                "selectedColor": [
+                    0.0,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.4000000059604645
+                ],
+                "shapeFlipX": false,
+                "shapeFlipY": false,
+                "shapePath": "",
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0,
+                "version": "2"
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 9,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "type": "ScriptTemplate"
+}

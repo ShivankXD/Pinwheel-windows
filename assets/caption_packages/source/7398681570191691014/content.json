@@ -1,0 +1,290 @@
+{
+    "children": [
+        {
+            "anims": [],
+            "caption_params": {
+                "enable_keyword": true,
+                "ignore_AI_punctuation": false,
+                "keyword_rich_text": "{\"styles\":[{\"fill\":{\"alpha\":1.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"alpha\":1.0,\"color\":[1.0,0.8705882430076599,0.0,1.0]}}},\"font\":{\"id\":\"7324166831881589249\"},\"range\":[0,1],\"shadows\":[{\"alpha\":0.3499999940395355,\"angle\":-45.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"alpha\":1.0,\"color\":[0.0,0.0,0.0]}},\"diffuse\":0.00531275337561965,\"distance\":3.0}],\"size\":12.0,\"useLetterColor\":true}],\"text\":\"A\"}",
+                "max_lines_per_page": 1,
+                "max_units_per_line": 3,
+                "version": "1.0.0"
+            },
+            "duration": 9.6,
+            "keyframe_params": {
+                "keyframes": [
+                    {
+                        "e": 1600000,
+                        "effect_id": "",
+                        "k": {
+                            "ti": [
+                                {
+                                    "h": 0,
+                                    "it": "linear",
+                                    "t": 0,
+                                    "v": 0.4
+                                },
+                                {
+                                    "h": 0,
+                                    "it": "linear",
+                                    "t": 1600000,
+                                    "v": 0.4
+                                }
+                            ]
+                        },
+                        "overlay_mode": "mul",
+                        "s": 0,
+                        "selector_id": "selector_word_unread",
+                        "t": 0,
+                        "v": "2.0.0"
+                    },
+                    {
+                        "e": 1600000,
+                        "effect_id": "",
+                        "k": {
+                            "bh": [
+                                {
+                                    "h": 0,
+                                    "it": "cubic",
+                                    "t": 0,
+                                    "v": 0.15,
+                                    "vi": 0.0,
+                                    "vo": 0.0029907168630826375,
+                                    "vti": 0.0,
+                                    "vto": 233333.0
+                                },
+                                {
+                                    "h": 0,
+                                    "it": "cubic",
+                                    "t": 233333,
+                                    "v": 0.2747679215770657,
+                                    "vi": 0.0,
+                                    "vo": 0.0,
+                                    "vti": -93333.20000000001,
+                                    "vto": 226666.80000000002
+                                },
+                                {
+                                    "h": 0,
+                                    "it": "linear",
+                                    "t": 800000,
+                                    "v": 0.15
+                                }
+                            ]
+                        },
+                        "overlay_mode": "add",
+                        "s": 0,
+                        "selector_id": "selector_word",
+                        "t": 0,
+                        "v": "2.0.0"
+                    },
+                    {
+                        "e": 1600000,
+                        "effect_id": "",
+                        "k": {
+                            "bw": [
+                                {
+                                    "h": 0,
+                                    "it": "linear",
+                                    "t": 0,
+                                    "v": 0.15
+                                },
+                                {
+                                    "h": 0,
+                                    "it": "cubic",
+                                    "t": 233333,
+                                    "v": 0.2681589934785487,
+                                    "vi": 0.0,
+                                    "vo": 0.0,
+                                    "vti": -93333.20000000001,
+                                    "vto": 226666.80000000002
+                                },
+                                {
+                                    "h": 0,
+                                    "it": "linear",
+                                    "t": 800000,
+                                    "v": 0.15
+                                }
+                            ]
+                        },
+                        "overlay_mode": "add",
+                        "s": 0,
+                        "selector_id": "selector_word",
+                        "t": 0,
+                        "v": "2.0.0"
+                    },
+                    {
+                        "e": 1600000,
+                        "effect_id": "",
+                        "k": {
+                            "bc": [
+                                {
+                                    "h": 0,
+                                    "it": "linear",
+                                    "t": 0,
+                                    "v": [
+                                        1.0,
+                                        0.3294117748737335,
+                                        0.2235294133424759,
+                                        1.0
+                                    ]
+                                },
+                                {
+                                    "h": 0,
+                                    "it": "linear",
+                                    "t": 1600000,
+                                    "v": [
+                                        1.0,
+                                        0.3294117748737335,
+                                        0.2235294133424759,
+                                        1.0
+                                    ]
+                                }
+                            ]
+                        },
+                        "overlay_mode": "over",
+                        "s": 0,
+                        "selector_id": "selector_word",
+                        "t": 0,
+                        "v": "2.0.0"
+                    },
+                    {
+                        "e": 1600000,
+                        "effect_id": "",
+                        "k": {
+                            "br": [
+                                {
+                                    "h": 0,
+                                    "it": "linear",
+                                    "t": 0,
+                                    "v": 0.2793899794756356
+                                },
+                                {
+                                    "h": 0,
+                                    "it": "linear",
+                                    "t": 1600000,
+                                    "v": 0.2793899794756356
+                                }
+                            ]
+                        },
+                        "overlay_mode": "add",
+                        "s": 0,
+                        "selector_id": "selector_word",
+                        "t": 0,
+                        "v": "2.0.0"
+                    }
+                ],
+                "selectors": [
+                    {
+                        "end_pos_shift": 0.0,
+                        "end_time_shift": 0.0,
+                        "id": "selector_word",
+                        "pos_based_on": "percent",
+                        "pos_unit": "word",
+                        "selector_unit": "word",
+                        "start_pos_shift": 0.0,
+                        "start_time_shift": 0.0,
+                        "time_based_on": "percent",
+                        "time_unit": "word"
+                    },
+                    {
+                        "id": "selector_word_unread",
+                        "selector_unit": "word_unread",
+                        "type": "caption"
+                    }
+                ],
+                "value_generators": null
+            },
+            "layout_params": {
+                "bottom_toBottomOf": "",
+                "fix_dimensionRatio": false,
+                "fix_height": true,
+                "fix_width": true,
+                "hCenter_toHCenterOf": "",
+                "left_toLeftOf": "",
+                "right_toRightOf": "",
+                "top_toTopOf": "",
+                "vCenter_toVCenterOf": ""
+            },
+            "lineFeedKind": 1,
+            "name": "84AFE3A6-8D1D-4D01-89B5-97A2D9C091DD",
+            "order_in_layer": 1,
+            "original_size": [
+                1058.40576171875,
+                300.6189880371094
+            ],
+            "position": [
+                0.0,
+                0.0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1
+            ],
+            "start_time": 0.0,
+            "text_params": {
+                "autoAdaptDpiEnabled": false,
+                "bloomPath": "",
+                "boldValue": 0.008,
+                "canvas": false,
+                "canvasColor": [
+                    0.4901960790157318,
+                    0.4901960790157318,
+                    0.4901960790157318,
+                    1.0
+                ],
+                "canvasCustomized": true,
+                "canvasOffsetCustomized": [
+                    0.0,
+                    0.0
+                ],
+                "canvasRoundCorner": false,
+                "canvasRoundRadiusScale": 0.0,
+                "canvasSplitPadding": 0.1,
+                "canvasSplitThreshold": 1000.0,
+                "canvasWHCustomized": [
+                    1.0,
+                    1.0
+                ],
+                "canvasWrapped": false,
+                "decorationOffset": 0.22,
+                "decorationWidth": 0.05,
+                "fallbackFontPathList": [],
+                "globalAlpha": 1.0,
+                "innerPadding": 0.2,
+                "italicDegree": 10,
+                "letterSpacing": 0.0,
+                "lineMaxWidth": -1.0,
+                "lineSpacing": 0.1530949755137791,
+                "oneLineCutOff": false,
+                "richText": "<useLetterColor><shadow color=(0,0,0,0.35) offset=(0.021213,-0.021213) diffuse=0.0050001 angle=-45><size=12><color=(0.98824,0.98431,0.99216,1)><font id=\"7324166831881589249\" path=\"\">[Flexible editing,\nmagical AI tools,\nteam collaboration,\nand stock assets.\nMake video creation like never before.]</font></color></size></shadow></useLetterColor>",
+                "selectedColor": [
+                    0.0,
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.4000000059604645
+                ],
+                "shapeFlipX": false,
+                "shapeFlipY": false,
+                "shapePath": "",
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0,
+                "version": "2"
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 9,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "type": "ScriptTemplate"
+}

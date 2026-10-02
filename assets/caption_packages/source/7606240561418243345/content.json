@@ -1,0 +1,110 @@
+{
+    "children": [
+        {
+            "anims": [
+                {
+                    "anim_resource_id": "7582432144211856641",
+                    "anim_resource_path": "",
+                    "anim_script_type": "lua",
+                    "anim_start_time": 0,
+                    "anim_type": "caption",
+                    "duration": 3,
+                    "loop_duration": 0
+                }
+            ],
+            "caption_params": {
+                "enable_keyword": true,
+                "ignore_AI_punctuation": false,
+                "keyword_alpha_overlay_mode": "over",
+                "keyword_capital": "none",
+                "keyword_color_overlay_mode": "over",
+                "keyword_default_overlay_mode": "over",
+                "keyword_isolation": "none",
+                "keyword_isolation_supersize": 1,
+                "keyword_rich_text": "{\"text\":\"A\",\"styles\":[{\"range\":[0,1],\"size\":12,\"fill\":{\"enable\":true,\"alpha\":1.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"color\":[1.0,0.0,0.0],\"alpha\":1}}}}]}",
+                "keyword_supersize": 1.2,
+                "max_lines_per_page": 2,
+                "max_units_per_line": 5,
+                "unit_type": "word",
+                "version": "1.0.0"
+            },
+            "duration": 3,
+            "keyframe_params": {
+            },
+            "layout_params": {
+            },
+            "lineFeedKind": 1,
+            "name": "C33A8883-77D3-4FC9-B8DA-74CBF113A0CE",
+            "order_in_layer": 0,
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "start_time": 0,
+            "text_params": {
+                "bloomBlurDegree": 0.1,
+                "bloomColor": [
+                    1,
+                    0.84,
+                    0,
+                    1
+                ],
+                "bloomColorCustomized": true,
+                "bloomDirX": 0.5,
+                "bloomDirY": 0.5,
+                "bloomId": "7367637998579487248",
+                "bloomPath": "",
+                "bloomRange": 0.2,
+                "bloomStrength": 0.3,
+                "boldValue": 0.008,
+                "canvas": false,
+                "capital": "none",
+                "decorationOffset": 0.15,
+                "decorationWidth": 0.04,
+                "fallbackFontPathList": [
+                ],
+                "globalAlpha": 1,
+                "innerPadding": 0,
+                "italicDegree": 10,
+                "letterSpacing": 0,
+                "lineMaxWidth": -1,
+                "lineSpacing": 0,
+                "richText": "<effectStyle id=\"7519455825526623541\" path=\"\"><color=(1,0.85,0,1)><size=12><font id=\"7044868401998598657\" path=\"\">[input text...]</font></size></color></effectStyle>",
+                "selectedColor": [
+                    0.5,
+                    0.7,
+                    1,
+                    0.8
+                ],
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0,
+                "version": "2"
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 3,
+        "keyframe_params": {
+            "keyframes": [
+            ]
+        },
+        "layer": 0,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "subType": "caption",
+    "type": "ScriptTemplate"
+}

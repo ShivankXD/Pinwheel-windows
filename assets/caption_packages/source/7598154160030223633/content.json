@@ -1,0 +1,164 @@
+{
+    "children": [
+        {
+            "caption_params": {
+                "max_lines_per_page": 1,
+                "max_units_per_line": 0,
+                "unit_type": "word"
+            },
+            "duration": 3,
+            "lineFeedKind": 1,
+            "name": "AC4F771D-220D-43D8-BD82-46FD9D8F1D31",
+            "order_in_layer": 0,
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "start_time": 0,
+            "text_params": {
+                "richText": "<size=12>[input text...]</size>",
+                "textLocale": 1,
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 3,
+        "layer": 0,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "subType": "uneven",
+    "sub_template_info": {
+        "application_mode": "sequential",
+        "application_order": [
+            1
+        ],
+        "elements": [
+            {
+                "children": [
+                    {
+                        "anims": [
+                            {
+                                "anim_resource_id": "7468924315493208592",
+                                "anim_resource_path": "",
+                                "anim_script_type": "lua",
+                                "anim_start_time": 0,
+                                "anim_type": "caption",
+                                "duration": 3,
+                                "loop_duration": 0
+                            }
+                        ],
+                        "caption_params": {
+                            "enable_keyword": true,
+                            "ignore_AI_punctuation": false,
+                            "keyword_alpha_overlay_mode": "over",
+                            "keyword_capital": "none",
+                            "keyword_color_overlay_mode": "over",
+                            "keyword_default_overlay_mode": "over",
+                            "keyword_isolation": "none",
+                            "keyword_isolation_supersize": 1,
+                            "keyword_rich_text": "{\"text\":\"A\",\"styles\":[{\"range\":[0,1],\"size\":12,\"fill\":{\"enable\":true,\"alpha\":1.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"color\":[1.0,0.498,0.314],\"alpha\":1}}}}]}",
+                            "keyword_supersize": 1.2,
+                            "max_lines_per_page": 2,
+                            "max_units_per_line": 8,
+                            "unit_type": "word",
+                            "version": "1.0.0"
+                        },
+                        "duration": 3,
+                        "keyframe_params": {
+                        },
+                        "layout_params": {
+                        },
+                        "lineFeedKind": 1,
+                        "name": "2F03756B-A0AA-4F45-947C-52D2FA450C7F",
+                        "order_in_layer": 0,
+                        "position": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "start_time": 0,
+                        "text_params": {
+                            "bloomBlurDegree": 0,
+                            "bloomColor": [
+                                1,
+                                1,
+                                1,
+                                1
+                            ],
+                            "bloomColorCustomized": false,
+                            "bloomDirX": 0.5,
+                            "bloomDirY": 0.5,
+                            "bloomId": "",
+                            "bloomPath": "",
+                            "bloomRange": 0,
+                            "bloomStrength": 0,
+                            "boldValue": 0.008,
+                            "canvas": false,
+                            "capital": "none",
+                            "decorationOffset": 0.15,
+                            "decorationWidth": 0.04,
+                            "fallbackFontPathList": [
+                            ],
+                            "globalAlpha": 1,
+                            "innerPadding": 0,
+                            "italicDegree": 10,
+                            "letterSpacing": 0,
+                            "lineMaxWidth": -1,
+                            "lineSpacing": 0,
+                            "richText": "<effectStyle id=\"local_2697CE9D\" path=\"local/local_2697CE9D\"><color=(0.878,0.922,0.965,1)><size=12><font id=\"7512729552410397969\" path=\"\">[input text...]</font></size></color></effectStyle>",
+                            "selectedColor": [
+                                0.5,
+                                0.7,
+                                1,
+                                0.8
+                            ],
+                            "typeSettingAlign": 1,
+                            "typeSettingKind": 0,
+                            "version": "2"
+                        },
+                        "type": "text",
+                        "visible": true
+                    }
+                ],
+                "root": {
+                    "duration": 3,
+                    "keyframe_params": {
+                        "keyframes": [
+                        ]
+                    },
+                    "layer": 0,
+                    "name": "rootWidget",
+                    "preview_time": 1.5
+                },
+                "sub_template_id": 1
+            }
+        ]
+    },
+    "type": "ScriptTemplate"
+}

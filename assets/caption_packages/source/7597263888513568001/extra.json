@@ -1,0 +1,10 @@
+{
+    "depend_resource_list": [
+        {
+            "resource_id": "7213702306926170626",
+            "source": 1,
+            "type": "text"
+        }
+    ],
+    "script_template_version": "1.0.0"
+}

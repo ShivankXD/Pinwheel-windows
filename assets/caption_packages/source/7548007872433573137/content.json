@@ -1,0 +1,182 @@
+{
+    "children": [
+        {
+            "caption_params": {
+                "enable_keyword": false,
+                "max_lines_per_page": 1,
+                "max_units_per_line": 0,
+                "unit_type": "word",
+                "version": "1.0.0"
+            },
+            "duration": 3,
+            "lineFeedKind": 1,
+            "name": "2A465FD6-0EA0-4DD0-98E9-EED7ACCFC169",
+            "order_in_layer": 0,
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "start_time": 0,
+            "text_params": {
+                "boldValue": 0.008,
+                "canvas": false,
+                "canvasColor": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "globalAlpha": 1,
+                "italicDegree": 10,
+                "richText": "<size=12>[input text...]</size>",
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0,
+                "version": "2"
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 3,
+        "layer": 0,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "subType": "uneven",
+    "sub_template_info": {
+        "application_mode": "sequential",
+        "application_order": [
+            1
+        ],
+        "elements": [
+            {
+                "children": [
+                    {
+                        "anims": [
+                            {
+                                "anim_resource_id": "7259642198914765313",
+                                "anim_resource_path": "",
+                                "anim_script_type": "lua",
+                                "anim_start_time": 0,
+                                "anim_type": "caption",
+                                "duration": 3,
+                                "loop_duration": 0
+                            }
+                        ],
+                        "caption_params": {
+                            "enable_keyword": true,
+                            "ignore_AI_punctuation": false,
+                            "keyword_alpha_overlay_mode": "over",
+                            "keyword_capital": "none",
+                            "keyword_color_overlay_mode": "over",
+                            "keyword_default_overlay_mode": "over",
+                            "keyword_isolation": "none",
+                            "keyword_isolation_supersize": 1,
+                            "keyword_rich_text": "{\"text\":\"A\",\"styles\":[{\"range\":[0,1],\"version\":\"3.0\",\"size\":14.0,\"fill\":{\"enable\":true,\"alpha\":1.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"color\":[1,0.5,0],\"alpha\":1}}}}]}",
+                            "keyword_supersize": 1,
+                            "max_lines_per_page": 1,
+                            "max_units_per_line": 0,
+                            "unit_type": "char",
+                            "version": "1.0.0"
+                        },
+                        "duration": 3,
+                        "keyframe_params": {
+                        },
+                        "layout_params": {
+                        },
+                        "lineFeedKind": 1,
+                        "name": "49FF8A3C-8326-4885-9304-19E75D68183F",
+                        "order_in_layer": 0,
+                        "position": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "start_time": 0,
+                        "text_params": {
+                            "boldValue": 0.008,
+                            "canvas": false,
+                            "canvasColor": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "canvasCustomized": false,
+                            "canvasOffsetCustomized": [
+                                0,
+                                0
+                            ],
+                            "canvasRoundCorner": false,
+                            "canvasRoundRadiusScale": 0,
+                            "canvasSplitPadding": 0.1,
+                            "canvasSplitThreshold": 10,
+                            "canvasWHCustomized": [
+                                0.1,
+                                0.1
+                            ],
+                            "canvasWrapped": false,
+                            "capital": "none",
+                            "decorationOffset": 0.15,
+                            "decorationWidth": 0.04,
+                            "fallbackFontPathList": [
+                            ],
+                            "globalAlpha": 1,
+                            "innerPadding": 0,
+                            "italicDegree": 10,
+                            "letterSpacing": 0,
+                            "lineMaxWidth": -1,
+                            "lineSpacing": 0,
+                            "richText": "<effectStyle id=\"local_45AEAC2B-3D88-4ED6-B422-C75CE4EB2728\" path=\"local/local_45AEAC2B-3D88-4ED6-B422-C75CE4EB2728\"><useLetterColor><size=12><font id=\"7512318818526579984\" path=\"\">[input text...]</font></size></useLetterColor></effectStyle>",
+                            "selectedColor": [
+                                0.5,
+                                0.7,
+                                1,
+                                0.8
+                            ],
+                            "typeSettingAlign": 1,
+                            "typeSettingKind": 0,
+                            "version": "2"
+                        },
+                        "type": "text",
+                        "visible": true
+                    }
+                ],
+                "root": {
+                    "duration": 3,
+                    "keyframe_params": {
+                        "keyframes": [
+                        ]
+                    },
+                    "layer": 0,
+                    "name": "rootWidget",
+                    "preview_time": 1.5
+                },
+                "sub_template_id": 1
+            }
+        ]
+    },
+    "type": "ScriptTemplate"
+}

@@ -1,0 +1,225 @@
+{
+    "children": [
+        {
+            "caption_params": {
+                "max_lines_per_page": 1,
+                "max_units_per_line": 0,
+                "unit_type": "word"
+            },
+            "duration": 3,
+            "lineFeedKind": 1,
+            "name": "2E4AFE7E-8C18-4610-B298-E8EF1F66C2A7",
+            "order_in_layer": 0,
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "start_time": 0,
+            "text_params": {
+                "richText": "<size=12>[input text...]</size>",
+                "textLocale": 1,
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 3,
+        "layer": 0,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "subType": "uneven",
+    "sub_template_info": {
+        "application_mode": "sequential",
+        "application_order": [
+            1
+        ],
+        "elements": [
+            {
+                "children": [
+                    {
+                        "anims": [
+                            {
+                                "anim_resource_id": "7122705805966578177",
+                                "anim_resource_path": "",
+                                "anim_script_type": "lua",
+                                "anim_start_time": 0,
+                                "anim_type": "caption",
+                                "duration": 3,
+                                "loop_duration": 0
+                            }
+                        ],
+                        "caption_params": {
+                            "enable_keyword": true,
+                            "ignore_AI_punctuation": false,
+                            "keyword_alpha_overlay_mode": "over",
+                            "keyword_capital": "upper",
+                            "keyword_color_overlay_mode": "over",
+                            "keyword_default_overlay_mode": "over",
+                            "keyword_isolation": "page",
+                            "keyword_isolation_supersize": 1,
+                            "keyword_rich_text": "{\"text\":\"A\",\"styles\":[{\"range\":[0,1],\"version\":\"3.0\",\"size\":12.0,\"fill\":{\"enable\":true,\"alpha\":1.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"color\":[1.0,0.8,0.0],\"alpha\":1}}}}]}",
+                            "keyword_supersize": 1.2,
+                            "max_lines_per_page": 1,
+                            "max_units_per_line": 6,
+                            "unit_type": "word",
+                            "version": "1.0.0"
+                        },
+                        "duration": 3,
+                        "keyframe_params": {
+                        },
+                        "layout_params": {
+                        },
+                        "lineFeedKind": 1,
+                        "name": "1CC72736-ED39-4DD2-8B45-207C92462BA1",
+                        "order_in_layer": 0,
+                        "position": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "start_time": 0,
+                        "text_params": {
+                            "bloomBlurDegree": 1,
+                            "bloomColor": [
+                                1,
+                                0,
+                                0,
+                                1
+                            ],
+                            "bloomColorCustomized": false,
+                            "bloomDirX": 0,
+                            "bloomDirY": 0,
+                            "bloomId": "",
+                            "bloomPath": "",
+                            "bloomRange": 1,
+                            "bloomStrength": 1,
+                            "boldValue": 0.008,
+                            "canvas": false,
+                            "canvasAdvancedInfo": {
+                                "fill": {
+                                    "alpha": 1,
+                                    "content": {
+                                        "gradient": {
+                                            "alpha": [
+                                                1,
+                                                1,
+                                                1
+                                            ],
+                                            "angle": 90,
+                                            "color": [
+                                                [
+                                                    0.93,
+                                                    0.11,
+                                                    0.14
+                                                ],
+                                                [
+                                                    1,
+                                                    0.84,
+                                                    0
+                                                ],
+                                                [
+                                                    0.06,
+                                                    0.32,
+                                                    0.73
+                                                ]
+                                            ],
+                                            "mode": "all",
+                                            "percent": [
+                                                0,
+                                                0.5,
+                                                1
+                                            ],
+                                            "style": "linear"
+                                        },
+                                        "render_type": "gradient"
+                                    },
+                                    "enable": true
+                                },
+                                "shapeType": "bounding"
+                            },
+                            "canvasColor": [
+                                1,
+                                0,
+                                0,
+                                1
+                            ],
+                            "canvasCustomized": true,
+                            "canvasOffsetCustomized": [
+                                0,
+                                0
+                            ],
+                            "canvasRoundCorner": true,
+                            "canvasRoundRadiusScale": 0,
+                            "canvasSplitPadding": 0.1,
+                            "canvasSplitThreshold": 10,
+                            "canvasWHCustomized": [
+                                0.1,
+                                0.1
+                            ],
+                            "capital": "upper",
+                            "decorationOffset": 0.15,
+                            "decorationWidth": 0.04,
+                            "fallbackFontPathList": [
+                            ],
+                            "globalAlpha": 1,
+                            "innerPadding": 0,
+                            "italicDegree": 10,
+                            "letterSpacing": 0,
+                            "lineMaxWidth": -1,
+                            "lineSpacing": 0,
+                            "richText": "<effectStyle id=\"local_833CE005\" path=\"local/local_833CE005\"><size=12><font id=\"7044868401998598657\" path=\"\">[input text...]</font></size></effectStyle>",
+                            "selectedColor": [
+                                0.5,
+                                0.7,
+                                1,
+                                0.8
+                            ],
+                            "typeSettingAlign": 1,
+                            "typeSettingKind": 0,
+                            "version": "2"
+                        },
+                        "type": "text",
+                        "visible": true
+                    }
+                ],
+                "root": {
+                    "duration": 3,
+                    "keyframe_params": {
+                        "keyframes": [
+                        ]
+                    },
+                    "layer": 0,
+                    "name": "rootWidget",
+                    "preview_time": 1.5
+                },
+                "sub_template_id": 1
+            }
+        ]
+    },
+    "type": "ScriptTemplate"
+}

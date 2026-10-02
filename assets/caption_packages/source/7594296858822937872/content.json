@@ -1,0 +1,201 @@
+{
+    "children": [
+        {
+            "caption_params": {
+                "max_lines_per_page": 1,
+                "max_units_per_line": 0,
+                "unit_type": "word"
+            },
+            "duration": 3,
+            "lineFeedKind": 1,
+            "name": "0B4FFE0A-D9C5-4CEA-BE4A-487C01C05ECF",
+            "order_in_layer": 0,
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "start_time": 0,
+            "text_params": {
+                "richText": "<size=12>[input text...]</size>",
+                "textLocale": 1,
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 3,
+        "layer": 0,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "subType": "uneven",
+    "sub_template_info": {
+        "application_mode": "sequential",
+        "application_order": [
+            1
+        ],
+        "elements": [
+            {
+                "children": [
+                    {
+                        "anims": [
+                            {
+                                "anim_resource_id": "7174985224432914945",
+                                "anim_resource_path": "",
+                                "anim_script_type": "lua",
+                                "anim_start_time": 0,
+                                "anim_type": "caption",
+                                "duration": 3,
+                                "loop_duration": 0
+                            }
+                        ],
+                        "caption_params": {
+                            "enable_keyword": true,
+                            "ignore_AI_punctuation": false,
+                            "keyword_alpha_overlay_mode": "over",
+                            "keyword_capital": "none",
+                            "keyword_color_overlay_mode": "over",
+                            "keyword_default_overlay_mode": "over",
+                            "keyword_isolation": "none",
+                            "keyword_isolation_supersize": 1,
+                            "keyword_rich_text": "{\"text\":\"A\",\"styles\":[{\"range\":[0,1],\"size\":12.0,\"fill\":{\"enable\":true,\"alpha\":1.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"color\":[1.0,0.84,0.0],\"alpha\":1.0}}}}]}",
+                            "keyword_supersize": 1.2,
+                            "max_lines_per_page": 2,
+                            "max_units_per_line": 6,
+                            "unit_type": "word",
+                            "version": "1.0.0"
+                        },
+                        "duration": 3,
+                        "keyframe_params": {
+                        },
+                        "layout_params": {
+                        },
+                        "lineFeedKind": 1,
+                        "name": "E6ADD77A-AF22-4ACD-B10E-80691CB6BB90",
+                        "order_in_layer": 0,
+                        "position": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "start_time": 0,
+                        "text_params": {
+                            "bloomBlurDegree": 1,
+                            "bloomColor": [
+                                1,
+                                1,
+                                1,
+                                1
+                            ],
+                            "bloomColorCustomized": false,
+                            "bloomDirX": 0,
+                            "bloomDirY": 0,
+                            "bloomId": "",
+                            "bloomPath": "",
+                            "bloomRange": 1,
+                            "bloomStrength": 1,
+                            "boldValue": 0.008,
+                            "canvas": false,
+                            "canvasAdvancedInfo": {
+                                "fill": {
+                                    "alpha": 1,
+                                    "content": {
+                                        "gradient": {
+                                            "alpha": [
+                                                1,
+                                                1
+                                            ],
+                                            "angle": 90,
+                                            "color": [
+                                                [
+                                                    0.15,
+                                                    0.35,
+                                                    0.55
+                                                ],
+                                                [
+                                                    0.35,
+                                                    0.65,
+                                                    0.95
+                                                ]
+                                            ],
+                                            "colorSpace": "sRGB",
+                                            "interpolation": "linear",
+                                            "mode": "all",
+                                            "percent": [
+                                                0,
+                                                1
+                                            ],
+                                            "style": "linear"
+                                        },
+                                        "render_type": "gradient"
+                                    },
+                                    "enable": true
+                                },
+                                "shapeType": "bounding"
+                            },
+                            "capital": "upper",
+                            "decorationOffset": 0.15,
+                            "decorationWidth": 0,
+                            "fallbackFontPathList": [
+                            ],
+                            "globalAlpha": 1,
+                            "innerPadding": 0,
+                            "italicDegree": 10,
+                            "letterSpacing": 0,
+                            "lineMaxWidth": -1,
+                            "lineSpacing": 0,
+                            "richText": "<effectStyle id=\"local_71DBC803\" path=\"local/local_71DBC803\"><color=(0.15,0.4,0.7,1)><size=12><font id=\"7525275079106759953\" path=\"\">[input text...]</font></size></color></effectStyle>",
+                            "selectedColor": [
+                                0.5,
+                                0.7,
+                                1,
+                                0.8
+                            ],
+                            "typeSettingAlign": 1,
+                            "typeSettingKind": 0,
+                            "version": "2"
+                        },
+                        "type": "text",
+                        "visible": true
+                    }
+                ],
+                "root": {
+                    "duration": 3,
+                    "keyframe_params": {
+                        "keyframes": [
+                        ]
+                    },
+                    "layer": 0,
+                    "name": "rootWidget",
+                    "preview_time": 1.5
+                },
+                "sub_template_id": 1
+            }
+        ]
+    },
+    "type": "ScriptTemplate"
+}

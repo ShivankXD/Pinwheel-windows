@@ -1,0 +1,147 @@
+{
+    "children": [
+        {
+            "anims": [
+                {
+                    "anim_resource_id": "7373891836558971393",
+                    "anim_resource_path": "",
+                    "anim_script_type": "lua",
+                    "anim_start_time": 0,
+                    "anim_type": "caption",
+                    "duration": 3,
+                    "loop_duration": 0
+                }
+            ],
+            "caption_params": {
+                "enable_keyword": true,
+                "ignore_AI_punctuation": false,
+                "keyword_alpha_overlay_mode": "over",
+                "keyword_capital": "none",
+                "keyword_color_overlay_mode": "over",
+                "keyword_default_overlay_mode": "over",
+                "keyword_isolation": "none",
+                "keyword_isolation_supersize": 1,
+                "keyword_rich_text": "{\"text\":\"A\",\"styles\":[{\"range\":[0,1],\"size\":12,\"fill\":{\"enable\":true,\"alpha\":1.0,\"content\":{\"render_type\":\"solid\",\"solid\":{\"color\":[0.85,0.62,0.23],\"alpha\":1}}}}]}",
+                "keyword_supersize": 1.2,
+                "max_lines_per_page": 2,
+                "max_units_per_line": 10,
+                "unit_type": "word",
+                "version": "1.0.0"
+            },
+            "duration": 3,
+            "keyframe_params": {
+            },
+            "layout_params": {
+            },
+            "lineFeedKind": 1,
+            "name": "AECCCACB-F550-4595-9126-BCF1A7CABECB",
+            "order_in_layer": 0,
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "start_time": 0,
+            "text_params": {
+                "bloomBlurDegree": 0.5,
+                "bloomColor": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "bloomColorCustomized": false,
+                "bloomDirX": 0.5,
+                "bloomDirY": 0.5,
+                "bloomId": "",
+                "bloomPath": "",
+                "bloomRange": 0.5,
+                "bloomStrength": 0.5,
+                "boldValue": 0.008,
+                "canvas": false,
+                "canvasAdvancedInfo": {
+                    "fill": {
+                        "alpha": 1,
+                        "content": {
+                            "render_type": "solid",
+                            "solid": {
+                                "alpha": 1,
+                                "color": [
+                                    1,
+                                    1,
+                                    1
+                                ]
+                            }
+                        },
+                        "enable": true
+                    },
+                    "shapeType": "bounding"
+                },
+                "canvasColor": [
+                    0.1,
+                    0.1,
+                    0.1,
+                    1
+                ],
+                "canvasCustomized": true,
+                "canvasOffsetCustomized": [
+                    0,
+                    0
+                ],
+                "canvasRoundCorner": true,
+                "canvasRoundRadiusScale": 0.2,
+                "canvasSplitPadding": 0.25,
+                "canvasSplitThreshold": 8,
+                "canvasWHCustomized": [
+                    0.2,
+                    0.2
+                ],
+                "capital": "none",
+                "decorationOffset": 0.15,
+                "decorationWidth": 0.04,
+                "fallbackFontPathList": [
+                ],
+                "globalAlpha": 1,
+                "innerPadding": 0,
+                "italicDegree": 10,
+                "letterSpacing": 0,
+                "lineMaxWidth": -1,
+                "lineSpacing": 0,
+                "richText": "<effectStyle id=\"7512369884890762557\" path=\"\"><useLetterColor><color=(0.1,0.1,0.1,1)><size=12><font id=\"7525275079106759953\" path=\"\"><b>[input text...]</b></font></size></color></useLetterColor></effectStyle>",
+                "selectedColor": [
+                    0.5,
+                    0.7,
+                    1,
+                    0.8
+                ],
+                "typeSettingAlign": 1,
+                "typeSettingKind": 0,
+                "version": "2"
+            },
+            "type": "text",
+            "visible": true
+        }
+    ],
+    "root": {
+        "duration": 3,
+        "keyframe_params": {
+            "keyframes": [
+            ]
+        },
+        "layer": 0,
+        "name": "rootWidget",
+        "preview_time": 1.5
+    },
+    "subType": "caption",
+    "type": "ScriptTemplate"
+}
