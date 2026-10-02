@@ -1,4 +1,4 @@
-name: Windows P0
+name: Windows P1
 on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
@@ -15,6 +15,12 @@ jobs:
       - name: Clean build and checks
         shell: pwsh
         run: ./scripts/build.ps1
+      - name: Verify pinned desktop source and asset hashes
+        shell: pwsh
+        run: python scripts/verify-p1-port.py --desktop-only
+      - name: Verify debug entitlement controls
+        shell: pwsh
+        run: ./scripts/build.ps1 -Tasks ':pinwheel-app:check','-Ppinwheel.debug=true'
       - name: Launch real Compose window and capture evidence
         shell: pwsh
         run: ./scripts/build.ps1 -Tasks ':pinwheel-app:p0Smoke'
@@ -24,7 +30,8 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: p0-evidence
+          name: p1-evidence
           path: |
             **/build/reports/tests/
             evidence/p0/runtime/
+            evidence/p1/runtime/

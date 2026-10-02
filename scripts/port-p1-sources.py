@@ -237,6 +237,11 @@ for source in sorted(test_source.rglob('*.kt')):
     records.append({'source': str(source.relative_to(MOBILE)).replace('\\', '/'), 'sourceSha256': hashlib.sha256(original).hexdigest(),
                     'target': str(target.relative_to(ROOT)).replace('\\', '/'), 'targetSha256': hashlib.sha256(target.read_bytes()).hexdigest()})
 shutil.copytree(MOBILE / 'app/src/test/resources', ROOT / 'pinwheel-core/src/test/resources', dirs_exist_ok=True)
+for source in sorted((MOBILE / 'app/src/test/resources').rglob('*')):
+    if source.is_file():
+        target = ROOT / 'pinwheel-core/src/test/resources' / source.relative_to(MOBILE / 'app/src/test/resources')
+        records.append({'source': str(source.relative_to(MOBILE)).replace('\\', '/'), 'sourceSha256': hashlib.sha256(source.read_bytes()).hexdigest(),
+                        'target': str(target.relative_to(ROOT)).replace('\\', '/'), 'targetSha256': hashlib.sha256(target.read_bytes()).hexdigest()})
 # A port can intentionally replace a registry with its pure-math superset above.
 records = list({record['target']: record for record in records}.values())
 manifest.write_text(json.dumps(records, indent=2) + '\n', encoding='utf-8')

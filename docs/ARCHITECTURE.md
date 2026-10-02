@@ -1,4 +1,4 @@
-# Desktop foundation
+# Desktop architecture through P1
 
 P0 implements the brief's six module boundaries. The core has no Compose, Android,
 AWT or native dependency. Native adapters return `RgbaFrame`: straight-alpha,
@@ -6,10 +6,14 @@ sRGB 8-bit RGBA, top row first. ANGLE readback reverses GL rows exactly once.
 The asymmetric triangle test verifies this convention.
 
 `pinwheel-app` depends on the core, platform and rendering/media/photo adapters.
-The adapters depend on the core and never on the UI. The photo module is an empty
-P6 boundary. There is no editor, project codec, command bus or MCP implementation yet.
+The adapters depend on the core and never on the UI. The photo module is a P6
+boundary; the pure math required by mobile JVM tests is already in core.
+P1 adds version-10 JSON, codecs, file stores, catalogs, typed serializable commands,
+ProjectSession, persisted undo, gesture drafts and durable autosave. Core editing
+and export policy consumes AuthProvider/Entitlement rather than UI state.
+There is no editor UI, production playback/export or MCP implementation yet.
 
-## Contracts planned for P1 and later
+## Implemented contracts and later phases
 
 - Copy mobile models and codecs with their current names, defaults, sanitization,
   stable IDs and project version 10 (read versions 1 through 10). Retired effect IDs
@@ -23,7 +27,7 @@ P6 boundary. There is no editor, project codec, command bus or MCP implementatio
   with today's JSON keys; no keyframe fields are implemented in P0.
 - P2 owns shader programs, ping-pong buffers, history/trails and catalog goldens.
   P3 owns persistent decode, bounded queues and the audio master clock. P5 owns
-  Media Foundation encoding, mixdown and export limits.
+  Media Foundation encoding and mixdown. P1 already enforces export limits.
 - Future MCP clients can call the same session and evaluator after P8 owner
   approval. No MCP module or tool is added before that approval.
 
@@ -31,7 +35,15 @@ The P0 triangle allocates a new pbuffer/context for each diagnostic call and
 releases it afterward. It proves the binding and orientation, not playback speed.
 The P0 FFmpeg subprocess accurately decodes a requested demo frame but provides
 no audio playback, hardware-decode verification, frame cache or low-latency seek claim.
+It cannot implement MediaDecoder: playback factories are explicitly in-process.
+The P3 interface carries D3D11VA/software selection, bounded frame/audio queues,
+byte budgets, timestamps and seek generations, persistent lifetime and audio EOS.
+
+P1 golden image I/O, metrics, reports and heatmaps live in pinwheel-render/qa.
+Core remains free of AWT, Compose, Android and native bindings. See port notes for
+the preserved shader data and preview input recipe; GPU execution stays in P2.
 
 Storage resolves to `%APPDATA%/Pinwheel/{projects,originals}` and
 `%LOCALAPPDATA%/Pinwheel/{cache,crash-reports}`. P0 only defines paths;
-settings persistence, autosave and crash-report writing are later-phase work.
+settings persistence and crash-report writing are later-phase work. P1 file
+stores and autosave operate on an injected Windows files directory.

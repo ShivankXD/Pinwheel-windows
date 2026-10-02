@@ -16,6 +16,13 @@ val debugBuild = providers.gradleProperty("pinwheel.debug").orNull == "true"
 layout.buildDirectory = layout.projectDirectory.dir(if (debugBuild) "build/debug" else "build/release")
 if (debugBuild) {
     sourceSets.main { kotlin.srcDir("src/debug/kotlin"); resources.srcDir("src/debug/resources") }
+    tasks.register<JavaExec>("debugCheck") {
+        dependsOn("classes")
+        classpath = sourceSets.main.get().runtimeClasspath
+        mainClass.set("com.pinwheel.app.debug.DebugCheckKt")
+        workingDir = rootDir
+    }
+    tasks.named("check") { dependsOn("debugCheck") }
 }
 tasks.register("verifyBuildVariant") {
     dependsOn("jar")

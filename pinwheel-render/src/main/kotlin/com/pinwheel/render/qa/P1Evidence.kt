@@ -1,4 +1,4 @@
-package com.pinwheel.core.qa
+package com.pinwheel.render.qa
 
 import com.pinwheel.core.data.*
 import com.pinwheel.core.media.video.*

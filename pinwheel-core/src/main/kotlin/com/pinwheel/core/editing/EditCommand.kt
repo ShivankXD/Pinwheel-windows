@@ -24,6 +24,7 @@ data class AddEffect(val kind: String, val atMs: Long, val lengthMs: Long? = nul
     val params: Map<String, Float>? = null, val target: String = "") : EditCommand { override val label = "Add effect" }
 data class PickEffect(val effectId: String?, val kind: String?, val atMs: Long, val target: String = "") : EditCommand { override val label = "Pick effect" }
 data class SetEffectParams(val effectId: String, val params: Map<String, Float>) : EditCommand { override val label = "Adjust effect" }
+data class SetEffect(val value: VideoTimedEffect) : EditCommand { override val label = "Edit effect" }
 data class DuplicateEffect(val effectId: String) : EditCommand { override val label = "Duplicate effect" }
 data class AddText(val value: VideoTextOverlay) : EditCommand { override val label = "Add title" }
 data class SetText(val value: VideoTextOverlay) : EditCommand { override val label = "Edit title" }
@@ -40,6 +41,7 @@ data class ShiftCaptions(val offsetMs: Long) : EditCommand { override val label 
 data class SetCaptions(val cues: List<VideoCaptionCue>, val style: VideoCaptionStyle) : EditCommand { override val label = "Import captions" }
 enum class LayerKind(val mobileName: String) { EFFECT("Effect"), TEXT("Text"), IMAGE("Image"), AUDIO("Audio"), CAPTION("Caption") }
 data class DeleteLayer(val kind: LayerKind, val id: String) : EditCommand { override val label = "Delete layer" }
+data class DuplicateLayer(val kind: LayerKind, val id: String) : EditCommand { override val label = "Duplicate layer" }
 data class DragLayer(val kind: LayerKind, val id: String, val edge: TimelineEdge, val deltaMs: Long) : EditCommand { override val label = "Move layer" }
 data class SetLane(val kind: LayerKind, val id: String, val lane: Int) : EditCommand { override val label = "Move lane" }
 data object Undo : EditCommand { override val label = "Undo" }

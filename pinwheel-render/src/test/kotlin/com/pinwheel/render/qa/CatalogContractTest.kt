@@ -1,4 +1,4 @@
-package com.pinwheel.core.qa
+package com.pinwheel.render.qa
 
 import com.pinwheel.core.media.*
 import com.pinwheel.core.media.audio.AudioAssetCatalog

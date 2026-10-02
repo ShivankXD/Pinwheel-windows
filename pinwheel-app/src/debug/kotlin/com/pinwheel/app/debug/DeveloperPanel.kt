@@ -6,6 +6,7 @@ import androidx.compose.material3.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.pinwheel.app.DebugPanel
+import com.pinwheel.app.ApplicationServices
 import com.pinwheel.core.plans.*
 
 /** Never compiled into the default/release source set. No billing verification claim. */
@@ -15,10 +16,10 @@ class DebugEntitlement : Entitlement {
     fun toggle() { tier = if (tier == PlanTier.FREE) PlanTier.PLUS else PlanTier.FREE }
 }
 class DeveloperPanel : DebugPanel {
-    @Composable override fun Content() {
-        val entitlement = remember { DebugEntitlement() }
+    override val entitlement = DebugEntitlement()
+    @Composable override fun Content(services: ApplicationServices) {
         Row(Modifier.fillMaxWidth().padding(12.dp), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-            Text("Developer plan: ${entitlement.tier}")
+            Text("Developer plan: ${services.entitlement.tier}")
             Button(onClick = entitlement::toggle) { Text("Toggle Plus (debug)") }
         }
     }

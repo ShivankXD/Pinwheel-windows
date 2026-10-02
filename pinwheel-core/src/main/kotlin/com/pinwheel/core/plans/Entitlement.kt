@@ -3,7 +3,10 @@ package com.pinwheel.core.plans
 enum class PlanTier { FREE, PLUS }
 
 /** Later supplied by the backend using the same Google subject on phone and PC. */
-interface Entitlement { val tier: PlanTier }
+interface Entitlement {
+    val tier: PlanTier
+    val googleSubject: String? get() = null
+}
 object FreeEntitlement : Entitlement { override val tier = PlanTier.FREE }
 
 data class AuthAccount(val googleSubject: String, val displayName: String)
@@ -23,6 +26,7 @@ object ExportPolicy {
         auth: AuthProvider, entitlement: Entitlement): ExportPlan {
         check(auth.account != null) { "Sign in before exporting" }
         val plus = entitlement.tier == PlanTier.PLUS
+        if (plus && entitlement.googleSubject != null) check(entitlement.googleSubject == auth.account?.googleSubject) { "Plus belongs to a different account" }
         // Existing Plus projects remain readable, but cannot bypass the Free effects gate.
         check(plus || project.video.effects.none { it.enabled }) { "Effects require Plus" }
         val height = if (plus) request.height else if (request.height <= 0 || request.height > 1080) 1080 else request.height

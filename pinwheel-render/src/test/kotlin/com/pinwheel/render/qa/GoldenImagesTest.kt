@@ -1,4 +1,4 @@
-package com.pinwheel.core.qa
+package com.pinwheel.render.qa
 
 import java.awt.image.BufferedImage
 import org.junit.jupiter.api.Test

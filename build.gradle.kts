@@ -24,4 +24,4 @@ subprojects {
     }
 }
 tasks.register("p0Check") { dependsOn(subprojects.map { "${it.path}:check" }) }
-tasks.register("p1Check") { dependsOn(subprojects.map { "${it.path}:check" }); dependsOn(":pinwheel-core:p1References") }
+tasks.register("p1Check") { dependsOn(subprojects.map { "${it.path}:check" }); dependsOn(":pinwheel-render:p1References") }

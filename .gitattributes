@@ -4,3 +4,6 @@ licenses/mobile/** -text
 *.png -text
 *.mp4 -text
 *.webp -text
+*.jpg -text
+*.jar -text
+gradlew.bat text eol=crlf

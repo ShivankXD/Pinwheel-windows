@@ -57,6 +57,7 @@ fun main(args: Array<String>) {
         var failure by remember { mutableStateOf<String?>(null) }
         var licences by remember { mutableStateOf(false) }
         val debugPanels = remember { java.util.ServiceLoader.load(DebugPanel::class.java).toList() }
+        val services = remember { ApplicationServices(entitlement = debugPanels.firstOrNull()?.entitlement ?: com.pinwheel.core.plans.FreeEntitlement) }
         LaunchedEffect(Unit) {
             runCatching {
                 withContext(Dispatchers.IO) {
@@ -76,7 +77,7 @@ fun main(args: Array<String>) {
                 Surface(Modifier.fillMaxSize(), color = Ink, contentColor = Theme.onBackground) {
                     if (intro) PinwheelIntro { intro = false }
                     else Column { Box(Modifier.weight(1f)) { Workspace(probe, failure, { intro = true }, { licences = true }) }
-                        debugPanels.forEach { it.Content() }
+                        debugPanels.forEach { it.Content(services) }
                     }
                 }
                 if (licences) AlertDialog(onDismissRequest = { licences = false },

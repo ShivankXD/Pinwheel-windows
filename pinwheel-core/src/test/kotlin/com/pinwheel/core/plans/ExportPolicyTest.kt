@@ -24,4 +24,8 @@ class ExportPolicyTest {
         assertFailsWith<IllegalStateException> { ExportPolicy.authorize(movie.copy(video = VideoProjectEdits(effects = listOf(VideoTimedEffect()))), ExportSettings(), auth, FreeEntitlement) }
         assertFailsWith<IllegalArgumentException> { ExportPolicy.authorize(movie, ExportSettings(mbps = -2), auth, FreeEntitlement) }
     }
+    @Test fun accountLinkedPlusCannotBeUsedByAnotherGoogleAccount() {
+        val other = object : Entitlement { override val tier = PlanTier.PLUS; override val googleSubject = "different" }
+        assertFailsWith<IllegalStateException> { ExportPolicy.authorize(movie, ExportSettings(), auth, other) }
+    }
 }

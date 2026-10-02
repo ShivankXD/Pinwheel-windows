@@ -16,18 +16,18 @@ class ProjectSession(initial: StudioProject, private val save: ProjectAutosave,
     private var draftCommand: EditCommand? = null
     private var draft: StudioProject? = null
     val project: StudioProject @Synchronized get() = snapshot(draft ?: committed)
-    val canUndo: Boolean get() = if (committed.kind == ProjectKind.PHOTO) committed.photoHistory.past.isNotEmpty() else committed.videoHistory.past.isNotEmpty()
-    val canRedo: Boolean get() = if (committed.kind == ProjectKind.PHOTO) committed.photoHistory.future.isNotEmpty() else committed.videoHistory.future.isNotEmpty()
+    val canUndo: Boolean @Synchronized get() = if (committed.kind == ProjectKind.PHOTO) committed.photoHistory.past.isNotEmpty() else committed.videoHistory.past.isNotEmpty()
+    val canRedo: Boolean @Synchronized get() = if (committed.kind == ProjectKind.PHOTO) committed.photoHistory.future.isNotEmpty() else committed.videoHistory.future.isNotEmpty()
 
     @Synchronized fun apply(command: EditCommand): StudioProject {
         check(draft == null) { "Finish the current gesture first" }
         return commit(command)
     }
     @Synchronized fun updateDraft(command: EditCommand): StudioProject {
-        require(command is SetAdjustments || command is SetClipEdits || command is SetCanvas || command is DragLayer || command is SetEffectParams || command is SetText || command is SetImage || command is SetAudio) { "This command cannot stream a gesture" }
+        require(command is SetAdjustments || command is SetClipEdits || command is SetCanvas || command is DragLayer || command is SetEffectParams || command is SetEffect || command is SetText || command is SetImage || command is SetAudio) { "This command cannot stream a gesture" }
         val candidate = reduce(committed, command)
         validate(committed, candidate)
-        draft = snapshot(candidate); draftCommand = command
+        draft = snapshot(candidate); draftCommand = EditCommandCodec.decode(EditCommandCodec.encode(command))
         return project
     }
     @Synchronized fun cancelDraft() { draft = null; draftCommand = null }
@@ -40,7 +40,7 @@ class ProjectSession(initial: StudioProject, private val save: ProjectAutosave,
     }
     private fun commit(command: EditCommand): StudioProject {
         var next = reduce(committed, command)
-        validate(committed, next)
+        validate(committed, next, enforcePlan = command != Undo && command != Redo)
         if (next == committed) return snapshot(committed)
         next = next.copy(modifiedAt = clock(), video = if (next.kind == ProjectKind.VIDEO) next.video.clampedToDuration(next.durationMs) else next.video)
         if (command != Undo && command != Redo) next = if (next.kind == ProjectKind.PHOTO)
@@ -51,16 +51,17 @@ class ProjectSession(initial: StudioProject, private val save: ProjectAutosave,
         return snapshot(committed)
     }
     private fun snapshot(p: StudioProject) = ProjectCodec.decode(ProjectCodec.encode(p))
-    private fun validate(old: StudioProject, next: StudioProject) {
+    private fun validate(old: StudioProject, next: StudioProject, enforcePlan: Boolean = true) {
         require(next.clips.isNotEmpty()) { "Keep at least one clip" }
         require(next.clips.map { it.id }.distinct().size == next.clips.size) { "Duplicate clip identifier" }
         require(next.clips.all { it.uri.isNotBlank() && it.sourceDurationMs > 0 && it.startMs >= 0 && it.endMs in (it.startMs + 1)..it.sourceDurationMs }) { "Invalid clip source or trim" }
         val v = next.video
+        require(v.images.all { it.uri.isNotBlank() } && v.audio.all { it.uri.isNotBlank() && it.sourceDurationMs > 0 && it.durationMs > 0 }) { "Invalid layer media" }
         require(v.effects.size <= MAX_VIDEO_EFFECTS && v.images.size <= MAX_VIDEO_OVERLAYS && v.texts.size <= MAX_VIDEO_OVERLAYS && v.audio.size <= MAX_VIDEO_AUDIO_TRACKS && v.captions.size <= MAX_VIDEO_CAPTIONS) { "Layer limit reached" }
         for (ids in listOf(v.effects.map { it.id }, v.images.map { it.id }, v.texts.map { it.id }, v.audio.map { it.id }, v.captions.map { it.id })) require(ids.distinct().size == ids.size) { "Duplicate layer identifier" }
         require(v.captions.all { it.text.isNotBlank() && it.startMs >= 0 && it.endMs > it.startMs && it.endMs <= next.durationMs && !captionOverlaps(v.captions, it) }) { "Invalid or overlapping captions" }
-        require(v.effects.all { it.target.isEmpty() || v.images.any { image -> image.id == it.target } }) { "Effect target does not exist" }
-        if (entitlement.tier != PlanTier.PLUS) {
+        require(v.effects.all { it.target.isEmpty() || v.images.any { image -> image.id == it.target } || old.video.effects.any { previous -> previous.id == it.id && previous.target == it.target } }) { "Effect target does not exist" }
+        if (enforcePlan && entitlement.tier != PlanTier.PLUS) {
             val existing = old.video.effects.associateBy { it.id }
             check(v.effects.all { existing[it.id] == it }) { "Effects require Plus" }
         }
@@ -112,6 +113,7 @@ class ProjectSession(initial: StudioProject, private val save: ProjectAutosave,
                 else { val spec = VideoFxCatalog.find(c.kind); require(spec != null || c.kind in VIDEO_EFFECT_KINDS); p.copy(video = v.copy(effects = v.effects.map { if (it.id == selected.id) it.copy(kind = c.kind, intensity = 1f, params = spec?.defaults().orEmpty()) else it })) }
             }
             is SetEffectParams -> { effect(c.effectId); p.copy(video = v.copy(effects = v.effects.map { if (it.id == c.effectId) it.copy(params = c.params).sanitized() else it })) }
+            is SetEffect -> { effect(c.value.id); p.copy(video = v.copy(effects = v.effects.map { if (it.id == c.value.id) c.value.sanitized() else it })) }
             is DuplicateEffect -> p.copy(video = v.copy(effects = v.effects + effect(c.effectId).copy(id = UUID.randomUUID().toString())))
             is AddText -> p.copy(video = v.copy(texts = v.texts + c.value.sanitized()))
             is SetText -> { require(v.texts.any { it.id == c.value.id }); p.copy(video = v.copy(texts = v.texts.map { if (it.id == c.value.id) c.value.sanitized() else it })) }
@@ -152,10 +154,20 @@ class ProjectSession(initial: StudioProject, private val save: ProjectAutosave,
             is DeleteLayer -> p.copy(video = when (c.kind) {
                 LayerKind.EFFECT -> v.copy(effects = v.effects.filterNot { it.id == c.id })
                 LayerKind.TEXT -> v.copy(texts = v.texts.filterNot { it.id == c.id })
-                LayerKind.IMAGE -> v.copy(images = v.images.filterNot { it.id == c.id }, effects = v.effects.map { if (it.target == c.id) it.copy(target = "") else it })
+                LayerKind.IMAGE -> v.copy(images = v.images.filterNot { it.id == c.id })
                 LayerKind.AUDIO -> v.copy(audio = v.audio.filterNot { it.id == c.id })
                 LayerKind.CAPTION -> v.copy(captions = v.captions.filterNot { it.id == c.id })
             })
+            is DuplicateLayer -> {
+                val id = UUID.randomUUID().toString()
+                p.copy(video = when (c.kind) {
+                    LayerKind.EFFECT -> v.copy(effects = v.effects + effect(c.id).copy(id = id))
+                    LayerKind.TEXT -> v.copy(texts = v.texts + v.texts.first { it.id == c.id }.copy(id = id))
+                    LayerKind.IMAGE -> v.copy(images = v.images + v.images.first { it.id == c.id }.copy(id = id))
+                    LayerKind.AUDIO -> v.copy(audio = v.audio + v.audio.first { it.id == c.id }.copy(id = id))
+                    LayerKind.CAPTION -> error("Caption duplicates need a free time range")
+                })
+            }
             is DragLayer -> p.copy(video = v.dragLayer(c.kind.mobileName, c.id, c.edge, c.deltaMs, p.durationMs))
             is SetLane -> p.copy(video = v.withLane(c.kind.mobileName, c.id, c.lane))
             else -> error("Unhandled command")

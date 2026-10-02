@@ -2392,5 +2392,35 @@
     "sourceSha256": "95d89fe89d6d8fe67793b1bf80a103223a8f82d3020d6df44ec8be741a8f0c89",
     "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/ui/PhotoCropFrameTest.kt",
     "targetSha256": "d3f021c084a2d49f30aeee782d02bc5350a3175e107ee472089432afe2d762d0"
+  },
+  {
+    "source": "app/src/test/resources/looks/car.ppm",
+    "sourceSha256": "ec51e2610667b4958a8e4139334db1cbb11a44ef11961bfcdba5d658e1819468",
+    "target": "pinwheel-core/src/test/resources/looks/car.ppm",
+    "targetSha256": "ec51e2610667b4958a8e4139334db1cbb11a44ef11961bfcdba5d658e1819468"
+  },
+  {
+    "source": "app/src/test/resources/looks/food.ppm",
+    "sourceSha256": "8c9da2e755149363da0a347a47d752328812b549932adcb092d6df24f51ec63d",
+    "target": "pinwheel-core/src/test/resources/looks/food.ppm",
+    "targetSha256": "8c9da2e755149363da0a347a47d752328812b549932adcb092d6df24f51ec63d"
+  },
+  {
+    "source": "app/src/test/resources/looks/landscape.ppm",
+    "sourceSha256": "dcd4392b677683a19ec0f77bcbbd24e0620e4fd0e66eec11963644345b4fff86",
+    "target": "pinwheel-core/src/test/resources/looks/landscape.ppm",
+    "targetSha256": "dcd4392b677683a19ec0f77bcbbd24e0620e4fd0e66eec11963644345b4fff86"
+  },
+  {
+    "source": "app/src/test/resources/looks/portrait.ppm",
+    "sourceSha256": "b34b51e16bf84779d5a1441ea6be46a5c8de9d66e52d7ce1468e1cbb7aafbd51",
+    "target": "pinwheel-core/src/test/resources/looks/portrait.ppm",
+    "targetSha256": "b34b51e16bf84779d5a1441ea6be46a5c8de9d66e52d7ce1468e1cbb7aafbd51"
+  },
+  {
+    "source": "app/src/test/resources/looks/street.ppm",
+    "sourceSha256": "e56b6369f9b850f6c0cf35b8a45983d223cc9ca6165816e4666b7d6715b9c046",
+    "target": "pinwheel-core/src/test/resources/looks/street.ppm",
+    "targetSha256": "e56b6369f9b850f6c0cf35b8a45983d223cc9ca6165816e4666b7d6715b9c046"
   }
 ]

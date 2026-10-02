@@ -122,4 +122,19 @@ class ProjectSessionTest {
         session.apply(Undo); assertEquals(0f, session.project.adjustments.exposure)
         session.apply(Redo); assertEquals("file:///background.png", session.project.adjustments.cutout.imageUri)
     }
+    @Test fun deletingTargetLayerLeavesEffectTargetUnchangedAsOnMobile() {
+        val session = ProjectSession(movie(), {}, plus)
+        session.apply(AddImage(VideoImageOverlay(id = "image", uri = "file:///a.png", name = "a")))
+        session.apply(AddEffect("fx-shake", 0, target = "image"))
+        session.apply(DeleteLayer(LayerKind.IMAGE, "image"))
+        assertEquals("image", session.project.video.effects.single().target)
+        session.apply(Undo); assertEquals("image", session.project.video.images.single().id)
+    }
+    @Test fun draftFreezesCallerCollectionsBeforeCommit() {
+        val session = ProjectSession(movie(), {}, plus)
+        val texts = mutableListOf(VideoTextOverlay(id = "text", text = "Draft"))
+        session.updateDraft(SetCanvas(VideoProjectEdits(texts = texts)))
+        texts.clear(); session.commitDraft()
+        assertEquals("Draft", session.project.video.texts.single().text)
+    }
 }

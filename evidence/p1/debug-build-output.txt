@@ -1,0 +1,63 @@
+PASS Gradle 8.14.5 official distribution SHA-256 verified
+> Task :pinwheel-photo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-platform:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-photo:processResources NO-SOURCE
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-platform:processResources NO-SOURCE
+> Task :pinwheel-app:convertXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForMain NO-SOURCE
+> Task :pinwheel-app:generateResourceAccessorsForMain SKIPPED
+> Task :pinwheel-app:generateActualResourceCollectorsForMain SKIPPED
+> Task :pinwheel-app:generateComposeResClass SKIPPED
+> Task :pinwheel-app:assembleMainResources UP-TO-DATE
+> Task :pinwheel-app:processResources UP-TO-DATE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:compileKotlin
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar
+> Task :pinwheel-photo:compileKotlin NO-SOURCE
+> Task :pinwheel-photo:compileJava NO-SOURCE
+> Task :pinwheel-photo:classes UP-TO-DATE
+> Task :pinwheel-photo:jar UP-TO-DATE
+> Task :pinwheel-platform:compileKotlin
+> Task :pinwheel-platform:compileJava NO-SOURCE
+> Task :pinwheel-platform:classes UP-TO-DATE
+> Task :pinwheel-platform:jar UP-TO-DATE
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+> Task :pinwheel-render:jar UP-TO-DATE
+> Task :pinwheel-media:compileKotlin
+> Task :pinwheel-media:compileJava NO-SOURCE
+> Task :pinwheel-media:classes UP-TO-DATE
+> Task :pinwheel-media:jar UP-TO-DATE
+> Task :pinwheel-app:compileKotlin
+> Task :pinwheel-app:compileJava NO-SOURCE
+> Task :pinwheel-app:classes UP-TO-DATE
+> Task :pinwheel-app:jar
+
+> Task :pinwheel-app:verifyBuildVariant
+PASS debug includes debug entitlement controls
+
+> Task :pinwheel-app:debugCheck
+PASS debug Plus toggle drives the shared core/export entitlement and sign-in gate
+
+> Task :pinwheel-app:p0Smoke
+PASS Compose window opened and intro completed
+PASS ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.8186)
+PASS OpenGL ES 3.0.0 (ANGLE 2.1.24077 git hash: 367e9e74a865)
+PASS FFmpeg decoded demo.mp4 at 1.000000 s: 960x720 RGBA
+PASS ffmpeg version n8.1.3-9-g29e619e767-20260930 Copyright (c) 2000-2026 the FFmpeg developers
+PASS licences dialog opened with copied notices
+PASS screenshots captured directly from the app's Skia layer
+
+
+BUILD SUCCESSFUL in 16s
+16 actionable tasks: 10 executed, 6 up-to-date

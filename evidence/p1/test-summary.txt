@@ -1,0 +1,5 @@
+pinwheel-core: 204 tests, 0 failures, 0 skipped
+pinwheel-platform: 2 tests, 0 failures, 0 skipped
+pinwheel-media: 3 tests, 0 failures, 0 skipped
+pinwheel-render: 9 tests, 0 failures, 0 skipped
+TOTAL: 218 tests, 0 failures, 0 skipped
