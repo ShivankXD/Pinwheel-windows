@@ -1,6 +1,6 @@
 # Parity checklist
 
-P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/package inputs. P2 runtime and Effect Lab are implemented, but the strict pixel audit has 277 failures. Under the owner noise amendment, 69 deterministic frames and 86 noise structural frames still fail; 686 noise passes remain provisional for owner review. Mobile editing and visual parity are incomplete. Windows target: 10 22H2+ and 11, x64.
+P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/package inputs. P2 runtime and Effect Lab are implemented, but the strict pixel audit has 252 failures. Under the owner noise amendment, 46 deterministic frames and 84 noise structural frames still fail; 688 noise passes remain provisional for owner review. Mobile editing and visual parity are incomplete. Windows target: 10 22H2+ and 11, x64.
 
 ✅ means the stated check has evidence; ⚠️ means partial implementation or missing comparison evidence; ❌ means unimplemented. P1 contract checks below have evidence; full features remain partial until rendering/UI and mobile comparisons pass. Deterministic golden acceptance requires sRGB per-channel mean absolute error <= 2/255 and 99th percentile <= 8/255 at 0.3, 0.9, 1.5 and 2.1 s. The owner amended noise-driven specs to Gaussian/histogram/mean-luminance structural review; proposed limits in docs/p2-noise-policy.json require owner review.
 
@@ -45,7 +45,7 @@ P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/
 | All catalog GLSL compiles | ✅ | 422 compiled, 0 failures; `evidence/p2/shader-compile.json` |
 | Sample/SWAY preview recipe, history inputs, params, loop/cache | ✅ | `PreviewTileRendererTest`, 1688 generated frames; recipe/runtime assertions do not imply every mobile pixel passes |
 | Debug Effect Lab and release exclusion | ✅ | `evidence/p2/effect-lab.png`, actual-window smoke and jar variant guard |
-| Mobile effect pixels | ⚠️ | Strict audit: 1411 pass / 277 fail / 0 missing. Owner class policy: 847 deterministic passes / 69 failures, 686 noise provisional passes / 86 failures. `evidence/p2/STRUCTURAL-REPORT.md`, both metric CSV sets and worst 20 galleries; acceptance remains open |
+| Mobile effect pixels | ⚠️ | Strict audit: 1436 pass / 252 fail / 0 missing. Owner class policy: 870 deterministic passes / 46 failures, 688 noise provisional passes / 84 failures. `evidence/p2/STRUCTURAL-REPORT.md`, both metric CSV sets and worst 20 galleries; acceptance remains open |
 | P2 read-only source/reference provenance | ✅ | 404 P1 hashes, 7 P2 mobile source hashes, 8 legacy/layer shader literals, 1715 reference input hashes unchanged |
 | Hosted Windows/JDK 17 runtime build | ✅ | [Run 36995074569](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36995074569), runtime 2e233ee; clean checks, frame generation, class verification and smoke; `evidence/p2/ci-result.json`; mobile goldens are local only |
 
@@ -61,7 +61,7 @@ P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/
 | Plan badge and Plus page | Free pill, gold Plus crown and subscription page | ⚠️ | Debug-only entitlement toggle and release guard tested; production page/backend P7 |
 | Multi-track timeline | Mixed clips, effects, overlays/stickers/text, audio, captions, ruler, filmstrips, trim/move/zoom; 64 lanes | ⚠️ | Models, drag/trim/lane/snapping math and JVM assertions ported; engine/UI P3/P4 |
 | Clip tools | Split, Extract audio, Volume, Speed 0.25-4x, Delete, Duplicate, Replace, Crop/zoom, Rotate/mirror, grade, Looks, Motion and transitions | ⚠️ | Commands cover clip edits, extraction, split/trim/duplicate/move and apply-all; render/UI P3/P4 |
-| GPU effects | 277 effects, parameters, animated previews, search, Adjust and layer targeting | ⚠️ | 277 catalog contracts/GLSL preserved; command placement/swap/Free tests pass; P2 shaders/tiles/targeted layer runtime implemented; 69 deterministic and 86 structural frame failures remain; effects UI P4 |
+| GPU effects | 277 effects, parameters, animated previews, search, Adjust and layer targeting | ⚠️ | 277 catalog contracts/GLSL preserved; command placement/swap/Free tests pass; P2 shaders/tiles/targeted layer runtime implemented; 46 deterministic and 84 structural frame failures remain; effects UI P4 |
 | Overlay library | 90 timed full-frame looks with opacity and timing | ⚠️ | 80 active and 19 legacy looks preserved; pending picker swaps tested; P2 timed-look runtime implemented; strict golden report has failures; UI P4 |
 | File overlays and PIP | Photo/video layers, masks, border, shadow, opacity, transforms and in/out animation | ⚠️ | Models/codecs/timing/commands tested; PIP rendering/UI P3/P4 |
 | Animated stickers | Time-based vector stickers; settled paused pose and animated playback/export | ⚠️ | IDs/categories/metadata ported; deterministic drawing and paused pose P2/P4 |
@@ -90,7 +90,7 @@ P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/
 
 ## Catalog item groups
 
-All groups below have ported IDs, defaults and assets verified by CatalogContractTest and the provenance audit. All 422 shaders compile and draw; 321 specs pass every golden time, while 101 specs fail. Full visual acceptance remains open in P2. Active overlays number 80, with 19 legacy IDs retained; the brief's 90 is stale. Trending categories contain curated subsets, not additional unique catalog IDs.
+All groups below have ported IDs, defaults and assets verified by CatalogContractTest and the provenance audit. All 422 shaders compile and draw; 336 specs pass every golden time, while 86 specs fail. Full visual acceptance remains open in P2. Active overlays number 80, with 19 legacy IDs retained; the brief's 90 is stale. Trending categories contain curated subsets, not additional unique catalog IDs.
 
 | Catalog group | Mobile behaviour | Desktop status | Evidence or remaining work |
 |---|---|---|---|
@@ -228,7 +228,7 @@ All groups below have ported IDs, defaults and assets verified by CatalogContrac
 | fx-st-retro-tv | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
 | fx-st-billboard | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
 | fx-st-film-strip | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
-| fx-ne-frame | noise-driven | ⚠️ | blur PASS, histogram FAIL, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
+| fx-ne-frame | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
 | fx-ne-ring | noise-driven | ⚠️ | blur FAIL, histogram FAIL, channel mean FAIL, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
 | fx-ne-heart | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
 | fx-ne-lightning | noise-driven | ⚠️ | blur PASS, histogram PASS, channel mean PASS, luminance PASS | `evidence/p2/STRUCTURAL-REPORT.md`, per-channel CSV and heatmaps |
@@ -385,7 +385,7 @@ All groups below have ported IDs, defaults and assets verified by CatalogContrac
 ## Pending parity evidence
 
 - Current mobile startup capture for side-by-side comparison; source inspection alone cannot prove appearance.
-- P2 has all required real mobile goldens. Resolve 69 deterministic strict failures and 86 noise structural failures; confirm provisional structural limits. See `docs/P2-PARITY-BUGS.md`.
+- P2 has all required real mobile goldens. Resolve 46 deterministic strict failures and 84 noise structural failures; confirm provisional structural limits. See `docs/P2-PARITY-BUGS.md`.
 - Device-library JSONs were not supplied. The four raw/package inputs pass and close P1.
 - All section 8 behaviour tests, performance budgets, fresh-machine installation and P8 owner acceptance.
 

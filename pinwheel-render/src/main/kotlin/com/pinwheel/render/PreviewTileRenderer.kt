@@ -84,16 +84,25 @@ class PreviewTileRenderer(nativeDirectory: Path, private val assets: Path, softw
     }
     companion object {
         fun catalogSpecs() = VideoFxCatalog.effects + VideoFxCatalog.transitions + VideoFxCatalog.overlays + VideoFxCatalog.legacyOverlays
-        /** Use Skia's actual RGB565 conversion, as Bitmap.copy does, including 5/6-bit expansion. */
+        /** Bitmap.copy quantization followed by the normalized RGB565 expansion used by Android PNG export. */
         fun rgb565(frame: RgbaFrame): RgbaFrame {
             Bitmap().use { original ->
                 check(original.installPixels(ImageInfo(frame.width, frame.height, ColorType.RGBA_8888, ColorAlphaType.OPAQUE), frame.pixels, frame.width * 4))
                 val info = ImageInfo(frame.width, frame.height, ColorType.RGB_565, ColorAlphaType.OPAQUE)
                 val packed = requireNotNull(original.readPixels(info, frame.width * 2, 0, 0))
-                Bitmap().use { converted ->
-                    check(converted.installPixels(info, packed, frame.width * 2))
-                    return RgbaFrame(frame.width, frame.height, requireNotNull(converted.readPixels(original.imageInfo, frame.width * 4, 0, 0)))
+                val rgba = ByteArray(frame.pixels.size)
+                for (pixel in 0 until frame.width * frame.height) {
+                    // Windows x64 RGB565 is little-endian. Keep Skia's packed values;
+                    // its low-precision 565 -> 8888 readPixels repeats bits, whereas
+                    // Android's skcms PNG encoder rounds normalized 5/6-bit channels.
+                    val colour = (packed[pixel * 2].toInt() and 255) or ((packed[pixel * 2 + 1].toInt() and 255) shl 8)
+                    val r = (colour ushr 11) and 31; val g = (colour ushr 5) and 63; val b = colour and 31
+                    rgba[pixel * 4] = ((r * 255 + 15) / 31).toByte()
+                    rgba[pixel * 4 + 1] = ((g * 255 + 31) / 63).toByte()
+                    rgba[pixel * 4 + 2] = ((b * 255 + 15) / 31).toByte()
+                    rgba[pixel * 4 + 3] = 255.toByte()
                 }
+                return RgbaFrame(frame.width, frame.height, rgba)
             }
         }
     }

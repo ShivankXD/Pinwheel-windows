@@ -21,9 +21,9 @@ jobs:
           python scripts/verify-p1-port.py --desktop-only
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           python scripts/verify-p2-port.py --desktop-only
-      - name: Compile catalog shaders and render all P2 frames
+      - name: Compile catalog shaders and render P2 frames and numeric probes
         shell: pwsh
-        run: ./scripts/build.ps1 -Tasks ':pinwheel-render:p2Frames',':pinwheel-render:p2NoiseSources'
+        run: ./scripts/build.ps1 -Tasks ':pinwheel-render:p2Frames',':pinwheel-render:p2NoiseSources',':pinwheel-render:p2NumericProbe'
       - name: Verify noise classes from unchanged active shaders
         shell: pwsh
         run: python scripts/classify-p2-noise.py --check

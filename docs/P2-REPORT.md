@@ -1,9 +1,9 @@
 # P1 closeout and P2 runtime report
 
 P1 is closed with four passing real mobile inputs. P2 runtime implementation is
-available, but P2 visual acceptance remains open. The original strict audit has 277
-failures. Under the later owner noise amendment, 69 deterministic frames and
-86 noise structural frames still fail; 686 noise structure passes are provisional. P3 has not started. References are from the owner's mobile
+available, but P2 visual acceptance remains open. The RGB565 readback fix reduces the strict audit from 277 to 252 failures.
+Under the owner noise amendment, 46 deterministic frames and 84 noise structural
+frames still fail; 688 noise structure passes are provisional. P3 has not started. References are from the owner's mobile
 `WindowsReferenceExport`, commit `2a417fd`, as described in the read-only README.
 
 ## 1. What was built
@@ -12,7 +12,7 @@ failures. Under the later owner noise amendment, 69 deterministic frames and
 |---|---|
 | pinwheel-core | P1 models, v10 codecs, catalogs, commands, persisted undo and core/export Free/Plus enforcement remain intact. Four owner JSON/package inputs now validate real mobile round trips. |
 | pinwheel-render | `AngleDevice`, `FxProgram`, `FxChain`, `EffectPlan`, `EffectRuntime`, `LegacyEffects`, `LayerFx` and `LayerCompositor`: persistent thread-owned ANGLE/D3D11 context; ordered active effects; ping-pong targets; previous/trail history and seek resets; cut transitions; opacity-scaled library looks; all six legacy kinds; colour/coverage layer effects. |
-| pinwheel-render | `PreviewTileRenderer`: mobile sample crop/resample, SWAY uniforms, history sample offsets, 2.4-second/16-slot loop, 40-spec cache, orientation and RGB565 readback. All 422 unchanged catalog shaders compile. |
+| pinwheel-render | `PreviewTileRenderer`: mobile sample crop/resample, SWAY uniforms, history sample offsets, 2.4-second/16-slot loop, 40-spec cache, orientation and normalized RGB565 readback matching mobile PNG channel levels. All 422 unchanged catalog shaders compile. |
 | pinwheel-render/qa | `P2Evidence` writes 1688 frames to `evidence/p2/frames/<id>/<t>.png`. Strict comparison measures every RGBA channel without resizing, alignment or filtering. Independent project/golden modes prevent one check from reporting the other's failures. |
 | pinwheel-app | Debug-only `EffectLab`: searchable catalog, fixed times/loop, parameter controls, mobile/desktop/heatmap panes and per-channel MAE/p99. Release jar guards exclude the Lab and local Plus toggle. |
 | pinwheel-media / platform / photo | Existing P1 boundaries remain. Production decoding, audio, frame evaluation, UI painters, encoding and photo pipeline belong to later phases. The runtime accepts decoded main frames and already-painted layer frames; it does not use subprocess playback. |
@@ -25,13 +25,13 @@ original mobile effect list, including catalog positions.
 ## 2. Tests and results
 
 ```text
-Desktop unit tests: 233 passed, 0 failures, 0 errors, 0 skipped
-  core 205; platform 2; media 3; render 23
+Desktop unit tests: 234 passed, 0 failures, 0 errors, 0 skipped
+  core 205; platform 2; media 3; render 24
 Catalog shaders: 422 passed, 0 failed
 P2 frames: 1688 rendered, 0 failures
 Real mobile projects: 4 passed, 0 failed, provided
-Golden references: 1411 passed, 277 failed, 0 missing
-Whole specs: 321 passed, 101 failed (all four times must pass)
+Golden references: 1436 passed, 252 failed, 0 missing
+Whole specs: 336 passed, 86 failed (all four times must pass)
 PASS 404 source, test and asset hashes; all GLSL literals preserved
 PASS 8 unchanged P2 legacy/glow/layer shader literals; 7 pinned mobile runtime source hashes
 ```
@@ -43,13 +43,13 @@ lifetime/thread ownership, constructor failure recovery, animation and cache
 behaviour. See `evidence/p2/test-summary.json`, `final-clean-build.txt`,
 `final-runtime-checks.txt`, `final-structural-tests.txt` and `shader-compile.json`.
 The clean build covered 230 tests; the later three structural tests bring the
-aggregate to 233. A debug compile failure caused by a missing direct JSON dependency
+aggregate to 233. The exhaustive RGB565 format regression adds one more, bringing the current total to 234; see `rgb565-runtime-checks.txt`, `rgb565-regression-before.txt` and `rgb565-regression-after.txt`. A debug compile failure caused by a missing direct JSON dependency
 was fixed and the real Lab smoke/project checks then passed; full initial output
 is in `noise-lab-and-project-checks.txt`, final output in
 `final-noise-lab-and-project-checks.txt` and `final-noise-lab-smoke.txt`.
 
 The latest strict check deliberately exits nonzero because provided images
-fail. **Full failing output:** `evidence/p2/final-reference-checks.txt`.
+fail. **Current failing output:** `evidence/p2/rgb565-owner-policy-check.txt`. The original strict output remains in `final-reference-checks.txt`.
 Earlier failures and their repairs remain in `first-gpu-tests.txt`,
 `runtime-and-lab-checks.txt` and `first-mobile-checks.txt`. An initial order-test
 fixture used an inactive burst time; its corrected active-time assertion passes.
@@ -57,10 +57,10 @@ An initial project-mode harness erroneously included golden failures; modes
 now compare independently. Neither repair changed mobile shaders or limits.
 
 For deterministic specs, MAE8 must be <= 2 and p99 <= 8 in **each RGBA channel**, equivalent to
-2/255 and 8/255 in normalized sRGB error. 175 failing frames exceed MAE;
-another 102 pass MAE but fail p99, including 76 whose maximum p99 is 9.
-This is the preserved strict audit. The owner later authorized structural review for noise-driven specs, as detailed below. The worst frame is Scene Cut at 0.9 s: R 94.902/156,
-G 96.400/158, B 95.838/157, A 0/0 (MAE8/p99).
+2/255 and 8/255 in normalized sRGB error. 170 failing frames exceed MAE;
+another 82 pass MAE but fail p99, including 56 whose maximum p99 is 9.
+This is the preserved strict audit. The owner later authorized structural review for noise-driven specs, as detailed below. The worst frame is Scene Cut at 0.9 s: R 94.760/156,
+G 96.124/157, B 95.707/157, A 0/0 (MAE8/p99).
 
 - [All 422 per-spec metrics](../evidence/p2/per-spec-metrics.csv): each channel's maximum MAE and p99 over four times, plus spec status.
 - [All 1688 per-time metrics](../evidence/p2/golden-metrics.csv): exact channel metrics at every required time.
@@ -73,9 +73,9 @@ Follow-up lifetime/audit commit `f1e7425` also passed hosted CI [run 36992291621
 
 The current owner-policy goldenCheck uses 193 source-classified noise specs and
 229 deterministic specs. Unused noise locals in shared preludes are excluded.
-It reports 847 deterministic frame passes and 69 failures; 686 noise provisional
-passes and 86 structural failures. 194 deterministic specs pass all times;
-159 noise specs pass every proposed metric at all times. P2 is not accepted.
+It reports 870 deterministic frame passes and 46 failures; 688 noise provisional
+passes and 84 structural failures. 207 deterministic specs pass all times;
+160 noise specs pass every proposed metric at all times. P2 is not accepted.
 
 Noise metrics use Gaussian sigma 8 px, radius 24, edge clamping and float sRGB8;
 channel histogram Wasserstein-1 distance and channel mean error; Rec.709 mean
@@ -87,14 +87,26 @@ distinction, histogram units and rejection of dimension changes.
 [Every noise spec and metric pass/fail](../evidence/p2/STRUCTURAL-REPORT.md),
 [full channel CSV](../evidence/p2/noise-spec-metrics.csv),
 [worst 20 structural heatmaps](../evidence/p2/noise-worst-20.html).
-Current failing output is `evidence/p2/owner-policy-check-output.txt`. The earlier
+Current failing output is `evidence/p2/rgb565-owner-policy-check.txt`. The prior policy run is retained in `owner-policy-check-output.txt`. The earlier
 strict failure output remains attached. `strictGoldenCheck` preserves the original
 pixel gate; `goldenCheck` applies the owner class policy and still exits nonzero.
+
+RGB565 packing still uses Skia's Bitmap.copy equivalent. Expansion now rounds
+normalized 5/6-bit channels, matching all supplied mobile PNG channel levels
+and the historical Skia/skcms PNG path. The old bit-repetition expansion fails
+the new 65,536-colour format test. All actual frames were regenerated on hardware;
+no reference PNG, shared shader, threshold or backend was changed.
+
+The numeric probe reproduces NVIDIA/WARP disagreement at a constant 0.5
+readback and exact pixel-grid boundaries. These remain strict failures. Raw
+cell maps and heatmaps are in `evidence/p2/diagnostics/numeric`; evidence and
+causal limits are explained in `P2-PARITY-BUGS.md`. The proposed owner probe
+now includes matching raw RGBA8 diagnostics and remains unverified on Android.
 
 ## 3. Screenshots
 
 `evidence/p2/effect-lab.png` is an actual Compose-window capture showing the
-worst Scene Cut mismatch and its failing per-channel metrics.
+worst Scene Cut mismatch and its failing per-channel metrics after the readback fix; `rgb565-lab-and-math-checks.txt` confirms the actual-window capture and debug guard. `rgb565-release-check.txt` confirms the release guard.
 `evidence/p2/effect-lab-and-mobile.html` presents that capture next to the
 owner's `11-effects-page.png`. The Lab is a diagnostic screen; the mobile
 editor effects page is P4 work and has no UI parity claim. The 21 supplied

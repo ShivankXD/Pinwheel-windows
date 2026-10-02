@@ -1,0 +1,30 @@
+{
+  "noiseSpecs": 193,
+  "deterministicSpecs": 229,
+  "noiseSpecCandidatePass": 159,
+  "noiseSpecFail": 34,
+  "deterministicSpecPass": 194,
+  "deterministicSpecFail": 35,
+  "noiseFrameCandidatePass": 686,
+  "noiseFrameFail": 86,
+  "deterministicFramePass": 847,
+  "deterministicFrameFail": 69,
+  "policy": {
+    "boundary": "clamp",
+    "perChannelMeanError8Max": 2,
+    "perChannelHistogramWasserstein8Max": 2,
+    "limitsStatus": "PROVISIONAL_OWNER_REVIEW",
+    "gaussianRadiusPx": 24,
+    "strictDeterministicMae8Max": 2,
+    "gaussianSigmaPx": 8,
+    "meanLuminanceError8Max": 2,
+    "perChannelBlurredMae8Max": 2,
+    "strictDeterministicP99Max": 8,
+    "ownerAmendment": "Use structural metrics for noise-driven specs; keep strict per-pixel limits for deterministic specs and preserve shared shaders."
+  },
+  "baselineCommit": "9806b0457fcac9071913bcea5dec6dc30fda97cb",
+  "strictFramePassed": 1411,
+  "strictFrameFailed": 277,
+  "strictSpecPassed": 321,
+  "strictSpecFailed": 101
+}

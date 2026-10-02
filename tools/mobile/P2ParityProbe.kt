@@ -25,9 +25,10 @@ class P2ParityProbe {
         val dispatcher = renderer.javaClass.getDeclaredField("dispatcher").apply { isAccessible = true }.get(renderer) as CoroutineDispatcher
         withContext(dispatcher) {
             renderer.javaClass.getDeclaredMethod("setUp").apply { isAccessible = true }.invoke(renderer)
-            val binding = IntArray(1); val viewport = IntArray(4); val program = IntArray(1); val unit = IntArray(1)
+            val binding = IntArray(1); val viewport = IntArray(4); val program = IntArray(1); val unit = IntArray(1); val boundTexture = IntArray(1)
             GLES20.glGetIntegerv(GLES20.GL_FRAMEBUFFER_BINDING, binding, 0); GLES20.glGetIntegerv(GLES20.GL_VIEWPORT, viewport, 0)
             GLES20.glGetIntegerv(GLES20.GL_CURRENT_PROGRAM, program, 0); GLES20.glGetIntegerv(GLES20.GL_ACTIVE_TEXTURE, unit, 0)
+            GLES20.glGetIntegerv(GLES20.GL_TEXTURE_BINDING_2D, boundTexture, 0)
             val textures = IntArray(1); val fbos = IntArray(1)
             val shader = FxProgram("""
 precision highp float;
@@ -58,13 +59,59 @@ void main() {
                     check(GLES20.glGetError() == GLES20.GL_NO_ERROR)
                     math.put(JSONObject().put("time", time).put("hash1_sRGB8", pixels.get(0).toInt() and 255))
                 }
+                // Match Windows' raw RGBA8 numeric probes before Bitmap.copy(RGB_565).
+                // These are diagnostic inputs, separate from the 1688 authoritative goldens.
+                GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, textures[0])
+                GLES20.glTexImage2D(GLES20.GL_TEXTURE_2D, 0, GLES20.GL_RGBA, 192, 240, 0, GLES20.GL_RGBA, GLES20.GL_UNSIGNED_BYTE, null)
+                check(GLES20.glCheckFramebufferStatus(GLES20.GL_FRAMEBUFFER) == GLES20.GL_FRAMEBUFFER_COMPLETE)
+                GLES20.glViewport(0, 0, 192, 240)
+                val raw = ByteBuffer.allocateDirect(192 * 240 * 4).order(ByteOrder.nativeOrder())
+                fun writeRaw(name: String) {
+                    raw.rewind(); GLES20.glReadPixels(0, 0, 192, 240, GLES20.GL_RGBA, GLES20.GL_UNSIGNED_BYTE, raw)
+                    check(GLES20.glGetError() == GLES20.GL_NO_ERROR); raw.rewind()
+                    val tile = android.graphics.Bitmap.createBitmap(192, 240, android.graphics.Bitmap.Config.ARGB_8888)
+                    try {
+                        tile.copyPixelsFromBuffer(raw)
+                        File(output, "numeric/$name.png").apply { parentFile!!.mkdirs() }.outputStream().use {
+                            check(tile.compress(android.graphics.Bitmap.CompressFormat.PNG, 100, it))
+                        }
+                    } finally { tile.recycle() }
+                }
+                val numeric = JSONArray()
+                val colour = FxProgram("""
+precision highp float;
+varying highp vec2 vUv;
+uniform float uValue;
+void main() { gl_FragColor = vec4(uValue, uValue, uValue, 1.0); }
+""")
+                try {
+                    for (value in listOf(.25f, .5f, .65f, .92f)) {
+                        colour.use(); colour.float("uFlipY", -1f); colour.float("uValue", value); colour.draw()
+                        writeRaw("constant-$value-rgba8")
+                        val levels = (0 until 192 * 240).map { raw.get(it * 4).toInt() and 255 }.toSet().sorted()
+                        numeric.put(JSONObject().put("value", value).put("rgba8Levels", JSONArray(levels)))
+                    }
+                } finally { colour.release() }
+                val grid = FxProgram("""
+precision highp float;
+varying highp vec2 vUv;
+uniform vec2 uGrid;
+void main() { gl_FragColor = vec4(floor(vUv * uGrid) / 255.0, 0.0, 1.0); }
+""")
+                try {
+                    for (n in listOf(16f, 32f, 64f, 128f)) {
+                        grid.use(); grid.float("uFlipY", -1f); grid.vec2("uGrid", n * (192f / 240), n); grid.draw()
+                        writeRaw("grid-${n.toInt()}-cells")
+                    }
+                } finally { grid.release() }
                 File(output, "mobile-math-probe.json").writeText(JSONObject().put("renderer", GLES20.glGetString(GLES20.GL_RENDERER))
                     .put("vendor", GLES20.glGetString(GLES20.GL_VENDOR)).put("version", GLES20.glGetString(GLES20.GL_VERSION))
-                    .put("highFloatBits", precision[0]).put("sceneCutMath", math).toString(2))
+                    .put("highFloatBits", precision[0]).put("sceneCutMath", math).put("constantColourReadback", numeric).toString(2))
             } finally {
                 shader.release(); GLES20.glDeleteFramebuffers(1, fbos, 0); GLES20.glDeleteTextures(1, textures, 0)
                 GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER, binding[0]); GLES20.glViewport(viewport[0], viewport[1], viewport[2], viewport[3])
                 GLES20.glUseProgram(program[0]); GLES20.glActiveTexture(unit[0])
+                GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, boundTexture[0])
             }
         }
         // Same preparation and SWAY as real catalog previews; isolate input/raster/RGB565 from FX math.

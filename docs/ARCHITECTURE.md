@@ -54,14 +54,14 @@ passes before compositing. Geometry, stickers, PIP and titles/caption painters
 remain later work. Main and layer CPU boundaries are top-down straight RGBA8.
 
 Preview tiles have their own source-backed crop/resample, SWAY, history offsets,
-orientation and RGB565 conversion. Effect Lab creates a renderer on a dedicated
+orientation and RGB565 conversion. Packed channel values come from Skia; normalized 5/6-bit expansion matches mobile PNG encoding rather than desktop bit repetition. Effect Lab creates a renderer on a dedicated
 worker, not the Compose UI thread. Repeated timestamps reuse deterministic
 16-slot loop entries within a 40-spec LRU cache. GPU constructors unwind partial
 allocations; closing one context leaves other live renderers usable.
 
 Catalog GLSL stays unchanged. Golden failures are recorded in P2-PARITY-BUGS.md;
 diagnostic WARP/neutral frames never replace hardware golden outputs. P2 is not
-accepted while its 277 provided frame comparisons fail. No P3 evaluator/player
+accepted while its 252 strict-audit frame comparisons fail. No P3 evaluator/player
 or P5 encoder has been added.
 
 Storage resolves to `%APPDATA%/Pinwheel/{projects,originals}` and
@@ -75,4 +75,4 @@ and complete evidence for all 422 specs. 193 noise specs use structural review;
 229 deterministic specs retain strict pixel limits. Gaussian convolution and
 histogram transport live in render QA, never in production frame evaluation.
 The original pixel audit remains available. All structural limits are provisional
-for owner review, and the current owner-policy gate still fails on 155 frames.
+for owner review, and the current owner-policy gate still fails on 130 frames.

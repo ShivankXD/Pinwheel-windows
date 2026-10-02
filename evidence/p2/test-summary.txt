@@ -1,5 +1,5 @@
-Desktop unit tests: 233 passed, 0 failures, 0 errors, 0 skipped
+Desktop unit tests: 234 passed, 0 failures, 0 errors, 0 skipped
 pinwheel-core: 205 passed
 pinwheel-platform: 2 passed
 pinwheel-media: 3 passed
-pinwheel-render: 23 passed
+pinwheel-render: 24 passed

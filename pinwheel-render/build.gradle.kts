@@ -44,6 +44,13 @@ tasks.register<JavaExec>("p2NoiseSources") {
     mainClass.set("com.pinwheel.render.qa.P2NoiseSourcesKt")
     args(rootDir.absolutePath)
 }
+tasks.register<JavaExec>("p2NumericProbe") {
+    dependsOn("classes")
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("com.pinwheel.render.qa.P2NumericProbeKt")
+    args(rootDir.absolutePath)
+    workingDir = rootDir
+}
 tasks.register<JavaExec>("p2StructuralReview") {
     dependsOn("classes", "goldenAudit")
     classpath = sourceSets.main.get().runtimeClasspath

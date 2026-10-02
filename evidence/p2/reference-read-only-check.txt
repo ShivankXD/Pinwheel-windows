@@ -1,5 +1,1 @@
-Reference read-only audit: 1715 input hashes verified; 0 changed/missing; 0 added.
-{
-  "changed": [],
-  "added": []
-}
+PASS 1715 read-only reference input hashes unchanged; 0 additions, 0 missing, 0 changed
