@@ -1,0 +1,9 @@
+ca92d2b ShivankXD <shivankprabhudessai@gmail.com> | ShivankXD <shivankprabhudessai@gmail.com> Preserve caption clamping when commands shorten a movie
+942e2ff ShivankXD <shivankprabhudessai@gmail.com> | ShivankXD <shivankprabhudessai@gmail.com> Validate P1 release boundaries and record phase evidence
+e1b9e80 ShivankXD <shivankprabhudessai@gmail.com> | ShivankXD <shivankprabhudessai@gmail.com> Add durable edit commands packages plan gates and JVM parity tests
+d2bd5b3 ShivankXD <shivankprabhudessai@gmail.com> | ShivankXD <shivankprabhudessai@gmail.com> Port core models codecs catalogs and mobile JVM contracts
+3d6f6a8 ShivankXD <shivankprabhudessai@gmail.com> | ShivankXD <shivankprabhudessai@gmail.com> Record P1 scope and owner platform decisions
+eaa4336 ShivankXD <shivankprabhudessai@gmail.com> | ShivankXD <shivankprabhudessai@gmail.com> Record P0 validation evidence and the mobile parity checklist
+cd9fa45 ShivankXD <shivankprabhudessai@gmail.com> | ShivankXD <shivankprabhudessai@gmail.com> Make P0 smoke failures return nonzero and verify startup errors
+5d306c9 ShivankXD <shivankprabhudessai@gmail.com> | ShivankXD <shivankprabhudessai@gmail.com> Add P0 ANGLE rendering and FFmpeg desktop smoke checks
+44f423f ShivankXD <shivankprabhudessai@gmail.com> | ShivankXD <shivankprabhudessai@gmail.com> Set up P0 Gradle modules and preserve mobile asset notices

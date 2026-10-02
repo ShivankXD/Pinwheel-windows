@@ -32,6 +32,7 @@ P0 is owner-approved. P1 core implementation passes local checks; acceptance awa
 | Golden metrics, dimensions, per-channel p99 and strict missing gates | ✅ | `GoldenImagesTest`, expected-missing logs; no rendered parity claim |
 | Real mobile project round trips | ⚠️ | Input absent; `evidence/p1/reference-status.json`, strict gate fails |
 | Mobile effect pixels and screenshots | ⚠️ | 1688 cases missing; P2 runtime and owner references pending |
+| Hosted Windows/JDK 17 P1 build and smoke | ✅ | [Run 36981850747](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36981850747), runtime ca92d2b, `evidence/p1/ci-result.json` |
 | Mobile repository unchanged | ✅ | `evidence/p1/mobile-status.txt`: exactly `?? output/` |
 
 ## Feature inventory from brief section 1.1

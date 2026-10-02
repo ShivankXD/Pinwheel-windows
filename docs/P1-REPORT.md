@@ -49,7 +49,7 @@ unsafe zips, automatic caption trim/drop after clip shortening, account-linked e
 Debug checks passed: the toggle drives shared core/export entitlement, fake
 sign-out blocks export, and debug controls are included only in debug jars.
 Release checks passed: developer classes and service metadata are absent.
-Windows/JDK 17 CI passed for runtime commit 942e2ff: https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36981095085. The caption-shortening follow-up adds one passing local regression test; its hosted run is tracked separately.
+The final runtime commit ca92d2b passed [Windows/JDK 17 CI](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36981850747), including clean build, source/asset hashes, debug controls, real-window smoke and expected startup failure. `evidence/p1/ci-result.json` records every successful step. The local total includes the caption-shortening regression follow-up.
 
 Real-window smoke verifies ANGLE D3D11, demo decode and notice display. Current
 hardware is RTX 4060 Laptop; later preview/seek performance budgets are untested.
