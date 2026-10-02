@@ -3,8 +3,8 @@
 Windows parity port of Pinwheel: Edit Photos & Videos. P0 is approved. P1 is closed
 with four passing owner-supplied mobile JSON/package inputs. P2 implements the
 effect runtime and debug Effect Lab, with all 422 shaders compiling and 1688
-frames rendered. Golden acceptance remains open. The strict audit has 252 failures; under the
-owner noise-class amendment, 46 deterministic and 84 structural frames still
+frames rendered. Golden acceptance remains open. The strict audit has 215 failures; under the
+owner noise-class amendment, 18 deterministic and 84 structural frames still
 fail. The 688 noise structural passes use provisional limits for owner review. Editing screens and playback are later phases.
 The authoritative brief is [docs/Pinwheel-Windows-Build-Brief.md](docs/Pinwheel-Windows-Build-Brief.md).
 

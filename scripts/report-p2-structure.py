@@ -66,6 +66,19 @@ for row, worst in specs:
 det_groups = defaultdict(list)
 for case in deterministic: det_groups[case['id']].append(case)
 det_spec_pass = sum(all(c['strictStatus'] == 'PASS' for c in cases) for cases in det_groups.values())
+det_failures = []
+for id_, cases in det_groups.items():
+    failed = [c for c in cases if c['strictStatus'] != 'PASS']
+    if not failed: continue
+    row = {'id': id_, 'failedTimes': ','.join(str(c['time']) for c in failed), 'failingFrames': len(failed)}
+    for index, channel in enumerate('RGBA'):
+        row[f'{channel}_maxMAE8'] = max(c['channelsRGBA'][index]['mae8'] for c in cases)
+        row[f'{channel}_maxP99_8'] = max(c['channelsRGBA'][index]['p99_8'] for c in cases)
+    det_failures.append(row)
+det_failures.sort(key=lambda row: max(row[f'{c}_maxMAE8'] for c in 'RGBA'), reverse=True)
+det_fields = ['id', 'failedTimes', 'failingFrames'] + [f'{c}_{m}' for c in 'RGBA' for m in ('maxMAE8', 'maxP99_8')]
+with (output / 'deterministic-failures.csv').open('w', encoding='utf-8', newline='') as stream:
+    writer = csv.DictWriter(stream, det_fields, lineterminator='\n'); writer.writeheader(); writer.writerows(det_failures)
 noise_spec_pass = sum(row['reviewStatus'] != 'FAIL' for row, _ in specs)
 text = f'''# P2 owner structural review
 

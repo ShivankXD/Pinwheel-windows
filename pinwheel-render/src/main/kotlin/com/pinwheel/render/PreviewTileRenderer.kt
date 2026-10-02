@@ -3,7 +3,6 @@ package com.pinwheel.render
 import com.pinwheel.core.RgbaFrame
 import com.pinwheel.core.media.video.*
 import org.jetbrains.skia.*
-import java.nio.file.Files
 import java.nio.file.Path
 
 /** Mobile's preview passes, sample crop, float timing, flip and RGB565 conversion. Thread confined. */
@@ -63,26 +62,10 @@ class PreviewTileRenderer(nativeDirectory: Path, private val assets: Path, softw
         checkGl("${spec.id} preview")
     }
     private fun uploadSample(name: String): GpuTexture {
-        Image.makeFromEncoded(Files.readAllBytes(assets.resolve(name))).use { decoded ->
-            val crop = VideoPreviewRecipe.crop(decoded.width, decoded.height)
-            val width = VideoPreviewRecipe.WIDTH * 2; val height = VideoPreviewRecipe.HEIGHT * 2
-            Surface.makeRasterN32Premul(width, height).use { surface ->
-                surface.canvas.translate(0f, height.toFloat()); surface.canvas.scale(1f, -1f)
-                surface.canvas.drawImageRect(decoded,
-                    Rect.makeXYWH(crop.x.toFloat(), crop.y.toFloat(), crop.width.toFloat(), crop.height.toFloat()),
-                    Rect.makeWH(width.toFloat(), height.toFloat()), FilterMipmap(FilterMode.LINEAR, MipmapMode.NONE), null, true)
-                surface.makeImageSnapshot().use { tile ->
-                    Bitmap().use { pixels ->
-                        check(pixels.allocPixels(ImageInfo(width, height, ColorType.RGBA_8888, ColorAlphaType.UNPREMUL)))
-                        check(tile.readPixels(pixels))
-                        val bytes = requireNotNull(pixels.readPixels(pixels.imageInfo, width * 4, 0, 0))
-                        val texture = GpuTexture(device, width, height)
-                        try { texture.upload(RgbaFrame(width, height, bytes), topDown = false); return texture }
-                        catch (failure: Throwable) { texture.close(); throw failure }
-                    }
-                }
-            }
-        }
+        val frame = PreviewSamples.read(assets, name)
+        val texture = GpuTexture(device, frame.width, frame.height)
+        try { texture.upload(frame, topDown = false); return texture }
+        catch (failure: Throwable) { texture.close(); throw failure }
     }
     override fun close() {
         device.checkThread(); cache.clear(); resources.close()

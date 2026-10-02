@@ -17,7 +17,7 @@ output.mkdir(parents=True, exist_ok=True)
 fields = ['id', 'time', 'status'] + [f'{c}_{m}' for c in 'RGBA' for m in ('MAE8', 'p99_8')]
 groups = defaultdict(list)
 with (output / 'golden-metrics.csv').open('w', encoding='utf-8', newline='') as stream:
-    writer = csv.DictWriter(stream, fields); writer.writeheader()
+    writer = csv.DictWriter(stream, fields, lineterminator='\n'); writer.writeheader()
     for case in report['goldenCases']:
         row = {key: case[key] for key in ('id', 'time', 'status')}
         for c, metric in zip('RGBA', case.get('channelsRGBA', [])):
@@ -38,7 +38,7 @@ for id_, cases in groups.items():
         row[f'{c}_maxP99_8'] = max((case['channelsRGBA'][index]['p99_8'] for case in cases if 'channelsRGBA' in case), default='')
     specs.append((row, worst))
 with (output / 'per-spec-metrics.csv').open('w', encoding='utf-8', newline='') as stream:
-    writer = csv.DictWriter(stream, list(specs[0][0])); writer.writeheader(); writer.writerows(row for row, _ in specs)
+    writer = csv.DictWriter(stream, list(specs[0][0]), lineterminator='\n'); writer.writeheader(); writer.writerows(row for row, _ in specs)
 
 ranked = sorted(specs, key=lambda item: key(item[1]), reverse=True)[:20]
 folder = output / 'worst-20'; folder.mkdir(exist_ok=True)
