@@ -1,0 +1,70 @@
+> Task :pinwheel-app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-platform:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-photo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-app:convertXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-photo:processResources NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForMain NO-SOURCE
+> Task :pinwheel-app:generateResourceAccessorsForMain SKIPPED
+> Task :pinwheel-app:generateActualResourceCollectorsForMain SKIPPED
+> Task :pinwheel-app:generateComposeResClass SKIPPED
+> Task :pinwheel-app:assembleMainResources UP-TO-DATE
+> Task :pinwheel-app:processResources UP-TO-DATE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-platform:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-platform:compileJava NO-SOURCE
+> Task :pinwheel-platform:processResources NO-SOURCE
+> Task :pinwheel-platform:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-platform:jar UP-TO-DATE
+> Task :pinwheel-photo:compileKotlin NO-SOURCE
+> Task :pinwheel-photo:compileJava NO-SOURCE
+> Task :pinwheel-photo:classes UP-TO-DATE
+> Task :pinwheel-photo:jar UP-TO-DATE
+> Task :pinwheel-render:compileKotlin UP-TO-DATE
+> Task :pinwheel-media:compileKotlin UP-TO-DATE
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+> Task :pinwheel-media:compileJava NO-SOURCE
+> Task :pinwheel-media:classes UP-TO-DATE
+> Task :pinwheel-render:jar UP-TO-DATE
+> Task :pinwheel-media:jar UP-TO-DATE
+> Task :pinwheel-app:compileKotlin
+> Task :pinwheel-app:compileJava NO-SOURCE
+> Task :pinwheel-app:classes UP-TO-DATE
+
+> Task :pinwheel-app:p0Smoke
+java.lang.UnsatisfiedLinkError: Failed to load library: D:\Pinwheel-Windows\evidence\p0\runtime\missing-native-home\native\windows-x64\libEGL.dll (error code = 126)
+	at org.lwjgl.system.windows.WindowsLibrary.loadLibrary(WindowsLibrary.java:47)
+	at org.lwjgl.system.windows.WindowsLibrary.<init>(WindowsLibrary.java:34)
+	at org.lwjgl.system.APIUtil.apiCreateLibrary(APIUtil.java:132)
+	at org.lwjgl.system.Library.loadNative(Library.java:251)
+	at org.lwjgl.system.Library.loadNative(Library.java:236)
+	at org.lwjgl.system.Library.loadNative(Library.java:217)
+	at org.lwjgl.system.Library.loadNative(Library.java:423)
+	at org.lwjgl.system.Library.loadNative(Library.java:399)
+	at org.lwjgl.egl.EGL.create(EGL.java:54)
+	at org.lwjgl.egl.EGL.<clinit>(EGL.java:46)
+	at com.pinwheel.render.AngleTriangle.render(AngleTriangle.kt:29)
+	at com.pinwheel.render.AngleTriangle.render$default(AngleTriangle.kt:23)
+	at com.pinwheel.app.MainKt$main$1$1$1$1.invokeSuspend(Main.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:820)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+
+
+BUILD SUCCESSFUL in 8s
+13 actionable tasks: 2 executed, 11 up-to-date

@@ -1,0 +1,60 @@
+{
+  "run_id": 36973747235,
+  "head_sha": "cd9fa459f2cd9f4179aed560811a4ace4d01d95b",
+  "run_url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36973747235",
+  "jobs": [
+    {
+      "name": "build",
+      "conclusion": "success",
+      "started_at": "2026-10-02T06:28:59Z",
+      "completed_at": "2026-10-02T06:31:16Z",
+      "html_url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/36973747235/job/110733019902",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-java@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Download and verify native dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Clean build and checks",
+          "conclusion": "success"
+        },
+        {
+          "name": "Launch real Compose window and capture evidence",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify app failure exits with a nonzero code",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-java@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}

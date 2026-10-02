@@ -1,0 +1,159 @@
+PASS Gradle 8.14.5 official distribution SHA-256 verified
+> Task :pinwheel-photo:clean
+> Task :pinwheel-photo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-photo:processResources NO-SOURCE
+> Task :pinwheel-photo:processTestResources NO-SOURCE
+> Task :pinwheel-core:clean
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:clean
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-platform:clean
+> Task :pinwheel-platform:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-render:clean
+> Task :pinwheel-media:processTestResources NO-SOURCE
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-render:processTestResources NO-SOURCE
+> Task :pinwheel-app:clean
+> Task :pinwheel-app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-app:convertXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForMain NO-SOURCE
+> Task :pinwheel-app:generateResourceAccessorsForMain SKIPPED
+> Task :pinwheel-app:generateActualResourceCollectorsForMain SKIPPED
+> Task :pinwheel-app:generateComposeResClass SKIPPED
+> Task :pinwheel-app:assembleMainResources
+> Task :pinwheel-app:processResources
+> Task :pinwheel-app:convertXmlValueResourcesForTest NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForTest NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForTest NO-SOURCE
+> Task :pinwheel-app:generateResourceAccessorsForTest SKIPPED
+> Task :pinwheel-app:assembleTestResources
+> Task :pinwheel-platform:processResources NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-platform:processTestResources NO-SOURCE
+> Task :pinwheel-core:processTestResources NO-SOURCE
+> Task :pinwheel-app:processTestResources
+> Task :pinwheel-core:compileKotlin
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-platform:compileKotlin
+> Task :pinwheel-platform:compileJava NO-SOURCE
+> Task :pinwheel-platform:classes UP-TO-DATE
+> Task :pinwheel-core:jar
+> Task :pinwheel-core:assemble
+> Task :pinwheel-photo:compileKotlin NO-SOURCE
+> Task :pinwheel-photo:compileJava NO-SOURCE
+> Task :pinwheel-core:compileTestKotlin NO-SOURCE
+> Task :pinwheel-photo:classes UP-TO-DATE
+> Task :pinwheel-core:compileTestJava NO-SOURCE
+> Task :pinwheel-core:testClasses UP-TO-DATE
+> Task :pinwheel-core:test NO-SOURCE
+> Task :pinwheel-core:check UP-TO-DATE
+> Task :pinwheel-core:build
+> Task :pinwheel-photo:jar
+> Task :pinwheel-photo:assemble
+> Task :pinwheel-photo:compileTestKotlin NO-SOURCE
+> Task :pinwheel-photo:compileTestJava NO-SOURCE
+> Task :pinwheel-photo:testClasses UP-TO-DATE
+> Task :pinwheel-photo:test NO-SOURCE
+> Task :pinwheel-photo:check UP-TO-DATE
+> Task :pinwheel-photo:build
+> Task :pinwheel-platform:jar
+> Task :pinwheel-platform:assemble
+> Task :pinwheel-platform:compileTestKotlin
+> Task :pinwheel-platform:compileTestJava NO-SOURCE
+> Task :pinwheel-platform:testClasses UP-TO-DATE
+> Task :pinwheel-media:compileKotlin
+> Task :pinwheel-media:compileJava NO-SOURCE
+> Task :pinwheel-media:classes UP-TO-DATE
+> Task :pinwheel-media:jar
+> Task :pinwheel-media:assemble
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+> Task :pinwheel-render:jar
+> Task :pinwheel-render:assemble
+
+> Task :pinwheel-platform:test
+
+AppPathsTest > storageMatchesBriefAndSeparatesDisposableCache() PASSED
+
+> Task :pinwheel-platform:check
+> Task :pinwheel-platform:build
+> Task :pinwheel-media:compileTestKotlin
+> Task :pinwheel-media:compileTestJava NO-SOURCE
+> Task :pinwheel-media:testClasses UP-TO-DATE
+> Task :pinwheel-render:compileTestKotlin
+> Task :pinwheel-render:compileTestJava NO-SOURCE
+> Task :pinwheel-render:testClasses UP-TO-DATE
+
+> Task :pinwheel-media:test
+
+FfmpegDecoderTest > rejectsMissingMediaAndInvalidTimes() PASSED
+
+FfmpegDecoderTest > bundledRuntimeIsSharedLgpl() PASSED
+
+FfmpegDecoderTest > decodesRealDemoAtTwoTimesWithoutChangingSource() STANDARD_OUT
+    PASS FFmpeg demo decode at 0 and 1 s: 960x720 RGBA; original SHA-256 unchanged
+
+FfmpegDecoderTest > decodesRealDemoAtTwoTimesWithoutChangingSource() PASSED
+
+> Task :pinwheel-media:check
+> Task :pinwheel-media:build
+> Task :pinwheel-app:compileKotlin
+> Task :pinwheel-app:compileJava NO-SOURCE
+> Task :pinwheel-app:classes
+> Task :pinwheel-app:jar
+> Task :pinwheel-app:assemble
+> Task :pinwheel-app:compileTestKotlin NO-SOURCE
+> Task :pinwheel-app:compileTestJava NO-SOURCE
+> Task :pinwheel-app:testClasses
+> Task :pinwheel-app:test NO-SOURCE
+> Task :pinwheel-app:check UP-TO-DATE
+> Task :pinwheel-app:build
+
+> Task :pinwheel-render:test
+
+AngleTriangleTest > freshContextCanRenderAfterRelease() PASSED
+
+AngleTriangleTest > d3d11TriangleHasColourAndTopDownOrientation() STANDARD_OUT
+    PASS ANGLE D3D11 triangle, shader compile/link, RGBA readback and Y orientation: ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.8186)
+
+AngleTriangleTest > d3d11TriangleHasColourAndTopDownOrientation() PASSED
+
+> Task :pinwheel-render:check
+> Task :pinwheel-render:build
+> Task :p0Check
+
+> Task :pinwheel-app:p0Smoke
+Exception in thread "AWT-EventQueue-0" java.lang.IllegalStateException: Screenshot background is not Pinwheel's Ink colour
+	at com.pinwheel.app.MainKt.capture(Main.kt:250)
+	at com.pinwheel.app.MainKt.access$capture(Main.kt:1)
+	at com.pinwheel.app.MainKt$main$1$3$2$1.invokeSuspend(Main.kt:96)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at androidx.compose.ui.platform.FlushCoroutineDispatcher$dispatch$2.invokeSuspend$lambda$0(FlushCoroutineDispatcher.skiko.kt:62)
+	at androidx.compose.ui.platform.FlushCoroutineDispatcher.performRun(FlushCoroutineDispatcher.skiko.kt:105)
+	at androidx.compose.ui.platform.FlushCoroutineDispatcher.access$performRun(FlushCoroutineDispatcher.skiko.kt:35)
+	at androidx.compose.ui.platform.FlushCoroutineDispatcher$dispatch$2.invokeSuspend(FlushCoroutineDispatcher.skiko.kt:57)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [androidx.compose.runtime.BroadcastFrameClock@117482de, androidx.compose.runtime.LaunchedEffectImpl@3b4216c8, StandaloneCoroutine{Cancelling}@5bd8c723, FlushCoroutineDispatcher@18eadba3]
+
+BUILD SUCCESSFUL in 37s
+28 actionable tasks: 28 executed

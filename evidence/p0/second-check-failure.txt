@@ -1,0 +1,120 @@
+PASS Gradle 8.14.5 official distribution SHA-256 verified
+> Task :pinwheel-platform:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-photo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-app:convertXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-photo:processResources NO-SOURCE
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-render:processTestResources NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForMain NO-SOURCE
+> Task :pinwheel-app:generateResourceAccessorsForMain SKIPPED
+> Task :pinwheel-app:generateActualResourceCollectorsForMain SKIPPED
+> Task :pinwheel-app:generateComposeResClass SKIPPED
+> Task :pinwheel-app:assembleMainResources UP-TO-DATE
+> Task :pinwheel-app:processResources UP-TO-DATE
+> Task :pinwheel-platform:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-platform:compileJava NO-SOURCE
+> Task :pinwheel-platform:processResources NO-SOURCE
+> Task :pinwheel-platform:classes UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-platform:jar UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-photo:compileKotlin NO-SOURCE
+> Task :pinwheel-photo:compileJava NO-SOURCE
+> Task :pinwheel-photo:classes UP-TO-DATE
+> Task :pinwheel-photo:jar UP-TO-DATE
+> Task :pinwheel-media:compileKotlin UP-TO-DATE
+> Task :pinwheel-media:compileJava NO-SOURCE
+> Task :pinwheel-media:classes UP-TO-DATE
+> Task :pinwheel-media:jar UP-TO-DATE
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+> Task :pinwheel-render:jar
+> Task :pinwheel-render:compileTestKotlin UP-TO-DATE
+> Task :pinwheel-render:compileTestJava NO-SOURCE
+> Task :pinwheel-render:testClasses UP-TO-DATE
+> Task :pinwheel-app:compileKotlin UP-TO-DATE
+> Task :pinwheel-app:compileJava NO-SOURCE
+> Task :pinwheel-app:classes UP-TO-DATE
+
+> Task :pinwheel-render:test FAILED
+
+AngleTriangleTest > freshContextCanRenderAfterRelease() FAILED
+    java.lang.NullPointerException at AngleTriangleTest.kt:20
+
+AngleTriangleTest > d3d11TriangleHasColourAndTopDownOrientation() FAILED
+    java.lang.NullPointerException at AngleTriangleTest.kt:8
+
+2 tests completed, 2 failed
+
+> Task :pinwheel-app:p0Smoke
+java.lang.NullPointerException
+	at org.lwjgl.system.Checks.check(Checks.java:188)
+	at org.lwjgl.egl.EXTPlatformBase.neglGetPlatformDisplayEXT(EXTPlatformBase.java:55)
+	at org.lwjgl.egl.EXTPlatformBase.eglGetPlatformDisplayEXT(EXTPlatformBase.java:65)
+	at com.pinwheel.render.AngleTriangle.render(AngleTriangle.kt:38)
+	at com.pinwheel.render.AngleTriangle.render$default(AngleTriangle.kt:24)
+	at com.pinwheel.app.MainKt$main$1$1$1$1$1.invokeSuspend(Main.kt:60)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:820)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+
+Exception in thread "main" java.lang.NullPointerException
+	at org.lwjgl.system.Checks.check(Checks.java:188)
+	at org.lwjgl.egl.EXTPlatformBase.neglGetPlatformDisplayEXT(EXTPlatformBase.java:55)
+	at org.lwjgl.egl.EXTPlatformBase.eglGetPlatformDisplayEXT(EXTPlatformBase.java:65)
+	at com.pinwheel.render.AngleTriangle.render(AngleTriangle.kt:38)
+	at com.pinwheel.render.AngleTriangle.render$default(AngleTriangle.kt:24)
+	at com.pinwheel.app.MainKt$main$1$1$1$1$1.invokeSuspend(Main.kt:60)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:820)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+
+> Task :pinwheel-app:p0Smoke FAILED
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':pinwheel-render:test'.
+> There were failing tests. See the report at: file:///D:/Pinwheel-Windows/pinwheel-render/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':pinwheel-app:p0Smoke'.
+> Process 'command 'E:\Java\jdk-23\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+BUILD FAILED in 29s
+15 actionable tasks: 4 executed, 11 up-to-date

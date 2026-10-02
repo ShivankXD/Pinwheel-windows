@@ -1,0 +1,14 @@
+Source: the three final JUnit XML suites saved beside this file.
+
+com.pinwheel.platform.AppPathsTest: tests=1 failures=0 errors=0 skipped=0
+com.pinwheel.render.AngleTriangleTest: tests=2 failures=0 errors=0 skipped=0
+com.pinwheel.media.FfmpegDecoderTest: tests=3 failures=0 errors=0 skipped=0
+TOTAL: tests=6 failures=0 errors=0 skipped=0
+
+Final local command: ./scripts/build.ps1 -Smoke
+BUILD SUCCESSFUL in 17s
+28 actionable tasks: 28 executed
+PASS missing-native smoke returns nonzero exit code with the expected library failure
+
+The core, app and photo modules have no JUnit tests in P0. The app is verified
+by the separate real-window smoke run. This count includes no mobile tests.

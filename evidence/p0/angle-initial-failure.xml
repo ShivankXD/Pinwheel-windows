@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pinwheel.render.AngleTriangleTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2026-10-02T05:51:49.274Z" hostname="SHIVANK" time="0.386">
+  <properties/>
+  <testcase name="freshContextCanRenderAfterRelease()" classname="com.pinwheel.render.AngleTriangleTest" time="0.382">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at org.lwjgl.system.Checks.check(Checks.java:188)
+	at org.lwjgl.egl.EXTPlatformBase.neglGetPlatformDisplayEXT(EXTPlatformBase.java:55)
+	at org.lwjgl.egl.EXTPlatformBase.eglGetPlatformDisplayEXT(EXTPlatformBase.java:65)
+	at com.pinwheel.render.AngleTriangle.render(AngleTriangle.kt:35)
+	at com.pinwheel.render.AngleTriangleTest.freshContextCanRenderAfterRelease(AngleTriangleTest.kt:20)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+</failure>
+  </testcase>
+  <testcase name="d3d11TriangleHasColourAndTopDownOrientation()" classname="com.pinwheel.render.AngleTriangleTest" time="0.002">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at org.lwjgl.system.Checks.check(Checks.java:188)
+	at org.lwjgl.egl.EXTPlatformBase.neglGetPlatformDisplayEXT(EXTPlatformBase.java:55)
+	at org.lwjgl.egl.EXTPlatformBase.eglGetPlatformDisplayEXT(EXTPlatformBase.java:65)
+	at com.pinwheel.render.AngleTriangle.render(AngleTriangle.kt:35)
+	at com.pinwheel.render.AngleTriangle.render$default(AngleTriangle.kt:24)
+	at com.pinwheel.render.AngleTriangleTest.d3d11TriangleHasColourAndTopDownOrientation(AngleTriangleTest.kt:8)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

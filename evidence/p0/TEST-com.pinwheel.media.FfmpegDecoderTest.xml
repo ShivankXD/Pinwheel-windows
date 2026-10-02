@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pinwheel.media.FfmpegDecoderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-02T06:27:27.611Z" hostname="SHIVANK" time="0.638">
+  <properties/>
+  <testcase name="rejectsMissingMediaAndInvalidTimes()" classname="com.pinwheel.media.FfmpegDecoderTest" time="0.047"/>
+  <testcase name="bundledRuntimeIsSharedLgpl()" classname="com.pinwheel.media.FfmpegDecoderTest" time="0.108"/>
+  <testcase name="decodesRealDemoAtTwoTimesWithoutChangingSource()" classname="com.pinwheel.media.FfmpegDecoderTest" time="0.48"/>
+  <system-out><![CDATA[PASS FFmpeg demo decode at 0 and 1 s: 960x720 RGBA; original SHA-256 unchanged
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

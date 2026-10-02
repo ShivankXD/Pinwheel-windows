@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pinwheel.render.AngleTriangleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-02T06:27:27.842Z" hostname="SHIVANK" time="0.991">
+  <properties/>
+  <testcase name="freshContextCanRenderAfterRelease()" classname="com.pinwheel.render.AngleTriangleTest" time="0.748"/>
+  <testcase name="d3d11TriangleHasColourAndTopDownOrientation()" classname="com.pinwheel.render.AngleTriangleTest" time="0.241"/>
+  <system-out><![CDATA[PASS ANGLE D3D11 triangle, shader compile/link, RGBA readback and Y orientation: ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.8186)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

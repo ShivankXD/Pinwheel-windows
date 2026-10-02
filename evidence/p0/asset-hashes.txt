@@ -1,0 +1,4 @@
+PASS assets/demo.mp4 2C1F42E09ED0B9A07AC714824AA63AC54DBA29072879D65DF755CDC78907BD7D matches read-only mobile source
+PASS assets/demo.jpg A586015278031AC2FE3C1345B8F99C497CDC17A29F4BB3D5C6ED03AB1D5565FB matches read-only mobile source
+PASS pinwheel-app/src/main/resources/brand/pinwheel_fan.png 8BD81416DDDCB0FE0C25C3AB4B67153CD652C53DD90E18FFB6B3E110234F6E70 matches read-only mobile source
+PASS pinwheel-app/src/main/resources/brand/pinwheel_fan_fill.png 741937F7F523C5FBE5DC01E3A4ACEC15B32A93657AA98068EC3A740E1C6D0911 matches read-only mobile source
