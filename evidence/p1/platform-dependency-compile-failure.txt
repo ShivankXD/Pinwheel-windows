@@ -1,0 +1,44 @@
+PASS Gradle 8.14.5 official distribution SHA-256 verified
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-platform:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-media:processTestResources NO-SOURCE
+> Task :pinwheel-platform:processResources NO-SOURCE
+> Task :pinwheel-platform:processTestResources NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:processTestResources NO-SOURCE
+
+> Task :pinwheel-platform:compileKotlin FAILED
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:3:21 Unresolved reference 'core'.
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:4:21 Unresolved reference 'core'.
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:7:49 Unresolved reference 'AuthAccount'.
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:7:63 Unresolved reference 'AuthAccount'.
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:7:114 Unresolved reference 'AuthProvider'.
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:8:5 'account' overrides nothing.
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:8:27 Unresolved reference 'AuthAccount'.
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:10:5 'signIn' overrides nothing.
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:10:28 Unresolved reference 'AuthAccount'.
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:10:54 Cannot infer type for type parameter 'T'. Specify it explicitly.
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:10:54 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
+fun <T> T.also(block: (T) -> Unit): T
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:10:59 Cannot infer type for type parameter 'T'. Specify it explicitly.
+e: file:///D:/Pinwheel-Windows/pinwheel-platform/src/main/kotlin/com/pinwheel/platform/FakeAuthProvider.kt:11:5 'signOut' overrides nothing.
+
+
+> Task :pinwheel-core:compileKotlin
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':pinwheel-platform:compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 11s
+2 actionable tasks: 2 executed

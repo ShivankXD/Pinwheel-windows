@@ -56,6 +56,7 @@ fun main(args: Array<String>) {
         var probe by remember { mutableStateOf<Probe?>(null) }
         var failure by remember { mutableStateOf<String?>(null) }
         var licences by remember { mutableStateOf(false) }
+        val debugPanels = remember { java.util.ServiceLoader.load(DebugPanel::class.java).toList() }
         LaunchedEffect(Unit) {
             runCatching {
                 withContext(Dispatchers.IO) {
@@ -74,7 +75,9 @@ fun main(args: Array<String>) {
             MaterialTheme(colorScheme = Theme) {
                 Surface(Modifier.fillMaxSize(), color = Ink, contentColor = Theme.onBackground) {
                     if (intro) PinwheelIntro { intro = false }
-                    else Workspace(probe, failure, { intro = true }, { licences = true })
+                    else Column { Box(Modifier.weight(1f)) { Workspace(probe, failure, { intro = true }, { licences = true }) }
+                        debugPanels.forEach { it.Content() }
+                    }
                 }
                 if (licences) AlertDialog(onDismissRequest = { licences = false },
                     title = { Text("Licences") },

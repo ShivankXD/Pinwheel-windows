@@ -521,7 +521,7 @@ object VideoFxCatalog {
         ov("frame-grid", "Grid Lines", "Frames", 27, 0.0f, 19),
     )
     /** Looks from earlier versions: still resolvable for saved projects, but not listed in the library. */
-    private val legacyOverlays = listOf(
+    val legacyOverlays = listOf(
         ov("leak-green", "Light Leak Green", "Light", 1, 0.36f), ov("leak-purple", "Light Leak Purple", "Light", 1, 0.78f),
         ov("leak-red", "Light Leak Red", "Light", 1, 0.0f), ov("flare-blue", "Lens Flare Blue", "Light", 2, 0.6f),
         ov("lightning", "Lightning", "Light", 29, 0.6f), ov("bokeh-blue", "Bokeh Blue", "Particles", 3, 0.6f),

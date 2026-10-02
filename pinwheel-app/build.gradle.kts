@@ -1,3 +1,5 @@
+import java.util.zip.ZipFile
+
 plugins { kotlin("jvm"); kotlin("plugin.compose"); id("org.jetbrains.compose") }
 dependencies {
     implementation(project(":pinwheel-core"))
@@ -10,6 +12,25 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
 }
 compose.desktop { application { mainClass = "com.pinwheel.app.MainKt" } }
+val debugBuild = providers.gradleProperty("pinwheel.debug").orNull == "true"
+layout.buildDirectory = layout.projectDirectory.dir(if (debugBuild) "build/debug" else "build/release")
+if (debugBuild) {
+    sourceSets.main { kotlin.srcDir("src/debug/kotlin"); resources.srcDir("src/debug/resources") }
+}
+tasks.register("verifyBuildVariant") {
+    dependsOn("jar")
+    doLast {
+        val archive = tasks.named<Jar>("jar").get().archiveFile.get().asFile
+        ZipFile(archive).use { zip ->
+            val hasToggle = zip.getEntry("com/pinwheel/app/debug/DebugEntitlement.class") != null
+            check(hasToggle == debugBuild) { "Debug entitlement leaked into the release jar or is missing from debug" }
+            val hasProvider = zip.getEntry("META-INF/services/com.pinwheel.app.DebugPanel") != null
+            check(hasProvider == debugBuild)
+        }
+        println("PASS ${if (debugBuild) "debug includes" else "release excludes"} debug entitlement controls")
+    }
+}
+tasks.named("check") { dependsOn("verifyBuildVariant") }
 tasks.register<JavaExec>("p0Smoke") {
     dependsOn("classes")
     classpath = sourceSets.main.get().runtimeClasspath

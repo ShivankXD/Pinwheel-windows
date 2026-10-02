@@ -1,0 +1,29 @@
+PASS Gradle 8.14.5 official distribution SHA-256 verified
+
+> Configure project :pinwheel-app
+e: file:///D:/Pinwheel-Windows/pinwheel-app/build.gradle.kts:21:14: Unresolved reference: util
+e: file:///D:/Pinwheel-Windows/pinwheel-app/build.gradle.kts:21:46: Cannot infer a type for this parameter. Please specify it explicitly.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'D:\Pinwheel-Windows\pinwheel-app\build.gradle.kts' line: 21
+
+* What went wrong:
+Script compilation errors:
+
+  Line 21:         java.util.zip.ZipFile(archive).use { zip ->
+                        ^ Unresolved reference: util
+
+  Line 21:         java.util.zip.ZipFile(archive).use { zip ->
+                                                        ^ Cannot infer a type for this parameter. Please specify it explicitly.
+
+2 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 6s

@@ -1,13 +1,6 @@
-* text=auto
-scripts/commit-msg text eol=lf
-*.kt text eol=lf
-*.kts text eol=lf
-*.md text eol=lf
-*.ps1 text eol=lf
-*.sh text eol=lf
-gradlew text eol=lf
-gradlew.bat text eol=crlf
-*.png binary
-*.jpg binary
-*.mp4 binary
-*.jar binary
+* text=auto eol=lf
+assets/** -text
+licenses/mobile/** -text
+*.png -text
+*.mp4 -text
+*.webp -text

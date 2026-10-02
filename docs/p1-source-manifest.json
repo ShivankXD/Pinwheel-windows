@@ -165,7 +165,7 @@
     "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoFxCatalog.kt",
     "sourceSha256": "3510199ef7505d07461151cdf2c4e220a1c4a98af318f95a3cda9fd327916c49",
     "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/video/VideoFxCatalog.kt",
-    "targetSha256": "6f0f2e3d2655c49b301b2cb46854016329f004311ea6ee72b7dbfeabfe119e09"
+    "targetSha256": "f3c76e5b11bcafe1902f608b528b16d11cfd9df0043ba46d6d8bd01f51374d2d"
   },
   {
     "source": "app/src/main/java/com/nativeoffice/studio/media/video/CaptionMotionTemplates.kt",
@@ -225,7 +225,7 @@
     "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoFrame.kt",
     "sourceSha256": "efd97a03e90a9f7171935878320faa06a6ffc26b2337c02d0592e3782186b6ab",
     "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoFrameRenderer.kt",
-    "targetSha256": "1484592b57abb52233f1bbe685c92cca44711954e4c1171763d9447dd3de182e"
+    "targetSha256": "419da72e46397eb704732a252fc0fcb7ad19fbc585931e8b4408b892ff31d561"
   },
   {
     "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoLooks.kt",
@@ -1900,5 +1900,497 @@
     "sourceSha256": "8ac2be843a0d5ff50121be22b6e8a3c20acda57eb6ffa5250e7f806be34fa121",
     "target": "assets/studio_scenes/riviera-home.webp",
     "targetSha256": "8ac2be843a0d5ff50121be22b6e8a3c20acda57eb6ffa5250e7f806be34fa121"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/01.webp",
+    "sourceSha256": "02c77f6a917031e2678fb19f871a86b4ab0322a41356708479fdc37becdd7cf4",
+    "target": "assets/template_gallery/01.webp",
+    "targetSha256": "02c77f6a917031e2678fb19f871a86b4ab0322a41356708479fdc37becdd7cf4"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/02.webp",
+    "sourceSha256": "cbe3984431d480ae9505651a800642473fcc4156a670cecd9397af8d8421a476",
+    "target": "assets/template_gallery/02.webp",
+    "targetSha256": "cbe3984431d480ae9505651a800642473fcc4156a670cecd9397af8d8421a476"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/03.webp",
+    "sourceSha256": "207a5dde24c047ddd45a6f20813ba30141fe19da7dfa13f9fd88c2f7ef589d60",
+    "target": "assets/template_gallery/03.webp",
+    "targetSha256": "207a5dde24c047ddd45a6f20813ba30141fe19da7dfa13f9fd88c2f7ef589d60"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/04.webp",
+    "sourceSha256": "3577c3634cddb0dc0af63454500afada7be39542404998100d70db1104687568",
+    "target": "assets/template_gallery/04.webp",
+    "targetSha256": "3577c3634cddb0dc0af63454500afada7be39542404998100d70db1104687568"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/05.webp",
+    "sourceSha256": "2ca1e6e90d17d0cbf0c47301e93479d091412f6fa668f5113996e0f9e9a30ab2",
+    "target": "assets/template_gallery/05.webp",
+    "targetSha256": "2ca1e6e90d17d0cbf0c47301e93479d091412f6fa668f5113996e0f9e9a30ab2"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/06.webp",
+    "sourceSha256": "f56727989b17fcc27ea2b25533d09c94bdf2970a083e72011725c00f17aa9197",
+    "target": "assets/template_gallery/06.webp",
+    "targetSha256": "f56727989b17fcc27ea2b25533d09c94bdf2970a083e72011725c00f17aa9197"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/07.webp",
+    "sourceSha256": "b7392d2d4180782b9e6fd0bb958f03e305b8835576b956bc9d0e868b5623457c",
+    "target": "assets/template_gallery/07.webp",
+    "targetSha256": "b7392d2d4180782b9e6fd0bb958f03e305b8835576b956bc9d0e868b5623457c"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/08.webp",
+    "sourceSha256": "ca39bc02ca578cf359866cb4896a8b669095344b8ee9472a0f4753090d27ccd7",
+    "target": "assets/template_gallery/08.webp",
+    "targetSha256": "ca39bc02ca578cf359866cb4896a8b669095344b8ee9472a0f4753090d27ccd7"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/09.webp",
+    "sourceSha256": "ca39bc02ca578cf359866cb4896a8b669095344b8ee9472a0f4753090d27ccd7",
+    "target": "assets/template_gallery/09.webp",
+    "targetSha256": "ca39bc02ca578cf359866cb4896a8b669095344b8ee9472a0f4753090d27ccd7"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/10.webp",
+    "sourceSha256": "0b7368b06955e2d154a0399ecdb00a6215890912c58be9054f2c6b5b3f007772",
+    "target": "assets/template_gallery/10.webp",
+    "targetSha256": "0b7368b06955e2d154a0399ecdb00a6215890912c58be9054f2c6b5b3f007772"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/11.webp",
+    "sourceSha256": "901795128c1fb7b3a639aed03945840a286df09e240196f33b8c96420206826e",
+    "target": "assets/template_gallery/11.webp",
+    "targetSha256": "901795128c1fb7b3a639aed03945840a286df09e240196f33b8c96420206826e"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/12.webp",
+    "sourceSha256": "6fceffc75dba62a4848319882efe00b973db5fa98eb95742ae2db9410ac73e5d",
+    "target": "assets/template_gallery/12.webp",
+    "targetSha256": "6fceffc75dba62a4848319882efe00b973db5fa98eb95742ae2db9410ac73e5d"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/13.webp",
+    "sourceSha256": "290c1912b90f1a7a305d7979a717cd6c19a94eceed628d5689fff1a39b7447fb",
+    "target": "assets/template_gallery/13.webp",
+    "targetSha256": "290c1912b90f1a7a305d7979a717cd6c19a94eceed628d5689fff1a39b7447fb"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/14.jpg",
+    "sourceSha256": "f242f783baadac522f9d03c56e342129a72a78cd9ade0c99b01b17fe6213d8fc",
+    "target": "assets/template_gallery/14.jpg",
+    "targetSha256": "f242f783baadac522f9d03c56e342129a72a78cd9ade0c99b01b17fe6213d8fc"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/15.webp",
+    "sourceSha256": "ba84f826ac37980258fc458dcf313a2d16e6e2160f6329af71c4a4cf9f0a01bb",
+    "target": "assets/template_gallery/15.webp",
+    "targetSha256": "ba84f826ac37980258fc458dcf313a2d16e6e2160f6329af71c4a4cf9f0a01bb"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/16.webp",
+    "sourceSha256": "d40b72b252e8155e03c9276b83ac69c0301b4ddbb39fbadf54cfc0c83b505faa",
+    "target": "assets/template_gallery/16.webp",
+    "targetSha256": "d40b72b252e8155e03c9276b83ac69c0301b4ddbb39fbadf54cfc0c83b505faa"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/17.webp",
+    "sourceSha256": "778cc8f1d2a3233bb81b067c85da022743715e69857bd80d57a15360103c1b15",
+    "target": "assets/template_gallery/17.webp",
+    "targetSha256": "778cc8f1d2a3233bb81b067c85da022743715e69857bd80d57a15360103c1b15"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/18.jpg",
+    "sourceSha256": "ae94d45f416a86302df73d80460f2706300dfeeff473c708243a1cd4c5ac3d64",
+    "target": "assets/template_gallery/18.jpg",
+    "targetSha256": "ae94d45f416a86302df73d80460f2706300dfeeff473c708243a1cd4c5ac3d64"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/19.jpg",
+    "sourceSha256": "3076fae2a4a31ddf82b6d1524aebd7709f56094aeb9192746764859730ed2a57",
+    "target": "assets/template_gallery/19.jpg",
+    "targetSha256": "3076fae2a4a31ddf82b6d1524aebd7709f56094aeb9192746764859730ed2a57"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/20.jpg",
+    "sourceSha256": "ae94d45f416a86302df73d80460f2706300dfeeff473c708243a1cd4c5ac3d64",
+    "target": "assets/template_gallery/20.jpg",
+    "targetSha256": "ae94d45f416a86302df73d80460f2706300dfeeff473c708243a1cd4c5ac3d64"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/21.jpg",
+    "sourceSha256": "444f6a7088d91061f7fe9b5eec6923eaa6d578ed50e877e8ebd71165dbe7c40e",
+    "target": "assets/template_gallery/21.jpg",
+    "targetSha256": "444f6a7088d91061f7fe9b5eec6923eaa6d578ed50e877e8ebd71165dbe7c40e"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/22.jpg",
+    "sourceSha256": "431dd8d107ea262e5f3174d4e5dfb56b9e6ed9f6c40c21d1f4b2c0ad7526f762",
+    "target": "assets/template_gallery/22.jpg",
+    "targetSha256": "431dd8d107ea262e5f3174d4e5dfb56b9e6ed9f6c40c21d1f4b2c0ad7526f762"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/23.jpg",
+    "sourceSha256": "01bf0d126081e50762badcb1fd8f184850c56b0ecd6294d71e438a75b4c12bee",
+    "target": "assets/template_gallery/23.jpg",
+    "targetSha256": "01bf0d126081e50762badcb1fd8f184850c56b0ecd6294d71e438a75b4c12bee"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/24.webp",
+    "sourceSha256": "a9b7a4036dacc75e3371b31c4b8cfdddb858506d80bd6f276453f77fbc49efa1",
+    "target": "assets/template_gallery/24.webp",
+    "targetSha256": "a9b7a4036dacc75e3371b31c4b8cfdddb858506d80bd6f276453f77fbc49efa1"
+  },
+  {
+    "source": "app/src/main/assets/template_gallery/25.webp",
+    "sourceSha256": "494d58dde0c911514eb0e72403ba3e8a020b3e01f6fd07f5cafaea392647462e",
+    "target": "assets/template_gallery/25.webp",
+    "targetSha256": "494d58dde0c911514eb0e72403ba3e8a020b3e01f6fd07f5cafaea392647462e"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/BrushMaskIndex.kt",
+    "sourceSha256": "1170c3da0e3d8973bbae3db80d1b6ab565f48927b1661f627ed0b9c3fc2df0ed",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/BrushMaskIndex.kt",
+    "targetSha256": "4be2711596b1d8d665d5d0cddad70c64b7f3b05d667a51921df0df3cab94f5ce"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/LensfunCalibrations.kt",
+    "sourceSha256": "0e07bc3cf20a28724f69baaecc3d2d5af3014199645586320eb546d5fac792d6",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/LensfunCalibrations.kt",
+    "targetSha256": "2ba70f042ad53a715ee6b57ad5730cb5151cfbe2172d95e98311175728da0cd3"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoColorTarget.kt",
+    "sourceSha256": "d6e0ff4ded64f644e207f464dfaeb898116b690f53bc6e3906ed5f605ddd23c4",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoColorTarget.kt",
+    "targetSha256": "b48d822e14066eaaf3001ea63b4a4b073aae31f48239f3198433f61f6b8592c0"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoColorTransform.kt",
+    "sourceSha256": "e33d874634e86ad7e43ff85c31914beccf02c50fe0e0f48499fabb675047df2f",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoColorTransform.kt",
+    "targetSha256": "30a5d905b325d780897a23dd370ca8b6a40b96a84e08bb5e331ecd6762d8c848"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoDehaze.kt",
+    "sourceSha256": "ec5b37b0339d69aca498752aa32e9d8312c80487c86ad6384ebcc0cf1cca77c0",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoDehaze.kt",
+    "targetSha256": "7f9f52a64e4f53c7bc291541e6cab1c53e79f4029e61f3f93537e070ecfb5fbb"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoGrading.kt",
+    "sourceSha256": "e697a121a8f02131ea0f90ab70bbb25af0381fbb011fb281d8b4bddda77251ac",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoGrading.kt",
+    "targetSha256": "dd796d4efea6b549cc546bb93b4ecc947b4e0e32e2c1677348e18020f066d3ff"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoGuidedPerspective.kt",
+    "sourceSha256": "f8015a0332c052074fd09b1db856fe55bfbaa4b0d1fadec48aa86980a1bbfd71",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoGuidedPerspective.kt",
+    "targetSha256": "2f23d821a8a2e955d7b1d35d5ad3284cfa39f87d64e97ab0bbd815287c839048"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoLens.kt",
+    "sourceSha256": "149f36fbb2c1d98e992a5b9dc936cd2cb21af734e2810417b334a4d10fdd3d3e",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoLens.kt",
+    "targetSha256": "80cbd7f5e48cc127d35279cbc6bcb22b35481b155ed3e882e8b33f6a91d10279"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoLensProfiles.kt",
+    "sourceSha256": "7b1fc0c27b396bfed156fa768eaa561ebf850bbc72cc9fdda2fd4ec756274ae1",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoLensProfiles.kt",
+    "targetSha256": "cc53b303acf34424ba44ca5aa92eff88d26e314a09679ebaec053557a3655545"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoMagicEnhance.kt",
+    "sourceSha256": "2c84b9a8aa1e71ac56aff9a9fb9149f69c5617958c3ecf767fd42921c862da68",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoMagicEnhance.kt",
+    "targetSha256": "5808fcd65a4261b505585470ddb61244b01ad3cce152fcb0dbdda004336164bf"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoMasks.kt",
+    "sourceSha256": "1d93d379d75421a27447e0354349fd67b24f5baf390ada729ae22b22fd9e65f0",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoMasks.kt",
+    "targetSha256": "2a68640a857516dd8fc11e947b8f63253b67e42a6dc50f62a1977e0599e236c6"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoPerspective.kt",
+    "sourceSha256": "002da70e7cee1408c8b8baf1c39da0b8448e0bee097d50fcd81d274feae15634",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoPerspective.kt",
+    "targetSha256": "aec719661fa854bf756ebc718e3c7aec9c32b0328ab8cd2260787f29af496d55"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoTca.kt",
+    "sourceSha256": "3666595a5e505ecc6f80a3cc14e6150459044eb9f2a36c9bdceacf31a45c0634",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoTca.kt",
+    "targetSha256": "bdc6fe2d4e73c521fc5c809fc81b4908c22571c9b57aeb8919a3a6259b93839e"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoThumbnail.kt",
+    "sourceSha256": "e56e61d173d33ab54aa2c790d3b048bd5dffbeba7bd06d8b22aac30de783918d",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoThumbnail.kt",
+    "targetSha256": "ae6fd57215da08b817709ba336ecc6b314d843bbfef4ed7d6622cd989391dfcd"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoWhiteBalance.kt",
+    "sourceSha256": "7e9718a6519fc1ceb8bee94751634369ce157fc5e0f601c5356f1c48e2dfb908",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoWhiteBalance.kt",
+    "targetSha256": "b6a07c11bdbc458e6bbdb059dc5ef5624bcd4127a0fdf57fc7c3b271d56d4efb"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PreviewScheduler.kt",
+    "sourceSha256": "73299d141803d36ab1ed313f5009d821a97cf9cffb705d92d8f888906a56c0fb",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PreviewScheduler.kt",
+    "targetSha256": "788766612ad568f1f7d0ea4ef3e9e366dcb3d471a2aecb14e10c62350828f28b"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoCropGeometry.kt",
+    "sourceSha256": "ea87817dfa566917eb5ea5b903f728f247fc20951b217632b6ed1027076def85",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/video/VideoCropGeometry.kt",
+    "targetSha256": "5356089465ad7a8dda936af56490e2d1fb12fa67229acdd69b43b76fd49ee504"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoCanvasSizing.kt",
+    "sourceSha256": "88b8d407432a121976c4afc48a4d3189e79764cff63fe7dfa8c1dbc51f744bfd",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/video/VideoCanvasSizing.kt",
+    "targetSha256": "8f51a963790261a1decbcefd226763d605a92e73468f29e1c58236fdd8c23ff8"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/audio/VoiceoverSession.kt",
+    "sourceSha256": "fc29e820999d676bb456734992e65b5bc8a5df30c7739a74f96f27076f34fac6",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/audio/VoiceoverSession.kt",
+    "targetSha256": "3b4e6a550e6a5a3b672dfdbb10ac6359a3d021d424f831a23dbee880e9310fe6"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/captions/CaptionWords.kt",
+    "sourceSha256": "c8bbd9f1dbee8bfdc2a08959d801352de975b5fa177a2cce3e29cba806d94b0c",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/captions/CaptionWords.kt",
+    "targetSha256": "736209e2c7932f061279b71c3ee5013433b0abc910a4951e34d1268374add017"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/ui/PhotoCropFrame.kt",
+    "sourceSha256": "760151833cf9d23eb36c7c747886a0f6dabbaecbc4627145cc2277a0196157fa",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/ui/PhotoCropFrame.kt",
+    "targetSha256": "99c2377afa8810d04f61f0c7a33048de5134a1ffb3f1a0987be4fa157b9fd198"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/ui/VideoCaptionPanels.kt",
+    "sourceSha256": "276abc0450d2c6de713fa5a2b52befae634eb1baeba14fafc968f8c9b6986d21",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/ui/CaptionTimeText.kt",
+    "targetSha256": "ae6c9e5b6bb9760bb166a5911b46f07d33c47f58b8da85549f949ee75b677aac"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoCutout.kt",
+    "sourceSha256": "475c462c6dbc4a5f8d44db9416c3b65e761337ea658f83870083a8d4eb2e808f",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/CutoutMask.kt",
+    "targetSha256": "3d6974281be612ef10f36337d6a3e8b6c773ae1673bcd9e5c0289401d85c48b9"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoClone.kt",
+    "sourceSha256": "043508aef97734d941e2a998fd1eb3ec0a90fbdd91422e91581962c4221e34c6",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoClone.kt",
+    "targetSha256": "366a090a90e1b3dd11b6e8deb0f29f1fa8f5a23a878bcc7795ff20a8f1161005"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/RawLinearImage.kt",
+    "sourceSha256": "1604a3cdc74204adbe38c0f27ca875b446f2c7a26598c6bc8101b752078d27bb",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/RawLinearImage.kt",
+    "targetSha256": "dc421137ba77731f2f69bc5e19063275872895c2046e6211dc8b8f935777adab"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/RawTiff.kt",
+    "sourceSha256": "90b41a83c90e5e24cf678f088ed2fff77cb45f099343f06bb7f1a0166046dfa5",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/RawTiff.kt",
+    "targetSha256": "d6bbe49d99e02f56a214ab89b12ff2bb13e199535c3dbc1c038b07de8175e45a"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/PhotoEngine.kt",
+    "sourceSha256": "b626efee5256db8626e4d61e089bff407ef6de8134102dd8d98dbaf5915ce9e7",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/PhotoEngine.kt",
+    "targetSha256": "9241a62f0a4e57471914b21de6a109b108dd238eaf971b15e81425d4591b189d"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoAudioEnvelope.kt",
+    "sourceSha256": "1b4f6a63d90073a5e8b51775d345c635bd51f255d4011831f3c469948f37911b",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/video/VideoAudioEnvelope.kt",
+    "targetSha256": "8012b113c3cfef1fc0041ee340a0adb66ee6c7bddeea79b0c305ce2bc74a3d99"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoAudioDspProcessor.kt",
+    "sourceSha256": "d5eee69161c5941cc647e8309557b6f0cb03d845038acbb6bb8b488f55545637",
+    "target": "pinwheel-core/src/main/kotlin/com/pinwheel/core/media/video/VideoAudioDspProcessor.kt",
+    "targetSha256": "646073846dba0623d866b98a06c521f9973864c2feddc9840989f0b5aeff0296"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/audio/VoiceoverSessionTest.kt",
+    "sourceSha256": "49b7b4c8b83fef86a336f66e1c194d027130227ebd556b65354576757707840d",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/audio/VoiceoverSessionTest.kt",
+    "targetSha256": "ba730c94fed510248a44e4ccf0de57ac0acb50d25c71868be690e5fcd86f3b66"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/captions/CaptionWordsTest.kt",
+    "sourceSha256": "98d56643bfce24063f0dc0693db757280e277fa272d5104b9c0d312a33f563d5",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/captions/CaptionWordsTest.kt",
+    "targetSha256": "f45d32cd74d3efb7b8fa417eb4d73f2dc8acb8ae95540fbd71a9d74cbc941ff2"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoAdvancedColorTest.kt",
+    "sourceSha256": "909446260fc6e3f7bab8206f259930e03fa869b739bf1044854136a7596cab7b",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoAdvancedColorTest.kt",
+    "targetSha256": "a5d1282715afa634918be110ab586f860f915e56c2c8cce5defa16246857a10a"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoCloneBlendTest.kt",
+    "sourceSha256": "93cd00df01f7049456b99d5b938a7abdb51ac7a03639461ace0421975bb1dc17",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoCloneBlendTest.kt",
+    "targetSha256": "06363316252cb35d23b2a31784a4f3d08ebdcbdf8741a17ec9932b1394ff3f0c"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoColorRowTest.kt",
+    "sourceSha256": "dffc18d0743edeeae8bbfaa9f635fae2840a57935e0798bd496dc0dc4ab613e7",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoColorRowTest.kt",
+    "targetSha256": "43560f955faf5b2bcff5c73e7d129d6b0fa5f309399905df017788b2c2482cba"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoColorTargetTest.kt",
+    "sourceSha256": "a03d3d75bc68f3d5ab26391a4d5f6b2ee590d792c2333f61818125c0e859598c",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoColorTargetTest.kt",
+    "targetSha256": "13f9fa86b94da24833998853a14b5e213694c8509049c48e38377e03c12c3924"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoColorTest.kt",
+    "sourceSha256": "ef817d467b835dae2b41733c4070ee30c5caa1dd2200554156771d1352bada64",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoColorTest.kt",
+    "targetSha256": "a1da4479415aefee7947a8843ed3360429556a004a76fea6ae9617c18d35fe40"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoCutoutTest.kt",
+    "sourceSha256": "c09190f89a502ec8afe37bd70caca9d9c6bd36c4b167ab053e862910f95663b1",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoCutoutTest.kt",
+    "targetSha256": "4dd4a20f6219e69b1e941efadd6acf0af16d7b49bda91e6a9608e5cd8f375894"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoDehazeTest.kt",
+    "sourceSha256": "343caa3090cb902668846e30488f1fcb059e0b20478fe8fb02ee9c4ca8313ad1",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoDehazeTest.kt",
+    "targetSha256": "baa211ae908a4df9e2ae802c4b550df2a1a4f001e1c92ad62867e5be1ef35196"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoFrameTest.kt",
+    "sourceSha256": "b73c3a60b1dd8a52033b9a7fc230049f2f7671cb88e2f865ba4954cdc4fc963d",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoFrameTest.kt",
+    "targetSha256": "65a3a030c1da35efa1de4e1e6c00674f0e0d174a96fb38219986dc87cebc2302"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoGuidedPerspectiveTest.kt",
+    "sourceSha256": "5e0f944991d2384915d67cff48951cf29f18832a80d5a588a08927dae82bcdd9",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoGuidedPerspectiveTest.kt",
+    "targetSha256": "d31c3a11afabf3ef5873b2dafdf70b69f2867d5405b99a81c6bbee6273585ff7"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoLensProfilesTest.kt",
+    "sourceSha256": "4f1b446d727e23b9c06f55024a57d97aabba04a951640ee94e3d384e45c832e5",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoLensProfilesTest.kt",
+    "targetSha256": "3bf384afe75d84ea32e7cbf9e5477741c154680eb347d9f6d66bd71847891c89"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoLensTest.kt",
+    "sourceSha256": "1325d0bf79e743a20457d4ff9edb72d48fc7c9996236447c8366f0dcfea9039e",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoLensTest.kt",
+    "targetSha256": "55d4b6db5eb62eb468171dcdcec70db711025257964a488bbc0819bb587fb15c"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoLookSheetTest.kt",
+    "sourceSha256": "65061c4b20a11cabc1c996bec9fd6743b21a135b4e94d762a993d1dba1093d1e",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoLookSheetTest.kt",
+    "targetSha256": "0452a6a24c121f60fc601333fc12d162df213be0a9d39bf363bc9b9bcfe5ae11"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoPackedColorTest.kt",
+    "sourceSha256": "2127ad39e0ba69f22075343a7cfc64c869563a26a6e1f9c8607db6b0c28f7e75",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoPackedColorTest.kt",
+    "targetSha256": "355c1d70f867e949b50029329bfd7e7183649844811e322707ad929c0ecfd3cf"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoPrecisionColorTest.kt",
+    "sourceSha256": "dade1c6dd3017ee607dca5421c9a73dda801382474404a91612fee38eb4d692e",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoPrecisionColorTest.kt",
+    "targetSha256": "344360e3039c58d2e4b9df449f2e33fae80aae4dc25356d803d6d95b5484fa6a"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoRefinementTest.kt",
+    "sourceSha256": "42825bdb7a1797259d5c7cf8a773050be94546e4e18611fa22d2448eec866531",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoRefinementTest.kt",
+    "targetSha256": "3165f40cf139a81cfd15417bf4c32f85ccd6f416a4418d2832d919869d0d3cae"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoTcaTest.kt",
+    "sourceSha256": "f227c97d9463b6ee16a865043d89a4285e92ffd65071ef7ca1e68cf7e87e7dc1",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoTcaTest.kt",
+    "targetSha256": "07e845d82d538e787bd805f2a168122e4eac487e2320611fa83a437d90edccc0"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PhotoThumbnailTest.kt",
+    "sourceSha256": "76001c05b402a07a76fd46673b53e5d3cdf1c7115e245c6bbf242d167e7beaa3",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PhotoThumbnailTest.kt",
+    "targetSha256": "1006c583f3e500a9dae354bfc6602ed07786ae2f4c0a88f4ff67836a76a09a3c"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/PreviewSchedulerTest.kt",
+    "sourceSha256": "7f97e657d63a2c5cd33cdaeca4ba4f5af0bd09c0bc2afd8000c994379e147fe4",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/PreviewSchedulerTest.kt",
+    "targetSha256": "38dd7b8f9a3e65b7d72dad23da5ba59bbff698e2a619e23af38c3871c52654d9"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/RawTiffTest.kt",
+    "sourceSha256": "c69ee212df63d5c0fc2e5bec8614589605d385e8e11ac2645b3e7e5ed17db293",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/RawTiffTest.kt",
+    "targetSha256": "f57f5ec66c05d8941d8fbe1ec1e08cb7b041061b807d7e26ba5c39fc9ed8f27d"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/video/VideoAudioDspProcessorTest.kt",
+    "sourceSha256": "8859d75139f61da320691fe764353d7ad03ae08158cecbf8c04fedab28179413",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/video/VideoAudioDspProcessorTest.kt",
+    "targetSha256": "f3cb32588073e27d957cc32a4788c2d2f52526c5429c45e7021e2dbcbbfe6b75"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/video/VideoAudioEnvelopeTest.kt",
+    "sourceSha256": "c9957d07572d6f37e38c517942ddde5adf8b87d685a53afd91eb071cdd5cad73",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/video/VideoAudioEnvelopeTest.kt",
+    "targetSha256": "e0cbe5180d860d8de3414d15c9041d66a808d622105f5908786670ba0bf046c0"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/video/VideoCanvasSizingTest.kt",
+    "sourceSha256": "8a67cbbf54f4e4345c0b2113c5f2a243df68f2ee60e2a29aa5124601223ec660",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/video/VideoCanvasSizingTest.kt",
+    "targetSha256": "c93a98de90e3afa017cac826e5805b0f6ee6d73f7a13125a42b9dd076c43b9e7"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/media/video/VideoCropGeometryTest.kt",
+    "sourceSha256": "c067e50ff7d4305aa7b386b768ee7d3456ccc73c401f462d53da9bfcdb17446b",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/media/video/VideoCropGeometryTest.kt",
+    "targetSha256": "26a7f018bf663e90904693912ba5a9eef562a3e0e710d3cdb9c4057111756ef1"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/RawLinearTransformTest.kt",
+    "sourceSha256": "34ed799904121e238d1ebd310748fd41d95ae5236845cd8226d2485e9f7a727a",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/RawLinearTransformTest.kt",
+    "targetSha256": "01c889d2f5aa57b49620fdb147892e87af2dc91436e4b870d0a7f4706815ee21"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/ui/CaptionTimeTextTest.kt",
+    "sourceSha256": "f8c1bb7967c5c0e0437ad290aa0a47a630278b99b4e35dfda20ecebaf6c858d7",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/ui/CaptionTimeTextTest.kt",
+    "targetSha256": "f312829c65e6b0931518cea7cbbd90565855f6359aedb9474f16d6701bb68715"
+  },
+  {
+    "source": "app/src/test/java/com/nativeoffice/studio/ui/PhotoCropFrameTest.kt",
+    "sourceSha256": "95d89fe89d6d8fe67793b1bf80a103223a8f82d3020d6df44ec8be741a8f0c89",
+    "target": "pinwheel-core/src/test/kotlin/com/pinwheel/core/ui/PhotoCropFrameTest.kt",
+    "targetSha256": "d3f021c084a2d49f30aeee782d02bc5350a3175e107ee472089432afe2d762d0"
   }
 ]
