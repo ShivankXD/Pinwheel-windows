@@ -22,3 +22,9 @@ These decisions amend the original brief and take precedence where they differ.
    `D:/Pinwheel-Windows-refs`, which is read-only input. Do not create or edit
    files in that folder. Missing references must be reported, never fabricated.
 7. All other brief rules remain. Mobile remains strictly read-only.
+8. P1 implementation reviewed. P1 acceptance follows real mobile input checks.
+   P2 is authorized while those inputs are being generated. Golden coverage is
+   277 effects, 46 transitions, 80 active overlays and 19 legacy overlays, all
+   at 0.3/0.9/1.5/2.1 s from VideoFxPreviewRenderer. Inputs also include raw
+   projects, .pinwheel packages, device-library JSONs and mobile screenshots.
+   Failures must be explained as bugs; thresholds must never be relaxed.
