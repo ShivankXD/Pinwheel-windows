@@ -1,0 +1,100 @@
+[
+  {
+    "shader": "fx-carousel-fragment.hlsl",
+    "hardwareSha256": "b586d36ddd44bde5fd1c0d5f4d33b548fa9021d90e43861ebe8d7833eea9b66a",
+    "warpSha256": "b586d36ddd44bde5fd1c0d5f4d33b548fa9021d90e43861ebe8d7833eea9b66a",
+    "byteIdentical": true,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-carousel-vertex.hlsl",
+    "hardwareSha256": "994eac4cd25b49ec2c713c898802a7f682e8e65e2b2d9b0d911f525e5eed05f1",
+    "warpSha256": "72fb9547f9c9b304cf7985430b59d1ac8541893b71543e85585fc63227adebdf",
+    "byteIdentical": false,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-cc-dance-flash-fragment.hlsl",
+    "hardwareSha256": "507026d3af3241c1f02f772deb18b5c9eb27f617ec2e937946e5638791f9a7cf",
+    "warpSha256": "507026d3af3241c1f02f772deb18b5c9eb27f617ec2e937946e5638791f9a7cf",
+    "byteIdentical": true,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-cc-dance-flash-vertex.hlsl",
+    "hardwareSha256": "994eac4cd25b49ec2c713c898802a7f682e8e65e2b2d9b0d911f525e5eed05f1",
+    "warpSha256": "72fb9547f9c9b304cf7985430b59d1ac8541893b71543e85585fc63227adebdf",
+    "byteIdentical": false,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-cmyk-print-fragment.hlsl",
+    "hardwareSha256": "274510640bdd7dddfd544f6794d654093be4ddbf1cb95d8afb7dfdce37654a96",
+    "warpSha256": "274510640bdd7dddfd544f6794d654093be4ddbf1cb95d8afb7dfdce37654a96",
+    "byteIdentical": true,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-cmyk-print-vertex.hlsl",
+    "hardwareSha256": "994eac4cd25b49ec2c713c898802a7f682e8e65e2b2d9b0d911f525e5eed05f1",
+    "warpSha256": "72fb9547f9c9b304cf7985430b59d1ac8541893b71543e85585fc63227adebdf",
+    "byteIdentical": false,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-mosaic-pulse-fragment.hlsl",
+    "hardwareSha256": "8af4edfa0d58a4752ac0b651c7d04601a6af5b6edef662e2d55fcea8879cd082",
+    "warpSha256": "8af4edfa0d58a4752ac0b651c7d04601a6af5b6edef662e2d55fcea8879cd082",
+    "byteIdentical": true,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-mosaic-pulse-vertex.hlsl",
+    "hardwareSha256": "994eac4cd25b49ec2c713c898802a7f682e8e65e2b2d9b0d911f525e5eed05f1",
+    "warpSha256": "72fb9547f9c9b304cf7985430b59d1ac8541893b71543e85585fc63227adebdf",
+    "byteIdentical": false,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-ne-edges-fragment.hlsl",
+    "hardwareSha256": "0806d688ef6b2f7e8074f523c71495a965b6120938bbf5202a256646f55bc9a2",
+    "warpSha256": "0806d688ef6b2f7e8074f523c71495a965b6120938bbf5202a256646f55bc9a2",
+    "byteIdentical": true,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-ne-edges-vertex.hlsl",
+    "hardwareSha256": "994eac4cd25b49ec2c713c898802a7f682e8e65e2b2d9b0d911f525e5eed05f1",
+    "warpSha256": "72fb9547f9c9b304cf7985430b59d1ac8541893b71543e85585fc63227adebdf",
+    "byteIdentical": false,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-ov-tr-diamond-fragment.hlsl",
+    "hardwareSha256": "1f318bfed73d6e3e0a71543623658e46b957792e879860b875d1721cb0ba0e45",
+    "warpSha256": "1f318bfed73d6e3e0a71543623658e46b957792e879860b875d1721cb0ba0e45",
+    "byteIdentical": true,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-ov-tr-diamond-vertex.hlsl",
+    "hardwareSha256": "994eac4cd25b49ec2c713c898802a7f682e8e65e2b2d9b0d911f525e5eed05f1",
+    "warpSha256": "72fb9547f9c9b304cf7985430b59d1ac8541893b71543e85585fc63227adebdf",
+    "byteIdentical": false,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-pb-pixel-creation-fragment.hlsl",
+    "hardwareSha256": "7e95ee49245549ccbe3fc1a571a75ac7f5d555471a9d1114c0e9d13e35a6f149",
+    "warpSha256": "7e95ee49245549ccbe3fc1a571a75ac7f5d555471a9d1114c0e9d13e35a6f149",
+    "byteIdentical": true,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  },
+  {
+    "shader": "fx-pb-pixel-creation-vertex.hlsl",
+    "hardwareSha256": "994eac4cd25b49ec2c713c898802a7f682e8e65e2b2d9b0d911f525e5eed05f1",
+    "warpSha256": "72fb9547f9c9b304cf7985430b59d1ac8541893b71543e85585fc63227adebdf",
+    "byteIdentical": false,
+    "identicalAfterFlipUniformRegisterNormalization": true
+  }
+]

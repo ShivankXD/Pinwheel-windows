@@ -59,6 +59,22 @@ tasks.register<JavaExec>("p2FramebufferProbe") {
     args(rootDir.absolutePath, providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"))
     workingDir = rootDir
 }
+
+tasks.register<JavaExec>("p2DeterministicProbe") {
+    dependsOn("classes")
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("com.pinwheel.render.qa.P2DeterministicProbeKt")
+    args(rootDir.absolutePath, providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"))
+    workingDir = rootDir
+}
+
+tasks.register<JavaExec>("p2SamplingProbe") {
+    dependsOn("classes")
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("com.pinwheel.render.qa.P2SamplingProbeKt")
+    args(rootDir.absolutePath, providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"))
+    workingDir = rootDir
+}
 tasks.register<JavaExec>("p2StructuralReview") {
     dependsOn("classes", "goldenAudit")
     classpath = sourceSets.main.get().runtimeClasspath

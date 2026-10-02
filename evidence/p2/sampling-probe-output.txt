@@ -1,0 +1,17 @@
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+
+> Task :pinwheel-render:p2SamplingProbe
+Sampling probe: 56 exact same-backend prepared-input replays; 56 crossed-input comparisons; D:\Pinwheel-Windows\evidence\p2\diagnostics\sampling
+
+BUILD SUCCESSFUL in 32s
+4 actionable tasks: 2 executed, 2 up-to-date

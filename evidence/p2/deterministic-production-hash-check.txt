@@ -1,0 +1,1 @@
+PASS all 1688 production RGBA frame hashes unchanged; new probes write only diagnostics

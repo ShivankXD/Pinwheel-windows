@@ -1,0 +1,3826 @@
+{
+  "cases": [
+    {
+      "inputBackend": "hardware",
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.8186)",
+      "cases": [
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 8.4203125,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "f89c8b02155fe6c1a05eaa8bedcc4fc55b199677934c886dfac67c13c2cf7beb",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ov-tr-diamond",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 7.79765625,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "5d8ea14f4b6d2d7b528ffff103b7aa6312412213c27c0bacf7d4d3061a28ddc4",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ov-tr-diamond",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.06872829861111111,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0.05759548611111111,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.06345486111111111,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "ec60a1af7fbce3488ff3a4499ee849f68e2d50a207beca22402884d5dcb41301",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-ov-tr-diamond",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 8.46796875,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "87b96fdaaf2bf0d8b9226157bfe74b56e170dff6e322f2c504d81cfdf026d436",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ov-tr-diamond",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.5034722222222222,
+              "p99_8": 9
+            },
+            {
+              "mae8": 2.1127821180555557,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.107986111111111,
+              "p99_8": 49
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "73748fef45fcf28d9610a5899c62c26e5ae2d647c17010c4f287ab3b1c7e04a9",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.4972005208333333,
+              "p99_8": 9
+            },
+            {
+              "mae8": 2.0960286458333335,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.103515625,
+              "p99_8": 49
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "910eb378d188757dbaaa141addc9941fed3e2043d3226ff4bc68fb9327dcc07b",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.4850043402777778,
+              "p99_8": 9
+            },
+            {
+              "mae8": 2.041276041666667,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.094596354166667,
+              "p99_8": 42
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "907917b7dbebe51f0e100be99c854fc8c4b8a5b3215e806987f7cb1f98197060",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.49919704861111114,
+              "p99_8": 9
+            },
+            {
+              "mae8": 2.078537326388889,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.069704861111111,
+              "p99_8": 42
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "35f5089f1f8dc8b68fc8b2a6d90800e890bf000e0f276554cba4e48ef43c9c25",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.08394097222222222,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.07957899305555556,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.07087673611111112,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "aeb297b1c9781b11a11a8261de8d2a919d2e88fbdc2d7c90981a1bd432887433",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-mosaic-pulse",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.07081163194444444,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0.07567274305555556,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.06134982638888889,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "3d065da56f026b511c5b510b102abc39ff99953267576e7ac02b19782546abe4",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-mosaic-pulse",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.0615234375,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0.113671875,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.0661892361111111,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "88a256bed1dfe1f5e10873d97185793fd8390a064c8ca02ea55b8026461fe432",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-mosaic-pulse",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.6962239583333334,
+              "p99_8": 49
+            },
+            {
+              "mae8": 1.533203125,
+              "p99_8": 40
+            },
+            {
+              "mae8": 1.3585286458333334,
+              "p99_8": 33
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "fcba7e813a1d01341cadcb0c68cdba999ec5b0010bd4ad611ebd36d0938083fd",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-mosaic-pulse",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.09040798611111112,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.06922743055555555,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.039778645833333334,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "243d6d9bd690ae743db537c4c3e16450f80d22645e26685fa7681d1a5b8fc4f2",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-pb-pixel-creation",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.06156684027777778,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0.07615017361111111,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.06453993055555556,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "db648656e7021bf1578a8f7d95c3ef264e6126798e6cc55eeb95a5fa0c930ae6",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-pb-pixel-creation",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.5478081597222222,
+              "p99_8": 49
+            },
+            {
+              "mae8": 1.4865885416666667,
+              "p99_8": 45
+            },
+            {
+              "mae8": 1.3789713541666666,
+              "p99_8": 41
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "448c6531a044e3ac6c4a014cdb6b4a08b3f4b6d746016c602c500fa8b8f55c3e",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-pb-pixel-creation",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.055989583333333336,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0.015885416666666666,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0.013302951388888888,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "1a4c31c8153a686523acd8de8d09f2c9a3c782282656e053effb34096ee3f372",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-pb-pixel-creation",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.7464409722222223,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.7569010416666667,
+              "p99_8": 12
+            },
+            {
+              "mae8": 0.7310329861111111,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "73748fef45fcf28d9610a5899c62c26e5ae2d647c17010c4f287ab3b1c7e04a9",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.9615234375,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.9477864583333333,
+              "p99_8": 12
+            },
+            {
+              "mae8": 0.9264973958333333,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "910eb378d188757dbaaa141addc9941fed3e2043d3226ff4bc68fb9327dcc07b",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.7439453125,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.7456163194444444,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.7192057291666667,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "907917b7dbebe51f0e100be99c854fc8c4b8a5b3215e806987f7cb1f98197060",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.5244140625,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.5282986111111111,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.48723958333333334,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "35f5089f1f8dc8b68fc8b2a6d90800e890bf000e0f276554cba4e48ef43c9c25",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.3381076388888889,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.29268663194444444,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.43116319444444445,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "73748fef45fcf28d9610a5899c62c26e5ae2d647c17010c4f287ab3b1c7e04a9",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.3434244791666667,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.24010416666666667,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.4040581597222222,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "910eb378d188757dbaaa141addc9941fed3e2043d3226ff4bc68fb9327dcc07b",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.33980034722222224,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.2545572916666667,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.4061414930555556,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "907917b7dbebe51f0e100be99c854fc8c4b8a5b3215e806987f7cb1f98197060",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.29225260416666665,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.27921006944444443,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.4217447916666667,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "35f5089f1f8dc8b68fc8b2a6d90800e890bf000e0f276554cba4e48ef43c9c25",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.3417751736111111,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.24184027777777778,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.2750434027777778,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "aeb297b1c9781b11a11a8261de8d2a919d2e88fbdc2d7c90981a1bd432887433",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cc-dance-flash",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.3532769097222222,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.22584635416666668,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.26360677083333334,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "3d065da56f026b511c5b510b102abc39ff99953267576e7ac02b19782546abe4",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-cc-dance-flash",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.33023003472222223,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.246484375,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.2631076388888889,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "88a256bed1dfe1f5e10873d97185793fd8390a064c8ca02ea55b8026461fe432",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-cc-dance-flash",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.3396050347222222,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.2330295138888889,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.2772135416666667,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "inputRgbaSha256": "fcba7e813a1d01341cadcb0c68cdba999ec5b0010bd4ad611ebd36d0938083fd",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-cc-dance-flash",
+          "time": 2.1
+        }
+      ],
+      "shaderBackend": "hardware",
+      "fragmentPrecision": [
+        {
+          "rangeMax": 127,
+          "rangeMin": 127,
+          "precisionBits": 23,
+          "type": 36338
+        },
+        {
+          "rangeMax": 127,
+          "rangeMin": 127,
+          "precisionBits": 23,
+          "type": 36337
+        },
+        {
+          "rangeMax": 127,
+          "rangeMin": 127,
+          "precisionBits": 23,
+          "type": 36336
+        }
+      ],
+      "translatedShaders": {
+        "fx-mosaic-pulse": {
+          "available": true,
+          "files": [
+            "fx-mosaic-pulse-vertex.hlsl",
+            "fx-mosaic-pulse-fragment.hlsl"
+          ]
+        },
+        "fx-pb-pixel-creation": {
+          "available": true,
+          "files": [
+            "fx-pb-pixel-creation-vertex.hlsl",
+            "fx-pb-pixel-creation-fragment.hlsl"
+          ]
+        },
+        "fx-ov-tr-diamond": {
+          "available": true,
+          "files": [
+            "fx-ov-tr-diamond-vertex.hlsl",
+            "fx-ov-tr-diamond-fragment.hlsl"
+          ]
+        },
+        "fx-ne-edges": {
+          "available": true,
+          "files": [
+            "fx-ne-edges-vertex.hlsl",
+            "fx-ne-edges-fragment.hlsl"
+          ]
+        },
+        "fx-carousel": {
+          "available": true,
+          "files": [
+            "fx-carousel-vertex.hlsl",
+            "fx-carousel-fragment.hlsl"
+          ]
+        },
+        "fx-cc-dance-flash": {
+          "available": true,
+          "files": [
+            "fx-cc-dance-flash-vertex.hlsl",
+            "fx-cc-dance-flash-fragment.hlsl"
+          ]
+        },
+        "fx-cmyk-print": {
+          "available": true,
+          "files": [
+            "fx-cmyk-print-vertex.hlsl",
+            "fx-cmyk-print-fragment.hlsl"
+          ]
+        }
+      }
+    },
+    {
+      "inputBackend": "warp",
+      "renderer": "ANGLE (Microsoft, Microsoft Basic Render Driver (0x0000008C) Direct3D11 vs_5_0 ps_5_0, D3D11-10.0.26100.9549)",
+      "cases": [
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "31bd5a2dab9bea63c2bee67b5eff5584c66b9e98a9078bf74a3657febfe0478b",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-ov-tr-diamond",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "9ad34905da0342ee0b890c8655861c73e8223c943e54adaa948ffc84b6d12d54",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-ov-tr-diamond",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.46586371527777776,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.49019097222222224,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.49203559027777777,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "bc7ff270ad879617a5ee4894a9cbc8effdde46c0976d8aa3676e74d65ded857b",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ov-tr-diamond",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "1e74a126b05e0771f2dc2ec4b4e4aa4e30f96a0bd4d9c4976eb720f6ad4b6343",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-ov-tr-diamond",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.7000868055555556,
+              "p99_8": 16
+            },
+            {
+              "mae8": 2.208376736111111,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.2424696180555554,
+              "p99_8": 49
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "2af58c56e415bde3414bf8d2e85f7fdc5249bb22c56870addadf9e5ae2611ade",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.6909505208333333,
+              "p99_8": 16
+            },
+            {
+              "mae8": 2.219856770833333,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.2156467013888888,
+              "p99_8": 49
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "1a6c6ae939b0ebd3fac0f0034117d64dd3b24d48f2d70357e46d99b31b6edd55",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.6989800347222223,
+              "p99_8": 16
+            },
+            {
+              "mae8": 2.1639973958333334,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.2067274305555555,
+              "p99_8": 49
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "dfd9c44008d15f165a1dc6dc7fabe93275733118f98f8b349ccf707d931f0db5",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.6909722222222222,
+              "p99_8": 16
+            },
+            {
+              "mae8": 2.186653645833333,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.173806423611111,
+              "p99_8": 42
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "a968a597232f1b038772dd59ce04fb5491430e061a5b1fb5680bd216fbf55d2a",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.41117621527777776,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.42159288194444444,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.42853732638888886,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "29f5488375a33bc05405230fb5cd2fbb3b317b56ae6e6253c558d4a95c707255",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-mosaic-pulse",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.42135416666666664,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.43135850694444444,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.4252170138888889,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "291715ab4c61f05b85053b1a8cd59ca299454543927f2fdd65e3e086cc47f248",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-mosaic-pulse",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.3372395833333333,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.3472222222222222,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.34739583333333335,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "c663570a32001744e72aae639e7919618c49e4716a5f06e645972e9446aedc6b",
+          "preparedRoundTripExact": true,
+          "strictPassed": true,
+          "id": "fx-mosaic-pulse",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.7049479166666667,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.6796440972222222,
+              "p99_8": 5
+            },
+            {
+              "mae8": 0.6476996527777777,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "418ab12890a28647e93bc12bc1f4584b108d7995ecefabb5334665851b074b02",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-mosaic-pulse",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.36868489583333336,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.33904079861111114,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.3544704861111111,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "77e490457337f0b5a707de9927f4e2bda6c616468467542c6f52c2295af114c2",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-pb-pixel-creation",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.39772135416666665,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.4084418402777778,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.4173828125,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "2ec08e7ec6728db5ad0d3ebe6e466c271d4ebb0e0531c3151251e0c4fb299304",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-pb-pixel-creation",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.8334852430555556,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.7931640625,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.7895833333333333,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "fafe38462314f656fed52a4e8cc6109c41d8b1522897c5daa624a8adf2978732",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-pb-pixel-creation",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.15911458333333334,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.31731770833333334,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.41423611111111114,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "f2a90767787878e1e2be52c50dfa0373ccfe62a9ae3cb41a439ec926a5d711df",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-pb-pixel-creation",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.8064019097222223,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.7982204861111111,
+              "p99_8": 12
+            },
+            {
+              "mae8": 0.7870876736111111,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "2af58c56e415bde3414bf8d2e85f7fdc5249bb22c56870addadf9e5ae2611ade",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.0250651041666667,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.9942708333333333,
+              "p99_8": 12
+            },
+            {
+              "mae8": 0.9786675347222222,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "1a6c6ae939b0ebd3fac0f0034117d64dd3b24d48f2d70357e46d99b31b6edd55",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.8172960069444445,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.7909722222222222,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.7966362847222223,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "dfd9c44008d15f165a1dc6dc7fabe93275733118f98f8b349ccf707d931f0db5",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.5911892361111111,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.5897569444444445,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.5761935763888889,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "a968a597232f1b038772dd59ce04fb5491430e061a5b1fb5680bd216fbf55d2a",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.2281032986111111,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.0314887152777779,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.6601128472222222,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "2af58c56e415bde3414bf8d2e85f7fdc5249bb22c56870addadf9e5ae2611ade",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.3630425347222221,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.8983072916666667,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.6115451388888888,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "1a6c6ae939b0ebd3fac0f0034117d64dd3b24d48f2d70357e46d99b31b6edd55",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.3820746527777779,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.9010416666666666,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.6166883680555555,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "dfd9c44008d15f165a1dc6dc7fabe93275733118f98f8b349ccf707d931f0db5",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.2579210069444444,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.067751736111111,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.6921657986111112,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "a968a597232f1b038772dd59ce04fb5491430e061a5b1fb5680bd216fbf55d2a",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.483224826388889,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.2230034722222223,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.3146050347222222,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "29f5488375a33bc05405230fb5cd2fbb3b317b56ae6e6253c558d4a95c707255",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cc-dance-flash",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.4704210069444446,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.2087456597222221,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.318967013888889,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "291715ab4c61f05b85053b1a8cd59ca299454543927f2fdd65e3e086cc47f248",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cc-dance-flash",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.4634331597222223,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.2305772569444444,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.3430121527777779,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "c663570a32001744e72aae639e7919618c49e4716a5f06e645972e9446aedc6b",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cc-dance-flash",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.4716796875,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.2389756944444446,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.3560112847222223,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "inputRgbaSha256": "418ab12890a28647e93bc12bc1f4584b108d7995ecefabb5334665851b074b02",
+          "preparedRoundTripExact": true,
+          "strictPassed": false,
+          "id": "fx-cc-dance-flash",
+          "time": 2.1
+        }
+      ],
+      "shaderBackend": "warp",
+      "fragmentPrecision": [
+        {
+          "rangeMax": 127,
+          "rangeMin": 127,
+          "precisionBits": 23,
+          "type": 36338
+        },
+        {
+          "rangeMax": 127,
+          "rangeMin": 127,
+          "precisionBits": 23,
+          "type": 36337
+        },
+        {
+          "rangeMax": 127,
+          "rangeMin": 127,
+          "precisionBits": 23,
+          "type": 36336
+        }
+      ],
+      "translatedShaders": {
+        "fx-mosaic-pulse": {
+          "available": true,
+          "files": [
+            "fx-mosaic-pulse-vertex.hlsl",
+            "fx-mosaic-pulse-fragment.hlsl"
+          ]
+        },
+        "fx-pb-pixel-creation": {
+          "available": true,
+          "files": [
+            "fx-pb-pixel-creation-vertex.hlsl",
+            "fx-pb-pixel-creation-fragment.hlsl"
+          ]
+        },
+        "fx-ov-tr-diamond": {
+          "available": true,
+          "files": [
+            "fx-ov-tr-diamond-vertex.hlsl",
+            "fx-ov-tr-diamond-fragment.hlsl"
+          ]
+        },
+        "fx-ne-edges": {
+          "available": true,
+          "files": [
+            "fx-ne-edges-vertex.hlsl",
+            "fx-ne-edges-fragment.hlsl"
+          ]
+        },
+        "fx-carousel": {
+          "available": true,
+          "files": [
+            "fx-carousel-vertex.hlsl",
+            "fx-carousel-fragment.hlsl"
+          ]
+        },
+        "fx-cc-dance-flash": {
+          "available": true,
+          "files": [
+            "fx-cc-dance-flash-vertex.hlsl",
+            "fx-cc-dance-flash-fragment.hlsl"
+          ]
+        },
+        "fx-cmyk-print": {
+          "available": true,
+          "files": [
+            "fx-cmyk-print-vertex.hlsl",
+            "fx-cmyk-print-fragment.hlsl"
+          ]
+        }
+      }
+    },
+    {
+      "inputBackend": "warp",
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.8186)",
+      "cases": [
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 8.4203125,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-ov-tr-diamond",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 7.79765625,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-ov-tr-diamond",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.46586371527777776,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.49019097222222224,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.49203559027777777,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-ov-tr-diamond",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 8.46796875,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-ov-tr-diamond",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.6622395833333333,
+              "p99_8": 16
+            },
+            {
+              "mae8": 2.2084852430555557,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.2434895833333335,
+              "p99_8": 49
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.6478081597222223,
+              "p99_8": 16
+            },
+            {
+              "mae8": 2.2200086805555554,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.214084201388889,
+              "p99_8": 49
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.6584418402777777,
+              "p99_8": 16
+            },
+            {
+              "mae8": 2.1643880208333335,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.2074869791666667,
+              "p99_8": 49
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.6548828125,
+              "p99_8": 16
+            },
+            {
+              "mae8": 2.18671875,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.1739149305555556,
+              "p99_8": 42
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.42999131944444446,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.4429904513888889,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.4459418402777778,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-mosaic-pulse",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.4434678819444444,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.45134548611111114,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.44268663194444446,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-mosaic-pulse",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.36764322916666664,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.3789279513888889,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.37007378472222224,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-mosaic-pulse",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 2.044552951388889,
+              "p99_8": 49
+            },
+            {
+              "mae8": 1.87578125,
+              "p99_8": 40
+            },
+            {
+              "mae8": 1.7055555555555555,
+              "p99_8": 33
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-mosaic-pulse",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.42473958333333334,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.3709852430555556,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.38459201388888886,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-pb-pixel-creation",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.48359375,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.47358940972222224,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.4947265625,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-pb-pixel-creation",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.8575737847222222,
+              "p99_8": 49
+            },
+            {
+              "mae8": 1.7918402777777778,
+              "p99_8": 45
+            },
+            {
+              "mae8": 1.7162109375,
+              "p99_8": 41
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-pb-pixel-creation",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.15911458333333334,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.35690104166666664,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.41423611111111114,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-pb-pixel-creation",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.8129774305555556,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.8217013888888889,
+              "p99_8": 12
+            },
+            {
+              "mae8": 0.7986545138888889,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.026736111111111,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.0157552083333334,
+              "p99_8": 12
+            },
+            {
+              "mae8": 0.9868272569444444,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.8225477430555556,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.8123914930555556,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.8014322916666666,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.5940321180555556,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.6130425347222223,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.5788628472222223,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.2278211805555554,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.0349175347222221,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.6588324652777777,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.3640407986111112,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.8999565972222222,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.6122829861111112,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.3834852430555555,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.9046657986111111,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.61796875,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.2603298611111111,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.069704861111111,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.695138888888889,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.4800130208333333,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.2204427083333333,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.3096571180555556,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-cc-dance-flash",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.4659071180555556,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.2069444444444444,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.3152994791666666,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-cc-dance-flash",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.4595703125,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.2275390625,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.3407552083333334,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-cc-dance-flash",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 1.4720703125,
+              "p99_8": 9
+            },
+            {
+              "mae8": 1.2364583333333334,
+              "p99_8": 5
+            },
+            {
+              "mae8": 1.352907986111111,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "warp",
+          "strictPassed": false,
+          "id": "fx-cc-dance-flash",
+          "time": 2.1
+        }
+      ],
+      "shaderBackend": "hardware"
+    },
+    {
+      "inputBackend": "hardware",
+      "renderer": "ANGLE (Microsoft, Microsoft Basic Render Driver (0x0000008C) Direct3D11 vs_5_0 ps_5_0, D3D11-10.0.26100.9549)",
+      "cases": [
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-ov-tr-diamond",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-ov-tr-diamond",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.06872829861111111,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0.05759548611111111,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.06345486111111111,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-ov-tr-diamond",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-ov-tr-diamond",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.6311848958333334,
+              "p99_8": 9
+            },
+            {
+              "mae8": 2.1127387152777777,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.1078993055555557,
+              "p99_8": 49
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.6280815972222222,
+              "p99_8": 9
+            },
+            {
+              "mae8": 2.096701388888889,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.103103298611111,
+              "p99_8": 49
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.6121744791666667,
+              "p99_8": 9
+            },
+            {
+              "mae8": 2.0408420138888888,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.0945746527777778,
+              "p99_8": 42
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.6186631944444444,
+              "p99_8": 9
+            },
+            {
+              "mae8": 2.0790581597222224,
+              "p99_8": 45
+            },
+            {
+              "mae8": 2.069704861111111,
+              "p99_8": 42
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-cmyk-print",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.09403211805555556,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.08077256944444444,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.07606336805555555,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-mosaic-pulse",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.07756076388888888,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0.07571614583333333,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.06866319444444445,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-mosaic-pulse",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.07641059027777777,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0.10345052083333334,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.07580295138888889,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-mosaic-pulse",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.35824652777777777,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.3415581597222222,
+              "p99_8": 5
+            },
+            {
+              "mae8": 0.3017361111111111,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-mosaic-pulse",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.13079427083333334,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.11653645833333333,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.04203559027777778,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-pb-pixel-creation",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.18302951388888888,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.1896484375,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.21671006944444443,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-pb-pixel-creation",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.5521050347222223,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.505078125,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.4515407986111111,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-pb-pixel-creation",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.04188368055555555,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0.015885416666666666,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0.013302951388888888,
+              "p99_8": 0
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-pb-pixel-creation",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.7486545138888889,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.7410807291666667,
+              "p99_8": 12
+            },
+            {
+              "mae8": 0.7247612847222222,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.9608506944444445,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.9302517361111111,
+              "p99_8": 12
+            },
+            {
+              "mae8": 0.9245659722222223,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.7426215277777778,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.7324652777777778,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.7186197916666667,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.5241319444444444,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0.5120659722222223,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.49190538194444444,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-carousel",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.3424262152777778,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.29759114583333335,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.43125,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.34717881944444445,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.24411892361111112,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.40598958333333335,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.3472222222222222,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.26447482638888886,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.4092013888888889,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.29598524305555557,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.28348524305555556,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.4221137152777778,
+              "p99_8": 9
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": false,
+          "id": "fx-ne-edges",
+          "time": 2.1
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.34325086805555555,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.2431640625,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.27491319444444445,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-cc-dance-flash",
+          "time": 0.3
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.35499131944444445,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.2271701388888889,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.26089409722222223,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-cc-dance-flash",
+          "time": 0.9
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.33114149305555557,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.2474609375,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.2654296875,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-cc-dance-flash",
+          "time": 1.5
+        },
+        {
+          "channelsRGBA": [
+            {
+              "mae8": 0.34108072916666665,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0.23424479166666667,
+              "p99_8": 4
+            },
+            {
+              "mae8": 0.2774739583333333,
+              "p99_8": 8
+            },
+            {
+              "mae8": 0,
+              "p99_8": 0
+            }
+          ],
+          "inputBackend": "hardware",
+          "strictPassed": true,
+          "id": "fx-cc-dance-flash",
+          "time": 2.1
+        }
+      ],
+      "shaderBackend": "warp"
+    }
+  ],
+  "constantInputBackendComparisons": [
+    {
+      "inputRGBA8": [
+        137,
+        113,
+        83,
+        255
+      ],
+      "channelsRGBA": [
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0.9355902777777778,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_CONSTANT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-ov-tr-diamond",
+      "time": 0.3
+    },
+    {
+      "inputRGBA8": [
+        137,
+        113,
+        83,
+        255
+      ],
+      "channelsRGBA": [
+        {
+          "mae8": 0.0024522569444444444,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0.0030164930555555557,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0.0039713541666666664,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_CONSTANT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-cmyk-print",
+      "time": 0.3
+    },
+    {
+      "inputRGBA8": [
+        137,
+        113,
+        83,
+        255
+      ],
+      "channelsRGBA": [
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_CONSTANT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-mosaic-pulse",
+      "time": 0.3
+    },
+    {
+      "inputRGBA8": [
+        137,
+        113,
+        83,
+        255
+      ],
+      "channelsRGBA": [
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_CONSTANT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-pb-pixel-creation",
+      "time": 0.3
+    },
+    {
+      "inputRGBA8": [
+        137,
+        113,
+        83,
+        255
+      ],
+      "channelsRGBA": [
+        {
+          "mae8": 0.019639756944444444,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.016688368055555555,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.0035807291666666665,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_CONSTANT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-carousel",
+      "time": 0.3
+    },
+    {
+      "inputRGBA8": [
+        137,
+        113,
+        83,
+        255
+      ],
+      "channelsRGBA": [
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_CONSTANT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-ne-edges",
+      "time": 0.3
+    },
+    {
+      "inputRGBA8": [
+        137,
+        113,
+        83,
+        255
+      ],
+      "channelsRGBA": [
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_CONSTANT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-cc-dance-flash",
+      "time": 0.3
+    }
+  ],
+  "preparedInputBackendComparisons": [
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.4651692708333333,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4674479166666667,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4597222222222222,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-ov-tr-diamond",
+      "time": 0.3
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.46651475694444444,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4646267361111111,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.46002604166666666,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-ov-tr-diamond",
+      "time": 0.9
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.4629123263888889,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.46981336805555557,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.46048177083333336,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-ov-tr-diamond",
+      "time": 1.5
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.46414930555555556,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.47022569444444445,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4583984375,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-ov-tr-diamond",
+      "time": 2.1
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.38819444444444445,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.3879123263888889,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39303385416666664,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-cmyk-print",
+      "time": 0.3
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.3926866319444444,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.38858506944444443,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39774305555555556,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-cmyk-print",
+      "time": 0.9
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.39544270833333334,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.3879123263888889,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39370659722222223,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-cmyk-print",
+      "time": 1.5
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.38958333333333334,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.3838975694444444,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39079861111111114,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-cmyk-print",
+      "time": 2.1
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.43407118055555555,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4299262152777778,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4344401041666667,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-mosaic-pulse",
+      "time": 0.3
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.4335720486111111,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4327473958333333,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.43678385416666665,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-mosaic-pulse",
+      "time": 0.9
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.42840711805555554,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4273871527777778,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4300347222222222,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-mosaic-pulse",
+      "time": 1.5
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.43057725694444443,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.42877604166666666,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4329644097222222,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-mosaic-pulse",
+      "time": 2.1
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.45125868055555557,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4476996527777778,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4485894097222222,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-pb-pixel-creation",
+      "time": 0.3
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.4458767361111111,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4450954861111111,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4476345486111111,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-pb-pixel-creation",
+      "time": 0.9
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.4419704861111111,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4497612847222222,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.44483506944444445,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-pb-pixel-creation",
+      "time": 1.5
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.44576822916666664,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4455512152777778,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.44869791666666664,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-pb-pixel-creation",
+      "time": 2.1
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.38819444444444445,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.3879123263888889,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39303385416666664,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-carousel",
+      "time": 0.3
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.3926866319444444,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.38858506944444443,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39774305555555556,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-carousel",
+      "time": 0.9
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.39544270833333334,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.3879123263888889,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39370659722222223,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-carousel",
+      "time": 1.5
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.38958333333333334,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.3838975694444444,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39079861111111114,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-carousel",
+      "time": 2.1
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.38819444444444445,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.3879123263888889,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39303385416666664,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-ne-edges",
+      "time": 0.3
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.3926866319444444,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.38858506944444443,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39774305555555556,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-ne-edges",
+      "time": 0.9
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.39544270833333334,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.3879123263888889,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39370659722222223,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-ne-edges",
+      "time": 1.5
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.38958333333333334,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.3838975694444444,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.39079861111111114,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-ne-edges",
+      "time": 2.1
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.43407118055555555,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4299262152777778,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4344401041666667,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-cc-dance-flash",
+      "time": 0.3
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.4335720486111111,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4327473958333333,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.43678385416666665,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-cc-dance-flash",
+      "time": 0.9
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.42840711805555554,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4273871527777778,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4300347222222222,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-cc-dance-flash",
+      "time": 1.5
+    },
+    {
+      "channelsRGBA": [
+        {
+          "mae8": 0.43057725694444443,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.42877604166666666,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0.4329644097222222,
+          "p99_8": 1
+        },
+        {
+          "mae8": 0,
+          "p99_8": 0
+        }
+      ],
+      "role": "BACKEND_INPUT_COMPARISON_NOT_MOBILE_GOLDEN",
+      "id": "fx-cc-dance-flash",
+      "time": 2.1
+    }
+  ],
+  "status": "DIAGNOSTIC_ONLY"
+}

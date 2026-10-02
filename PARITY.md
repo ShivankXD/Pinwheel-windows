@@ -47,10 +47,16 @@ P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/
 | RGB565 normalized preview expansion | ✅ | Exhaustive 65,536-colour regression; baseline fails and repair passes; all 1688 actuals regenerated; `rgb565-regression-before.txt`, `rgb565-regression-after.txt` |
 | Sample crop-local matrix and float bounds | ✅ | Android matrix order retained before rounding allocation; 37 new strict passes, zero pass-to-fail regressions; two sample geometry/crop/flip regressions pass; `diagnostics/sample-matrix/SAMPLE-MATRIX-REPORT.md`, `sample-matrix-runtime-checks.txt` |
 | GPU fixed-point portability | ⚠️ | Dither toggle does not fix the half-value mismatch; an endpoint sampler proves it exists in GPU texture storage before readback. Separate float conversion experiments repair Diamond but are not adopted: fp32 regresses seven frames; fp16 changes precision. `docs/P2-PARITY-BUGS.md`, `diagnostics/numeric/numeric-probe.json`, `diagnostics/framebuffer/framebuffer-probe.json` |
+| Deterministic stage isolation | ✅ | 28 hardware hashes match production; 56 stored-input replays are byte-exact; crossed-input/backend results, raw quantization signatures, precision and translated HLSL retained under `diagnostics/deterministic` and `diagnostics/sampling`. This validates the diagnostic method, not pixel acceptance |
 | Debug Effect Lab and release exclusion | ✅ | `evidence/p2/effect-lab.png`, actual-window smoke and jar variant guard |
 | Mobile effect pixels | ⚠️ | Strict audit: 1473 pass / 215 fail / 0 missing. Owner class policy: 898 deterministic passes / 18 failures, 688 noise provisional passes / 84 failures. `evidence/p2/STRUCTURAL-REPORT.md`, both metric CSV sets and worst 20 galleries; acceptance remains open |
 | P2 read-only source/reference provenance | ✅ | 404 P1 hashes, 7 P2 mobile source hashes, 8 legacy/layer shader literals, 1715 reference input hashes unchanged |
 | Hosted Windows/JDK 17 runtime build | ✅ | [Run 37011571663](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37011571663), runtime 614e447; clean checks, frame generation, storage/dither probes, class verification and smoke; `evidence/p2/ci-result.json`; mobile goldens and experimental float comparisons are local only |
+
+CMYK Print preserves the mobile reversed-smoothstep quirk. Reversed bounds are
+undefined by the [Khronos function reference](https://raw.githubusercontent.com/KhronosGroup/OpenGL-Refpages/main/es3.0/smoothstep.xml);
+this remains an open portability lead, with no shader edit, noise reclassification
+or threshold change. [Stage investigation](evidence/p2/diagnostics/deterministic/DETERMINISTIC-REPORT.md).
 
 ## Feature inventory from brief section 1.1
 

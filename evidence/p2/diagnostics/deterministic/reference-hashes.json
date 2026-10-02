@@ -1,0 +1,37 @@
+[
+  {
+    "source": "D:\\Pinwheel-Windows-refs\\golden\\fx-ov-tr-diamond\\2.1.png",
+    "copiedTo": "evidence\\p2\\diagnostics\\deterministic\\mobile\\fx-ov-tr-diamond-2.1.png",
+    "sha256": "ee9479c575d964b6e7ef2605ef653ff49f395912f78c88f1713713dc9cd16c16"
+  },
+  {
+    "source": "D:\\Pinwheel-Windows-refs\\golden\\fx-cmyk-print\\0.3.png",
+    "copiedTo": "evidence\\p2\\diagnostics\\deterministic\\mobile\\fx-cmyk-print-0.3.png",
+    "sha256": "6d281e8e0f99be211e78c22e960b38585691f4787246ba263d2b72b9e1a9ea4f"
+  },
+  {
+    "source": "D:\\Pinwheel-Windows-refs\\golden\\fx-mosaic-pulse\\2.1.png",
+    "copiedTo": "evidence\\p2\\diagnostics\\deterministic\\mobile\\fx-mosaic-pulse-2.1.png",
+    "sha256": "00fe6076b34c876178dee2239cf4134ee3e16831584bc5e4663e646614b24b31"
+  },
+  {
+    "source": "D:\\Pinwheel-Windows-refs\\golden\\fx-pb-pixel-creation\\1.5.png",
+    "copiedTo": "evidence\\p2\\diagnostics\\deterministic\\mobile\\fx-pb-pixel-creation-1.5.png",
+    "sha256": "94b60c8a8a24b4396d91094b7c3afbe84f89d2c7204738bfc5cc2e90aee1ecf6"
+  },
+  {
+    "source": "D:\\Pinwheel-Windows-refs\\golden\\fx-carousel\\0.9.png",
+    "copiedTo": "evidence\\p2\\diagnostics\\deterministic\\mobile\\fx-carousel-0.9.png",
+    "sha256": "1bd60fd67a79acc0a76a3dad353b70c6a1cdbea0cda413fb0e70d3de5af701c2"
+  },
+  {
+    "source": "D:\\Pinwheel-Windows-refs\\golden\\fx-ne-edges\\0.3.png",
+    "copiedTo": "evidence\\p2\\diagnostics\\deterministic\\mobile\\fx-ne-edges-0.3.png",
+    "sha256": "af5a83d990dd1e6e2d4d7e30f2496abe8278404c1e01a1bc75e351009bb3bee7"
+  },
+  {
+    "source": "D:\\Pinwheel-Windows-refs\\golden\\fx-cc-dance-flash\\0.3.png",
+    "copiedTo": "evidence\\p2\\diagnostics\\deterministic\\mobile\\fx-cc-dance-flash-0.3.png",
+    "sha256": "ef5f2a9d71e0a1081f7bfd0ba733d73fb3b617fe53aed8f6a12b883b3d2d42af"
+  }
+]

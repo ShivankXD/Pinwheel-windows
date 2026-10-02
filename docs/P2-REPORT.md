@@ -16,6 +16,7 @@ not started.
 | pinwheel-render | New `PreviewSamples` reproduces Android's crop-local float matrix and mapped-bound translation before rounding bitmap allocation. `PreviewTileRenderer` uploads those pixels and retains SWAY, default params, mobile quad, RGBA8 targets, RGB565 expansion, history and loop/cache behaviour. |
 | pinwheel-render/qa | All 1688 actual frames refreshed in `evidence/p2/frames/<id>/<t>.png`. Full strict and structural comparisons, every channel metric, worst-20 galleries and 84 neutral sample tiles refreshed. |
 | pinwheel-app | Debug-only Effect Lab actual-window capture refreshed. Search, fixed times/loop, params and mobile/desktop/heatmap panes remain available; release excludes the Lab and local Plus toggle. |
+| pinwheel-render/qa | New deterministic and sampling probes isolate all seven remaining specs with raw RGBA8, quantization signatures, stored-input replays, crossed backends, precision queries and translated HLSL evidence. They never replace production frames. |
 | scripts | `report-p2-sample-matrix.py` compares all frames against published baseline ddad406, records 21 sample geometries and every channel's before/after metrics. Structural reporting now regenerates `deterministic-failures.csv` to prevent stale manual reports. |
 | media / platform / photo | Existing P1 boundaries remain. Playback/audio/evaluation are P3, editor UI P4, export P5 and photo work P6. No subprocess decoding was added to playback. |
 
@@ -52,11 +53,13 @@ crop/flip colours. Existing tests cover channel format, orientation, timing,
 ordered effects, history resets, legacy effects, layers, resource ownership,
 shader compilation, animation and bounded cache. Local aggregate runtime
 checks pass. See `test-summary.json`, `sample-matrix-runtime-checks.txt`,
-`sample-matrix-all-runtime-checks.txt` and `sample-matrix-lab-and-neutral-checks.txt`
+`sample-matrix-all-runtime-checks.txt`, `sample-matrix-lab-and-neutral-checks.txt`
+and the successful follow-up `final-sampling-and-runtime-checks.txt`
 under `evidence/p2`.
 
 `goldenCheck` intentionally exits nonzero. **Full current failing output:**
-[sample-matrix-reference-checks.txt](../evidence/p2/sample-matrix-reference-checks.txt).
+[sampling-reference-checks.txt](../evidence/p2/sampling-reference-checks.txt).
+The preceding matrix failure log remains retained.
 Deterministic limits remain MAE8 <= 2 and p99 <= 8 in each RGBA channel, with
 no reference alignment, resizing or filtering. The original strict audit
 retains all specs: 170 frames exceed MAE; 45 fail only p99, including 19 with
@@ -82,6 +85,24 @@ heatmaps are under `diagnostics/numeric`. Earlier RGBA32F/RGBA16F conversion
 experiments are retained under `diagnostics/framebuffer`; they used the
 pre-matrix baseline. Neither format is adopted. Production stays RGBA8.
 
+The follow-up stage controls confirm 56 byte-exact stored-input replays and
+28 unchanged NVIDIA production hashes. On the seven remaining specs,
+NVIDIA/NVIDIA passes 10/28, WARP/WARP 4/28, NVIDIA/WARP 0/28 and WARP/NVIDIA
+14/28. Crossed routes remain diagnostics. Input-stage bias accounts for much
+of WARP's increased Neon/Dance error; constant photo-free controls and
+identical fragment HLSL further narrow the investigation. Both desktop
+contexts report 23-bit precision for high, medium and low floats. Phone
+precision and raw inputs are still required before adopting a production repair.
+
+[Stage report](../evidence/p2/diagnostics/deterministic/DETERMINISTIC-REPORT.md),
+[all stage channel metrics](../evidence/p2/diagnostics/deterministic/stage-metrics.csv)
+and [remaining-seven gallery](../evidence/p2/diagnostics/deterministic/remaining-seven.html)
+provide the measurements and heatmaps. An initial LWJGL buffer guard failure
+in the precision query was corrected; full initial output is
+`sampling-and-runtime-checks.txt`, successful output is
+`final-sampling-and-runtime-checks.txt`. All 236 unit tests still pass.
+Production acceptance counts remain unchanged.
+
 Sample matrix runtime 614e447 passed hosted Windows/JDK 17 CI [run 37011571663](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37011571663).
 All 15 CI steps succeeded, including the two new sample regressions. CI checks
 runtime, shader/frame generation, numeric probes, source/class
@@ -96,7 +117,8 @@ remain in earlier logs and Git history.
 pairs the refreshed actual Compose capture with the owner's effects screenshot.
 The Lab shows the Scene Cut mismatch and its current failing channel metrics.
 The mobile editor page is a P4 layout reference; this does not claim editor UI
-parity. Both worst-20 galleries pair mobile/desktop/heatmap images.
+parity. Both worst-20 galleries pair mobile/desktop/heatmap images. The new
+remaining-seven gallery also shows both input-stage controls and their metrics.
 
 No personal gallery thumbnail from `06-media-picker.png` is published. Export
 settings will use mobile `VideoExportScreens.kt`; supplied screen 15 is the

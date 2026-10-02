@@ -234,6 +234,42 @@ The seven failing deterministic specs and every time/channel measurement remain
 in the current CSV reports. No deterministic failure has been reclassified
 as noise to remove it from the strict gate.
 
+## Deterministic backend and prepared-input controls
+
+The new `p2DeterministicProbe` and `p2SamplingProbe` isolate all seven remaining
+strict specs. All 28 NVIDIA output hashes match production. All 56 stored-input
+read/upload/replay controls are byte-exact. The original strict limits and all
+production frames remain unchanged.
+
+Across the selected 28 cases, NVIDIA shader/NVIDIA input passes 10, WARP/WARP
+passes 4, NVIDIA/WARP passes 0 and WARP/NVIDIA passes 14. The crossed route is
+only a control. WARP repairs Diamond's three flat-field cases but regresses its
+photo-bearing 1.5 s case; it cannot be substituted as the production backend.
+Neon Edges worst MAE is 1.692166 on WARP/WARP and 0.431250 on WARP/NVIDIA;
+Dance Flash is 1.483225 versus 0.354991. This supports a major SWAY-input
+contribution to those WARP errors. Neon still fails; Dance passes its four
+crossed control times. CMYK and Carousel remain failing. Pixel Creation/Mosaic
+large grid errors shrink under WARP shader execution, while strict p99 still fails.
+
+Both contexts report 23-bit high/medium/low fragment floats. All seven translated
+fragment HLSL files are byte-identical. Vertex translations differ only in
+uFlipY allocation to c1 versus c0, with the same operations. Translations are
+read-only evidence and never replace shared GLSL. Exact phone precision and
+neutral/raw inputs remain pending; backend metadata alone cannot establish a
+repair for the phone.
+
+CMYK retains a mobile portability quirk: `smoothstep(0.05, 0.0, ...)` uses
+reversed bounds. The [Khronos function reference](https://raw.githubusercontent.com/KhronosGroup/OpenGL-Refpages/main/es3.0/smoothstep.xml)
+defines reversed-bound results as undefined. This is not yet a proven cause
+of the phone mismatch. It stays in the strict deterministic class, unchanged.
+
+[Full stage report](../evidence/p2/diagnostics/deterministic/DETERMINISTIC-REPORT.md),
+[all 112 per-frame RGBA measurements](../evidence/p2/diagnostics/deterministic/stage-metrics.csv)
+and [seven mobile/desktop/control comparisons with heatmaps](../evidence/p2/diagnostics/deterministic/remaining-seven.html)
+retain every time and channel. Raw signatures distinguish one-cell quantization
+errors from larger sampling/grid errors; a raw value 127 alone is not proof
+that a shader produced exact 0.5. New diagnostics do not constitute a parity fix.
+
 ## Current deterministic failures
 
 Every listed spec keeps strict per-channel MAE8 <= 2 and p99 <= 8. Maxima
