@@ -61,6 +61,7 @@ fun main(args: Array<String>) {
     println("Real mobile projects: $projectsPassed passed, $projectsFailed failed, ${if (files.isEmpty()) "MISSING" else "provided"}")
     println("Report: ${output.resolve("reference-status.json")}")
     if (mode == "inventory") check(projectsFailed == 0 && goldenFailed == 0) { "Provided references failed; inspect reference-status.json" }
+    if (mode == "project-inventory") check(projectsFailed == 0) { "Provided mobile projects failed; inspect reference-status.json" }
     if (mode == "golden") check(missing == 0 && goldenFailed == 0) { "Golden check incomplete: provide mobile PNGs in $refs/golden and P2 frames in evidence/p2/frames" }
     if (mode == "projects") check(files.isNotEmpty() && projectsFailed == 0) { "Real mobile package check incomplete: provide projects in $projectFolder" }
 }

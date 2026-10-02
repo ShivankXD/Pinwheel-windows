@@ -7,7 +7,7 @@ plugins {
     id("org.jetbrains.compose") version "1.10.3" apply false
 }
 
-allprojects { group = "com.pinwheel"; version = "0.1.0-p1" }
+allprojects { group = "com.pinwheel"; version = "0.2.0-p2" }
 subprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
     tasks.withType<KotlinCompile>().configureEach { compilerOptions.jvmTarget.set(JvmTarget.JVM_17) }
@@ -24,4 +24,8 @@ subprojects {
     }
 }
 tasks.register("p0Check") { dependsOn(subprojects.map { "${it.path}:check" }) }
-tasks.register("p1Check") { dependsOn(subprojects.map { "${it.path}:check" }); dependsOn(":pinwheel-render:p1References") }
+tasks.register("p1Check") { dependsOn(subprojects.map { "${it.path}:check" }); dependsOn(":pinwheel-render:p1ProjectInventory") }
+tasks.register("p2RuntimeCheck") { dependsOn(subprojects.map { "${it.path}:check" }) }
+tasks.register("p2Check") {
+    dependsOn("p2RuntimeCheck", ":pinwheel-render:mobilePackagesCheck", ":pinwheel-render:goldenCheck")
+}

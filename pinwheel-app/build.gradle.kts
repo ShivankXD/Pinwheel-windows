@@ -23,6 +23,14 @@ if (debugBuild) {
         workingDir = rootDir
     }
     tasks.named("check") { dependsOn("debugCheck") }
+    tasks.register<JavaExec>("p2LabSmoke") {
+        dependsOn("classes")
+        classpath = sourceSets.main.get().runtimeClasspath
+        mainClass.set("com.pinwheel.app.debug.EffectLabKt")
+        args(rootDir.resolve("evidence/p2").absolutePath)
+        systemProperty("pinwheel.refs", providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"))
+        workingDir = rootDir
+    }
 }
 tasks.register("verifyBuildVariant") {
     dependsOn("jar")
@@ -33,6 +41,7 @@ tasks.register("verifyBuildVariant") {
             check(hasToggle == debugBuild) { "Debug entitlement leaked into the release jar or is missing from debug" }
             val hasProvider = zip.getEntry("META-INF/services/com.pinwheel.app.DebugPanel") != null
             check(hasProvider == debugBuild)
+            check((zip.getEntry("com/pinwheel/app/debug/EffectLabKt.class") != null) == debugBuild) { "Effect Lab leaked into release or is missing from debug" }
         }
         println("PASS ${if (debugBuild) "debug includes" else "release excludes"} debug entitlement controls")
     }

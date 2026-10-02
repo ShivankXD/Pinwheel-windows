@@ -1,0 +1,58 @@
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+
+> Task :pinwheel-render:mobilePackagesCheck
+Golden references: 1411 passed, 277 failed, 0 missing
+Real mobile projects: 4 passed, 0 failed, provided
+Report: D:\Pinwheel-Windows\evidence\p1\runtime\reference-status.json
+Exception in thread "main" java.lang.IllegalStateException: Provided references failed; inspect reference-status.json
+	at com.pinwheel.render.qa.P1EvidenceKt.main(P1Evidence.kt:63)
+
+> Task :pinwheel-render:mobilePackagesCheck FAILED
+
+> Task :pinwheel-render:goldenCheck FAILED
+Golden references: 1411 passed, 277 failed, 0 missing
+Real mobile projects: 4 passed, 0 failed, provided
+Report: D:\Pinwheel-Windows\evidence\p1\runtime\reference-status.json
+Exception in thread "main" java.lang.IllegalStateException: Provided references failed; inspect reference-status.json
+	at com.pinwheel.render.qa.P1EvidenceKt.main(P1Evidence.kt:63)
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':pinwheel-render:mobilePackagesCheck'.
+> Process 'command 'E:\Java\jdk-23\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':pinwheel-render:goldenCheck'.
+> Process 'command 'E:\Java\jdk-23\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+BUILD FAILED in 38s
+5 actionable tasks: 3 executed, 2 up-to-date

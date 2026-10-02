@@ -1,4 +1,4 @@
-name: Windows P1
+name: Windows P2
 on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
@@ -18,6 +18,9 @@ jobs:
       - name: Verify pinned desktop source and asset hashes
         shell: pwsh
         run: python scripts/verify-p1-port.py --desktop-only
+      - name: Compile catalog shaders and render all P2 frames
+        shell: pwsh
+        run: ./scripts/build.ps1 -Tasks ':pinwheel-render:p2Frames'
       - name: Verify debug entitlement controls
         shell: pwsh
         run: ./scripts/build.ps1 -Tasks ':pinwheel-app:check','-Ppinwheel.debug=true'
@@ -30,8 +33,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: p1-evidence
+          name: p2-evidence
           path: |
             **/build/reports/tests/
             evidence/p0/runtime/
             evidence/p1/runtime/
+            evidence/p2/

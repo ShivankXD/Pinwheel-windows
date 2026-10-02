@@ -1,0 +1,2 @@
+PASS real Effect Lab window, mobile/desktop/heatmap panels, fixed metrics
+FAIL  R MAE=94.902 p99=156  G MAE=96.400 p99=158  B MAE=95.838 p99=157  A MAE=0.000 p99=0

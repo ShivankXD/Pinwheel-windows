@@ -1,0 +1,584 @@
+> Task :pinwheel-photo:clean
+> Task :pinwheel-photo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-photo:processResources NO-SOURCE
+> Task :pinwheel-photo:processTestResources NO-SOURCE
+> Task :pinwheel-app:clean
+> Task :pinwheel-app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-app:convertXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForMain NO-SOURCE
+> Task :pinwheel-app:generateResourceAccessorsForMain SKIPPED
+> Task :pinwheel-app:generateActualResourceCollectorsForMain SKIPPED
+> Task :pinwheel-app:generateComposeResClass SKIPPED
+> Task :pinwheel-app:assembleMainResources
+> Task :pinwheel-app:processResources
+> Task :pinwheel-app:convertXmlValueResourcesForTest NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForTest NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForTest NO-SOURCE
+> Task :pinwheel-app:generateResourceAccessorsForTest SKIPPED
+> Task :pinwheel-platform:clean
+> Task :pinwheel-platform:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-platform:processResources NO-SOURCE
+> Task :pinwheel-platform:processTestResources NO-SOURCE
+> Task :pinwheel-media:clean
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-app:assembleTestResources
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-media:processTestResources NO-SOURCE
+> Task :pinwheel-app:processTestResources
+> Task :pinwheel-render:clean
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-render:processTestResources NO-SOURCE
+> Task :pinwheel-core:clean
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:processTestResources
+> Task :pinwheel-core:compileKotlin
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar
+> Task :pinwheel-core:assemble
+> Task :pinwheel-photo:compileKotlin NO-SOURCE
+> Task :pinwheel-photo:compileJava NO-SOURCE
+> Task :pinwheel-photo:classes UP-TO-DATE
+> Task :pinwheel-photo:jar
+> Task :pinwheel-photo:assemble
+> Task :pinwheel-photo:compileTestKotlin NO-SOURCE
+> Task :pinwheel-photo:compileTestJava NO-SOURCE
+> Task :pinwheel-photo:testClasses UP-TO-DATE
+> Task :pinwheel-photo:test NO-SOURCE
+> Task :pinwheel-photo:check UP-TO-DATE
+> Task :pinwheel-photo:build
+> Task :pinwheel-platform:compileKotlin
+> Task :pinwheel-platform:compileJava NO-SOURCE
+> Task :pinwheel-platform:classes UP-TO-DATE
+> Task :pinwheel-platform:jar
+> Task :pinwheel-platform:assemble
+> Task :pinwheel-media:compileKotlin
+> Task :pinwheel-media:compileJava NO-SOURCE
+> Task :pinwheel-media:classes UP-TO-DATE
+> Task :pinwheel-media:jar
+> Task :pinwheel-media:assemble
+> Task :pinwheel-platform:compileTestKotlin
+> Task :pinwheel-platform:compileTestJava NO-SOURCE
+> Task :pinwheel-platform:testClasses UP-TO-DATE
+
+> Task :pinwheel-platform:test
+
+AppPathsTest > storageMatchesBriefAndSeparatesDisposableCache() PASSED
+
+FakeAuthProviderTest > fakeStartsSignedOutAndRetainsExplicitIdentityUntilSignOut() PASSED
+
+> Task :pinwheel-platform:check
+> Task :pinwheel-platform:build
+> Task :pinwheel-media:compileTestKotlin
+> Task :pinwheel-media:compileTestJava NO-SOURCE
+> Task :pinwheel-media:testClasses UP-TO-DATE
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+> Task :pinwheel-render:jar
+> Task :pinwheel-render:assemble
+
+> Task :pinwheel-media:test
+
+FfmpegDecoderTest > rejectsMissingMediaAndInvalidTimes() PASSED
+
+FfmpegDecoderTest > bundledRuntimeIsSharedLgpl() PASSED
+
+FfmpegDecoderTest > decodesRealDemoAtTwoTimesWithoutChangingSource() STANDARD_OUT
+    PASS FFmpeg demo decode at 0 and 1 s: 960x720 RGBA; original SHA-256 unchanged
+
+FfmpegDecoderTest > decodesRealDemoAtTwoTimesWithoutChangingSource() PASSED
+
+> Task :pinwheel-media:check
+> Task :pinwheel-media:build
+> Task :pinwheel-render:compileTestKotlin
+> Task :pinwheel-render:compileTestJava NO-SOURCE
+> Task :pinwheel-render:testClasses UP-TO-DATE
+> Task :pinwheel-core:compileTestKotlin
+> Task :pinwheel-core:compileTestJava NO-SOURCE
+> Task :pinwheel-core:testClasses
+> Task :pinwheel-app:compileKotlin
+> Task :pinwheel-app:compileJava NO-SOURCE
+> Task :pinwheel-app:classes
+> Task :pinwheel-app:jar
+> Task :pinwheel-app:assemble
+> Task :pinwheel-app:compileTestKotlin NO-SOURCE
+> Task :pinwheel-app:compileTestJava NO-SOURCE
+> Task :pinwheel-app:testClasses
+> Task :pinwheel-app:test NO-SOURCE
+
+> Task :pinwheel-app:verifyBuildVariant
+PASS release excludes debug entitlement controls
+
+> Task :pinwheel-app:check
+> Task :pinwheel-app:build
+
+> Task :pinwheel-render:test
+
+AngleTriangleTest > freshContextCanRenderAfterRelease() PASSED
+
+AngleTriangleTest > d3d11TriangleHasColourAndTopDownOrientation() STANDARD_OUT
+    PASS ANGLE D3D11 triangle, shader compile/link, RGBA readback and Y orientation: ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.8186)
+
+AngleTriangleTest > d3d11TriangleHasColourAndTopDownOrientation() PASSED
+
+EffectRuntimeTest > textureCopyKeepsAsymmetricTopDownRowsAndExactPixels() PASSED
+
+EffectRuntimeTest > transitionsUseClipDurationsSpeedAndClippedHalfWindows() PASSED
+
+EffectRuntimeTest > activeChainUsesListOrderAndStartInclusiveEndExclusive() PASSED
+
+EffectRuntimeTest > overlayIntensityAndOrphanTargetMatchMobileGraph() PASSED
+
+EffectRuntimeTest > contextRejectsOtherThreadsAndOneContextClosingDoesNotTerminateAnother() PASSED
+
+EffectRuntimeTest > layerFadeChangesCoverageAndLeavesBlueMainUntouched() PASSED
+
+EffectRuntimeTest > allLegacyKindsDrawAndAnimateWithCompositionTime() PASSED
+
+EffectRuntimeTest > historyResetsOnBackwardSeekAndJumpsOver250ms() PASSED
+
+> Task :pinwheel-core:test
+
+StorageContractTest > packageRemapsCurrentAndHistoryMediaAndPhotoBackgrounds() PASSED
+
+StorageContractTest > failedAtomicSaveRetainsPriorFileAndBackupRecoveryMatchesMobile() PASSED
+
+StorageContractTest > legacyMissingKeysUseMobileDefaultsAndRetiredEffectsDrop() PASSED
+
+StorageContractTest > zipTraversalAbsoluteUrisAndOversizedMediaFailWithoutOrphans() PASSED
+
+StorageContractTest > acceptsVersionsOneThroughTenAndRejectsFutureSchema() PASSED
+
+StorageContractTest > allRecipeFieldsAndBothHistoriesRoundTrip() PASSED
+
+StorageContractTest > deletionPreservesSharedAndUndoReferencedOriginals() PASSED
+
+EditCommandCodecTest > unknownTypesAndVersionsAreRejected() PASSED
+
+EditCommandCodecTest > everyTypedCommandHasAnExplicitRoundTrip() PASSED
+
+ProjectSessionTest > branchingEditClearsRedoAndHistoryRemainsBounded() PASSED
+
+ProjectSessionTest > cancelledGestureAndNoOpLeaveHistoryAndAutosaveAlone() PASSED
+
+ProjectSessionTest > shorteningMainTrackTrimsCrossingCaptionsAndDropsThoseOutside() PASSED
+
+ProjectSessionTest > gestureAutosavesOnceAndHistorySurvivesReload() PASSED
+
+ProjectSessionTest > applyAllGradeDoesNotChangeGeometryTimingOrAudio() PASSED
+
+ProjectSessionTest > deletingTargetLayerLeavesEffectTargetUnchangedAsOnMobile() PASSED
+
+ProjectSessionTest > splitKeepsSpeedAndTrimAndUndoRestoresOriginal() PASSED
+
+ProjectSessionTest > draftFreezesCallerCollectionsBeforeCommit() PASSED
+
+ProjectSessionTest > mutableCallerDataCannotChangeCommittedState() PASSED
+
+ProjectSessionTest > failedSaveDoesNotPublishStateOrLoseDraft() PASSED
+
+ProjectSessionTest > effectPickerSwapsSelectedLayerAndUsesMobileWindows() PASSED
+
+ProjectSessionTest > captionsRejectOverlapAndSplitWithSingleUndoStep() PASSED
+
+ProjectSessionTest > libraryPickerSwapsPendingOverlayAndPreservesTiming() PASSED
+
+ProjectSessionTest > audioExtractionUsesClipPositionTrimSpeedAndMutesSource() PASSED
+
+ProjectSessionTest > layerLimitsRejectBeforeSanitizationCanDropUserData() PASSED
+
+ProjectSessionTest > photoAdjustmentsUsePhotoHistoryAndRetainCutoutRecipe() PASSED
+
+ProjectSessionTest > freeGateAlsoCatchesCanvasAndDraftBypasses() PASSED
+
+ExportPolicyTest > freeLimitsAreEnforcedWithoutAUi() PASSED
+
+ExportPolicyTest > accountLinkedPlusCannotBeUsedByAnotherGoogleAccount() PASSED
+
+ExportPolicyTest > plusAllowsFourKAndOptionalEnding() PASSED
+
+ExportPolicyTest > signedOutAndLoadedPlusEffectsCannotBypassExportGate() PASSED
+
+RawLinearTransformTest > highlightCompressionLeavesShadowsAndRemainsContinuousAtKnee PASSED
+
+RawLinearTransformTest > exposureIsLinearBeforeDisplayTransferAndDoesNotClampHdr PASSED
+
+RawLinearTransformTest > relativeWhiteBalanceAndMalformedInputAreFinite PASSED
+
+CaptionFileTextTest > unicodeTextAndBomEncodingsRoundTripWithoutReplacement PASSED
+
+CaptionFileTextTest > zeroLengthReadFallsBackWithoutSpinning PASSED
+
+CaptionFileTextTest > malformedBytesAreRejectedRatherThanCorruptingCaptions PASSED
+
+CaptionFileTextTest > oversizedInputStopsReadingAtOneBytePastLimit PASSED
+
+SrtCodecTest > malformedOverflowReversedAndEmptyCuesReportSkips PASSED
+
+SrtCodecTest > limitsAreBoundedAndImportReportsEveryDiscard PASSED
+
+SrtCodecTest > bomCrLfMultilineUnicodeAndDecimalFractionsImport PASSED
+
+SrtCodecTest > durationClipsTailAndReportsOutsideCues PASSED
+
+SrtCodecTest > ordinaryArrowsInCaptionTextAreNotTreatedAsTimingLines PASSED
+
+SrtCodecTest > writerIsCanonicalLocaleIndependentAndRoundTripsMultilineText PASSED
+
+SrtCodecTest > commonAndNumericEntitiesDecodeOnceAfterActualTagsAreRemoved PASSED
+
+SrtCodecTest > writerRejectsInvalidOrOverlappingCuesRatherThanDroppingThem PASSED
+
+SrtCodecTest > sortAndOverlapPolicyKeepEarliestAndAllowTouchingEnds PASSED
+
+SrtCodecTest > writerEscapesLiteralTagsAndEntitiesForLosslessPlainTextRoundTrip PASSED
+
+SrtCodecTest > missingSeparatorsRecoverAndInlineStylingIsReported PASSED
+
+PhotoAdvancedColorTest > gradingSeparatesShadowsAndHighlightsAndPreservesEndpoints PASSED
+
+PhotoAdvancedColorTest > localExposureLeavesUnselectedPixelsAndAlphaUntouched PASSED
+
+PhotoAdvancedColorTest > radialMaskIsFeatheredAndInvertIsComplementary PASSED
+
+PhotoAdvancedColorTest > brushInterpolatesStrokesAndErasesOnlyPaintedAreas PASSED
+
+PhotoAdvancedColorTest > presetsKeepDestinationMasksAndGeometry PASSED
+
+PhotoAdvancedColorTest > linearMaskHasDirectionalFalloff PASSED
+
+PhotoCloneBlendTest > transparentColoursDoNotBleedIntoFeatheredEdges PASSED
+
+PhotoCloneBlendTest > endpointsCopyPixelsExactlyAndOpaqueMixStaysOpaque PASSED
+
+PhotoColorRowTest > compiledRowsMatchIndividualPixelsIncludingAlphaAndCreativeEffects PASSED
+
+PhotoColorTargetTest > neutralTransparentAndClippedSamplesDoNotPretendToHaveAHue PASSED
+
+PhotoColorTargetTest > samplingTracksChannelCurvesButDoesNotChaseItsOwnHueEdits PASSED
+
+PhotoColorTargetTest > redWrapAndUnequalBandSpacingMatchLargestEngineWeight PASSED
+
+PhotoColorTargetTest > primaryAndSecondaryColoursSelectTheExpectedMixerBands PASSED
+
+PhotoColorTest > colourMixPreservesNeutralAndCanDesaturateRed PASSED
+
+PhotoColorTest > monochromeHasEqualChannels PASSED
+
+PhotoColorTest > autoIsBoundedForBlackAndWhiteImages PASSED
+
+PhotoColorTest > curvesAffectOnlySelectedChannel PASSED
+
+PhotoColorTest > grainIsDeterministicAndVignetteDarkensCorners PASSED
+
+PhotoColorTest > neutralRecipePreservesPixels PASSED
+
+PhotoColorTest > exposureAndShadowRecoveryIncreaseDarkTones PASSED
+
+PhotoCutoutTest > plainBrushRemovesEverythingItTouches PASSED
+
+PhotoCutoutTest > tapSelectTakesTheConnectedBackgroundAndRestoreBringsItBack PASSED
+
+PhotoCutoutTest > smartBrushStopsAtTheSubject PASSED
+
+PhotoDehazeTest > negativeStrengthAddsVeilAndRetainsWhite PASSED
+
+PhotoDehazeTest > correctionIsIndependentOfImagePositionAndTargetSamplingKeepsIt PASSED
+
+PhotoDehazeTest > zeroStrengthIsAnExactIdentityAndInvalidStrengthIsNeutral PASSED
+
+PhotoDehazeTest > removalRestoresColourSeparationWithoutChangingHueOrAlpha PASSED
+
+PhotoDehazeTest > grayscaleRemainsOrderedAndNeutralWithProtectedEndpoints PASSED
+
+PhotoDehazeTest > whiteBalanceSamplingIncludesTheSameDehazeStage PASSED
+
+PhotoFrameTest > canvasHasTheChosenShapeAndHoldsThePhotoUnscaled PASSED
+
+PhotoFrameTest > evenBorderIsTheSameOnEverySide PASSED
+
+PhotoFrameTest > frameSurvivesSaveAndLooks PASSED
+
+PhotoGuidedPerspectiveTest > reversingGuideDirectionsAndOrderDoesNotChangeCorrection PASSED
+
+PhotoGuidedPerspectiveTest > refusesCorrectionsBeyondExistingGeometryBoundsInsteadOfClampingBadResults PASSED
+
+PhotoGuidedPerspectiveTest > rejectsDegenerateShortCoincidentHorizontalAndNonFiniteGuides PASSED
+
+PhotoGuidedPerspectiveTest > recoversRotationAndKeystoneAcrossPortraitLandscapeAndExistingHorizontal PASSED
+
+PhotoLensProfilesTest > profileAndManualGeometryRoundTripAndKeepEdgesFilled PASSED
+
+PhotoLensProfilesTest > calibratedPolynomialMatchesPublishedPtlensDefinition PASSED
+
+PhotoLensProfilesTest > exactExifNamesAndRationalFocalLengthsMatchSupportedCalibrations PASSED
+
+PhotoLensProfilesTest > missingAmbiguousCroppedAndUnsupportedMetadataCannotEnableAProfile PASSED
+
+PhotoLensProfilesTest > disabledUnknownAndWrongAspectProfilesAreNeutral PASSED
+
+PhotoLensProfilesTest > expandedProfilesKeepExactMatchingAcrossBrandsAndRejectSimilarVersions PASSED
+
+PhotoLensTest > forwardInverseRoundTripAcrossStrengthAndAspectRatio PASSED
+
+PhotoLensTest > everyOutputPointHasAValidSourceAtBothExtremes PASSED
+
+PhotoLensTest > neutralAndInvalidStrengthDoNotMoveCoordinates PASSED
+
+PhotoLensTest > bothDirectionsBendStraightLinesDifferently PASSED
+
+PhotoLookSheetTest > lookNamesAreUnique PASSED
+
+PhotoLookSheetTest > writeRenders PASSED
+
+PhotoLookSheetTest > magicEnhanceReadsScenesAndImproves PASSED
+
+PhotoLookSheetTest > everyLookKeepsAUsablePicture PASSED
+
+PhotoPackedColorTest > neutralPackedPathPreservesEveryEightBitChannelAndAllAlphaValues PASSED
+
+PhotoPackedColorTest > packedChannelsMatchGeneralPipelineAcrossToneCurvesWhiteBalanceFadeAndAlpha PASSED
+
+PhotoPackedColorTest > spatialEditsNeverUseThePositionIndependentPackedPath PASSED
+
+PhotoPrecisionColorTest > floatAndDisplayColorAgreeWithinQuantizationForRepresentativeRecipes PASSED
+
+PhotoPrecisionColorTest > hdrLightExposureAndCurveContinueAboveWhiteWithoutClipping PASSED
+
+PhotoPrecisionColorTest > identityPreservesSubEightBitDifferencesAndHdrHeadroom PASSED
+
+PhotoRefinementTest > legacyCurveOutputIsUnchangedAtEveryInputLevel PASSED
+
+PhotoRefinementTest > perspectiveIsInvertibleAndCoverAlwaysKeepsOutputInsideSource PASSED
+
+PhotoRefinementTest > arbitraryCurvesHitNodesAndDoNotOvershoot PASSED
+
+PhotoRefinementTest > newLocalAdjustmentsAffectOnlyTheirSelection PASSED
+
+PhotoRefinementTest > neutralPickerCorrectsWarmAndGreenCastsWithoutChangingNeutralGreys PASSED
+
+PhotoRefinementTest > neutralPickerIncludesExistingLightEdits PASSED
+
+PhotoTcaTest > publishedPolynomialUsesOriginalGreenCoordinatesAndKeepsGreenIdentity PASSED
+
+PhotoTcaTest > channelMapComposesAfterDistortionAndKeepsExistingGeometryUnchanged PASSED
+
+PhotoTcaTest > noCalibrationDisabledAndWrongAspectCannotChangeCoordinates PASSED
+
+PhotoThumbnailTest > extremeAspectRatiosCannotAllocateAnUnboundedThumbnail PASSED
+
+PhotoThumbnailTest > normalThumbnailsKeepAspectRatioAndNeverEnlargeSmallInputs PASSED
+
+PreviewSchedulerTest > renderingNeverOverlapsAndInteractionCannotReplaceSettledFrame PASSED
+
+PreviewSchedulerTest > finalInteractionFrameIsPublishedBeforeItsExpensiveRefinement PASSED
+
+PreviewSchedulerTest > aFailedInteractionDoesNotPreventFullQualityRecovery PASSED
+
+PreviewSchedulerTest > aNewEditCancelsAnExpensiveRefinementImmediately PASSED
+
+PreviewSchedulerTest > dragCoalescesFramesAndAlwaysEndsAtFullQualityLatestRecipe PASSED
+
+RawTiffTest > genuine16BitRampRetainsFarMoreThan256LevelsAndEmbedsValidProfile PASSED
+
+RawTiffTest > hdrValuesClipExplicitlyAtSdrWhiteAndNegativeExposureRetainsHighlights PASSED
+
+RawTiffTest > allPhotoEditsHaveAPrecisionPath PASSED
+
+RawTiffTest > cancellationStopsBeforeWritingAndDuringRows PASSED
+
+RawTiffTest > samplesMatchIndependentSrgbFormulaAfterLinearExposureAndPreserveRowOrder PASSED
+
+VoiceoverSessionTest > maximumDurationStopsExactlyOnceAndAcceptsAlreadyStoppedValidFile PASSED
+
+VoiceoverSessionTest > staleCallbacksCannotKillNewTakeOrResurrectClosedSession PASSED
+
+VoiceoverSessionTest > pauseTimeDoesNotConsumeRecordingBudgetAndBackgroundStopsForReview PASSED
+
+VoiceoverSessionTest > successfulAdoptionSurvivesSessionCloseAndSmallBudgetDoesNotStart PASSED
+
+VoiceoverSessionTest > cleanupKeepsLeasedTakesAndOnlyDeletesOwnedAbandonedNames PASSED
+
+VoiceoverSessionTest > failureAndTooShortTakeDeleteOwnedFilesAndReleaseRecorder PASSED
+
+CaptionWordsTest > fillerWordsAreRemovedButRealWordsKeepTheirTiming PASSED
+
+CaptionWordsTest > backwardsServiceTimingIsRejected PASSED
+
+CaptionWordsTest > speechPausesCreateSeparateReadableCues PASSED
+
+CaptionWordsTest > timingsFollowSourceSpeedAndCompositionOffset PASSED
+
+CaptionWordsTest > voiceoverSpeedsOutsideClipRangeStillMapToTheTimeline PASSED
+
+VideoAudioDspProcessorTest > noiseReductionAttenuatesLowLevelStationarySignal PASSED
+
+VideoAudioDspProcessorTest > robotPresetChangesActualSamples PASSED
+
+VideoAudioDspProcessorTest > highGainIsLimitedWithoutPcmWraparound PASSED
+
+VideoAudioEnvelopeTest > gainProcessorRemainsActiveWhenFadeStartsAtSilence PASSED
+
+VideoAudioEnvelopeTest > fadeInAndOutFollowTrimmedPlaybackClock PASSED
+
+VideoCanvasSizingTest > landscapeFourKIntoPortraitIsBoundedByActualDeviceLimit PASSED
+
+VideoCanvasSizingTest > extremeInputDoesNotOverflowBeforeClamping PASSED
+
+VideoCanvasSizingTest > ordinaryCanvasPreservesOriginalPixelsWhenDeviceCanFitIt PASSED
+
+VideoCropGeometryTest > cropAnchorReachesTopRightAndSanitizesInvalidInput PASSED
+
+VideoCropGeometryTest > centeredCropKeepsAspectAndBounds PASSED
+
+PhotoHistoryTest > historyIsBoundedAndSupportsMultipleRedoSteps PASSED
+
+PhotoHistoryTest > aNewEditDropsTheOldRedoBranch PASSED
+
+PhotoHistoryTest > undoRedoPreserveCropMasksRawAndProjectIdentity PASSED
+
+ProjectTest > newEditAfterUndoInvalidatesRedo PASSED
+
+ProjectTest > splitRejectsUnusableFragments PASSED
+
+ProjectTest > trimClampsToSourceAndPreservesMinimumDuration PASSED
+
+ProjectTest > splitPreservesTrimmedSourceRange PASSED
+
+VideoAudioTrackTest > speedChangesPlaybackDurationWithoutChangingSourceTrim PASSED
+
+VideoAudioTrackTest > shorteningMovieKeepsExtractedSourceBounds PASSED
+
+VideoAudioTrackTest > sanitizesExtremeAudioControlsAndFadeInPlaybackTime PASSED
+
+VideoCaptionsTest > sanitizerBoundsNumbersWithoutBreakingSurrogatePair PASSED
+
+VideoCaptionsTest > overlapsUseExclusiveEndAndIgnoreTheEditedCueId PASSED
+
+VideoCaptionsTest > newCaptionFindsActualFreeGapRatherThanOverwritingExistingCue PASSED
+
+VideoCaptionsTest > shortenProjectClampsCaptionTailAndPreservesStyle PASSED
+
+VideoCaptionsTest > splitUsesTextCaretAndPlayheadWithoutSplittingEmoji PASSED
+
+VideoClipMotionTest > panNeverExposesOutsideFrameAndIsDeterministicWhenSeeking PASSED
+
+VideoClipMotionTest > unknownAndNonFiniteSettingsSanitizeWithoutDamagingExistingEdits PASSED
+
+VideoClipMotionTest > zoomUsesTrimmedPlaybackDurationAndResetsAtNextClip PASSED
+
+VideoEditsTest > titleAnimationDefaultsAndBoundsAreStable PASSED
+
+VideoEditsTest > boundedOverlayListsAndCanvasDefaults PASSED
+
+VideoEditsTest > textBoundsSurviveOverflowAndInvalidFloatingPoint PASSED
+
+VideoEditsTest > malformedClipControlsCannotReachRenderer PASSED
+
+VideoEditsTest > splitAndHistoryPreserveVideoEdits PASSED
+
+VideoEffectsTest > effectTimesAndInvalidValuesAreBounded PASSED
+
+VideoEffectsTest > effectCountDeduplicationAndShortenedTimelineRemainSafe PASSED
+
+VideoEffectsTest > threeDTiltUsesLocalEffectTimeAndExclusiveEnd PASSED
+
+VideoEffectsTest > activeIntensityIsEndExclusiveAndOverlapsAreCapped PASSED
+
+VideoEffectsTest > softGlowSumsOnlyActiveFiniteEffects PASSED
+
+VideoHistoryTest > undoRedoRestoresClipsCaptionsAudioAndBranchDiscardsRedo PASSED
+
+VideoHistoryTest > fortyStepLimitRemainsBoundedThroughBothDirections PASSED
+
+VideoPipTimingTest > trimEndCannotReadPastSourceAndMoveDoesNotSlipSource PASSED
+
+VideoPipTimingTest > sanitationAndProjectShorteningRetainPlayableSource PASSED
+
+VideoPipTimingTest > trimmingStartChangesSourceInPointAndKeepsEnd PASSED
+
+VideoSpeedAudioTest > transitionAndAudioCountBoundsAreExplicit PASSED
+
+VideoSpeedAudioTest > malformedAudioMetadataCannotCreateNegativeRangesOrInfiniteGain PASSED
+
+VideoSpeedAudioTest > audioOutsideShortenedTimelineKeepsItsSourceTrim PASSED
+
+VideoSpeedAudioTest > speedControlsPlaybackDurationWithoutChangingSourceBounds PASSED
+
+VideoSpeedAudioTest > splittingPlaybackTimeMapsToSourceAndLeavesOutgoingTransitionOnlyOnRight PASSED
+
+VideoSpeedAudioTest > fractionalSpeedSplitPreservesExactSourceAndAtMostOneMillisecondOfRounding PASSED
+
+VideoTimelineLayerEditTest > repeatedLayerEditsPreserveBoundsAndAudioSourceAtAllSpeeds PASSED
+
+VideoTimelineLayerEditTest > captionsCannotBeDraggedOntoAnotherCaption PASSED
+
+VideoTimelineLayerEditTest > textMoveAndEdgeTrimStayInsideComposition PASSED
+
+VideoTimelineLayerEditTest > tinyCaptionEdgesRemainValidAfterProjectShortening PASSED
+
+VideoTimelineLayerEditTest > audioEdgesChangeSourceRangeAtPlaybackSpeed PASSED
+
+VideoTimelineTest > playheadMappingUsesTrimmedDurationsAndChoosesNextClipAtBoundary PASSED
+
+VideoTimelineTest > shorteningPreservesEarlierLayersAndClipsTailWithoutRelocatingOutsideLayers PASSED
+
+VideoTimelineTest > emptyAndZeroLengthTimelinesAreSafe PASSED
+
+VideoTimelineTrimTest > startHandleMapsPlaybackDragToSourceTime PASSED
+
+VideoTimelineTrimTest > endHandleCanRecoverPreviouslyTrimmedSource PASSED
+
+VideoTimelineTrimTest > handlesCannotCrossOrMakeLessThan100msOfPlayback PASSED
+
+VideoTimelineTrimTest > invalidGestureCannotCorruptClip PASSED
+
+VideoTitleTemplatesTest > everyTemplateFitsShortAndLongProjectsWithoutOverlappingItsTitles PASSED
+
+CaptionTimeTextTest > millisecondTimesRoundTripIncludingLongVideos PASSED
+
+CaptionTimeTextTest > invalidAndAmbiguousTimeFieldsDoNotBecomeZero PASSED
+
+CaptionTimeTextTest > timeFieldsStayAsciiAcrossDeviceLocales PASSED
+
+PhotoCropFrameTest > movingKeepsRatioAndSizeInsideImage PASSED
+
+PhotoCropFrameTest > crossingHandlesCannotInvertFrame PASSED
+
+PhotoCropFrameTest > resizingAnyHandleSelectsFreeCrop PASSED
+
+PhotoCropFrameTest > edgesDoNotMoveUnrelatedCoordinates PASSED
+
+> Task :pinwheel-core:check
+> Task :pinwheel-core:build
+
+> Task :pinwheel-render:test
+
+PreviewTileRendererTest > everyShaderCompilesAndEveryCatalogEffectDrawsAPictureAndMoves() PASSED
+
+PreviewTileRendererTest > paramsAffectPixelsLoopSlotsCacheAndLruStaysBounded() PASSED
+
+CatalogContractTest > pinnedCatalogCountsIdsDefaultsAndLegacyLookupsStayStable() PASSED
+
+CatalogContractTest > previewRecipeKeepsThirdHeightCropAndTransitionSwitch() PASSED
+
+CatalogContractTest > captionFontsImportedPackagesAndHomeTemplatesHaveAssetsAndNotices() PASSED
+
+CatalogContractTest > everyLibraryCategoryResolvesItsLookAndStickerCards() PASSED
+
+GoldenImagesTest > exactToleranceBoundaryPassesAndLargerMeanFails() PASSED
+
+GoldenImagesTest > orientationAndDimensionsCannotBeSilentlyAligned() PASSED
+
+GoldenImagesTest > percentileIsPerChannelAndCannotHideBehindLowMean() PASSED
+
+> Task :pinwheel-render:check
+> Task :pinwheel-render:build
+> Task :p2RuntimeCheck
+
+BUILD SUCCESSFUL in 2m 15s
+31 actionable tasks: 31 executed

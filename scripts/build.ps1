@@ -1,4 +1,4 @@
-param([string[]]$Tasks = @('clean', 'build', 'p1Check'), [switch]$Smoke)
+param([string[]]$Tasks = @('clean', 'build', 'p2RuntimeCheck'), [switch]$Smoke)
 $ErrorActionPreference = 'Stop'
 $taskRoot = Split-Path -Parent $PSScriptRoot
 & (Join-Path $PSScriptRoot 'bootstrap-gradle.ps1')

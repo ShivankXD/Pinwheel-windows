@@ -1,0 +1,6 @@
+{
+  "specs": 422,
+  "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.8186)",
+  "version": "OpenGL ES 3.0.0 (ANGLE 2.1.24077 git hash: 367e9e74a865)",
+  "compileFailures": {}
+}

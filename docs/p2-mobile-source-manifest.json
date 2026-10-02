@@ -1,0 +1,30 @@
+[
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoFxShaders.kt",
+    "sourceSha256": "f4bcde6cd89b4b77df4fe89e24cbbe2a5b571871aa02e61f690d5addad49badc"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoFxPreviewRenderer.kt",
+    "sourceSha256": "dc042830c7728f650fd9787e6e4f5427b0bb72ce4e779f5b78a2a756e475a9b0"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoFxEffect.kt",
+    "sourceSha256": "93ebb38c18252e035c6a151386b8569960f9c2a9aadef22928ec72b359713ca3"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoLayerFxOverlay.kt",
+    "sourceSha256": "f8cb9fa007b6a3f9abb019026e111e41da96bb891f3bb4164f586f83dce931fe"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoRenderGraph.kt",
+    "sourceSha256": "afd3366f78e41758b39d055294561fe6a9aee966b50ab12ba66fbe13d9d94fd6"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoCreativeEffects.kt",
+    "sourceSha256": "750002ef9b7328b6a74e29796413b8d0c651037aa8a2b300c09d96b2515258ef"
+  },
+  {
+    "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoSoftGlowEffect.kt",
+    "sourceSha256": "925207d4ca6b6d72a3749866bada9cb5a514959808a49c14bf54fa76e1135e13"
+  }
+]

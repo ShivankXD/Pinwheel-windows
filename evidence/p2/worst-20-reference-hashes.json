@@ -1,0 +1,102 @@
+[
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-ct-scene-cut\\0.9.png",
+    "copiedTo": "evidence\\p2\\worst-20\\01-fx-ct-scene-cut-0.9-mobile.png",
+    "sha256": "35a88e9283a0e50c9f96f5d6925932c7946a9460bb533fd3913fabbfc6f55549"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-ct-negative-panels\\2.1.png",
+    "copiedTo": "evidence\\p2\\worst-20\\02-fx-ct-negative-panels-2.1-mobile.png",
+    "sha256": "41fdd9e86938732c827cd311aa3c75851a9b5b31fd7982cb7edaee131b13d28a"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-cr-signal-lost\\2.1.png",
+    "copiedTo": "evidence\\p2\\worst-20\\03-fx-cr-signal-lost-2.1-mobile.png",
+    "sha256": "b54d646346b45511653c4867762ad35334aa5619033e5c719470575f87ff11ea"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-ct-chaotic-heat\\1.5.png",
+    "copiedTo": "evidence\\p2\\worst-20\\04-fx-ct-chaotic-heat-1.5-mobile.png",
+    "sha256": "299dc60a8177b4313bad804d051718149662e6e6ec1d3b1639779afe4d51d301"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-cc-wiggle-flicker\\0.3.png",
+    "copiedTo": "evidence\\p2\\worst-20\\05-fx-cc-wiggle-flicker-0.3-mobile.png",
+    "sha256": "46deff8087edec71a963e8cf296a2fb0fe7e27b3481ee3762e09dab93efa0be7"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-mt-photo-snap\\1.5.png",
+    "copiedTo": "evidence\\p2\\worst-20\\06-fx-mt-photo-snap-1.5-mobile.png",
+    "sha256": "e898b77f9fae8816599e557f19854126b4caa290b2529bea0209b45a799c5fb7"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-ct-error-quake\\0.3.png",
+    "copiedTo": "evidence\\p2\\worst-20\\07-fx-ct-error-quake-0.3-mobile.png",
+    "sha256": "f64a351394dbeae4e07a292829fa41945098cf0cc9b695860a8521fe0b0a7aba"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-ov-tr-scribble\\0.9.png",
+    "copiedTo": "evidence\\p2\\worst-20\\08-fx-ov-tr-scribble-0.9-mobile.png",
+    "sha256": "f8fa432ef5eb5697c6506a9bc637bdb9b4ba45897d3f77c20a84b9a533de3564"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-ov-grain\\0.3.png",
+    "copiedTo": "evidence\\p2\\worst-20\\09-fx-ov-grain-0.3-mobile.png",
+    "sha256": "a5a046a2e9fc9d1b4b68387adab7d0aa6d343bf3b181c8ff73de158c234476ca"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-cc-shiny-stack\\0.9.png",
+    "copiedTo": "evidence\\p2\\worst-20\\10-fx-cc-shiny-stack-0.9-mobile.png",
+    "sha256": "386550aa65eec50796aa195d3e972c6010f0b1f21bb41e8be6c86e1ec19fe157"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-cc-feverish\\0.9.png",
+    "copiedTo": "evidence\\p2\\worst-20\\11-fx-cc-feverish-0.9-mobile.png",
+    "sha256": "48b6ba8495b39b80397f42531bc918b7266e57e5617d8653e13106eaa3213593"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-mt-zoom-shake\\1.5.png",
+    "copiedTo": "evidence\\p2\\worst-20\\12-fx-mt-zoom-shake-1.5-mobile.png",
+    "sha256": "e89ef7ce8042a565c23f65a71c5e9f7e0aec97f7b9f0d8ee8a3ae58ba72e6166"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-signal-loss\\0.9.png",
+    "copiedTo": "evidence\\p2\\worst-20\\13-fx-signal-loss-0.9-mobile.png",
+    "sha256": "89832d3357124a353b33a3201489928989f028a27155e739b42454a8fc3640f2"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-ov-bg-3d-shapes\\0.3.png",
+    "copiedTo": "evidence\\p2\\worst-20\\14-fx-ov-bg-3d-shapes-0.3-mobile.png",
+    "sha256": "c27d4fd6250fdc7c04e09527e440bd0828fcedbcba07243d6e7ea907ac553a90"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-ct-lightning-crack\\0.3.png",
+    "copiedTo": "evidence\\p2\\worst-20\\15-fx-ct-lightning-crack-0.3-mobile.png",
+    "sha256": "1775052162fdc6a0d89ae3d146901f397193d7e6b35d352fb039e016bd7aa0db"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-cc-vintage-film\\1.5.png",
+    "copiedTo": "evidence\\p2\\worst-20\\16-fx-cc-vintage-film-1.5-mobile.png",
+    "sha256": "31de2b3baa39b1d41b3e428230a80a2d4f6f01af0b72139300e16e7fb9a26ca2"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-cc-retro-flicker\\2.1.png",
+    "copiedTo": "evidence\\p2\\worst-20\\17-fx-cc-retro-flicker-2.1-mobile.png",
+    "sha256": "bab98b821bc54343cb0cdbc49a5c427f6b3fce1ada03e212c1b081b43cf71fa4"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-film-8mm\\0.9.png",
+    "copiedTo": "evidence\\p2\\worst-20\\18-fx-film-8mm-0.9-mobile.png",
+    "sha256": "2bcac9e8baa2cdc7c8edaf5380ec5b3342fbe01e134a1fe4e97a22bb133857cf"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-cr-tri-split\\1.5.png",
+    "copiedTo": "evidence\\p2\\worst-20\\19-fx-cr-tri-split-1.5-mobile.png",
+    "sha256": "d6088b63adaccc1c189871bbcc23487c9b30b2518d8144afe9ac071ed6471ff3"
+  },
+  {
+    "reference": "D:\\Pinwheel-Windows-refs\\golden\\fx-film-grain\\1.5.png",
+    "copiedTo": "evidence\\p2\\worst-20\\20-fx-film-grain-1.5-mobile.png",
+    "sha256": "b8582c894405a461fa5672d1d8b0ae5e1ef1b629f25d032200500676dcbd79fd"
+  }
+]
