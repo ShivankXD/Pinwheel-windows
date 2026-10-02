@@ -103,7 +103,12 @@ in the precision query was corrected; full initial output is
 `final-sampling-and-runtime-checks.txt`. All 236 unit tests still pass.
 Production acceptance counts remain unchanged.
 
-Sample matrix runtime 614e447 passed hosted Windows/JDK 17 CI [run 37011571663](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37011571663).
+The new deterministic controls in local commit 13d23cb pass local checks,
+but publication is blocked by repeated Git HTTPS HTTP 408 failures and API
+upload disconnects. GitHub main remains df75ced. No hosted CI result exists
+for 13d23cb. [Publication status and complete error messages](../evidence/p2/PUBLICATION-STATUS.md)
+record the attempted recovery and preserved commit. The prior sample matrix
+runtime 614e447 passed hosted Windows/JDK 17 CI [run 37011571663](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37011571663).
 All 15 CI steps succeeded, including the two new sample regressions. CI checks
 runtime, shader/frame generation, numeric probes, source/class
 verification, debug guard and actual-window smoke. Owner goldens are local

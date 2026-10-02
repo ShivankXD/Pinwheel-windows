@@ -1,6 +1,6 @@
 {
-  "auditedThrough": "614e4479e941b6ecf08ecc16035a2ee4fbedee95",
-  "commits": 22,
+  "auditedThrough": "13d23cba6e0fcb2b785c912215ce5d0b39606bb3",
+  "commits": 24,
   "authors": [
     {
       "name": "ShivankXD",
@@ -14,5 +14,10 @@
     }
   ],
   "forbiddenTrailers": 0,
-  "emDashesInMessages": 0
+  "emDashesInMessages": 0,
+  "githubContributors": [
+    "ShivankXD"
+  ],
+  "publishedThrough": "df75ced84493b0f361d3488ad4cb7652d205028e",
+  "publicationPending": true
 }

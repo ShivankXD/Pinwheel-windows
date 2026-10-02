@@ -52,6 +52,7 @@ P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/
 | Mobile effect pixels | ⚠️ | Strict audit: 1473 pass / 215 fail / 0 missing. Owner class policy: 898 deterministic passes / 18 failures, 688 noise provisional passes / 84 failures. `evidence/p2/STRUCTURAL-REPORT.md`, both metric CSV sets and worst 20 galleries; acceptance remains open |
 | P2 read-only source/reference provenance | ✅ | 404 P1 hashes, 7 P2 mobile source hashes, 8 legacy/layer shader literals, 1715 reference input hashes unchanged |
 | Hosted Windows/JDK 17 runtime build | ✅ | [Run 37011571663](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37011571663), runtime 614e447; clean checks, frame generation, storage/dither probes, class verification and smoke; `evidence/p2/ci-result.json`; mobile goldens and experimental float comparisons are local only |
+| Publish latest deterministic controls and run hosted CI | ⚠️ | Local 13d23cb is validated; repeated Git HTTP 408 and API upload failures leave remote main at df75ced. New hosted CI has not run. `evidence/p2/PUBLICATION-STATUS.md` |
 
 CMYK Print preserves the mobile reversed-smoothstep quirk. Reversed bounds are
 undefined by the [Khronos function reference](https://raw.githubusercontent.com/KhronosGroup/OpenGL-Refpages/main/es3.0/smoothstep.xml);
