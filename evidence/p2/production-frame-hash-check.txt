@@ -1,0 +1,1 @@
+PASS 1688 production RGBA frame hashes unchanged after QA draw refactor; 0 changes

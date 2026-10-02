@@ -8,13 +8,18 @@ repair if those names change.
 
 The diagnostic produces `windows-refs/diagnostics/mobile-math-probe.json` and
 84 neutral SWAY tiles in `windows-refs/diagnostics/neutral/<sample>/<t>.png` under
-the app's external files directory. It also writes eight raw RGBA8 numeric
-PNGs under `windows-refs/diagnostics/numeric`: four constant colours and four
+the app's external files directory. It also writes twelve raw RGBA8 numeric
+PNGs under `windows-refs/diagnostics/numeric`: eight constant-colour images
+(four with the original dither state and four with its opposite) and four
 pixel-cell maps. It uses the existing preview GL context, restores the
-framebuffer, viewport, program, active texture unit and its texture binding,
+framebuffer, viewport, program, dither flag, clear colour, active texture unit
+and affected texture bindings,
 and does not edit projects. The JSON records the phone
-GL vendor, renderer, version and high-float precision, plus the exact reduced
-Scene Cut hash values at the four golden times.
+GL vendor, renderer, version and high/medium/low-float precision, plus the exact
+reduced Scene Cut hash values at the four golden times. It also records four
+GPU storage observations: uploading bytes 127 and 128, clearing to 0.5, and
+drawing uniform 0.5. A second shader observes the stored side of 0.5 using
+only endpoint colours; this separates attachment conversion from readback.
 
 The numeric images bypass RGB565. Constant 0.5 distinguishes an observed
 NVIDIA readback of 127 from WARP's 128. Pixel-cell maps use the unchanged mobile
@@ -23,6 +28,14 @@ boundaries without sample decoding or SWAY. Windows counterparts and boundary
 heatmaps come from `:pinwheel-render:p2NumericProbe`, in
 `evidence/p2/diagnostics/numeric`. Oversized triangles are an additional Windows
 diagnostic and are not used by the production runtime or golden renderer.
+
+Windows GL_DITHER on/off produces the same constants. Both clear and draw
+half-values are already stored below 0.5 on NVIDIA and above 0.5 on WARP.
+The separate Windows `p2FramebufferProbe` tests explicit final conversion
+without changing catalog shaders. It repairs Diamond Burst in its diagnostics,
+but the full precision variant also regresses other frames; the half precision
+variant changes output precision. Neither is adopted. The phone's medium/low
+precision and raw images will help determine the actual compatibility recipe.
 
 These files can be supplied alongside the existing read-only Windows references
 to compare against `evidence/p2/diagnostics`. Neutral copies isolate sample

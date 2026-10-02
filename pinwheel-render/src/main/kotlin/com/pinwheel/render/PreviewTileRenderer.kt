@@ -9,7 +9,7 @@ import java.nio.file.Path
 /** Mobile's preview passes, sample crop, float timing, flip and RGB565 conversion. Thread confined. */
 class PreviewTileRenderer(nativeDirectory: Path, private val assets: Path, softwareDiagnostic: Boolean = false) : AutoCloseable {
     private val resources = GpuResources()
-    private val device = resources.own { AngleDevice(nativeDirectory, softwareDiagnostic) }
+    internal val device = resources.own { AngleDevice(nativeDirectory, softwareDiagnostic) }
     val renderer get() = device.renderer
     val version get() = device.version
     private val programs = HashMap<String, FxProgram>()
@@ -35,7 +35,14 @@ class PreviewTileRenderer(nativeDirectory: Path, private val assets: Path, softw
             .also { frames[slot] = it }
     }
     fun renderAt(spec: VideoFxSpec, seconds: Float, values: Map<String, Float> = emptyMap()): RgbaFrame {
+        drawTo(work[3], spec, seconds, values)
+        // Mobile directly copies glReadPixels into a top-down Bitmap after uFlipY=-1.
+        return rgb565(work[3].read(topDown = false))
+    }
+    /** QA can isolate attachment conversion while keeping sample preparation and shader inputs identical. */
+    internal fun drawTo(output: GpuTarget, spec: VideoFxSpec, seconds: Float, values: Map<String, Float> = emptyMap()) {
         device.checkThread(); require(seconds.isFinite())
+        require(output.texture.device === device && output.texture.width == VideoPreviewRecipe.WIDTH && output.texture.height == VideoPreviewRecipe.HEIGHT)
         val input = VideoPreviewRecipe.inputs(spec, seconds.toDouble())
         val sample = samples.getOrPut(input.sample) { resources.own { uploadSample(input.sample) } }
         fun swayTo(target: Int, motion: VideoPreviewRecipe.Sway) {
@@ -44,7 +51,7 @@ class PreviewTileRenderer(nativeDirectory: Path, private val assets: Path, softw
         }
         swayTo(0, input.current)
         if (spec.history) { swayTo(1, input.previous); swayTo(2, input.trail) }
-        work[3].bind()
+        output.bind()
         val p = program(spec); p.use(); p.float("uFlipY", -1f)
         p.texture("uTexture", work[0].texture.id, 0)
         p.texture("uPrev", work[if (spec.history) 1 else 0].texture.id, 1)
@@ -54,8 +61,6 @@ class PreviewTileRenderer(nativeDirectory: Path, private val assets: Path, softw
         p.float("uTime", seconds); p.float("uDuration", VideoPreviewRecipe.LOOP_SECONDS); p.float("uProgress", input.progress)
         val uniforms = spec.uniforms(values); p.vec4("uP0", uniforms); p.vec4("uP1", uniforms, 4); p.draw()
         checkGl("${spec.id} preview")
-        // Mobile directly copies glReadPixels into a top-down Bitmap after uFlipY=-1.
-        return rgb565(work[3].read(topDown = false))
     }
     private fun uploadSample(name: String): GpuTexture {
         Image.makeFromEncoded(Files.readAllBytes(assets.resolve(name))).use { decoded ->

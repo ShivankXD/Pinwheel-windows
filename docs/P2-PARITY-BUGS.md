@@ -136,6 +136,72 @@ An oversized full-screen triangle was tested with the unchanged vertex shader.
 It worsens NVIDIA's grid disagreement to 5,984 pixels and has not been adopted.
 Production keeps the mobile quad, backend, shaders and default values.
 
+### Dithering and storage isolation follow-up
+
+Both Windows contexts start with GL_DITHER enabled. Toggling it leaves all four
+constant results unchanged: NVIDIA gives 64/127/166/235; WARP gives
+64/128/166/235 for 0.25/0.5/0.65/0.92. The diagnostic restores the original flag
+before running Diamond and grid probes. Disabling dithering is not a repair.
+
+A second shader samples the stored texture and emits only 0 or 1 to classify
+each texel as below, above or exactly 0.5. Endpoint readback avoids another
+half-value tie. Every one of the 46,080 texels gives the following result:
+
+| Origin | NVIDIA stored value | WARP stored value |
+|---|---|---|
+| Upload byte 127 | below 0.5; readback 127 | below 0.5; readback 127 |
+| Upload byte 128 | above 0.5; readback 128 | above 0.5; readback 128 |
+| Clear to 0.5 | below 0.5; readback 127 | above 0.5; readback 128 |
+| Draw uniform 0.5 | below 0.5; readback 127 | above 0.5; readback 128 |
+
+The discrepancy therefore exists in GPU texture storage before CPU readback.
+It cannot be repaired by changing row handling or the normalized RGB565
+expansion. The constant and endpoint shaders isolate this observation from
+catalog math and photo preparation. Full results are in `numeric-probe.json`
+and `numeric-storage-probe-output.txt`.
+
+### Explicit conversion experiment, not adopted
+
+`p2FramebufferProbe` renders the unchanged effect into a floating-point final
+attachment, then uses a separate GPU pass for `floor(clamp(x,0,1)*255+0.5)/255`
+before the existing RGB565 packing/expansion. Sample decoding, all RGBA8 SWAY
+inputs, shader source, uniforms, geometry and comparisons remain the same.
+This task writes only diagnostics, never `evidence/p2/frames` or references.
+
+| Final attachment | Strict passes / failures | New passes / regressions | Deterministic failures |
+|---|---:|---:|---:|
+| Existing production RGBA8 | 1436 / 252 | baseline | 46 |
+| Sized RGBA32F with explicit conversion | 1438 / 250 | 9 / 7 | 47 |
+| RGBA16F with explicit conversion | 1447 / 241 | 11 / 0 | 39 |
+
+Both floating routes reproduce Diamond Burst exactly at 0.3, 0.9 and 2.1 s,
+with every RGBA MAE and p99 equal to zero. This confirms that final attachment
+conversion can explain its field mismatch without editing the effect shader.
+RGBA32F introduces six deterministic regressions: Background Fit at 0.9 s,
+Color Pixel at 0.3/0.9 s, Mirror Beat at 0.9/2.1 s and Blink at 0.9 s; Shake
+transition at 1.5 s is the seventh strict regression, in the noise class.
+
+RGBA16F has no strict pass-to-fail regressions in this set, but it rounds
+intermediate shader outputs: for example, 0.65 becomes 0.64990234. Its better
+golden count is not sufficient evidence to adopt a precision change. The
+[GLSL ES 1.00 specification, section 7.2](https://registry.khronos.org/OpenGL/specs/es/2.0/GLSL_ES_Specification_1.00.pdf)
+declares gl_FragColor as mediump; that does not prove this phone stores an
+IEEE binary16 output or that explicit nearest conversion matches all of its
+fixed-function behaviour. Phone medium/low-float precision and raw numeric
+outputs are still needed. Neither experiment changes production storage.
+
+The unsized RGBA/FLOAT attachment is incomplete in this ANGLE context. Sized
+RGBA32F succeeds, as does RGBA/HALF_FLOAT_OES. The advertised context reports
+OpenGL ES 3.0 even though EGL creation requested client version 2. The
+[float-buffer extension](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_color_buffer_float.txt)
+describes the sized formats; the [half-float extension](https://registry.khronos.org/OpenGL/extensions/EXT/EXT_color_buffer_half_float.txt)
+defines floating-point readback and half-float attachments. Completeness is
+checked for each allocation instead of assuming support from a texture flag.
+
+All 1688 comparisons, individual regressions, constants and selected tile/diff
+PNGs are retained in `evidence/p2/diagnostics/framebuffer`. Existing acceptance
+still reports 46 deterministic and 84 noise failures, with the original limits.
+
 Raw cell maps, raw Diamond colours, per-pixel boundary comparisons and heatmaps
 are in `evidence/p2/diagnostics/numeric`. The proposed owner-run probe now exports
 matching raw RGBA8 constant and cell-map PNGs before RGB565 conversion. It remains

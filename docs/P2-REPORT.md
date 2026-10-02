@@ -103,6 +103,28 @@ cell maps and heatmaps are in `evidence/p2/diagnostics/numeric`; evidence and
 causal limits are explained in `P2-PARITY-BUGS.md`. The proposed owner probe
 now includes matching raw RGBA8 diagnostics and remains unverified on Android.
 
+The follow-up storage probe rules out GL_DITHER and CPU readback as repairs for
+the half-value case. A second GPU shader observes NVIDIA's stored value below
+0.5 and WARP's above 0.5; byte uploads remain intact. The explicit conversion
+experiment makes Diamond Burst exact at its three failing times, but RGBA32F
+causes seven other strict regressions. RGBA16F gives eleven new strict passes
+and zero pass-to-fail regressions, while changing intermediate precision. Both
+are retained as diagnostics; production stays RGBA8. Full constants, all 1688
+metrics for each supported format, and selected tile/diff PNGs are under
+`evidence/p2/diagnostics/framebuffer`. See `framebuffer-probe-output.txt` and
+`numeric-storage-probe-output.txt`. The proposed phone probe now records
+medium/low-float precision, dither state and the same endpoint observations.
+
+`numeric-follow-up-reference-checks.txt` is the new full failing output: four
+mobile inputs still pass, and goldenCheck still reports 46 deterministic plus
+84 noise failures. P3 remains unstarted following the owner's phase clarification.
+The follow-up runtime check passes; all 24 render tests reran, and the aggregate
+test results remain 234 passed with no failures/errors/skips. All 422 shaders
+compile and 1688 production frames regenerate with identical RGBA hashes to
+the previous run. `numeric-follow-up-runtime-checks.txt` and
+`production-frame-hash-check.txt` retain that validation. No diagnostic output
+was substituted for a production frame.
+
 ## 3. Screenshots
 
 `evidence/p2/effect-lab.png` is an actual Compose-window capture showing the

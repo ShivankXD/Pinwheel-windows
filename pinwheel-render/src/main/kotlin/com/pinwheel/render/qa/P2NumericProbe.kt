@@ -17,6 +17,60 @@ private fun exactGridCell(halfPixel: Int, size: Int, grid: Float): Int {
     return (halfPixel.toLong() * significand / ((size.toLong() * 2) shl denominatorShift)).toInt()
 }
 
+private fun RgbaFrame.redLevels() = pixels.indices.step(4).map { pixels[it].toInt() and 255 }.toSet().sorted()
+
+/** A second shader observes texture storage using only endpoint output colours, avoiding another tie. */
+private fun halfValueStorage(device: AngleDevice, source: GpuTarget): JSONArray {
+    val results = JSONArray()
+    val clearColour = BufferUtils.createFloatBuffer(4); glGetFloatv(GL_COLOR_CLEAR_VALUE, clearColour)
+    try {
+        GpuTarget(device, 192, 240).use { observation ->
+            FxProgram("""
+precision highp float;
+varying highp vec2 vUv;
+uniform sampler2D uTexture;
+void main() {
+    float stored = texture2D(uTexture, vUv).r;
+    gl_FragColor = vec4(stored < 0.5 ? 1.0 : 0.0, stored > 0.5 ? 1.0 : 0.0, stored == 0.5 ? 1.0 : 0.0, 1.0);
+}
+""").use { reader ->
+                FxProgram("""
+precision highp float;
+varying highp vec2 vUv;
+uniform float uValue;
+void main() { gl_FragColor = vec4(uValue, uValue, uValue, 1.0); }
+""").use { writer ->
+                    for (origin in listOf("upload-127", "upload-128", "clear-half", "draw-half")) {
+                        source.bind()
+                        when (origin) {
+                            "upload-127", "upload-128" -> {
+                                val level = if (origin == "upload-127") 127 else 128
+                                val bytes = ByteArray(192 * 240 * 4) { if (it % 4 == 3) 255.toByte() else level.toByte() }
+                                source.texture.upload(RgbaFrame(192, 240, bytes), topDown = false)
+                            }
+                            "clear-half" -> { glClearColor(.5f, .5f, .5f, 1f); glClear(GL_COLOR_BUFFER_BIT) }
+                            "draw-half" -> { writer.use(); writer.float("uFlipY", -1f); writer.float("uValue", .5f); writer.draw() }
+                        }
+                        val levels = source.read(topDown = false).redLevels()
+                        if (origin.startsWith("upload")) check(levels == listOf(if (origin == "upload-127") 127 else 128))
+                        observation.bind(); reader.use(); reader.float("uFlipY", -1f); reader.texture("uTexture", source.texture.id, 0); reader.draw()
+                        val observed = observation.read(topDown = false)
+                        val counts = IntArray(3)
+                        for (at in observed.pixels.indices step 4) {
+                            val endpoints = (0..2).map { observed.pixels[at + it].toInt() and 255 }
+                            check(endpoints.all { it == 0 || it == 255 } && endpoints.count { it == 255 } == 1)
+                            counts[endpoints.indexOf(255)]++
+                        }
+                        results.put(JSONObject().put("origin", origin).put("rgba8Levels", JSONArray(levels))
+                            .put("storedBelowHalfPixels", counts[0]).put("storedAboveHalfPixels", counts[1]).put("storedExactlyHalfPixels", counts[2]))
+                    }
+                }
+            }
+        }
+    } finally { glClearColor(clearColour[0], clearColour[1], clearColour[2], clearColour[3]) }
+    return results
+}
+
 /** Isolate readback ties and varying/grid boundaries. Diagnostic outputs never replace actual frames. */
 fun main(args: Array<String>) {
     val root = Path.of(args[0]); val output = root.resolve("evidence/p2/diagnostics/numeric")
@@ -24,22 +78,33 @@ fun main(args: Array<String>) {
     for (software in listOf(false, true)) {
         val backend = if (software) "warp" else "hardware"
         AngleDevice(root.resolve("native/windows-x64"), software).use { device ->
-            val report = JSONObject().put("backend", backend).put("renderer", device.renderer)
+            val defaultDither = glIsEnabled(GL_DITHER)
+            val report = JSONObject().put("backend", backend).put("renderer", device.renderer).put("defaultDitherEnabled", defaultDither)
             val colours = JSONArray()
+            val ditherColours = JSONArray()
             GpuTarget(device, 192, 240).use { target ->
-                for (value in listOf(.25f, .5f, .65f, .92f)) {
+                try {
                     FxProgram("""
 precision highp float;
 varying highp vec2 vUv;
 uniform float uValue;
 void main() { gl_FragColor = vec4(uValue, uValue, uValue, 1.0); }
 """).use { program ->
-                        target.bind(); program.use(); program.float("uFlipY", -1f); program.float("uValue", value); program.draw()
-                        val frame = target.read(topDown = false)
-                        val levels = frame.pixels.indices.step(4).map { frame.pixels[it].toInt() and 255 }.toSet().sorted()
-                        colours.put(JSONObject().put("value", value).put("rgba8Levels", JSONArray(levels)))
+                        for (dither in listOf(defaultDither, !defaultDither)) for (value in listOf(.25f, .5f, .65f, .92f)) {
+                            if (dither) glEnable(GL_DITHER) else glDisable(GL_DITHER)
+                            target.bind(); program.use(); program.float("uFlipY", -1f); program.float("uValue", value); program.draw()
+                            val frame = target.read(topDown = false)
+                            val result = JSONObject().put("value", value).put("rgba8Levels", JSONArray(frame.redLevels()))
+                            if (dither == defaultDither) {
+                                colours.put(result)
+                                FrameImages.write(frame, output.resolve("$backend/constant-$value-rgba8.png"))
+                            } else FrameImages.write(frame, output.resolve("$backend/constant-$value-dither-$dither-rgba8.png"))
+                            ditherColours.put(JSONObject(result.toString()).put("ditherEnabled", dither))
+                        }
                     }
-                }
+                } finally { if (defaultDither) glEnable(GL_DITHER) else glDisable(GL_DITHER) }
+                check(glIsEnabled(GL_DITHER) == defaultDither)
+                report.put("halfValueStorage", halfValueStorage(device, target))
                 GpuTexture(device, 1, 1).use { input ->
                     input.upload(RgbaFrame(1, 1, byteArrayOf(137.toByte(), 113, 83, 255.toByte())))
                     val spec = requireNotNull(VideoFxCatalog.find("fx-ov-tr-diamond"))
@@ -103,7 +168,7 @@ void main() { gl_FragColor = vec4(floor(vUv * uGrid) / 255.0, 0.0, 1.0); }
                             .put("differingPixels", failures.length()).put("cases", failures))
                     }
                 }
-                report.put("constantColourReadback", colours).put("gridBoundaryComparisons", grids)
+                report.put("constantColourReadback", colours).put("ditherColourReadback", ditherColours).put("gridBoundaryComparisons", grids)
             }
             reports.put(report)
         }

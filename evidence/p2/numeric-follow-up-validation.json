@@ -1,0 +1,37 @@
+{
+  "scope": "P2 storage isolation and experimental final attachment conversion; production pipeline remains RGBA8",
+  "runtimeCheck": "passed",
+  "renderTestsRerun": 24,
+  "aggregateTests": 234,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "catalogShadersCompiled": 422,
+  "productionFramesRegenerated": 1688,
+  "productionRgbaHashesChanged": 0,
+  "mobileInputsPassed": 4,
+  "deterministicGoldenFailures": 46,
+  "noiseStructuralFailures": 84,
+  "noisePassesProvisional": 688,
+  "goldenCheckExitCode": 1,
+  "referenceFilesUnchanged": 1715,
+  "mobileStatus": "?? output/",
+  "mobileHead": "2a417fd29ef43a8792eb4d58cbe4d102327b11c9",
+  "ditherDisabledFixesTie": false,
+  "halfTieObservedBeforeReadback": true,
+  "experimentalFormats": {
+    "RGBA32F": {
+      "strictNewPasses": 9,
+      "strictRegressions": 7,
+      "deterministicFailures": 47,
+      "adopted": false
+    },
+    "RGBA16F": {
+      "strictNewPasses": 11,
+      "strictRegressions": 0,
+      "deterministicFailures": 39,
+      "adopted": false
+    }
+  },
+  "phoneProbeStatus": "Windows-only proposal; not copied, compiled or run on Android"
+}

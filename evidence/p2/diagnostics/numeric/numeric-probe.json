@@ -218608,7 +218608,80 @@
         "rgba8Levels": [235]
       }
     ],
-    "backend": "hardware"
+    "backend": "hardware",
+    "ditherColourReadback": [
+      {
+        "ditherEnabled": true,
+        "value": 0.25,
+        "rgba8Levels": [64]
+      },
+      {
+        "ditherEnabled": true,
+        "value": 0.5,
+        "rgba8Levels": [127]
+      },
+      {
+        "ditherEnabled": true,
+        "value": 0.65,
+        "rgba8Levels": [166]
+      },
+      {
+        "ditherEnabled": true,
+        "value": 0.92,
+        "rgba8Levels": [235]
+      },
+      {
+        "ditherEnabled": false,
+        "value": 0.25,
+        "rgba8Levels": [64]
+      },
+      {
+        "ditherEnabled": false,
+        "value": 0.5,
+        "rgba8Levels": [127]
+      },
+      {
+        "ditherEnabled": false,
+        "value": 0.65,
+        "rgba8Levels": [166]
+      },
+      {
+        "ditherEnabled": false,
+        "value": 0.92,
+        "rgba8Levels": [235]
+      }
+    ],
+    "defaultDitherEnabled": true,
+    "halfValueStorage": [
+      {
+        "storedAboveHalfPixels": 0,
+        "origin": "upload-127",
+        "storedBelowHalfPixels": 46080,
+        "storedExactlyHalfPixels": 0,
+        "rgba8Levels": [127]
+      },
+      {
+        "storedAboveHalfPixels": 46080,
+        "origin": "upload-128",
+        "storedBelowHalfPixels": 0,
+        "storedExactlyHalfPixels": 0,
+        "rgba8Levels": [128]
+      },
+      {
+        "storedAboveHalfPixels": 0,
+        "origin": "clear-half",
+        "storedBelowHalfPixels": 46080,
+        "storedExactlyHalfPixels": 0,
+        "rgba8Levels": [127]
+      },
+      {
+        "storedAboveHalfPixels": 0,
+        "origin": "draw-half",
+        "storedBelowHalfPixels": 46080,
+        "storedExactlyHalfPixels": 0,
+        "rgba8Levels": [127]
+      }
+    ]
   },
   {
     "renderer": "ANGLE (Microsoft, Microsoft Basic Render Driver (0x0000008C) Direct3D11 vs_5_0 ps_5_0, D3D11-10.0.26100.9549)",
@@ -283235,6 +283308,79 @@
         "rgba8Levels": [235]
       }
     ],
-    "backend": "warp"
+    "backend": "warp",
+    "ditherColourReadback": [
+      {
+        "ditherEnabled": true,
+        "value": 0.25,
+        "rgba8Levels": [64]
+      },
+      {
+        "ditherEnabled": true,
+        "value": 0.5,
+        "rgba8Levels": [128]
+      },
+      {
+        "ditherEnabled": true,
+        "value": 0.65,
+        "rgba8Levels": [166]
+      },
+      {
+        "ditherEnabled": true,
+        "value": 0.92,
+        "rgba8Levels": [235]
+      },
+      {
+        "ditherEnabled": false,
+        "value": 0.25,
+        "rgba8Levels": [64]
+      },
+      {
+        "ditherEnabled": false,
+        "value": 0.5,
+        "rgba8Levels": [128]
+      },
+      {
+        "ditherEnabled": false,
+        "value": 0.65,
+        "rgba8Levels": [166]
+      },
+      {
+        "ditherEnabled": false,
+        "value": 0.92,
+        "rgba8Levels": [235]
+      }
+    ],
+    "defaultDitherEnabled": true,
+    "halfValueStorage": [
+      {
+        "storedAboveHalfPixels": 0,
+        "origin": "upload-127",
+        "storedBelowHalfPixels": 46080,
+        "storedExactlyHalfPixels": 0,
+        "rgba8Levels": [127]
+      },
+      {
+        "storedAboveHalfPixels": 46080,
+        "origin": "upload-128",
+        "storedBelowHalfPixels": 0,
+        "storedExactlyHalfPixels": 0,
+        "rgba8Levels": [128]
+      },
+      {
+        "storedAboveHalfPixels": 46080,
+        "origin": "clear-half",
+        "storedBelowHalfPixels": 0,
+        "storedExactlyHalfPixels": 0,
+        "rgba8Levels": [128]
+      },
+      {
+        "storedAboveHalfPixels": 46080,
+        "origin": "draw-half",
+        "storedBelowHalfPixels": 0,
+        "storedExactlyHalfPixels": 0,
+        "rgba8Levels": [128]
+      }
+    ]
   }
 ]

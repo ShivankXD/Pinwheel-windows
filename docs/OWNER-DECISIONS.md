@@ -40,3 +40,5 @@ These decisions amend the original brief and take precedence where they differ.
     deterministic specs. List every noise spec, metric result and heatmap for
     owner review. Exact phone GL_RENDERER/GL_VERSION will be added to the
     reference manifest later. Structural limits are currently provisional.
+11. The owner clarified that "new Pi" means continue P2 parity fixes. P3 is
+    not authorized by that message; P2 visual acceptance remains open.
