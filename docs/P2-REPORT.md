@@ -121,7 +121,10 @@ Windows/JDK 17 CI [run 37097525085](https://github.com/ShivankXD/Pinwheel-window
 The crop-filter repair was then committed and pushed as 15adf38; its hosted
 [run 37098985024](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37098985024)
 also passes all 15 steps, including the new regression. The alternative
-8-bit control task and mobile golden comparisons run locally. CI checks
+8-bit control checkpoint 6ac2753 is committed and pushed. Its hosted
+[run 37099505455](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37099505455)
+passes all 15 steps. The new task compiles in CI; its 224 comparisons and
+the full mobile golden checks run locally. CI checks
 runtime, shader/frame generation, numeric probes, source/class
 verification, debug guard and actual-window smoke. Owner goldens are local
 inputs; hosted CI does not certify pixel acceptance. `ci-result.json` names

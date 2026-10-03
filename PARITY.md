@@ -53,7 +53,7 @@ P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/
 | Debug Effect Lab and release exclusion | ✅ | `evidence/p2/effect-lab.png`, actual-window smoke and jar variant guard |
 | Mobile effect pixels | ⚠️ | Strict audit: 1473 pass / 215 fail / 0 missing. Owner class policy: 898 deterministic passes / 18 failures, 688 noise provisional passes / 84 failures. `evidence/p2/STRUCTURAL-REPORT.md`, both metric CSV sets and worst 20 galleries; acceptance remains open |
 | P2 read-only source/reference provenance | ✅ | 404 P1 hashes, 7 P2 mobile source hashes, 8 legacy/layer shader literals, 1715 reference input hashes unchanged |
-| Hosted Windows/JDK 17 runtime build | ✅ | [Run 37098985024](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37098985024), runtime 15adf38; all 15 steps pass, including crop regression, clean checks, frame generation, storage/dither probes, class verification and smoke. Owner comparisons and alternative attachment controls run locally; `evidence/p2/ci-result.json` |
+| Hosted Windows/JDK 17 runtime build | ✅ | [Run 37099505455](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37099505455), runtime 6ac2753; all 15 steps pass, including crop regression, clean checks, frame generation, storage/dither probes, class verification and smoke. Alternative attachment task compiles in CI; owner comparisons and its 224 controls run locally. `evidence/p2/ci-result.json` |
 | Publish latest deterministic controls and run hosted CI | ✅ | Exact commits 13d23cb and 1b7c8a3 pushed by fast-forward on 2026-10-03; hosted CI succeeds for 1b7c8a3. Historical transport errors retained in `evidence/p2/PUBLICATION-STATUS.md` |
 
 CMYK Print preserves the mobile reversed-smoothstep quirk. Reversed bounds are

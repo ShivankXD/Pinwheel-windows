@@ -15,8 +15,12 @@ local and failing. The crop-filter correction was committed and pushed as
 production pixels are unchanged. Its hosted Windows/JDK 17
 [run 37098985024](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37098985024)
 also passes all 15 steps; artifact id 11265088093. `ci-result.json` identifies
-this exact tested runtime. The subsequent alternative 8-bit controls are
-validated locally and require their own pushed checkpoint.
+the exact tested runtime. The alternative 8-bit controls were committed and
+pushed as `6ac275330aa64a9028024ff9929a47e54094db48`; hosted
+[run 37099505455](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37099505455)
+passes all 15 steps, artifact id 11264874701. This task compiles in CI; its
+224 owner-reference comparisons run locally. The CI record now names this
+tested commit. Publication is recovered, with P2 visual acceptance still open.
 
 ## Historical transport failures, 2026-10-02
 
