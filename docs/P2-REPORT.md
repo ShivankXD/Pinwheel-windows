@@ -128,8 +128,13 @@ The crop-filter repair was then committed and pushed as 15adf38; its hosted
 also passes all 15 steps, including the new regression. The alternative
 8-bit control checkpoint 6ac2753 is committed and pushed. Its hosted
 [run 37099505455](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37099505455)
-passes all 15 steps. The new task compiles in CI; its 224 comparisons and
-the full mobile golden checks run locally. CI checks
+passes all 15 steps. Its 224 owner-reference comparisons run locally.
+Current-baseline conversion checkpoint b843ad3 is committed and pushed;
+hosted [run 37112187879](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37112187879)
+passes all 15 steps. The conversion tasks compile in CI; their 6752 strict
+comparisons, 3088 structural comparisons and 511 staged numeric controls
+run locally. The initial single-pass negative control retains its 126 numeric
+failures and full output. The full mobile golden checks also run locally. CI checks
 runtime, shader/frame generation, numeric probes, source/class
 verification, debug guard and actual-window smoke. Owner goldens are local
 inputs; hosted CI does not certify pixel acceptance. `ci-result.json` names

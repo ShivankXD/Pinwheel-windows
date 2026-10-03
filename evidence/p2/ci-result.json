@@ -1,9 +1,9 @@
 {
-  "runtimeCommit": "6ac275330aa64a9028024ff9929a47e54094db48",
+  "runtimeCommit": "b843ad3e7394307e20309af919b33f6a8719b914",
   "status": "completed",
   "conclusion": "success",
-  "url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37099505455",
-  "scope": "Windows/JDK 17 clean runtime checks including the crop filtering regression, default frames, numeric storage/dither probes, source audits, debug guards and window smoke. The alternative 8-bit task compiles in CI and its 224 owner-golden comparisons run locally, along with deterministic/sampling controls and full golden checks.",
+  "url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37112187879",
+  "scope": "Windows/JDK 17 clean runtime checks, default frames, numeric storage/dither probes, source audits, debug guards and window smoke. Current-baseline conversion tasks compile in CI; their 6752 strict comparisons, 3088 structural comparisons and 511 staged numeric controls run locally against owner inputs. The single-pass negative control retains its 126 numeric failures. Hosted CI does not certify mobile pixel acceptance.",
   "checks": [
     {
       "name": "Set up job",
@@ -83,9 +83,9 @@
   ],
   "artifacts": [
     {
-      "id": 11264874701,
+      "id": 11269929548,
       "name": "p2-evidence",
-      "size_in_bytes": 129883091,
+      "size_in_bytes": 162227730,
       "expired": false
     }
   ]

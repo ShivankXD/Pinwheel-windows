@@ -22,6 +22,18 @@ passes all 15 steps, artifact id 11264874701. This task compiles in CI; its
 224 owner-reference comparisons run locally. The CI record now names this
 tested commit. Publication is recovered, with P2 visual acceptance still open.
 
+Current-baseline conversion diagnostics were committed and pushed as
+`b843ad3e7394307e20309af919b33f6a8719b914`. Local main and the actual remote
+branch SHA matched after the push. Hosted Windows/JDK 17
+[run 37112187879](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37112187879)
+passes all 15 steps, artifact id 11269929548. The conversion tasks compile
+in CI; 6752 strict comparisons, 3088 structural comparisons and 511 staged
+numeric controls run locally against owner inputs. The single-pass negative
+control retains 126 numeric failures. No candidate conversion was adopted;
+production parity counts and hashes are unchanged. `ci-result.json` now
+names b843ad3. GitHub lists only ShivankXD, with 29 contributions at this
+checkpoint. The evidence-only follow-up records this verified result.
+
 ## Historical transport failures, 2026-10-02
 
 At that time, the validated deterministic and sampling controls were saved in local commit
