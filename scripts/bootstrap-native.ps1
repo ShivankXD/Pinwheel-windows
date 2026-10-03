@@ -35,3 +35,4 @@ if ($LASTEXITCODE -ne 0 -or $version -match '--enable-(gpl|nonfree)|--enable-lib
 $license = & (Join-Path $native 'ffmpeg.exe') -L 2>&1 | Out-String
 if ($license -notmatch 'Lesser General Public License') { throw "Unexpected FFmpeg license:`n$license" }
 Write-Output 'PASS FFmpeg shared LGPL configuration verified'
+& (Join-Path $PSScriptRoot 'build-media-native.ps1')

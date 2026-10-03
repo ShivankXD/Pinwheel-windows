@@ -26,6 +26,7 @@ subprojects {
 tasks.register("p0Check") { dependsOn(subprojects.map { "${it.path}:check" }) }
 tasks.register("p1Check") { dependsOn(subprojects.map { "${it.path}:check" }); dependsOn(":pinwheel-render:p1ProjectInventory") }
 tasks.register("p2RuntimeCheck") { dependsOn(subprojects.map { "${it.path}:check" }) }
+tasks.register("p3RuntimeCheck") { dependsOn(subprojects.map { "${it.path}:check" }) }
 tasks.register("p2Check") {
     dependsOn("p2RuntimeCheck", ":pinwheel-render:mobilePackagesCheck", ":pinwheel-render:goldenCheck")
 }

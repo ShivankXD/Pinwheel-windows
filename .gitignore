@@ -5,6 +5,8 @@
 .downloads/
 native/windows-x64/*
 !native/windows-x64/.gitkeep
+native/sdk/
+evidence/p3/runtime/
 *.log
 .idea/
 local.properties

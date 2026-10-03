@@ -1,6 +1,6 @@
 # Parity checklist
 
-P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/package inputs. P2 runtime and Effect Lab are implemented, but the strict pixel audit has 215 failures. Under the owner noise amendment, 18 deterministic frames and 84 noise structural frames still fail; 688 noise passes remain provisional for owner review. Mobile editing and visual parity are incomplete. Windows target: 10 22H2+ and 11, x64.
+P0 is owner-approved. P1 is closed with four passing owner-supplied mobile JSON/package inputs. P2 runtime and Effect Lab are implemented, but the strict pixel audit has 215 failures. Under the owner noise amendment, 18 deterministic frames and 84 noise structural frames still fail; 688 noise passes remain provisional for owner review. The owner explicitly authorized P3 engine work while P2 acceptance stays open. Mobile editing and visual parity are incomplete. Windows target: 10 22H2+ and 11, x64.
 
 ✅ means the stated check has evidence; ⚠️ means partial implementation or missing comparison evidence; ❌ means unimplemented. P1 contract checks below have evidence; full features remain partial until rendering/UI and mobile comparisons pass. Deterministic golden acceptance requires sRGB per-channel mean absolute error <= 2/255 and 99th percentile <= 8/255 at 0.3, 0.9, 1.5 and 2.1 s. The owner amended noise-driven specs to Gaussian/histogram/mean-luminance structural review; proposed limits in docs/p2-noise-policy.json require owner review.
 
@@ -100,6 +100,19 @@ or threshold change. [Stage investigation](evidence/p2/diagnostics/deterministic
 | Project interoperability | Version 10, read 1-10, same keys/defaults/clamps/IDs; package media remapping | ⚠️ | v10 codecs, relative-media packages and synthetic round trips pass; four real mobile JSON/package inputs pass; device-library inputs pending |
 | Desktop affordances | Shortcuts, wheel zoom, file drop, context menus, DPI, saved window position, fullscreen/Esc | ❌ | P4/P7; no editor affordance claim |
 | Platform distribution | Storage/settings, crash reports, MSIX/MSI and update channel | ❌ | P7; paths defined but services/installers absent |
+
+## Catalog item groups
+
+## P3 engine evidence
+
+| Check | Status | Evidence |
+|---|---|---|
+| In-process persistent libav decoder | ✅ | `LibavDecoderTest`: real demo D3D11VA frames and stereo PCM; independent persistent demuxers; no playback subprocess adapter. `evidence/p3/decoder-tests-output.txt` |
+| Bounded independent queues and seek generations | ✅ | Saturated video queue does not block 20 audio blocks; count/byte budgets, 26 seek requests with accurate final generation, still pixel reuse and cancellation tests pass |
+| Shared frame evaluator and audio-clock player | ❌ | P3 implementation underway; decoder evidence alone is not playback acceptance |
+| Ported stress, still-transition and PIP device scenarios | ❌ | Pending frame evaluator/player; export scenarios require P5 |
+
+See `docs/P3-REPORT.md`. P2's outstanding failures remain recorded above.
 
 ## Catalog item groups
 

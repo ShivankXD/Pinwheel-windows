@@ -42,3 +42,6 @@ These decisions amend the original brief and take precedence where they differ.
     reference manifest later. Structural limits are currently provisional.
 11. The owner clarified that "new Pi" means continue P2 parity fixes. P3 is
     not authorized by that message; P2 visual acceptance remains open.
+12. The owner subsequently explicitly authorized proceeding to P3. Build the
+    in-process video engine while retaining the unresolved P2 acceptance gates
+    and their existing evidence. This does not approve P2 pixel parity or P8.
