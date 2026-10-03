@@ -9,7 +9,7 @@ import kotlin.concurrent.thread
 import kotlin.concurrent.withLock
 import kotlin.math.ceil
 
-internal data class NativeVideo(val timeUs: Long, val width: Int, val height: Int, val bytes: ByteArray)
+internal data class NativeVideo(val timeUs: Long, val width: Int, val height: Int, val bytes: ByteArray, val hardware: Boolean)
 internal data class NativeAudio(val timeUs: Long, val samples: FloatArray)
 
 internal object LibavNative {
@@ -65,7 +65,8 @@ private class LibavDecoder(source: Path, override val config: DecodeConfig) : Me
     private var decodedAudio = 0L
     private var seekCount = 0L
     private val workers = mutableListOf<Thread>()
-    override val description: MediaDescription
+    @Volatile override var description: MediaDescription
+        private set
     private val videoBudget: Long
     private val audioBudget: Long
 
@@ -73,7 +74,7 @@ private class LibavDecoder(source: Path, override val config: DecodeConfig) : Me
         try {
             if (config.decodeVideo) videoHandle = LibavNative.open(source.toString(), 0, config.backend.ordinal, config.maxVideoEdge, config.allowSoftwareFallback)
             if (config.decodeAudio) audioHandle = LibavNative.open(source.toString(), 1, 1, 0, true)
-            check(videoHandle != 0L || audioHandle != 0L) { "No requested playable stream: $source" }
+            if(videoHandle==0L && audioHandle==0L) throw MissingMediaStream("No requested playable stream: $source")
             val v = if (videoHandle != 0L) LibavNative.description(videoHandle) else LongArray(8)
             val a = if (audioHandle != 0L) LibavNative.description(audioHandle) else LongArray(8)
             description = MediaDescription(maxOf(v[0], a[0]), v[1].toInt(), v[2].toInt(), a[3].toInt().takeIf { it > 0 },
@@ -127,6 +128,8 @@ private class LibavDecoder(source: Path, override val config: DecodeConfig) : Me
                 while (!closed && g == generation && (videos.size >= config.videoQueueFrames || videoBytes + size > videoBudget)) changed.await()
                 if (closed) return
                 if (g == generation) {
+                    val backend=if(frame.hardware)DecodeBackend.LIBAV_D3D11VA else DecodeBackend.LIBAV_SOFTWARE
+                    if(description.backend!=backend) description=description.copy(backend=backend,backendNote="Software frame after D3D11VA format negotiation")
                     videos += DecodedVideo(if (description.still) 0 else frame.timeUs, g, RgbaFrame(frame.width, frame.height, frame.bytes))
                     videoBytes += size; decodedVideo++; peak = maxOf(peak, videoBytes + audioBytes)
                     if (description.still) videoDone = true

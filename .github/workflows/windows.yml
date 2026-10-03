@@ -1,4 +1,4 @@
-name: Windows P2
+name: Windows P3
 on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
@@ -21,6 +21,8 @@ jobs:
           python scripts/verify-p1-port.py --desktop-only
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           python scripts/verify-p2-port.py --desktop-only
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python scripts/verify-p3-port.py --desktop-only
       - name: Compile catalog shaders and render P2 frames and numeric probes
         shell: pwsh
         run: ./scripts/build.ps1 -Tasks ':pinwheel-render:p2Frames',':pinwheel-render:p2NoiseSources',':pinwheel-render:p2NumericProbe'
@@ -39,9 +41,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: p2-evidence
+          name: p3-evidence
           path: |
             **/build/reports/tests/
             evidence/p0/runtime/
             evidence/p1/runtime/
             evidence/p2/
+            evidence/p3/

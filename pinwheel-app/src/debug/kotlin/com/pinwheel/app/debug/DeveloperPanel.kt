@@ -19,11 +19,14 @@ class DeveloperPanel : DebugPanel {
     override val entitlement = DebugEntitlement()
     @Composable override fun Content(services: ApplicationServices) {
         var lab by remember { mutableStateOf(false) }
+        var playerLab by remember { mutableStateOf(false) }
         Row(Modifier.fillMaxWidth().padding(12.dp), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
             Text("Developer plan: ${services.entitlement.tier}")
             Button(onClick = entitlement::toggle) { Text("Toggle Plus (debug)") }
             OutlinedButton(onClick = { lab = true }) { Text("Effect Lab") }
+            OutlinedButton(onClick = { playerLab = true }) { Text("Player Lab") }
         }
         if (lab) EffectLabWindow(onClose = { lab = false })
+        if (playerLab) PlayerLabWindow(onClose = { playerLab = false })
     }
 }

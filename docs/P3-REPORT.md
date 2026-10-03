@@ -1,70 +1,127 @@
 # P3 video engine checkpoint
 
-The owner authorized P3 on 2026-10-03 while P2 acceptance remains open. P2
-production pixels, strict limits and provisional noise limits are unchanged.
-This report records implementation checkpoints, not completed phase acceptance.
+The owner authorized P3 on 2026-10-03 while P2 acceptance remains open. This is
+an implementation checkpoint, not completed P3 or P8 acceptance. P2 production
+pixels, deterministic limits and provisional noise limits remain unchanged.
 
 ## 1. Built
 
-`pinwheel-media/LibavDecoder.kt` implements the P1 in-process decoder contract.
-`native/media/media_bridge.cpp` binds the already-pinned shared LGPL FFmpeg
-8.1 SDK through JNI. `scripts/build-media-native.ps1` verifies and extracts
-that SDK and builds the bridge with Visual Studio 2022. Bootstrap builds it
-locally and on hosted Windows; no JavaCPP GPL codec runtime is introduced.
+- **pinwheel-media:** persistent in-process libav/JNI decoder with D3D11VA and
+  reported software fallback, independent bounded video/PCM queues, accurate
+  generation-tagged seeks, still reuse and cancellation. VideoFrameSource adds
+  an eight-cursor LRU with separate main/PIP video clocks. TimelineAudioMixer
+  produces 48 kHz stereo float PCM with trim, speed, pitch, volume, fades and
+  silence padding. VideoPlayer separates audio and GL workers, uses consumed
+  JavaSound PCM frames as its master clock, drops slow video ticks, and coalesces
+  project edits for 120 ms.
+- **pinwheel-render:** GpuFrameEvaluator shares one recipe for preview/export
+  input frames: source clock, rotation/mirror, crop, mobile grade/legacy matrix,
+  canvas Fit/Fill/blur, timed PIP masks/geometry/animation/stacking, clip motion,
+  existing P2 effects and caller-painted targeted layers. Preview sizing uses a
+  720 px short side. Inactive GPU passes are borrowed without changing pixels.
+- **native/media:** C++ bridge dynamically links the already-pinned LGPL FFmpeg
+  8.1 shared libraries. Bootstrap verifies and extracts matching SDK headers and
+  builds with Visual Studio 2022/CMake. No playback subprocess or GPL codec
+  runtime is added. The Media3 1.11.1 Sonic DSP source and Apache-2.0 notice are
+  retained with a hash audit allowing only dependency/package adaptations.
+- **pinwheel-app:** debug-only Player Lab has real audio output, play/pause,
+  scrub/restart and moving circular PIP. Jar checks exclude both Labs and the
+  debug entitlement toggle from release. Production editor UI remains P4.
+- **core/platform/photo:** existing P1 policies and tests remain intact; no
+  beyond-mobile features are implemented.
 
-Video and audio have independent persistent demux/codec contexts. D3D11VA
-frames transfer to RGBA for ANGLE upload; software fallback is explicit in
-configuration and description. Decode output can be downscaled. Stereo float
-PCM is 48 kHz. Separate frame/block/byte budgets stop video backpressure from
-blocking audio. Seek requests flush queues and tag delivery with a generation;
-workers seek to a previous keyframe and decode through the requested timestamp.
-Stills decode once and reuse the same bytes across split/trim seeks. Cancellation
-interrupts libav, wakes queue waits, joins workers and then frees contexts.
-
-Frame evaluation, clocked playback, PIP and the ported device-test scenarios
-are being implemented next. P5 encoder/export assertions remain future work.
-
-## 2. Tests
+## 2. Tests and failures
 
 ```text
-Media tests: 10 passed, 0 failures, 0 errors, 0 skipped
-Real demo: D3D11VA, 960x720 RGBA, 48 kHz stereo PCM
-Rapid seeks: 25 superseded requests plus final accurate generation passed
-Video queue saturation: 20 audio blocks consumed without draining video passed
-Known PCM tone: stereo sample values match independently generated 440 Hz input
-Still seek: decoded pixel array reused at 1.629 s passed
-Cancellation: no remaining libav worker threads passed
+Core:     205 passed
+Platform:   2 passed
+Media:     15 passed
+Render:    57 passed
+Total:    279 passed, 0 failures, 0 errors, 0 skipped
+All 16 named still-transition playback scenarios passed
+Local engine-only stress: 45.69 fps; maximum frame gap 1555.79 ms
+Unchanged local limits: >=24 fps, <=2500 ms frame gap; PASS
+35 inactive/history/legacy/glow RGBA byte-exact regression comparisons passed
+Real hardware audio-clock playback reached 2.6 s; paused 1.4 s PIP seek passed
+Local Player Lab first frame: 1231.17 ms; warmed seek: 24.37 ms
+Source audit: 404 P1 hashes, eight P2 literals/seven source hashes,
+             nine P3 sections/assets/nine sources; Sonic DSP unchanged
 ```
 
-[Native build output](../evidence/p3/native-build-output.txt),
-[decoder test output](../evidence/p3/decoder-tests-output.txt).
-The initial test incorrectly assumed the demo's first audio block was audible.
-That assertion failed; the full [initial output](../evidence/p3/decoder-tests-initial-failure.txt)
-is retained. An independent generated PCM tone now verifies actual sample
-conversion rather than assuming a non-silent movie intro. Queue and seek
-assertions are retained. Third-party SDK headers emit conversion warnings;
-the bridge builds successfully.
+[Full runtime output](../evidence/p3/runtime-tests-output.txt),
+[per-module summary](../evidence/p3/test-summary.json),
+[stress metrics and retained limits](../evidence/p3/performance.json),
+[real audio/window output](../evidence/p3/player-lab-output.txt),
+[source audit](../evidence/p3/source-audit.txt).
+
+The initial engine run produced 224 frames in 25.43 s, about 8.8 fps, below
+24 fps. The complete [initial performance output](../evidence/p3/stress-initial-performance.txt)
+is retained. Removing unnecessary inactive/neutral full-frame passes raised the
+measured local rate; 35 byte-exact comparisons verify output preservation.
+No shader, active-stage effect or threshold was changed to obtain that result.
+
+The cold first activation of the PIP input took **204.42 ms**, exceeding the
+150 ms seek budget, while its warmed repeat took 21.20 ms in the frame harness
+and 24.37 ms in the real Player Lab. This remains a P3 latency bug: decoder/input
+setup is still on the first-use render path and needs asynchronous prefetch.
+The local 1231 ms first-frame probe is one sample, not broad hardware qualification.
+See [individual frame timings](../evidence/p3/engine-frames.json).
+
+Other full failing outputs are retained:
+[initial decoder test](../evidence/p3/decoder-tests-initial-failure.txt) assumed an
+incorrectly non-silent demo intro; an independent known PCM tone replaces that
+assumption. [Initial playback compilation](../evidence/p3/playback-tests-initial-output.txt)
+had a Kotlin test declaration typo. [Initial frame evidence compilation](../evidence/p3/frame-evidence-initial-failure.txt)
+used the wrong metadata field name. These mistakes were corrected; limits were
+not relaxed. FFmpeg warns about deprecated JPEG pixel format; conversion sets
+colour range explicitly and current pixel assertions pass. SDK headers emit
+conversion warnings but build successfully.
+
+P3 tests use a bounded injected consumed-PCM clock. The Player Lab separately
+uses real Windows JavaSound output. Local stress is NVIDIA RTX 4060 Laptop/D3D11;
+no Intel Iris Xe result or complete painted heavy-project result is claimed.
+The [test map](P3-TEST-MAP.md) distinguishes retained mobile assertions from
+frame-only adaptations, reduced edit fixtures and future encoder tests.
 
 ## 3. Visual evidence
 
-No new editor screen is claimed in this decoder checkpoint. P3 playback/frame
-evidence will accompany the frame evaluator. Existing P2 paired mobile screens
-and golden heatmaps remain in `evidence/p2`.
+[Actual Player Lab](../evidence/p3/player-lab.png),
+[paired mobile editor context](../evidence/p3/mobile-player-lab.png),
+[engine PIP frames](../evidence/p3/frames/pip),
+[frame timings/backend descriptions](../evidence/p3/engine-frames.json).
+The pair is explicitly a P3 harness beside a P4 editor reference, not editor UI
+parity. Only screenshot 07 is copied into the pair; private gallery screenshot
+06 is not published. Known-colour PIP fixtures are byte-identical mobile test
+assets, not fabricated mobile goldens.
 
-## 4. Parity
+## 4. Parity and remaining work
 
-`PARITY.md` records the in-process decoder evidence and P3's remaining scope.
-P2 remains at 18 deterministic and 84 provisional structural frame failures.
+[PARITY.md](../PARITY.md) and [P3 test map](P3-TEST-MAP.md) record evidence and gaps.
+P3 remains open for full sticker/title/caption/photo painters, the full heavy
+seek/edit/audio-cut matrices, asynchronous decoder prefetch, HDR-to-SDR tone
+mapping, combined voice/speed/DSP output qualification and target hardware
+budgets. HDR PQ/HLG is explicitly rejected currently; silently wrong SDR is not
+accepted. HEIC/EXIF handling and full-size 4K decode budgets remain unqualified.
+Encoder, ending card and actual 720p/1080p/every-effect export assertions are P5.
 
-## 5. Owner inputs and limits
+P1's four real inputs remain passing. P2 still has 215 strict-audit failures;
+under the owner amendment, 18 deterministic frames and 84 provisional structural
+frames fail. The 688 structural passes remain provisional. Current gate output
+is retained in [P1/P2 checks](../evidence/p3/p1-p2-gates-output.txt); no production
+frame or comparison threshold is replaced by P3 fixtures.
 
-Phone GPU/precision and raw/neutral probes, device-library JSONs, and review of
-provisional structural limits are still pending for P2. These do not block P3
-engine work. Google Desktop OAuth is still needed before P7. No phone or
-emulator action is authorized or performed.
+## 5. Owner inputs
+
+P2 phone GL_RENDERER/GL_VERSION, precision/raw/neutral probes, device-library
+JSONs and owner review of provisional noise limits are still pending. Google
+Desktop OAuth client ID is needed before P7. Shared entitlement/backend direction
+is recorded. No new owner permission is needed for this engine checkpoint.
 
 ## 6. Read-only inputs and publication
 
-Mobile HEAD is `2a417fd29ef43a8792eb4d58cbe4d102327b11c9`, status exactly
-`?? output/`. It has not been built or modified. Reference inputs are read-only.
-Every checkpoint is committed with the owner identity and pushed immediately.
+Mobile HEAD remains 2a417fd29ef43a8792eb4d58cbe4d102327b11c9 and status exactly
+`?? output/`. It was not built or modified. All 1715 reference files retain their
+pinned SHA-256 values. [Read-only audit](../evidence/p3/read-only-inputs.json).
+Every checkpoint uses the owner's configured author/committer identity, no
+em dash or AI attribution trailer, and is pushed immediately. Hosted clean-build
+evidence is recorded after the implementation push.

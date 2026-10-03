@@ -1,0 +1,39 @@
+{
+  "modules": [
+    {
+      "module": "pinwheel-core",
+      "tests": 205,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "pinwheel-media",
+      "tests": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "pinwheel-platform",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "pinwheel-render",
+      "tests": 57,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "total": {
+    "tests": 279,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "scope": "Complete core/platform/media/render runtime checks; release/debug jar controls. No encoded export or full painted mobile stress acceptance."
+}

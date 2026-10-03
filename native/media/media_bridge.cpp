@@ -170,9 +170,11 @@ extern "C" JNIEXPORT jobject JNICALL Java_com_pinwheel_media_LibavNative_video(J
     try {
         auto& d = decoder(handle); if (!d.receive()) return nullptr;
         int64_t pts = d.timeUs(); AVFrame* image = d.frame;
-        if (image->format == d.hardwareFormat && d.hardwareFormat != AV_PIX_FMT_NONE) {
+        bool usedHardware = image->format == d.hardwareFormat && d.hardwareFormat != AV_PIX_FMT_NONE;
+        if (usedHardware) {
             av_frame_unref(d.transferred); checked(av_hwframe_transfer_data(d.transferred, image, 0), "transfer D3D11VA frame"); image = d.transferred;
         }
+        if (d.frame->color_trc == AVCOL_TRC_SMPTE2084 || d.frame->color_trc == AVCOL_TRC_ARIB_STD_B67) throw std::runtime_error("HDR to SDR tone mapping is not yet supported by this decoder");
         int w = image->width, h = image->height;
         if (d.maxEdge > 0 && std::max(w, h) > d.maxEdge) { double factor = static_cast<double>(d.maxEdge) / std::max(w, h); w = std::max(2, static_cast<int>(std::round(w * factor))); h = std::max(2, static_cast<int>(std::round(h * factor))); }
         d.scale = sws_getCachedContext(d.scale, image->width, image->height, static_cast<AVPixelFormat>(image->format), w, h, AV_PIX_FMT_RGBA, SWS_BILINEAR, nullptr, nullptr, nullptr);
@@ -183,18 +185,21 @@ extern "C" JNIEXPORT jobject JNICALL Java_com_pinwheel_media_LibavNative_video(J
         if (sws_scale(d.scale, image->data, image->linesize, 0, image->height, outputs, strides) != h) throw std::runtime_error("Incomplete video conversion");
         auto pixels = env->NewByteArray(static_cast<jsize>(bytes.size())); if (!pixels) return nullptr;
         env->SetByteArrayRegion(pixels, 0, static_cast<jsize>(bytes.size()), reinterpret_cast<const jbyte*>(bytes.data()));
-        auto type = env->FindClass("com/pinwheel/media/NativeVideo"); auto result = env->NewObject(type, env->GetMethodID(type, "<init>", "(JII[B)V"), static_cast<jlong>(pts), w, h, pixels);
+        auto type = env->FindClass("com/pinwheel/media/NativeVideo"); auto result = env->NewObject(type, env->GetMethodID(type, "<init>", "(JII[BZ)V"), static_cast<jlong>(pts), w, h, pixels, static_cast<jboolean>(usedHardware));
         av_frame_unref(d.frame); return result;
     } catch (const std::exception& error) { fail(env, error); return nullptr; }
 }
 extern "C" JNIEXPORT jobject JNICALL Java_com_pinwheel_media_LibavNative_audio(JNIEnv* env, jobject, jlong handle) {
     try {
-        auto& d = decoder(handle); if (!d.receive()) return nullptr;
-        int64_t pts = d.timeUs(); int64_t delay = swr_get_delay(d.resample, d.codec->sample_rate);
-        int capacity = static_cast<int>(av_rescale_rnd(delay + d.frame->nb_samples, 48000, d.codec->sample_rate, AV_ROUND_UP));
+        auto& d = decoder(handle); bool received = d.receive();
+        int64_t delay = swr_get_delay(d.resample, d.codec->sample_rate);
+        if (!received && delay == 0) return nullptr;
+        int64_t pts = received ? d.timeUs() : d.nextAudioUs;
+        int capacity = static_cast<int>(av_rescale_rnd(delay + (received ? d.frame->nb_samples : 0), 48000, d.codec->sample_rate, AV_ROUND_UP));
         std::vector<float> values(static_cast<size_t>(capacity) * 2); uint8_t* destination[] = { reinterpret_cast<uint8_t*>(values.data()) };
-        int samples = swr_convert(d.resample, destination, capacity, const_cast<const uint8_t**>(d.frame->extended_data), d.frame->nb_samples);
+        int samples = swr_convert(d.resample, destination, capacity, received ? const_cast<const uint8_t**>(d.frame->extended_data) : nullptr, received ? d.frame->nb_samples : 0);
         checked(samples, "convert audio");
+        if (samples == 0 && !received) return nullptr;
         if (d.nextAudioUs == AV_NOPTS_VALUE) d.nextAudioUs = pts - av_rescale(delay, AV_TIME_BASE, d.codec->sample_rate);
         pts = d.nextAudioUs; d.nextAudioUs += av_rescale(samples, AV_TIME_BASE, 48000);
         auto pcm = env->NewFloatArray(samples * 2); if (!pcm) return nullptr; env->SetFloatArrayRegion(pcm, 0, samples * 2, values.data());

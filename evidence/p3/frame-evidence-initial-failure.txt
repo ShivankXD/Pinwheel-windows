@@ -1,0 +1,86 @@
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-platform:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-photo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-photo:processResources NO-SOURCE
+> Task :pinwheel-platform:processResources NO-SOURCE
+> Task :pinwheel-app:convertXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-photo:processTestResources NO-SOURCE
+> Task :pinwheel-render:processTestResources NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-platform:processTestResources NO-SOURCE
+> Task :pinwheel-media:processTestResources NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForMain NO-SOURCE
+> Task :pinwheel-app:generateResourceAccessorsForMain SKIPPED
+> Task :pinwheel-app:generateActualResourceCollectorsForMain SKIPPED
+> Task :pinwheel-app:generateComposeResClass SKIPPED
+> Task :pinwheel-app:assembleMainResources UP-TO-DATE
+> Task :pinwheel-app:processResources UP-TO-DATE
+> Task :pinwheel-app:convertXmlValueResourcesForTest NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForTest NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForTest NO-SOURCE
+> Task :pinwheel-app:generateResourceAccessorsForTest SKIPPED
+> Task :pinwheel-app:assembleTestResources UP-TO-DATE
+> Task :pinwheel-app:processTestResources UP-TO-DATE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-photo:compileKotlin NO-SOURCE
+> Task :pinwheel-photo:compileJava NO-SOURCE
+> Task :pinwheel-photo:classes UP-TO-DATE
+> Task :pinwheel-photo:jar UP-TO-DATE
+> Task :pinwheel-photo:compileTestKotlin NO-SOURCE
+> Task :pinwheel-photo:compileTestJava NO-SOURCE
+> Task :pinwheel-photo:testClasses UP-TO-DATE
+> Task :pinwheel-photo:test NO-SOURCE
+> Task :pinwheel-photo:check UP-TO-DATE
+> Task :pinwheel-media:compileKotlin UP-TO-DATE
+> Task :pinwheel-platform:compileKotlin UP-TO-DATE
+> Task :pinwheel-platform:compileJava NO-SOURCE
+> Task :pinwheel-platform:classes UP-TO-DATE
+> Task :pinwheel-media:compileJava UP-TO-DATE
+> Task :pinwheel-core:compileTestKotlin UP-TO-DATE
+> Task :pinwheel-media:classes UP-TO-DATE
+> Task :pinwheel-core:compileTestJava NO-SOURCE
+> Task :pinwheel-core:processTestResources UP-TO-DATE
+> Task :pinwheel-core:testClasses UP-TO-DATE
+> Task :pinwheel-platform:jar UP-TO-DATE
+> Task :pinwheel-media:jar UP-TO-DATE
+> Task :pinwheel-core:test UP-TO-DATE
+> Task :pinwheel-core:check UP-TO-DATE
+> Task :pinwheel-media:compileTestKotlin UP-TO-DATE
+> Task :pinwheel-media:compileTestJava NO-SOURCE
+> Task :pinwheel-platform:compileTestKotlin UP-TO-DATE
+> Task :pinwheel-media:testClasses UP-TO-DATE
+> Task :pinwheel-platform:compileTestJava NO-SOURCE
+> Task :pinwheel-platform:testClasses UP-TO-DATE
+> Task :pinwheel-media:test UP-TO-DATE
+> Task :pinwheel-media:check UP-TO-DATE
+> Task :pinwheel-platform:test UP-TO-DATE
+> Task :pinwheel-platform:check UP-TO-DATE
+
+> Task :pinwheel-render:compileKotlin FAILED
+e: file:///D:/Pinwheel-Windows/pinwheel-render/src/main/kotlin/com/pinwheel/render/qa/P3Evidence.kt:31:72 Cannot infer type for type parameter 'R'. Specify it explicitly.
+e: file:///D:/Pinwheel-Windows/pinwheel-render/src/main/kotlin/com/pinwheel/render/qa/P3Evidence.kt:32:161 Unresolved reference 'decoderNote'.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':pinwheel-render:compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 3s
+20 actionable tasks: 1 executed, 19 up-to-date

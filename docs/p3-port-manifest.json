@@ -1,0 +1,116 @@
+{
+  "ports": [
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoGrade.kt",
+      "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/VideoGradeRecipes.kt",
+      "kind": "literal",
+      "literal": "GRADE_FRAGMENT",
+      "sha256": "e7b64bc6d9fddab773fae40dfd85e40686b5a5240ae52b9b232058ad287509eb"
+    },
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoCreativeEffects.kt",
+      "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/VideoCanvasShaders.kt",
+      "kind": "literal",
+      "literal": "CANVAS_FRAGMENT",
+      "sha256": "b367ebe7d07821a3773e4149e818991f8915057d23ff807a4423214aa3264c14"
+    },
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoCreativeEffects.kt",
+      "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/VideoCanvasShaders.kt",
+      "kind": "literal",
+      "literal": "BLUR_FRAGMENT",
+      "sha256": "3b1f1b2f9931d9a5acf2147a9e0d7e52c5ad7efdfd13b4334752d0ae187fbfdb"
+    },
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoCreativeEffects.kt",
+      "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/VideoCanvasShaders.kt",
+      "kind": "literal",
+      "literal": "BLUR_CANVAS_FRAGMENT",
+      "sha256": "4de710a4afea41b12ddbd3ecb81f608f8e76abe11791298402cda9b1894aff6d"
+    },
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoGrade.kt",
+      "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/VideoGradeRecipes.kt",
+      "kind": "section",
+      "pattern": "internal data class FilterRecipe\\([\\s\\S]*?    fun find\\(id: String\\)[^\\n]*",
+      "sha256": "2f8f1d1f9cba3c1d5164c68d73394962a4412b50447d0ce7c92d68bcfb9cb85a"
+    },
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoGrade.kt",
+      "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/VideoGradeRecipes.kt",
+      "kind": "section",
+      "pattern": "internal fun VideoClipEdits\\.needsGrade\\(\\): Boolean[\\s\\S]*?(?=\\n\\n)",
+      "sha256": "96a35d3067b35d0ceeb9d6bebcb72b3c6fd63ca5d0ae28a4c3f43b986c6dc3b2"
+    },
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoOverlayGeometry.kt",
+      "target": "pinwheel-render/src/main/kotlin/com/pinwheel/render/OverlayPose.kt",
+      "kind": "section",
+      "pattern": "internal fun overlayPose\\([\\s\\S]*?\\n}",
+      "sha256": "7c687767ff2f9e0fa645cda8757b5ab08aa3ba775a71be2549ea22549ba3a55e"
+    },
+    {
+      "source": "app/src/androidTest/assets/pip-base.mp4",
+      "target": "assets/p3/pip-base.mp4",
+      "kind": "asset",
+      "sha256": "1f87eb08a435549e2883aa65d4014e3cb8417f425a5a8f7df5053be68cafb1aa"
+    },
+    {
+      "source": "app/src/androidTest/assets/pip-layer.mp4",
+      "target": "assets/p3/pip-layer.mp4",
+      "kind": "asset",
+      "sha256": "580de62f72a383588991370e546bf79ffb360eb79107f9755c624a43f402f02f"
+    }
+  ],
+  "sources": [
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoGrade.kt",
+      "sha256": "881ab01f280271c00bf9f7b0d7459f791788ddac463388b109907fb1a48ac657"
+    },
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoCreativeEffects.kt",
+      "sha256": "750002ef9b7328b6a74e29796413b8d0c651037aa8a2b300c09d96b2515258ef"
+    },
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoOverlayGeometry.kt",
+      "sha256": "b1352d519acc838596bfc242cd4c4acb4fd2f7ef049252b62e5d4e2f21e9412f"
+    },
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoRenderGraph.kt",
+      "sha256": "afd3366f78e41758b39d055294561fe6a9aee966b50ab12ba66fbe13d9d94fd6"
+    },
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoPipCompositor.kt",
+      "sha256": "3efc564f0522242a74f8a411e8e70c9412242e3fd7d6e83c040ca03588739c97"
+    },
+    {
+      "source": "app/src/main/java/com/nativeoffice/studio/media/video/VideoClipMotionEffect.kt",
+      "sha256": "fcd9b2634361f61853d00d83220ebc66f31418998f5d64a5f357c6ce3ecf1e13"
+    },
+    {
+      "source": "app/src/androidTest/java/com/nativeoffice/studio/VideoStressTest.kt",
+      "sha256": "d7ebc83833acf986bed2d5bdcb564c4cc64fe42e8627fce7606250d41772647f"
+    },
+    {
+      "source": "app/src/androidTest/java/com/nativeoffice/studio/VideoStillTransitionPlaybackTest.kt",
+      "sha256": "d44b57c8a7bc32dccc3f0d5bc6e52317b95dc6b32e0d7709a7bec73e3404957f"
+    },
+    {
+      "source": "app/src/androidTest/java/com/nativeoffice/studio/VideoPipTest.kt",
+      "sha256": "3c5ebd2f215edc7b28a6dde6020843d2a99d0e91f53de0caeedc4dda59e568f8"
+    }
+  ],
+  "sonic": {
+    "url": "https://raw.githubusercontent.com/androidx/media/1.11.1/libraries/common/src/main/java/androidx/media3/common/audio/Sonic.java",
+    "original": "native/provenance/Sonic-1.11.1.java.txt",
+    "target": "pinwheel-media/src/main/java/com/pinwheel/media/Sonic.java",
+    "sourceSha256": "6fdaffeca98ad1e4d3d0bfc84eeba5501fb2b69adb8d1f5201e9b76547b4fa04",
+    "targetSha256": "37d60ba4a49c4952023cedd169d02c7aaec0da12825ad4db61e6f7d63cbf498c",
+    "license": "Apache-2.0",
+    "adaptations": [
+      "package",
+      "remove checker nullness annotation",
+      "replace Guava checkState without changing DSP"
+    ]
+  }
+}

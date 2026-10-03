@@ -1,0 +1,3 @@
+PASS 404 source, test and asset hashes; all GLSL literals preserved
+PASS 8 unchanged P2 legacy/glow/layer shader literals; 7 pinned mobile runtime source hashes
+PASS 9 unchanged P3 port sections/assets; unchanged Media3 1.11.1 Sonic DSP; in-process playback files; 9 pinned read-only mobile sources

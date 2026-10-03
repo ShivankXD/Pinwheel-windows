@@ -1,0 +1,20 @@
+{
+  "durationMs": 25000,
+  "renderedFrames": 1151,
+  "elapsedSeconds": 25.1922232,
+  "fps": 45.688702853347216,
+  "maximumFrameGapMs": 1555.7933,
+  "droppedFrames": 331,
+  "fpsMin": 24,
+  "freezeMsMax": 2500,
+  "passed": true,
+  "hardware": "Local NVIDIA RTX 4060 Laptop GPU, ANGLE D3D11; injected bounded PCM consumption clock",
+  "scope": "Engine-only 720x1280, eight clips, 40 FX, three sounds and video PIP. Missing sticker/title/caption/photo painters; no Intel Iris Xe or full mobile stress acceptance.",
+  "initialFailure": {
+    "frames": 224,
+    "elapsedSeconds": 25.4252648,
+    "fps": 8.810134398285598,
+    "reason": "Inactive and neutral full-frame GPU passes caused excessive work. Removing them improved local results; 35 RGBA byte-exact regression comparisons pass.",
+    "output": "evidence/p3/stress-initial-performance.txt"
+  }
+}

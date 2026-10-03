@@ -1,0 +1,41 @@
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-render:processTestResources NO-SOURCE
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-media:processTestResources NO-SOURCE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-media:compileKotlin
+> Task :pinwheel-media:compileJava
+> Task :pinwheel-media:classes
+> Task :pinwheel-media:jar
+
+> Task :pinwheel-media:compileTestKotlin FAILED
+e: file:///D:/Pinwheel-Windows/pinwheel-media/src/test/kotlin/com/pinwheel/media/SonicTest.kt:12:11 Syntax error: Expecting member declaration.
+e: file:///D:/Pinwheel-Windows/pinwheel-media/src/test/kotlin/com/pinwheel/media/SonicTest.kt:12:64 Syntax error: Expecting member declaration.
+e: file:///D:/Pinwheel-Windows/pinwheel-media/src/test/kotlin/com/pinwheel/media/SonicTest.kt:12:65 Syntax error: Expecting member declaration.
+e: file:///D:/Pinwheel-Windows/pinwheel-media/src/test/kotlin/com/pinwheel/media/SonicTest.kt:12:67 Syntax error: Expecting member declaration.
+e: file:///D:/Pinwheel-Windows/pinwheel-media/src/test/kotlin/com/pinwheel/media/SonicTest.kt:12:67 Function declaration must have a name.
+
+> Task :pinwheel-render:compileKotlin
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':pinwheel-media:compileTestKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 8s
+7 actionable tasks: 5 executed, 2 up-to-date

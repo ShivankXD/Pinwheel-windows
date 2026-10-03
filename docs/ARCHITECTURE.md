@@ -1,4 +1,4 @@
-# Desktop architecture through P2
+# Desktop architecture through P3 engine checkpoints
 
 P0 implements the brief's six module boundaries. The core has no Compose, Android,
 AWT or native dependency. Native adapters return `RgbaFrame`: straight-alpha,
@@ -11,7 +11,8 @@ boundary; the pure math required by mobile JVM tests is already in core.
 P1 adds version-10 JSON, codecs, file stores, catalogs, typed serializable commands,
 ProjectSession, persisted undo, gesture drafts and durable autosave. Core editing
 and export policy consumes AuthProvider/Entitlement rather than UI state.
-There is no editor UI, production playback/export or MCP implementation yet.
+P3 adds in-process playback and a debug Player Lab. The editor UI, encoder/export
+and MCP remain later phases.
 
 ## Implemented contracts and later phases
 
@@ -50,8 +51,8 @@ buffers and seek resets. EffectRuntime executes legacy effects, main catalog
 effects, Soft Glow, cut transitions, library looks and targeted layer effects
 in mobile order. Caller-supplied layer frames are already painted at the layer
 effect size, converted to premultiplied input and processed with colour/coverage
-passes before compositing. Geometry, stickers, PIP and titles/caption painters
-remain later work. Main and layer CPU boundaries are top-down straight RGBA8.
+passes before compositing. P3 adds geometry and video PIP; stickers and
+title/caption painters remain open. Main and layer CPU boundaries are top-down straight RGBA8.
 
 Preview tiles have their own source-backed crop/resample, SWAY, history offsets,
 orientation and RGB565 conversion. Packed channel values come from Skia; normalized 5/6-bit expansion matches mobile PNG encoding rather than desktop bit repetition. Effect Lab creates a renderer on a dedicated
@@ -61,8 +62,8 @@ allocations; closing one context leaves other live renderers usable.
 
 Catalog GLSL stays unchanged. Golden failures are recorded in P2-PARITY-BUGS.md;
 diagnostic WARP/neutral frames never replace hardware golden outputs. P2 is not
-accepted while its 252 strict-audit frame comparisons fail. No P3 evaluator/player
-or P5 encoder has been added.
+accepted while its 215 strict-audit frame comparisons fail. P3's evaluator/player
+uses the existing P2 recipe; the P5 encoder has not been added.
 
 Storage resolves to `%APPDATA%/Pinwheel/{projects,originals}` and
 `%LOCALAPPDATA%/Pinwheel/{cache,crash-reports}`. P0 only defines paths;
@@ -75,4 +76,31 @@ and complete evidence for all 422 specs. 193 noise specs use structural review;
 229 deterministic specs retain strict pixel limits. Gaussian convolution and
 histogram transport live in render QA, never in production frame evaluation.
 The original pixel audit remains available. All structural limits are provisional
-for owner review, and the current owner-policy gate still fails on 130 frames.
+for owner review, and the current owner-policy gate still fails on 102 frames.
+
+P3's JNI bridge dynamically links the pinned LGPL shared libav libraries. Video
+and PCM demuxers persist independently, with generation-tagged bounded queues,
+D3D11VA video decode and explicit software fallback. HDR PQ/HLG currently raises
+an explicit unsupported tone-map error rather than silently treating HDR as SDR.
+The video LRU keeps at most eight decoder cursors and one look-ahead frame each;
+stills sharing a URI reuse decoded bytes, while main/PIP video clocks use distinct
+identities. Frame selection owns accurate keyframe seeks and forward reuse.
+
+GpuFrameEvaluator owns one ANGLE thread and its decode LRU. The shared preview/
+export stages are source timing, rotation/mirror, crop, grade or legacy matrix,
+canvas, timed video PIP composition, clip motion, existing P2 composition FX and
+targeted painted-layer effects. Export-mode ordinary photo composition is
+incomplete without mobile border/shadow painters; caller-supplied painted layers
+are a contract, not a completed sticker/title/caption renderer. Full-size 4K
+decode budgets and encoder handoff are not qualified yet.
+
+VideoPlayer owns separate PCM and GL workers. Consumed JavaSound device frames
+are the only production master clock. Slow video drops ticks while audio
+continues; seek generations flush audio, invalidate stale video and reset
+history. Project edits debounce for 120 ms and compare render/audio recipes.
+Plain live-overlay changes do not rebuild either recipe. TimelineAudioMixer
+delivers stereo float PCM at 48 kHz, pads silence and applies trim, speed, pitch,
+voice DSP, volume and envelopes. Media3 1.11.1 Sonic math is pinned unchanged;
+combined voice/speed/DSP processing order still needs mobile output qualification.
+P3 tests use an injected bounded clocked PCM sink; the debug window additionally
+verifies real Windows JavaSound output. Neither proves the Intel Iris Xe budget.

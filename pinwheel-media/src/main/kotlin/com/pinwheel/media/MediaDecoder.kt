@@ -23,6 +23,7 @@ data class DecodedAudio(val presentationTimeUs: Long, val generation: Long,
 
 /** In-process factories only. P0 FfmpegDecoder deliberately does not implement this interface. */
 interface MediaDecoderFactory { fun open(source: Path, config: DecodeConfig): MediaDecoder }
+class MissingMediaStream(message: String) : IllegalStateException(message)
 interface MediaDecoder : AutoCloseable {
     val description: MediaDescription
     val config: DecodeConfig

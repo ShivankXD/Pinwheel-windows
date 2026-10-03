@@ -1,0 +1,118 @@
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-media:processTestResources NO-SOURCE
+> Task :pinwheel-render:processTestResources NO-SOURCE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-media:compileKotlin
+> Task :pinwheel-media:compileJava UP-TO-DATE
+> Task :pinwheel-media:classes UP-TO-DATE
+> Task :pinwheel-media:jar
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+> Task :pinwheel-render:jar
+> Task :pinwheel-media:compileTestKotlin
+> Task :pinwheel-media:compileTestJava NO-SOURCE
+> Task :pinwheel-media:testClasses UP-TO-DATE
+> Task :pinwheel-render:compileTestKotlin
+> Task :pinwheel-render:compileTestJava NO-SOURCE
+> Task :pinwheel-render:testClasses UP-TO-DATE
+[swscaler @ 0000020699542740] deprecated pixel format used, make sure you did set range correctly
+
+> Task :pinwheel-media:test
+
+FfmpegDecoderTest > rejectsMissingMediaAndInvalidTimes() PASSED
+
+FfmpegDecoderTest > bundledRuntimeIsSharedLgpl() PASSED
+
+FfmpegDecoderTest > decodesRealDemoAtTwoTimesWithoutChangingSource() STANDARD_OUT
+    PASS FFmpeg demo decode at 0 and 1 s: 960x720 RGBA; original SHA-256 unchanged
+
+FfmpegDecoderTest > decodesRealDemoAtTwoTimesWithoutChangingSource() PASSED
+
+LibavDecoderTest > stillReusesDecodedPixelsAfterTrimAndSeek() PASSED
+
+LibavDecoderTest > rapidSeeksRejectStaleFramesAndLandBeyondPreviousKeyframe() PASSED
+
+LibavDecoderTest > cancellationWhileQueuesAreFullReleasesWorkers() PASSED
+
+LibavDecoderTest > persistentContextsDecodeHardwareVideoAndStereoAudio() STANDARD_OUT
+    PASS in-process libav: LIBAV_D3D11VA, D3D11VA with CPU transfer for ANGLE upload; video 960x720, 48 kHz stereo
+
+LibavDecoderTest > persistentContextsDecodeHardwareVideoAndStereoAudio() PASSED
+
+LibavDecoderTest > fullVideoQueueCannotBlockAudioAndBothRemainBounded() PASSED
+
+LibavDecoderTest > decodesKnownPcmToneWithoutAProcess() PASSED
+
+[swscaler @ 0000020699bbd6c0] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 00000206a05d1f80] deprecated pixel format used, make sure you did set range correctly
+
+> Task :pinwheel-render:test
+
+VideoFrameEvaluatorTest > previewAndExportUseIdenticalStagesOnMatchingInputs() PASSED
+
+VideoFrameEvaluatorTest > previewShortSideIs720AndUnsetSideIsEven() PASSED
+
+VideoFrameEvaluatorTest > geometryMirrorsBeforeClockwiseRotationAndRetainsTopDownOrientation() PASSED
+
+VideoFrameEvaluatorTest > audioTailFillerUsesExactCanvasSize() PASSED
+
+> Task :pinwheel-media:test
+
+LibavDecoderTest > softwareBackendAndDecodeScaleAreExplicit() PASSED
+
+SonicTest > voicePitchKeepsDurationAndUsesMobilePresetFactors() PASSED
+
+SonicTest > tempoPreservesPitchAcrossTheMobileSpeedRange() PASSED
+
+> Task :pinwheel-render:test
+
+VideoPipTest > delayedTrimmedMovingVideoHasTransparentMask() PASSED
+
+VideoPipTest > overlappingVideoLayersKeepTheirStackingOrder() PASSED
+
+VideoPipTest > opacityAndEntranceExitAnimationMatchMobileSamples() PASSED
+
+VideoPipTest > endedInputsDropOutWithoutChangingRemainingLayerIdentity() PASSED
+
+VideoPlaybackClockTest > slowVideoDropsFramesWhileConsumedAudioAdvances() PASSED
+
+[swscaler @ 000001d1cfd16d40] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 000001d216b5ef40] deprecated pixel format used, make sure you did set range correctly
+
+> Task :pinwheel-render:test
+
+VideoPlaybackClockTest > thirtyRapidEditsCoalesceAndThenPlay() PASSED
+
+[swscaler @ 000001d215defe40] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 000001d215defe40] deprecated pixel format used, make sure you did set range correctly
+
+> Task :pinwheel-render:test
+
+VideoPlaybackClockTest > pausedSeekAndRapidSupersedingSeeksOnlyPublishTheFinalGeneration() PASSED
+
+VideoStillTransitionPlaybackTest > seekIntoTransitionThenPlayDoesNotStall() PASSED
+
+[swscaler @ 000001d215defe40] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 000001d215defe40] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 000001d216386700] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 000001d2165ad380] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 000001d2165ad380] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 000001d2165ad380] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 000001d2165ad380] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 000001d2165ad380] deprecated pixel format used, make sure you did set range correctly
+
+> Task :pinwheel-render:test
+
+VideoStillTransitionPlaybackTest > samePhotoSplitTransitionAndEffectsPlayThroughAllMobileCombinations() PASSED
+
+BUILD SUCCESSFUL in 42s
+11 actionable tasks: 8 executed, 3 up-to-date

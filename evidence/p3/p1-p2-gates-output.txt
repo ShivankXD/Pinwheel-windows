@@ -1,0 +1,56 @@
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-media:compileKotlin UP-TO-DATE
+> Task :pinwheel-media:compileJava UP-TO-DATE
+> Task :pinwheel-media:classes UP-TO-DATE
+> Task :pinwheel-media:jar UP-TO-DATE
+> Task :pinwheel-render:compileKotlin UP-TO-DATE
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+
+> Task :pinwheel-render:mobilePackagesCheck
+Real mobile projects: 4 passed, 0 failed, provided
+Report: D:\Pinwheel-Windows\evidence\p1\runtime\reference-status.json
+
+> Task :pinwheel-render:goldenAudit
+Golden references: 1473 passed, 215 failed, 0 missing
+Report: D:\Pinwheel-Windows\evidence\p1\runtime\reference-status.json
+
+> Task :pinwheel-render:goldenCheck
+Structural comparisons: 100 noise frames
+Structural comparisons: 200 noise frames
+Structural comparisons: 300 noise frames
+Structural comparisons: 400 noise frames
+Structural comparisons: 500 noise frames
+Structural comparisons: 600 noise frames
+Structural comparisons: 700 noise frames
+Deterministic strict frames: 898 passed, 18 failed
+Noise structural frames: 688 provisional passes, 84 failures
+Structural report: D:\Pinwheel-Windows\evidence\p2\structural-status.json
+Exception in thread "main" java.lang.IllegalStateException: 18 deterministic strict failures and 84 noise structural failures; inspect structural-status.json and heatmaps
+	at com.pinwheel.render.qa.P2StructuralEvidenceKt.main(P2StructuralEvidence.kt:63)
+
+> Task :pinwheel-render:goldenCheck FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':pinwheel-render:goldenCheck'.
+> Process 'command 'E:\Java\jdk-23\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 40s
+9 actionable tasks: 3 executed, 6 up-to-date

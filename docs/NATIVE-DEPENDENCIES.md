@@ -1,4 +1,4 @@
-# P0 dependency provenance and choices
+# Native dependency provenance and choices
 
 Exact download URLs, source revisions and archive SHA-256 values are in
 [`native/dependencies.json`](../native/dependencies.json). The bootstrap verifies
@@ -45,12 +45,33 @@ the selected build enables GPL-only codecs.
 
 Written reason for a subprocess adapter in P0: it proves real demux/decode and
 RGBA delivery without introducing JNI lifecycle code before the frame engine
-exists. P3 still requires persistent decode and bounded queues, using the
-recommended native bridge/presets and D3D11VA. Hardware decode, playback
-performance and exports are unverified. The producer currently gives Windows
-10 22H2 as its minimum supported version; the brief's Windows 10 21H2 target
-is not validated and needs a compatible build or an explicit owner decision
-before release.
+exists. P3 now uses the native bridge described below. The owner dropped Windows
+10 21H2 and selected Windows 10 22H2+/Windows 11 x64, matching this runtime target.
+Encoder/export and Intel Iris Xe performance qualification remain future work.
+
+P3 `native/media/media_bridge.cpp` dynamically links avformat-62, avcodec-62,
+avutil-60, swscale-9 and swresample-6 from the same checksum-pinned shared archive.
+`scripts/build-media-native.ps1` verifies the archive, extracts its matching
+headers/import libraries into ignored `native/sdk/ffmpeg`, and builds JNI with
+Visual Studio 2022/CMake and JDK headers. The bridge is rebuilt by bootstrap on
+hosted Windows. There is no subprocess decoder or JavaCPP codec runtime in the
+player. Native cancellation, flush/drain, D3D11VA-to-RGBA transfer and PCM
+resampling follow the official [libavcodec send/receive contract](https://ffmpeg.org/doxygen/8.0/group__lavc__encdec.html),
+[hardware decode example](https://ffmpeg.org/doxygen/8.0/hw_decode_8c-example.html)
+and [libswresample API](https://ffmpeg.org/doxygen/8.0/group__lswr.html).
+Actual frame delivery reports D3D11VA or software fallback, rather than claiming
+hardware success merely because device creation succeeded.
+
+## Sonic time stretching
+
+The float PCM implementation is copied from the official [Media3 1.11.1 source](https://raw.githubusercontent.com/androidx/media/1.11.1/libraries/common/src/main/java/androidx/media3/common/audio/Sonic.java).
+Copyright notices are retained in the Java file; the Apache-2.0 notice is
+`licenses/MEDIA3-SONIC-APACHE-2.0.txt` and appears through the existing licence
+reader. The original is retained in `native/provenance/Sonic-1.11.1.java.txt`.
+`docs/p3-port-manifest.json` pins original and port hashes. The audit permits only
+package changes, removal of a nullness annotation/dependency and a local
+equivalent of Guava's state check. DSP math is unchanged. Independent generated
+440 Hz inputs test pitch and duration over the supported speed range.
 
 ## Gradle and Compose
 

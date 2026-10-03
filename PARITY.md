@@ -76,14 +76,14 @@ or threshold change. [Stage investigation](evidence/p2/diagnostics/deterministic
 | Clip tools | Split, Extract audio, Volume, Speed 0.25-4x, Delete, Duplicate, Replace, Crop/zoom, Rotate/mirror, grade, Looks, Motion and transitions | ⚠️ | Commands cover clip edits, extraction, split/trim/duplicate/move and apply-all; render/UI P3/P4 |
 | GPU effects | 277 effects, parameters, animated previews, search, Adjust and layer targeting | ⚠️ | 277 catalog contracts/GLSL preserved; command placement/swap/Free tests pass; P2 shaders/tiles/targeted layer runtime implemented; 18 deterministic and 84 structural frame failures remain; effects UI P4 |
 | Overlay library | 90 timed full-frame looks with opacity and timing | ⚠️ | 80 active and 19 legacy looks preserved; pending picker swaps tested; P2 timed-look runtime implemented; strict golden report has failures; UI P4 |
-| File overlays and PIP | Photo/video layers, masks, border, shadow, opacity, transforms and in/out animation | ⚠️ | Models/codecs/timing/commands tested; PIP rendering/UI P3/P4 |
+| File overlays and PIP | Photo/video layers, masks, border, shadow, opacity, transforms and in/out animation | ⚠️ | P3 real video PIP timing/trim, masks, stacking, opacity/animation and seek frames pass; ordinary photo border/shadow and UI remain |
 | Animated stickers | Time-based vector stickers; settled paused pose and animated playback/export | ⚠️ | IDs/categories/metadata ported; deterministic drawing and paused pose P2/P4 |
 | Text and titles | Styles, colours, backgrounds, animations, templates and canvas-scaled typography | ⚠️ | Title/style/motion catalogs and models/JVM tests ported; painters/UI pending |
 | Captions | Auto speech captions, SRT, word times, styles, built-in/imported motion templates and 17 fonts | ⚠️ | SRT, times, words, styles, template catalogs and 17 TTF/15 license assets ported; speech/painters/UI pending |
-| Audio | 16 tracks, Sounds/Openverse, art/waveforms/search/moods/Commercial/saved/credits, bundled SFX, device/extracted audio, voiceover, volume/fades/speed/DSP/denoise | ⚠️ | Track/voiceover/DSP/envelope contracts and JVM tests ported; native recording/mixer/library UI P3/P4 |
-| Canvas | Aspect ratios, Fit/Fill, solid or blurred background | ⚠️ | Sanitized model and sizing math tested; compositing/UI P3/P4 |
+| Audio | 16 tracks, Sounds/Openverse, art/waveforms/search/moods/Commercial/saved/credits, bundled SFX, device/extracted audio, voiceover, volume/fades/speed/DSP/denoise | ⚠️ | P3 48 kHz mixer, silence padding, volume/fades, Sonic speed/pitch and real JavaSound output verified; recording/library UI and combined DSP mobile-output qualification remain |
+| Canvas | Aspect ratios, Fit/Fill, solid or blurred background | ⚠️ | P3 copied canvas/blur shaders and preview/export recipe; pixel fixtures verify rotation/mirror/orientation and exact-size black tail. Full canvas mobile goldens/UI remain |
 | Undo and redo | Persisted history, gesture drafts and one commit on release | ⚠️ | Persisted histories, autosave, gesture freeze/commit/cancel and reload tests pass; editor UI P4 |
-| Video preview | Playback, scrubbing, fullscreen and live overlays | ❌ | P3/P4; one decoded frame is not playback |
+| Video preview | Playback, scrubbing, fullscreen and live overlays | ⚠️ | P3 audio-clock playback, paused/rapid seek, edit debounce and debug Player Lab pass. P4 fullscreen/live painters remain |
 | Video export | 480p through 4K, 24/25/30/50/60 fps, bitrate slider/size, 2.5 s ending, Movies/Pinwheel, progress/result | ⚠️ | Free/Plus and signed-in export policy tested; encoding/muxing/progress P5 |
 | Photo filters | Approximately 75 looks with amount and saved user presets | ⚠️ | Looks/preset catalogs and pure transform assertions ported; bitmap preview/UI P6 |
 | Photo adjust | Dial, light/colour, curves, HSL/picker, grading, detail, dehaze, vignette/grain, WB and Magic Enhance | ⚠️ | Colour/curve/HSL/grading/dehaze/WB/Enhance pure math and tests ported; complete pipeline/UI P6 |
@@ -101,16 +101,18 @@ or threshold change. [Stage investigation](evidence/p2/diagnostics/deterministic
 | Desktop affordances | Shortcuts, wheel zoom, file drop, context menus, DPI, saved window position, fullscreen/Esc | ❌ | P4/P7; no editor affordance claim |
 | Platform distribution | Storage/settings, crash reports, MSIX/MSI and update channel | ❌ | P7; paths defined but services/installers absent |
 
-## Catalog item groups
-
 ## P3 engine evidence
 
 | Check | Status | Evidence |
 |---|---|---|
 | In-process persistent libav decoder | ✅ | `LibavDecoderTest`: real demo D3D11VA frames and stereo PCM; independent persistent demuxers; no playback subprocess adapter. `evidence/p3/decoder-tests-output.txt` |
 | Bounded independent queues and seek generations | ✅ | Saturated video queue does not block 20 audio blocks; count/byte budgets, 26 seek requests with accurate final generation, still pixel reuse and cancellation tests pass |
-| Shared frame evaluator and audio-clock player | ❌ | P3 implementation underway; decoder evidence alone is not playback acceptance |
-| Ported stress, still-transition and PIP device scenarios | ❌ | Pending frame evaluator/player; export scenarios require P5 |
+| Shared frame evaluator and audio-clock player | ⚠️ | `VideoFrameEvaluatorTest`, `VideoPlaybackClockTest`, real JavaSound `player-lab-smoke.json`; source trim/speed, geometry, grade, canvas, PIP, motion and P2 FX share one GPU path. Remaining painters, HDR tone mapping and full hardware qualification are open |
+| Still-transition playback scenarios | ✅ | All 16 named mobile scenarios in `VideoStillTransitionPlaybackTest`, same 270x480/60 fps playback and >=2.8 s within 6 s assertion. Optional phone photo is replaced by the owner-supplied bundled sample; no personal originals read |
+| PIP rendering and seek scenarios | ⚠️ | `VideoPipTest` retains mobile channel/mask/stack/opacity limits on byte-identical MP4 fixtures; real Player Lab plays and seeks. P5 encoded-file assertions remain |
+| Engine-only stress and edit handling | ⚠️ | Eight clips, 40 FX, three sounds and video PIP; local >=24 fps and <=2500 ms frame-gap gates retained. Sticker/title/caption/photo painters, full mobile heavy edit sequences and all encoder assertions remain open; see `docs/P3-TEST-MAP.md` |
+| Inactive GPU-stage optimization | ✅ | `EffectTargetBorrowTest`: 35 byte-exact comparisons against the original P2 path, including inactive windows, history, zero model intensity, legacy grain and Soft Glow |
+| Debug Player Lab | ✅ | Real window `evidence/p3/player-lab.png`; hardware audio-clock playback and paused PIP seek; class and controls excluded from release jar |
 
 See `docs/P3-REPORT.md`. P2's outstanding failures remain recorded above.
 
@@ -394,13 +396,13 @@ All groups below have ported IDs, defaults and assets verified by CatalogContrac
 | Mobile behaviour to preserve | Desktop status | Evidence or remaining work |
 |---|---|---|
 | Selecting an effect swaps the selected layer; tick commits; new windows are 3 s or 1.5 s; Free opens Plus. | ❌ | Port the corresponding behaviour tests in P1-P6 |
-| A split still starts at zero and uses its trimmed duration. | ❌ | Port the corresponding behaviour tests in P1-P6 |
-| Pad shorter sounds with silence through movie end. | ❌ | Port the corresponding behaviour tests in P1-P6 |
-| Playback near an audio end must not stall; preserve the mobile 220 ms workaround scenario. | ❌ | Port the corresponding behaviour tests in P1-P6 |
-| Preview effects use a 720 px short side; test 40 stacked effects. | ❌ | Port the corresponding behaviour tests in P1-P6 |
-| Ended PIP inputs leave the compositor; never assume input positions. | ❌ | Port the corresponding behaviour tests in P1-P6 |
+| A split still starts at zero and uses its trimmed duration. | ✅ | Native still reuses pixels after 1.629 s seek; all six mobile split-still playback scenarios pass |
+| Pad shorter sounds with silence through movie end. | ✅ | `TimelineAudioMixerTest` exact silent sample assertions; engine stress plays/seeks after 12 s sound end through 25 s movie |
+| Playback near an audio end must not stall; preserve the mobile 220 ms workaround scenario. | ⚠️ | P3 starts at 11.9/12.411/15 s and advances; full mobile repeated audio-cut matrix remains in test map |
+| Preview effects use a 720 px short side; test 40 stacked effects. | ⚠️ | Sizing assertion and 720x1280 engine-only 40-FX stress; full painted heavy project and Iris Xe budget remain |
+| Ended PIP inputs leave the compositor; never assume input positions. | ✅ | `VideoPipTest.endedInputsDropOutWithoutChangingRemainingLayerIdentity` |
 | Full-frame library overlays show only Opacity/Timing with no drag hint. | ❌ | Port the corresponding behaviour tests in P1-P6 |
-| Audio-tail and ending filler use the movie's exact dimensions. | ❌ | Port the corresponding behaviour tests in P1-P6 |
+| Audio-tail and ending filler use the movie's exact dimensions. | ⚠️ | Audio-tail RGBA pixels and exact 320x240 dimensions pass; ending card belongs to P5 |
 | Timeline time readout has a solid background. | ❌ | Port the corresponding behaviour tests in P1-P6 |
 | Photo Preview equals the edited canvas including replaced/removed backgrounds. | ❌ | Port the corresponding behaviour tests in P1-P6 |
 | Extracted clip audio preserves timeline start, trim and speed, then mutes the source clip. | ❌ | Port the corresponding behaviour tests in P1-P6 |

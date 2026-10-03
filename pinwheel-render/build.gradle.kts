@@ -2,6 +2,7 @@ plugins { kotlin("jvm") }
 dependencies {
     implementation("org.json:json:20240303")
     implementation(project(":pinwheel-core"))
+    implementation(project(":pinwheel-media"))
     implementation(platform("org.lwjgl:lwjgl-bom:3.3.6"))
     implementation("org.lwjgl:lwjgl")
     implementation("org.lwjgl:lwjgl-egl")
@@ -10,6 +11,16 @@ dependencies {
     runtimeOnly("org.jetbrains.skiko:skiko-awt-runtime-windows-x64:0.9.37.4")
     runtimeOnly("org.lwjgl:lwjgl::natives-windows")
     runtimeOnly("org.lwjgl:lwjgl-opengles::natives-windows")
+}
+tasks.withType<Test>().configureEach {
+    systemProperty("pinwheel.p3.performance", providers.gradleProperty("pinwheel.p3.performance").getOrElse("false"))
+}
+tasks.register<JavaExec>("p3Frames") {
+    dependsOn("classes")
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("com.pinwheel.render.qa.P3EvidenceKt")
+    args(rootDir.absolutePath)
+    workingDir = rootDir
 }
 
 fun referenceTask(name: String, mode: String) = tasks.register<JavaExec>(name) {

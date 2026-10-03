@@ -1,0 +1,91 @@
+{
+  "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.8186)",
+  "openAndFiveFramesMs": 1165.4178,
+  "frames": [
+    {
+      "seconds": 0.4,
+      "evaluationMs": 118.4426,
+      "centerRgb": [
+        0,
+        0,
+        253
+      ],
+      "maskCornerRgb": [
+        0,
+        0,
+        253
+      ]
+    },
+    {
+      "seconds": 1.4,
+      "evaluationMs": 204.4237,
+      "centerRgb": [
+        252,
+        0,
+        0
+      ],
+      "maskCornerRgb": [
+        0,
+        0,
+        253
+      ]
+    },
+    {
+      "seconds": 2.6,
+      "evaluationMs": 11.4136,
+      "centerRgb": [
+        0,
+        254,
+        0
+      ],
+      "maskCornerRgb": [
+        0,
+        0,
+        253
+      ]
+    },
+    {
+      "seconds": 3.5,
+      "evaluationMs": 4.7517,
+      "centerRgb": [
+        0,
+        0,
+        253
+      ],
+      "maskCornerRgb": [
+        0,
+        0,
+        253
+      ]
+    },
+    {
+      "seconds": 1.4,
+      "evaluationMs": 21.2031,
+      "centerRgb": [
+        252,
+        0,
+        0
+      ],
+      "maskCornerRgb": [
+        0,
+        0,
+        253
+      ]
+    }
+  ],
+  "scope": "Mobile PIP known-colour assertions; no P2 golden or P4 UI replacement",
+  "decoders": [
+    {
+      "note": "D3D11VA with CPU transfer for ANGLE upload",
+      "width": 320,
+      "backend": "LIBAV_D3D11VA",
+      "height": 240
+    },
+    {
+      "note": "D3D11VA with CPU transfer for ANGLE upload",
+      "width": 160,
+      "backend": "LIBAV_D3D11VA",
+      "height": 120
+    }
+  ]
+}
