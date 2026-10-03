@@ -1,9 +1,9 @@
 {
-  "runtimeCommit": "614e4479e941b6ecf08ecc16035a2ee4fbedee95",
+  "runtimeCommit": "1b7c8a388277bb49eaef3f9b91e84144e8f98c7f",
   "status": "completed",
   "conclusion": "success",
-  "url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37011571663",
-  "scope": "Windows/JDK 17 clean runtime checks including sample matrix regressions, default frames, numeric storage/dither probes, source audits, debug guards and window smoke. Mobile goldens, neutral tiles and experimental float comparisons run locally.",
+  "url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37097525085",
+  "scope": "Windows/JDK 17 clean runtime checks, default frames, numeric storage/dither probes, source audits, debug guards and window smoke. Mobile goldens, deterministic/sampling controls and crop filtering regression run locally; this earlier commit does not include the new crop regression.",
   "checks": [
     {
       "name": "Set up job",
@@ -83,9 +83,9 @@
   ],
   "artifacts": [
     {
-      "id": 11227937269,
+      "id": 11264907345,
       "name": "p2-evidence",
-      "size_in_bytes": 110989575,
+      "size_in_bytes": 129809414,
       "expired": false
     }
   ]

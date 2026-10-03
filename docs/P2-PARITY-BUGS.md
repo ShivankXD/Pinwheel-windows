@@ -122,6 +122,24 @@ neutral/raw probes are still needed to isolate remaining decode/interpolation
 precision. The float framebuffer experiments below predate this source fix and
 remain diagnostic; production stays RGBA8.
 
+## Repaired crop filtering constraint
+
+Android Canvas's [Skia bitmap path](https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/android-14.0.0_r1/libs/hwui/SkiaCanvas.cpp)
+uses the fast source-rectangle constraint. The desktop had used the strict
+constraint, excluding neighbouring source pixels at upscaled crop edges.
+`PreviewSamples` now retains those taps. An exact scale-2 fixture checks both
+horizontal and flipped vertical edges: outside/inside channels 32/96 instead
+of the former 0/128. The negative baseline fails; all 237 repaired tests pass.
+
+The current 21 sample scales are at most 1, so all 1688 frame hashes and
+per-time channel metric rows remain identical to published baseline 1b7c8a3.
+This correction does not resolve any of the seven remaining strict specs.
+The [filter report](../evidence/p2/diagnostics/sample-filter/SAMPLE-FILTER-REPORT.md)
+includes the full failed baseline and explains the unsuitable initial
+fractional-colour oracle that was replaced with aligned quarter-pixel centres.
+No golden threshold changed. Full current golden failures are retained in
+`evidence/p2/sample-filter-reference-checks.txt`.
+
 ## Remaining raw readback and grid differences
 
 `:pinwheel-render:p2NumericProbe` runs the same shaders and uploaded values on

@@ -1,10 +1,26 @@
-# P2 publication blocker
+# P2 publication recovery
 
-The validated deterministic and sampling controls are saved in local commit
+Resolved on 2026-10-03: a buffered HTTP/1.1 fast-forward push published the
+exact local commits `13d23cba6e0fcb2b785c912215ce5d0b39606bb3` and
+`1b7c8a388277bb49eaef3f9b91e84144e8f98c7f`. Local and remote main were
+verified at 1b7c8a3. No history was rewritten and no Git Data API tree, commit
+or reference was created. GitHub lists only ShivankXD, with 25 contributions
+at this checkpoint.
+
+Hosted Windows/JDK 17 [run 37097525085](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37097525085)
+completed successfully for exact runtime 1b7c8a3. All 15 steps pass; the
+artifact is `p2-evidence`, id 11264907345. Owner golden comparisons remain
+local and failing. The subsequent crop-filter correction has 237 passing
+local tests and unchanged production pixels; it requires its own pushed CI
+checkpoint. `ci-result.json` identifies only the runtime actually tested.
+
+## Historical transport failures, 2026-10-02
+
+At that time, the validated deterministic and sampling controls were saved in local commit
 `13d23cba6e0fcb2b785c912215ce5d0b39606bb3`. GitHub main was verified at
 `df75ced84493b0f361d3488ad4cb7652d205028e` after the failed attempts. The new
-runtime has not been published and has no hosted CI result. `ci-result.json`
-continues to name the previously tested runtime, never the unpublished one.
+runtime had not been published and had no hosted CI result. The then-current
+`ci-result.json` named the previously tested runtime.
 
 The initial default HTTPS upload made no observable progress for several
 minutes and was stopped. Buffered uploads using HTTP/1.1 and HTTP/2, an
@@ -68,6 +84,6 @@ and source/reference audits pass. Golden acceptance still fails with 18
 deterministic frames and 84 noise structural frames. No threshold or shader
 was changed to make this checkpoint pass.
 
-The next publication attempt must retain the exact validated local commits,
-verify the remote SHA, and obtain a new hosted CI result before updating the
-CI evidence. This report does not claim that the owner-requested push succeeded.
+The successful recovery retained those exact validated commits, verified the
+remote SHA and obtained the new hosted result before updating CI evidence.
+The historical failures above do not describe the current publication state.

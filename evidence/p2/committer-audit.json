@@ -1,6 +1,6 @@
 {
-  "auditedThrough": "13d23cba6e0fcb2b785c912215ce5d0b39606bb3",
-  "commits": 24,
+  "auditedThrough": "1b7c8a388277bb49eaef3f9b91e84144e8f98c7f",
+  "commits": 25,
   "authors": [
     {
       "name": "ShivankXD",
@@ -18,6 +18,6 @@
   "githubContributors": [
     "ShivankXD"
   ],
-  "publishedThrough": "df75ced84493b0f361d3488ad4cb7652d205028e",
-  "publicationPending": true
+  "publishedThrough": "1b7c8a388277bb49eaef3f9b91e84144e8f98c7f",
+  "publicationPending": false
 }

@@ -32,7 +32,8 @@ internal object PreviewSamples {
                 surface.canvas.drawImageRect(decoded,
                     Rect.makeXYWH(crop.x.toFloat(), crop.y.toFloat(), crop.width.toFloat(), crop.height.toFloat()),
                     Rect.makeWH(crop.width.toFloat(), crop.height.toFloat()),
-                    FilterMipmap(FilterMode.LINEAR, MipmapMode.NONE), null, true)
+                    // Android SkiaCanvas::drawBitmap uses kFast_SrcRectConstraint.
+                    FilterMipmap(FilterMode.LINEAR, MipmapMode.NONE), null, false)
                 surface.makeImageSnapshot().use { tile ->
                     Bitmap().use { pixels ->
                         check(pixels.allocPixels(ImageInfo(m.width, m.height, ColorType.RGBA_8888, ColorAlphaType.UNPREMUL)))

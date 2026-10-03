@@ -14,10 +14,12 @@ not started.
 | pinwheel-core | P1 models, ProjectStore v10 codecs, catalogs, typed commands, persisted undo and Free/Plus core/export limits. All four real JSON/package inputs still round-trip. |
 | pinwheel-render | Existing FxProgram, ordered chain, previous/trail history, transitions, overlay looks, legacy effects, layer effects and compositor remain intact. All 422 preserved catalog shaders compile. |
 | pinwheel-render | New `PreviewSamples` reproduces Android's crop-local float matrix and mapped-bound translation before rounding bitmap allocation. `PreviewTileRenderer` uploads those pixels and retains SWAY, default params, mobile quad, RGBA8 targets, RGB565 expansion, history and loop/cache behaviour. |
+| pinwheel-render | Crop filtering now permits neighbouring source pixels, matching Android Canvas's fast source-rectangle constraint. A scale-2 regression covers both horizontal and flipped vertical crop edges; all supplied frame pixels remain unchanged. |
 | pinwheel-render/qa | All 1688 actual frames refreshed in `evidence/p2/frames/<id>/<t>.png`. Full strict and structural comparisons, every channel metric, worst-20 galleries and 84 neutral sample tiles refreshed. |
 | pinwheel-app | Debug-only Effect Lab actual-window capture refreshed. Search, fixed times/loop, params and mobile/desktop/heatmap panes remain available; release excludes the Lab and local Plus toggle. |
 | pinwheel-render/qa | New deterministic and sampling probes isolate all seven remaining specs with raw RGBA8, quantization signatures, stored-input replays, crossed backends, precision queries and translated HLSL evidence. They never replace production frames. |
 | scripts | `report-p2-sample-matrix.py` compares all frames against published baseline ddad406, records 21 sample geometries and every channel's before/after metrics. Structural reporting now regenerates `deterministic-failures.csv` to prevent stale manual reports. |
+| scripts | `report-p2-sample-filter.py` decodes and verifies all 1688 PNG hashes and channel metric rows against published baseline 1b7c8a3; the current 21 samples all downscale or use identity sizing. |
 | media / platform / photo | Existing P1 boundaries remain. Playback/audio/evaluation are P3, editor UI P4, export P5 and photo work P6. No subprocess decoding was added to playback. |
 
 The sample fix follows [AOSP Bitmap.createBitmap](https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/android-14.0.0_r1/graphics/java/android/graphics/Bitmap.java).
@@ -30,8 +32,8 @@ thresholds, noise classes and NVIDIA/ANGLE backend were unchanged.
 ## 2. Tests and results
 
 ```text
-Desktop unit tests: 236 passed, 0 failures, 0 errors, 0 skipped
-  core 205; platform 2; media 3; render 26
+Desktop unit tests: 237 passed, 0 failures, 0 errors, 0 skipped
+  core 205; platform 2; media 3; render 27
 Catalog shaders: 422 passed, 0 failed
 P2 frames: 1688 rendered, 0 failures
 Real mobile projects: 4 passed, 0 failed
@@ -42,23 +44,25 @@ Deterministic specs: 222 passed, 7 failed
 Noise structural frames: 688 provisional passes, 84 failures
 Noise specs: 160 provisional passes, 33 failures
 Sample matrix: 592 changed frame hashes, 37 new strict passes, 0 strict regressions
+Crop filtering: 0 changed frame hashes; all channel metric rows unchanged
 PASS 404 source, test and asset hashes; all GLSL literals preserved
 PASS 8 unchanged P2 shader literals; 7 pinned mobile runtime source hashes
 PASS 193 noise and 229 deterministic classes; all 422 shader source hashes
 PASS debug includes and release excludes debug entitlement controls
 ```
 
-Two new regression tests cover float mapped bounds and actual asymmetric
-crop/flip colours. Existing tests cover channel format, orientation, timing,
+Three regression tests cover float mapped bounds, asymmetric crop/flip colours
+and source pixels outside upscaled crop boundaries. Existing tests cover channel format, orientation, timing,
 ordered effects, history resets, legacy effects, layers, resource ownership,
 shader compilation, animation and bounded cache. Local aggregate runtime
 checks pass. See `test-summary.json`, `sample-matrix-runtime-checks.txt`,
 `sample-matrix-all-runtime-checks.txt`, `sample-matrix-lab-and-neutral-checks.txt`
-and the successful follow-up `final-sampling-and-runtime-checks.txt`
+and the successful follow-ups `final-sampling-and-runtime-checks.txt`
+and `sample-filter-runtime-and-frames.txt`
 under `evidence/p2`.
 
 `goldenCheck` intentionally exits nonzero. **Full current failing output:**
-[sampling-reference-checks.txt](../evidence/p2/sampling-reference-checks.txt).
+[sample-filter-reference-checks.txt](../evidence/p2/sample-filter-reference-checks.txt).
 The preceding matrix failure log remains retained.
 Deterministic limits remain MAE8 <= 2 and p99 <= 8 in each RGBA channel, with
 no reference alignment, resizing or filtering. The original strict audit
@@ -70,6 +74,7 @@ G 96.116276/157, B 95.700412/157, A 0/0 (MAE8/p99).
 - [Worst 20 strict report](../evidence/p2/GOLDEN-REPORT.md), [mobile/desktop/heatmap gallery](../evidence/p2/worst-20.html) and [contact sheet](../evidence/p2/worst-20-contact-sheet.png).
 - [Every noise spec and structural metric](../evidence/p2/STRUCTURAL-REPORT.md), [full channel CSV](../evidence/p2/noise-spec-metrics.csv) and [worst 20 structural heatmaps](../evidence/p2/noise-worst-20.html).
 - [Source-backed matrix comparison](../evidence/p2/diagnostics/sample-matrix/SAMPLE-MATRIX-REPORT.md) and [full before/after JSON](../evidence/p2/diagnostics/sample-matrix/sample-matrix-comparison.json).
+- [Crop filtering correction and negative regression](../evidence/p2/diagnostics/sample-filter/SAMPLE-FILTER-REPORT.md); every supplied PNG and metric remains identical to 1b7c8a3. The initial fractional fixture was an unsuitable exact-colour oracle; its failures are retained and explained in that report.
 - [Seven remaining deterministic specs](../evidence/p2/deterministic-failures.csv) and [parity investigation](P2-PARITY-BUGS.md).
 
 Noise review uses Gaussian sigma 8 px, radius 24, edge clamping and float
@@ -100,16 +105,17 @@ and [remaining-seven gallery](../evidence/p2/diagnostics/deterministic/remaining
 provide the measurements and heatmaps. An initial LWJGL buffer guard failure
 in the precision query was corrected; full initial output is
 `sampling-and-runtime-checks.txt`, successful output is
-`final-sampling-and-runtime-checks.txt`. All 236 unit tests still pass.
+`final-sampling-and-runtime-checks.txt`. That checkpoint passed all 236 tests;
+the crop correction adds one regression, bringing the current total to 237.
 Production acceptance counts remain unchanged.
 
-The new deterministic controls in local commit 13d23cb pass local checks,
-but publication is blocked by repeated Git HTTPS HTTP 408 failures and API
-upload disconnects. GitHub main remains df75ced. No hosted CI result exists
-for 13d23cb. [Publication status and complete error messages](../evidence/p2/PUBLICATION-STATUS.md)
-record the attempted recovery and preserved commit. The prior sample matrix
-runtime 614e447 passed hosted Windows/JDK 17 CI [run 37011571663](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37011571663).
-All 15 CI steps succeeded, including the two new sample regressions. CI checks
+Publication recovered on 2026-10-03. Exact commits 13d23cb and 1b7c8a3 were
+pushed by a normal fast-forward; no published history was rewritten.
+[Publication status and historical errors](../evidence/p2/PUBLICATION-STATUS.md)
+retain the preceding transport failures. Runtime 1b7c8a3 passed hosted
+Windows/JDK 17 CI [run 37097525085](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37097525085).
+All 15 CI steps succeeded. This earlier run does not include the new crop-filter
+regression, which currently passes locally. CI checks
 runtime, shader/frame generation, numeric probes, source/class
 verification, debug guard and actual-window smoke. Owner goldens are local
 inputs; hosted CI does not certify pixel acceptance. `ci-result.json` names

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pinwheel.render.PreviewSamplesTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-10-03T04:50:26.601Z" hostname="SHIVANK" time="0.478">
+  <properties/>
+  <testcase name="mobileCropFilteringIncludesNeighbouringSourcePixelsAtBothEdges()" classname="com.pinwheel.render.PreviewSamplesTest" time="0.478">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;[125, 0, 130, 255]&gt; but was: &lt;[0, 0, 255, 255]&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;[125, 0, 130, 255]&gt; but was: &lt;[0, 0, 255, 255]&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at app//kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
+	at app//kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
+	at app//kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at app//kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:62)
+	at app//kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at app//com.pinwheel.render.PreviewSamplesTest.mobileCropFilteringIncludesNeighbouringSourcePixelsAtBothEdges(PreviewSamplesTest.kt:22)
+	at java.base@23.0.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@23.0.1/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base@23.0.1/java.util.ArrayList.forEach(ArrayList.java:1597)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

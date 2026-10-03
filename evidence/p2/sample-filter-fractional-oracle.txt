@@ -1,0 +1,39 @@
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-render:processTestResources NO-SOURCE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+> Task :pinwheel-render:jar
+> Task :pinwheel-render:compileTestKotlin UP-TO-DATE
+> Task :pinwheel-render:compileTestJava NO-SOURCE
+> Task :pinwheel-render:testClasses UP-TO-DATE
+
+> Task :pinwheel-render:test FAILED
+
+PreviewSamplesTest > mobileCropFilteringIncludesNeighbouringSourcePixelsAtBothEdges() FAILED
+    org.opentest4j.AssertionFailedError at PreviewSamplesTest.kt:22
+
+PreviewSamplesTest > mobileMatrixKeepsMappedFloatBoundsBeforeRoundingBitmapSize() PASSED
+
+PreviewSamplesTest > preparedSampleUsesThirdHeightCropAndFlipsRowsWithoutChangingOpaqueColours() PASSED
+
+3 tests completed, 1 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':pinwheel-render:test'.
+> There were failing tests. See the report at: file:///D:/Pinwheel-Windows/pinwheel-render/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 16s
+6 actionable tasks: 3 executed, 3 up-to-date

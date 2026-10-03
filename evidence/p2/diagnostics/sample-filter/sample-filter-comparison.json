@@ -1,0 +1,38 @@
+{
+  "baselineCommit": "1b7c8a388277bb49eaef3f9b91e84144e8f98c7f",
+  "pixelVerifiedFrames": 1688,
+  "changedFrames": [],
+  "unchangedChannelMetricRows": 1688,
+  "gate": {
+    "goldenPassed": 1473,
+    "goldenFailed": 215,
+    "goldenMissing": 0,
+    "deterministicPassed": 898,
+    "deterministicFailed": 18,
+    "noiseCandidatePassed": 688,
+    "noiseCandidateFailed": 84
+  },
+  "samplesAllDownscaleOrIdentity": true,
+  "source": "https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/android-14.0.0_r1/libs/hwui/SkiaCanvas.cpp",
+  "test": "PreviewSamplesTest.mobileCropFilteringIncludesNeighbouringSourcePixelsAtBothEdges",
+  "testColoursRGBA": {
+    "leading": [
+      32,
+      0,
+      96,
+      255
+    ],
+    "trailing": [
+      0,
+      32,
+      96,
+      255
+    ],
+    "inside": [
+      0,
+      0,
+      128,
+      255
+    ]
+  }
+}
