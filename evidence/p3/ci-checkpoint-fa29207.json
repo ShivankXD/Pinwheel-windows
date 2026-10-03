@@ -1,0 +1,96 @@
+{
+  "headSha": "fa29207cc4cc3dcbb68ad92a79241197844f4682",
+  "runId": 37121272000,
+  "status": "completed",
+  "conclusion": "success",
+  "url": "https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37121272000",
+  "scope": "Hosted clean Windows 2022/JDK 17 runtime checks, native bridge, source hashes, shaders/probes, debug/release controls and P0 Compose smoke. Local real audio Player Lab and owner golden comparisons are separate evidence.",
+  "jobs": {
+    "name": "build",
+    "status": "completed",
+    "conclusion": "success",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/setup-java@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Download and verify native dependencies",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Clean build and checks",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Verify pinned desktop source and asset hashes",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Compile catalog shaders and render P2 frames and numeric probes",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Verify noise classes from unchanged active shaders",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Verify debug entitlement controls",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Launch real Compose window and capture evidence",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Verify app failure exits with a nonzero code",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/upload-artifact@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Run actions/setup-java@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "artifacts": {
+    "id": 11273431338,
+    "name": "p3-evidence",
+    "size_in_bytes": 162441753,
+    "expired": false
+  }
+}

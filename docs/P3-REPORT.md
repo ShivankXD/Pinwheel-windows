@@ -123,6 +123,10 @@ seek/edit/audio-cut matrices, cold cache-miss latency qualification, HDR-to-SDR 
 mapping, combined voice/speed/DSP output qualification and target hardware
 budgets. HDR PQ/HLG is explicitly rejected currently; silently wrong SDR is not
 accepted. HEIC/EXIF handling and full-size 4K decode budgets remain unqualified.
+Main clips apply stream rotation metadata. PIP currently applies only the layer
+rotation; its source display-matrix rotation still needs a per-input stage before
+target FX. The supplied PIP tests have no rotation metadata and do not prove that
+case. This is an open P3 behaviour bug, not an accepted mobile difference.
 Encoder, ending card and actual 720p/1080p/every-effect export assertions are P5.
 
 P1's four real inputs remain passing. P2 still has 215 strict-audit failures;
@@ -148,5 +152,8 @@ em dash or AI attribution trailer, and is pushed immediately. Hosted clean-build
 evidence for checkpoint 3ec3d61 passed all 15 hosted steps with JDK 17;
 [run 37120115705](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37120115705)
 and [step/artifact record](../evidence/p3/ci-checkpoint-3ec3d61.json).
-The subsequent prefetch/mono-gain checkpoint receives its own exact-commit CI
-record; the earlier run does not validate later code.
+Prefetch/mono-gain code checkpoint fa29207 also passed all 15 hosted steps;
+[run 37121272000](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37121272000)
+and [exact-commit record](../evidence/p3/ci-checkpoint-fa29207.json).
+The final report/evidence commit changes documentation only; both code
+checkpoints were pushed immediately and are independently validated.
