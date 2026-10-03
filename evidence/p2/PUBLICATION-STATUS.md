@@ -10,9 +10,13 @@ at this checkpoint.
 Hosted Windows/JDK 17 [run 37097525085](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37097525085)
 completed successfully for exact runtime 1b7c8a3. All 15 steps pass; the
 artifact is `p2-evidence`, id 11264907345. Owner golden comparisons remain
-local and failing. The subsequent crop-filter correction has 237 passing
-local tests and unchanged production pixels; it requires its own pushed CI
-checkpoint. `ci-result.json` identifies only the runtime actually tested.
+local and failing. The crop-filter correction was committed and pushed as
+`15adf3875456b68eb64de36b047bf909dd91ed99`; all 237 local tests pass and
+production pixels are unchanged. Its hosted Windows/JDK 17
+[run 37098985024](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37098985024)
+also passes all 15 steps; artifact id 11265088093. `ci-result.json` identifies
+this exact tested runtime. The subsequent alternative 8-bit controls are
+validated locally and require their own pushed checkpoint.
 
 ## Historical transport failures, 2026-10-02
 

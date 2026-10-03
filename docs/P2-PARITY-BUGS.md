@@ -201,6 +201,23 @@ expansion. The constant and endpoint shaders isolate this observation from
 catalog math and photo preparation. Full results are in `numeric-probe.json`
 and `numeric-storage-probe-output.txt`.
 
+### Alternative 8-bit formats, no repair
+
+The next control keeps eight bits per channel and compares unsized RGBA,
+sized RGBA8, unsized BGRA and sized BGRA8 on NVIDIA and WARP. All allocations
+are complete, every channel reports eight bits and a distinct-channel upload
+checks all texels. Uniform half-value storage remains below 0.5 on NVIDIA
+and above 0.5 on WARP in every format, observed by endpoint shaders before
+readback. All 224 selected renders and every strict MAE/p99 metric match the
+default within their backend. These format choices do not repair the seven
+remaining specs on either measured implementation. No format was adopted;
+all production PNGs and metrics remain unchanged.
+
+[Full 8-bit control report](../evidence/p2/diagnostics/storage8/STORAGE8-REPORT.md),
+[all selected per-time metrics](../evidence/p2/diagnostics/storage8/storage8-metrics.csv)
+and `evidence/p2/storage8-probe-output.txt` retain the successful controls.
+This selected diagnostic does not establish the phone's storage precision.
+
 ### Explicit conversion experiment, not adopted
 
 `p2FramebufferProbe` renders the unchanged effect into a floating-point final
