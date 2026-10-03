@@ -1,0 +1,1 @@
+P3 engine-only stress: 25000 ms, 1386 frames in 25.0528426 s, 55.323063419557826 fps, maximum frame gap 142.0663 ms, 96 dropped; excludes missing sticker/title/caption painters and P5 encoder

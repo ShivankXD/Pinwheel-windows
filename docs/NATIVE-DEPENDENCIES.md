@@ -61,6 +61,12 @@ resampling follow the official [libavcodec send/receive contract](https://ffmpeg
 and [libswresample API](https://ffmpeg.org/doxygen/8.0/group__lswr.html).
 Actual frame delivery reports D3D11VA or software fallback, rather than claiming
 hardware success merely because device creation succeeded.
+Mono-to-stereo uses an explicit unity matrix before resampler initialization,
+matching the [Media3 default mixer](https://raw.githubusercontent.com/androidx/media/1.11.1/libraries/transformer/src/main/java/androidx/media3/transformer/DefaultAudioMixer.java)
+and its [constant-gain channel matrix](https://raw.githubusercontent.com/androidx/media/1.11.1/libraries/common/src/main/java/androidx/media3/common/audio/ChannelMixingMatrix.java).
+The default libswresample mono mapping reduced level and failed an independent
+constant-sample test. That test now also confirms 4410 mono samples at 44.1 kHz
+produce all 4800 stereo frames at 48 kHz, including the delayed EOF tail.
 
 ## Sonic time stretching
 

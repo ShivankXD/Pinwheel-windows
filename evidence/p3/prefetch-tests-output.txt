@@ -1,0 +1,35 @@
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-media:processResources NO-SOURCE
+> Task :pinwheel-media:processTestResources NO-SOURCE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-media:compileKotlin
+> Task :pinwheel-media:compileJava UP-TO-DATE
+> Task :pinwheel-media:classes UP-TO-DATE
+> Task :pinwheel-media:jar
+> Task :pinwheel-media:compileTestKotlin
+> Task :pinwheel-media:compileTestJava NO-SOURCE
+> Task :pinwheel-media:testClasses UP-TO-DATE
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+
+> Task :pinwheel-media:test
+
+VideoFrameSourceTest > closeCancelsQueuedPreparationAndJoinsItsWorker() PASSED
+
+VideoFrameSourceTest > failedSpeculativeInputDoesNotLeakOrHideItsFailureWhenActivated() PASSED
+
+VideoFrameSourceTest > preparationRunsOffCallerAndReadyInputIsReusedWithinGlobalLimit() PASSED
+
+> Task :pinwheel-render:p3Frames
+PASS P3 PIP 0.4/1.4/2.6/3.5 s and repeated 1.4 s seek, unchanged mobile channel/mask assertions
+
+BUILD SUCCESSFUL in 5s
+9 actionable tasks: 6 executed, 3 up-to-date

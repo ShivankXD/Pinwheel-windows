@@ -1,20 +1,20 @@
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-platform:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :pinwheel-photo:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :pinwheel-app:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :pinwheel-platform:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :pinwheel-photo:processResources NO-SOURCE
-> Task :pinwheel-app:convertXmlValueResourcesForMain NO-SOURCE
 > Task :pinwheel-platform:processResources NO-SOURCE
-> Task :pinwheel-photo:processTestResources NO-SOURCE
+> Task :pinwheel-app:convertXmlValueResourcesForMain NO-SOURCE
 > Task :pinwheel-media:processResources NO-SOURCE
-> Task :pinwheel-app:copyNonXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-photo:processResources NO-SOURCE
+> Task :pinwheel-render:processResources NO-SOURCE
 > Task :pinwheel-media:processTestResources NO-SOURCE
 > Task :pinwheel-platform:processTestResources NO-SOURCE
-> Task :pinwheel-render:processResources NO-SOURCE
-> Task :pinwheel-app:prepareComposeResourcesTaskForMain NO-SOURCE
+> Task :pinwheel-photo:processTestResources NO-SOURCE
 > Task :pinwheel-render:processTestResources NO-SOURCE
+> Task :pinwheel-app:copyNonXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-app:prepareComposeResourcesTaskForMain NO-SOURCE
 > Task :pinwheel-app:generateResourceAccessorsForMain SKIPPED
 > Task :pinwheel-app:generateActualResourceCollectorsForMain SKIPPED
 > Task :pinwheel-app:generateComposeResClass SKIPPED
@@ -40,35 +40,35 @@
 > Task :pinwheel-photo:testClasses UP-TO-DATE
 > Task :pinwheel-photo:test NO-SOURCE
 > Task :pinwheel-photo:check UP-TO-DATE
-> Task :pinwheel-platform:compileKotlin UP-TO-DATE
 > Task :pinwheel-core:compileTestKotlin UP-TO-DATE
-> Task :pinwheel-platform:compileJava NO-SOURCE
-> Task :pinwheel-platform:classes UP-TO-DATE
 > Task :pinwheel-core:compileTestJava NO-SOURCE
 > Task :pinwheel-core:processTestResources UP-TO-DATE
 > Task :pinwheel-core:testClasses UP-TO-DATE
+> Task :pinwheel-platform:compileKotlin UP-TO-DATE
+> Task :pinwheel-platform:compileJava NO-SOURCE
+> Task :pinwheel-platform:classes UP-TO-DATE
 > Task :pinwheel-platform:jar UP-TO-DATE
+> Task :pinwheel-core:test UP-TO-DATE
+> Task :pinwheel-core:check UP-TO-DATE
 > Task :pinwheel-media:compileKotlin UP-TO-DATE
 > Task :pinwheel-media:compileJava UP-TO-DATE
 > Task :pinwheel-media:classes UP-TO-DATE
 > Task :pinwheel-media:jar UP-TO-DATE
 > Task :pinwheel-platform:compileTestKotlin UP-TO-DATE
 > Task :pinwheel-platform:compileTestJava NO-SOURCE
-> Task :pinwheel-core:test UP-TO-DATE
 > Task :pinwheel-platform:testClasses UP-TO-DATE
-> Task :pinwheel-core:check UP-TO-DATE
 > Task :pinwheel-platform:test UP-TO-DATE
 > Task :pinwheel-platform:check UP-TO-DATE
-> Task :pinwheel-media:compileTestKotlin UP-TO-DATE
-> Task :pinwheel-media:compileTestJava NO-SOURCE
-> Task :pinwheel-media:testClasses UP-TO-DATE
-> Task :pinwheel-media:test UP-TO-DATE
-> Task :pinwheel-media:check UP-TO-DATE
-> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileKotlin UP-TO-DATE
 > Task :pinwheel-render:compileJava NO-SOURCE
 > Task :pinwheel-render:classes UP-TO-DATE
-> Task :pinwheel-render:jar
-> Task :pinwheel-app:compileKotlin
+> Task :pinwheel-render:jar UP-TO-DATE
+> Task :pinwheel-render:compileTestKotlin UP-TO-DATE
+> Task :pinwheel-render:compileTestJava NO-SOURCE
+> Task :pinwheel-render:testClasses UP-TO-DATE
+> Task :pinwheel-render:test UP-TO-DATE
+> Task :pinwheel-render:check UP-TO-DATE
+> Task :pinwheel-app:compileKotlin UP-TO-DATE
 > Task :pinwheel-app:compileJava NO-SOURCE
 > Task :pinwheel-app:classes UP-TO-DATE
 > Task :pinwheel-app:jar UP-TO-DATE
@@ -81,214 +81,64 @@
 PASS release excludes debug entitlement controls
 
 > Task :pinwheel-app:check
-> Task :pinwheel-render:compileTestKotlin
+> Task :pinwheel-media:compileTestKotlin
+> Task :pinwheel-media:compileTestJava NO-SOURCE
+> Task :pinwheel-media:testClasses UP-TO-DATE
+[swscaler @ 00000240469a1680] deprecated pixel format used, make sure you did set range correctly
 
-> Task :pinwheel-render:p3Frames
-PASS P3 PIP 0.4/1.4/2.6/3.5 s and repeated 1.4 s seek, unchanged mobile channel/mask assertions
+> Task :pinwheel-media:test
 
-> Task :pinwheel-render:compileTestJava NO-SOURCE
-> Task :pinwheel-render:testClasses UP-TO-DATE
+LibavDecoderTest > stillReusesDecodedPixelsAfterTrimAndSeek() PASSED
 
-> Task :pinwheel-render:test
+LibavDecoderTest > rapidSeeksRejectStaleFramesAndLandBeyondPreviousKeyframe() PASSED
 
-AngleTriangleTest > freshContextCanRenderAfterRelease() PASSED
+LibavDecoderTest > cancellationWhileQueuesAreFullReleasesWorkers() PASSED
 
-AngleTriangleTest > d3d11TriangleHasColourAndTopDownOrientation() STANDARD_OUT
-    PASS ANGLE D3D11 triangle, shader compile/link, RGBA readback and Y orientation: ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.8186)
+LibavDecoderTest > persistentContextsDecodeHardwareVideoAndStereoAudio() STANDARD_OUT
+    PASS in-process libav: LIBAV_D3D11VA, D3D11VA with CPU transfer for ANGLE upload; video 960x720, 48 kHz stereo
 
-AngleTriangleTest > d3d11TriangleHasColourAndTopDownOrientation() PASSED
+LibavDecoderTest > persistentContextsDecodeHardwareVideoAndStereoAudio() PASSED
 
-EffectRuntimeTest > legacyLimitCountsOriginalEntriesAndConstructorFailureAllowsRetry() PASSED
+LibavDecoderTest > mono44100ResamplingDrainsEveryTailSampleAtEndOfStream() PASSED
 
-EffectRuntimeTest > textureCopyKeepsAsymmetricTopDownRowsAndExactPixels() PASSED
+LibavDecoderTest > fullVideoQueueCannotBlockAudioAndBothRemainBounded() PASSED
 
-EffectRuntimeTest > transitionsUseClipDurationsSpeedAndClippedHalfWindows() PASSED
+LibavDecoderTest > decodesKnownPcmToneWithoutAProcess() PASSED
 
-EffectRuntimeTest > activeChainUsesListOrderAndStartInclusiveEndExclusive() PASSED
+[swscaler @ 0000024046e7b840] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 000002404b57c180] deprecated pixel format used, make sure you did set range correctly
 
-EffectRuntimeTest > overlayIntensityAndOrphanTargetMatchMobileGraph() PASSED
+> Task :pinwheel-media:test
 
-EffectRuntimeTest > contextRejectsOtherThreadsAndOneContextClosingDoesNotTerminateAnother() PASSED
+LibavDecoderTest > softwareBackendAndDecodeScaleAreExplicit() PASSED
 
-EffectRuntimeTest > layerFadeChangesCoverageAndLeavesBlueMainUntouched() PASSED
+FfmpegDecoderTest > rejectsMissingMediaAndInvalidTimes() PASSED
 
-EffectRuntimeTest > allLegacyKindsDrawAndAnimateWithCompositionTime() PASSED
+FfmpegDecoderTest > bundledRuntimeIsSharedLgpl() PASSED
 
-EffectRuntimeTest > historyResetsOnBackwardSeekAndJumpsOver250ms() PASSED
+FfmpegDecoderTest > decodesRealDemoAtTwoTimesWithoutChangingSource() STANDARD_OUT
+    PASS FFmpeg demo decode at 0 and 1 s: 960x720 RGBA; original SHA-256 unchanged
 
-EffectTargetBorrowTest > skippingInactiveAttachmentsPreservesEveryOutputByteIncludingHistoryAndLegacyStages() PASSED
+FfmpegDecoderTest > decodesRealDemoAtTwoTimesWithoutChangingSource() PASSED
 
-PreviewSamplesTest > mobileCropFilteringIncludesNeighbouringSourcePixelsAtBothEdges() PASSED
+SonicTest > voicePitchKeepsDurationAndUsesMobilePresetFactors() PASSED
 
-PreviewSamplesTest > mobileMatrixKeepsMappedFloatBoundsBeforeRoundingBitmapSize() PASSED
+SonicTest > tempoPreservesPitchAcrossTheMobileSpeedRange() PASSED
 
-PreviewSamplesTest > preparedSampleUsesThirdHeightCropAndFlipsRowsWithoutChangingOpaqueColours() PASSED
+TimelineAudioMixerTest > delayedTrimmedTrackFadesAndPadsSilenceWithoutStalling() PASSED
 
-PreviewTileRendererTest > everyShaderCompilesAndEveryCatalogEffectDrawsAPictureAndMoves() PASSED
+TimelineAudioMixerTest > clipGainIsLinearAndMuteRemovesOnlyTheClipContribution() PASSED
 
-PreviewTileRendererTest > everyRgb565ColourUsesNormalizedChannelLevels() PASSED
+TimelineAudioMixerTest > mixedTracksClipPeaksAndSilenceContinuesAfterAllSoundsEnd() PASSED
 
-PreviewTileRendererTest > paramsAffectPixelsLoopSlotsCacheAndLruStaysBounded() PASSED
+VideoFrameSourceTest > closeCancelsQueuedPreparationAndJoinsItsWorker() PASSED
 
-StructuralGoldensTest > blurCannotHideAGlobalColourOrBranchError() PASSED
+VideoFrameSourceTest > failedSpeculativeInputDoesNotLeakOrHideItsFailureWhenActivated() PASSED
 
-StructuralGoldensTest > histogramTransportUsesChannelUnitsAndDimensionsStayStrict() PASSED
+VideoFrameSourceTest > preparationRunsOffCallerAndReadyInputIsReusedWithinGlobalLimit() PASSED
 
-StructuralGoldensTest > relocatedFineNoiseCanPassStructureWhileStrictPixelsFail() PASSED
-
-VideoFrameEvaluatorTest > previewAndExportUseIdenticalStagesOnMatchingInputs() PASSED
-
-VideoFrameEvaluatorTest > previewShortSideIs720AndUnsetSideIsEven() PASSED
-
-VideoFrameEvaluatorTest > geometryMirrorsBeforeClockwiseRotationAndRetainsTopDownOrientation() PASSED
-
-VideoFrameEvaluatorTest > audioTailFillerUsesExactCanvasSize() PASSED
-
-VideoPipTest > delayedTrimmedMovingVideoHasTransparentMask() PASSED
-
-VideoPipTest > overlappingVideoLayersKeepTheirStackingOrder() PASSED
-
-VideoPipTest > opacityAndEntranceExitAnimationMatchMobileSamples() PASSED
-
-VideoPipTest > endedInputsDropOutWithoutChangingRemainingLayerIdentity() PASSED
-
-VideoPlaybackClockTest > slowVideoDropsFramesWhileConsumedAudioAdvances() PASSED
-
-[swscaler @ 000001d45cc444c0] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 000001d45cc444c0] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoPlaybackClockTest > thirtyRapidEditsCoalesceAndThenPlay() PASSED
-
-[swscaler @ 000001d45cc444c0] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 000001d45cc444c0] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoPlaybackClockTest > pausedSeekAndRapidSupersedingSeeksOnlyPublishTheFinalGeneration() PASSED
-
-VideoStillTransitionPlaybackTest > seekIntoTransitionThenPlay() PASSED
-[swscaler @ 000001d45cc444c0] deprecated pixel format used, make sure you did set range correctly
-
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > seekIntoTransitionThenPlayNoEffects() PASSED
-
-[swscaler @ 000001d455608b80] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > samePhotoTwicePlaysThrough() PASSED
-
-[swscaler @ 000001d455608b80] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > splitPlain() PASSED
-
-[swscaler @ 000001d455608b80] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > splitTransitionOnly() PASSED
-
-[swscaler @ 000001d455608b80] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 000001d45d2931c0] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > stillsWithEffectsPlayThrough() PASSED
-
-[swscaler @ 000001d45cc444c0] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > splitEffectsOnly() PASSED
-
-[swscaler @ 000001d45cc444c0] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > splitMashupOnly() PASSED
-
-[swscaler @ 000001d45cc444c0] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 000001d45f6ded40] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > stillsWithTransitionPlayThrough() PASSED
-
-[swscaler @ 000001d45f6ded40] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > splitPhotoPlaysThrough() PASSED
-
-[swscaler @ 000001d45f6ded40] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 000001d45cc444c0] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > plainStillsPlayThrough() PASSED
-
-[swscaler @ 000001d45cc444c0] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > samePhotoTwiceWithTransitionAndEffectsPlaysThrough() PASSED
-
-[swscaler @ 000001d45cc444c0] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 000001d45d07b740] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > stillsWithTransitionAndEffectsPlayThrough() PASSED
-
-[swscaler @ 000001d45d07b740] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > userPhotoProjectPlaysThrough() PASSED
-
-[swscaler @ 000001d45d07b740] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 000001d45d07b740] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStillTransitionPlaybackTest > seekBeforeCutThenPlayPlain() PASSED
-
-VideoStillTransitionPlaybackTest > splitCopiesOnly() PASSED
-
-[swscaler @ 000001d45dae4080] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 000001d45a758080] deprecated pixel format used, make sure you did set range correctly
-
-> Task :pinwheel-render:test
-
-VideoStressTest > heavyProjectPlaysThroughWithVideoLayerAndThreeSounds() STANDARD_OUT
-    P3 engine-only stress: 25000 ms, 1151 frames in 25.1922232 s, 45.688702853347216 fps, maximum frame gap 1555.7933 ms, 331 dropped; excludes missing sticker/title/caption painters and P5 encoder
-
-VideoStressTest > heavyProjectPlaysThroughWithVideoLayerAndThreeSounds() PASSED
-
-VideoStressTest > seeksPastEarlySoundEndAndStartsNearAudioCutsKeepAdvancing() PASSED
-
-CatalogContractTest > pinnedCatalogCountsIdsDefaultsAndLegacyLookupsStayStable() PASSED
-
-CatalogContractTest > previewRecipeKeepsThirdHeightCropAndTransitionSwitch() PASSED
-
-CatalogContractTest > captionFontsImportedPackagesAndHomeTemplatesHaveAssetsAndNotices() PASSED
-
-CatalogContractTest > everyLibraryCategoryResolvesItsLookAndStickerCards() PASSED
-
-GoldenImagesTest > exactToleranceBoundaryPassesAndLargerMeanFails() PASSED
-
-GoldenImagesTest > orientationAndDimensionsCannotBeSilentlyAligned() PASSED
-
-GoldenImagesTest > percentileIsPerChannelAndCannotHideBehindLowMean() PASSED
-
-> Task :pinwheel-render:check
+> Task :pinwheel-media:check
 > Task :p3RuntimeCheck
 
-BUILD SUCCESSFUL in 1m 56s
-27 actionable tasks: 7 executed, 20 up-to-date
+BUILD SUCCESSFUL in 5s
+26 actionable tasks: 3 executed, 23 up-to-date

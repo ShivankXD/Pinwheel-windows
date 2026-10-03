@@ -1,0 +1,25 @@
+{
+  "baselineCommit": "3ec3d61a85d6ca3c6fe3bcffa2debd47d39e9021",
+  "frames": [
+    {
+      "path": "evidence/p3/frames/pip/0.4.png",
+      "sha256": "b7513cce42d0611edb6e2b0e3e7707e0d7a03da93cc4923a10feabe0a4fb936c",
+      "byteIdentical": true
+    },
+    {
+      "path": "evidence/p3/frames/pip/1.4.png",
+      "sha256": "6d849c07929dbc01af7e0435659c20b4f99810ac7f8fa17a2728ca4240220d29",
+      "byteIdentical": true
+    },
+    {
+      "path": "evidence/p3/frames/pip/2.6.png",
+      "sha256": "c72b44fa31b9cee8567a78ba45c3c1ee98fa8df83abe6aa6e9ce5fc7dbb7efe3",
+      "byteIdentical": true
+    },
+    {
+      "path": "evidence/p3/frames/pip/3.5.png",
+      "sha256": "b7513cce42d0611edb6e2b0e3e7707e0d7a03da93cc4923a10feabe0a4fb936c",
+      "byteIdentical": true
+    }
+  ]
+}

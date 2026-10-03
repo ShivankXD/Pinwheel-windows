@@ -45,6 +45,27 @@ class LibavDecoderTest {
             assertTrue(stats.audioDecoded >= 20)
         }
     }
+    @Test fun mono44100ResamplingDrainsEveryTailSampleAtEndOfStream() {
+        val file=java.nio.file.Files.createTempFile(Path.of("pinwheel-media/build"),"resample-tail-",".wav")
+        try {
+            val frames=4410
+            val bytes=java.nio.ByteBuffer.allocate(44+frames*2).order(java.nio.ByteOrder.LITTLE_ENDIAN)
+            bytes.put("RIFF".toByteArray()).putInt(36+frames*2).put("WAVEfmt ".toByteArray()).putInt(16).putShort(1).putShort(1)
+                .putInt(44100).putInt(88200).putShort(2).putShort(16).put("data".toByteArray()).putInt(frames*2)
+            repeat(frames) { bytes.putShort(8192) };java.nio.file.Files.write(file,bytes.array())
+            factory.open(file,DecodeConfig(decodeVideo=false,audioQueueBlocks=2)).use { decoder ->
+                val samples=mutableListOf<Float>()
+                while(true) {
+                    val block=decoder.pollAudio(Duration.ofSeconds(5)) ?: break
+                    for(i in block.interleavedPcm.indices step 2) {
+                        assertEquals(block.interleavedPcm[i],block.interleavedPcm[i+1]);samples.add(block.interleavedPcm[i])
+                    }
+                }
+                assertTrue(decoder.audioEnded);assertEquals(4800,samples.size,"100 ms at 48 kHz must retain the resampler's delayed EOF samples")
+                assertTrue(samples.all { it.isFinite() });assertTrue(samples.subList(200,4600).all { kotlin.math.abs(it-.25f)<.00001f },"Mono constant-gain centre sample ${samples[1000]} must remain .25 in each stereo channel")
+            }
+        } finally { java.nio.file.Files.deleteIfExists(file) }
+    }
     @Test fun rapidSeeksRejectStaleFramesAndLandBeyondPreviousKeyframe() {
         factory.open(source, DecodeConfig()).use { decoder ->
             repeat(25) { decoder.seek((it % 7) * 110_000L) }

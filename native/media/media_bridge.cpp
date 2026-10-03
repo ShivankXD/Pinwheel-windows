@@ -139,6 +139,11 @@ extern "C" JNIEXPORT jlong JNICALL Java_com_pinwheel_media_LibavNative_open(JNIE
         if (self->audio) {
             AVChannelLayout stereo = AV_CHANNEL_LAYOUT_STEREO;
             checked(swr_alloc_set_opts2(&self->resample, &stereo, AV_SAMPLE_FMT_FLT, 48000, &self->codec->ch_layout, self->codec->sample_fmt, self->codec->sample_rate, 0, nullptr), "audio resampler");
+            if (self->codec->ch_layout.nb_channels == 1) {
+                // Media3's default constant-gain mixer duplicates mono at unity, not -3 dB.
+                const double monoToStereo[] = {1.0, 1.0};
+                checked(swr_set_matrix(self->resample, monoToStereo, 1), "constant-gain mono stereo matrix");
+            }
             checked(swr_init(self->resample), "initialize resampler");
         }
         return reinterpret_cast<jlong>(self.release());

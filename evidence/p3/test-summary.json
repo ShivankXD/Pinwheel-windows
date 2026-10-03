@@ -9,7 +9,7 @@
     },
     {
       "module": "pinwheel-media",
-      "tests": 15,
+      "tests": 19,
       "failures": 0,
       "errors": 0,
       "skipped": 0
@@ -30,10 +30,10 @@
     }
   ],
   "total": {
-    "tests": 279,
+    "tests": 283,
     "failures": 0,
     "errors": 0,
     "skipped": 0
   },
-  "scope": "Complete core/platform/media/render runtime checks; release/debug jar controls. No encoded export or full painted mobile stress acceptance."
+  "scope": "Core/platform/media/render checks; release/debug jar controls. Full painted mobile stress, export and Iris Xe qualification remain open."
 }

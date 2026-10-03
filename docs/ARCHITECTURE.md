@@ -85,6 +85,11 @@ an explicit unsupported tone-map error rather than silently treating HDR as SDR.
 The video LRU keeps at most eight decoder cursors and one look-ahead frame each;
 stills sharing a URI reuse decoded bytes, while main/PIP video clocks use distinct
 identities. Frame selection owns accurate keyframe seeks and forward reuse.
+One separate input worker prepares at most two upcoming cursors; those pending
+inputs count inside the same eight-cursor limit. Startup overlaps first decode
+with GPU graph construction. Look-ahead admission never evicts an active input,
+and disposal cancels queued preparation, joins its owner and closes retained
+decoders. Upcoming PIP masks are prepared at startup with identical pixels.
 
 GpuFrameEvaluator owns one ANGLE thread and its decode LRU. The shared preview/
 export stages are source timing, rotation/mirror, crop, grade or legacy matrix,
@@ -100,7 +105,9 @@ continues; seek generations flush audio, invalidate stale video and reset
 history. Project edits debounce for 120 ms and compare render/audio recipes.
 Plain live-overlay changes do not rebuild either recipe. TimelineAudioMixer
 delivers stereo float PCM at 48 kHz, pads silence and applies trim, speed, pitch,
-voice DSP, volume and envelopes. Media3 1.11.1 Sonic math is pinned unchanged;
+voice DSP, volume and envelopes. Mono duplicates into stereo at unity gain,
+matching Media3's default mixer; delayed resampler samples drain at EOF.
+Media3 1.11.1 Sonic math is pinned unchanged;
 combined voice/speed/DSP processing order still needs mobile output qualification.
 P3 tests use an injected bounded clocked PCM sink; the debug window additionally
 verifies real Windows JavaSound output. Neither proves the Intel Iris Xe budget.

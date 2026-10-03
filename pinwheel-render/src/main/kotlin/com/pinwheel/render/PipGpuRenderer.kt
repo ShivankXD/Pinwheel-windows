@@ -16,14 +16,19 @@ internal class PipGpuRenderer(private val device: AngleDevice, private val width
     private var mask: GpuTexture? = null
     private var chain: FxChain? = null
     init { resources.initialized() }
+    fun prepareMask(frameWidth:Int,frameHeight:Int) {
+        device.checkThread();require(frameWidth>0 && frameHeight>0)
+        val factor=minOf(1f,1024f/maxOf(frameWidth,frameHeight))
+        val mw=(frameWidth*factor).toInt().coerceAtLeast(1);val mh=(frameHeight*factor).toInt().coerceAtLeast(1)
+        if(mask?.let { it.width==mw && it.height==mh }==true)return
+        mask?.close();mask=GpuTexture(device,mw,mh).also { it.upload(maskPixels(layer.mask,mw,mh)) }
+    }
     fun render(frame: RgbaFrame, timeUs: Long): GpuTarget {
         device.checkThread()
         if (input?.let { it.width != frame.width || it.height != frame.height } != false) {
-            input?.close(); mask?.close(); chain?.close()
+            input?.close(); chain?.close()
             input = GpuTexture(device, frame.width, frame.height)
-            val factor = minOf(1f, 1024f / maxOf(frame.width, frame.height))
-            val mw = (frame.width * factor).toInt().coerceAtLeast(1); val mh = (frame.height * factor).toInt().coerceAtLeast(1)
-            mask = GpuTexture(device, mw, mh).also { it.upload(maskPixels(layer.mask, mw, mh)) }
+            prepareMask(frame.width,frame.height)
             chain = if (effects.isEmpty()) null else FxChain(device, frame.width, frame.height, effects)
         }
         input!!.upload(frame)

@@ -1,9 +1,9 @@
 {
   "output": "JavaSound SourceDataLine, 48 kHz stereo, real consumed PCM frame clock",
-  "seekMs": 24.3742,
+  "seekMs": 29.0187,
   "seekTimeUs": 1400000,
-  "firstFrameMs": 1231.1722,
-  "droppedFrames": 2,
+  "firstFrameMs": 1101.3403,
+  "droppedFrames": 0,
   "scope": "Debug engine window, not P4 editor UI parity or Iris Xe qualification",
   "centerRgb": [
     252,
@@ -11,5 +11,5 @@
     0
   ],
   "playedToUs": 2600000,
-  "renderedFrames": 78
+  "renderedFrames": 79
 }

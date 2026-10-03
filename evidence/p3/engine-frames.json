@@ -1,10 +1,117 @@
 {
+  "stageTimings": [
+    {
+      "milliseconds": 0.0908,
+      "seconds": 0.4,
+      "stage": "composite"
+    },
+    {
+      "milliseconds": 6.0903,
+      "seconds": 0.4,
+      "stage": "readback"
+    },
+    {
+      "milliseconds": 84.2492,
+      "seconds": 0.4,
+      "stage": "total"
+    },
+    {
+      "milliseconds": 19.5192,
+      "seconds": 1.4,
+      "stage": "pip-source"
+    },
+    {
+      "milliseconds": 2.1948,
+      "seconds": 1.4,
+      "stage": "pip-render"
+    },
+    {
+      "milliseconds": 0.3945,
+      "seconds": 1.4,
+      "stage": "composite"
+    },
+    {
+      "milliseconds": 2.121,
+      "seconds": 1.4,
+      "stage": "readback"
+    },
+    {
+      "milliseconds": 41.5058,
+      "seconds": 1.4,
+      "stage": "total"
+    },
+    {
+      "milliseconds": 5.0583,
+      "seconds": 2.6,
+      "stage": "pip-source"
+    },
+    {
+      "milliseconds": 0.4368,
+      "seconds": 2.6,
+      "stage": "pip-render"
+    },
+    {
+      "milliseconds": 0.0323,
+      "seconds": 2.6,
+      "stage": "composite"
+    },
+    {
+      "milliseconds": 0.947,
+      "seconds": 2.6,
+      "stage": "readback"
+    },
+    {
+      "milliseconds": 13.343,
+      "seconds": 2.6,
+      "stage": "total"
+    },
+    {
+      "milliseconds": 0.005,
+      "seconds": 3.5,
+      "stage": "composite"
+    },
+    {
+      "milliseconds": 0.5922,
+      "seconds": 3.5,
+      "stage": "readback"
+    },
+    {
+      "milliseconds": 3.2232,
+      "seconds": 3.5,
+      "stage": "total"
+    },
+    {
+      "milliseconds": 10.9436,
+      "seconds": 1.4,
+      "stage": "pip-source"
+    },
+    {
+      "milliseconds": 0.7138,
+      "seconds": 1.4,
+      "stage": "pip-render"
+    },
+    {
+      "milliseconds": 0.1193,
+      "seconds": 1.4,
+      "stage": "composite"
+    },
+    {
+      "milliseconds": 1.0066,
+      "seconds": 1.4,
+      "stage": "readback"
+    },
+    {
+      "milliseconds": 33.9634,
+      "seconds": 1.4,
+      "stage": "total"
+    }
+  ],
   "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.15.8186)",
-  "openAndFiveFramesMs": 1165.4178,
+  "openAndFiveFramesMs": 2168.8751,
   "frames": [
     {
       "seconds": 0.4,
-      "evaluationMs": 118.4426,
+      "evaluationMs": 84.2574,
       "centerRgb": [
         0,
         0,
@@ -18,7 +125,7 @@
     },
     {
       "seconds": 1.4,
-      "evaluationMs": 204.4237,
+      "evaluationMs": 41.5096,
       "centerRgb": [
         252,
         0,
@@ -32,7 +139,7 @@
     },
     {
       "seconds": 2.6,
-      "evaluationMs": 11.4136,
+      "evaluationMs": 13.3505,
       "centerRgb": [
         0,
         254,
@@ -46,7 +153,7 @@
     },
     {
       "seconds": 3.5,
-      "evaluationMs": 4.7517,
+      "evaluationMs": 3.2332,
       "centerRgb": [
         0,
         0,
@@ -60,7 +167,7 @@
     },
     {
       "seconds": 1.4,
-      "evaluationMs": 21.2031,
+      "evaluationMs": 33.9681,
       "centerRgb": [
         252,
         0,

@@ -16,6 +16,8 @@ assertion, and a stress run without the mobile painters does not close P3.
 | VideoStressTest ending, 720p/1080p durations, every effect stacked 40 exports | P1 export limit policy is enforced; matching preview/export frame inputs have identical RGBA bytes | Encoder, full ending painter, actual duration/non-black output checks are P5; no exported movie claimed |
 | Grade/canvas/motion source port | Four unchanged shader literals, complete recipe section, needsGrade and overlayPose audited; rotation/mirror/orientation and shared preview/export assertions | Dedicated rendered mobile engine probes, HDR tone mapping, HEIC/EXIF and full-size export decode budgets remain |
 | Audio time/pitch/volume/fade/clip mute | Unchanged Media3 Sonic DSP; independent 440 Hz frequency/duration checks; exact constant-sample trim/delay/fade/gain/mixing and silent-tail checks | Combined voice/speed/DSP pipeline output order needs mobile audio qualification |
+| Bounded decode-ahead preparation | Off-caller worker, at most two pending cursors counted within the existing limit, acquisition reuse, cancellation/join and speculative-failure cleanup tests; four PIP PNGs byte-identical | Arbitrary cold cache misses, many concurrent layers and Intel Iris Xe latency qualification remain |
+| 44.1 kHz mono input | Exact 4410 input ->4800 output frame count, unity gain copied to both channels, finite samples, delayed EOF tail retained | Other multichannel layouts remain unqualified |
 
 The debug Player Lab is a P3 harness. Its paired mobile editor screenshot gives
 phase context; it is not a claim of P4 UI appearance parity. The public evidence

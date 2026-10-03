@@ -12,7 +12,8 @@ for the remaining painters, full mobile stress assertions and hardware checks.
 The editing screens and encoder remain later phases.
 The authoritative brief is [docs/Pinwheel-Windows-Build-Brief.md](docs/Pinwheel-Windows-Build-Brief.md).
 
-Requirements: Windows 10 22H2+ or Windows 11 x64, JDK 17 or newer (locally validated with JDK 23), internet
+Requirements: Windows 10 22H2+ or Windows 11 x64, JDK 17 or newer with JAVA_HOME
+set to that JDK (locally validated with JDK 23), Visual Studio 2022 C++ Build Tools, internet
 for first dependency download. Open PowerShell in this directory:
 
 ```powershell

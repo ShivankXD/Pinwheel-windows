@@ -1,14 +1,14 @@
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :pinwheel-media:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :pinwheel-photo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-app:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :pinwheel-platform:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :pinwheel-app:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :pinwheel-platform:processResources NO-SOURCE
-> Task :pinwheel-photo:processResources NO-SOURCE
+> Task :pinwheel-photo:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :pinwheel-media:processResources NO-SOURCE
 > Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-photo:processResources NO-SOURCE
 > Task :pinwheel-app:convertXmlValueResourcesForMain NO-SOURCE
+> Task :pinwheel-platform:processResources NO-SOURCE
 > Task :pinwheel-app:copyNonXmlValueResourcesForMain NO-SOURCE
 > Task :pinwheel-app:prepareComposeResourcesTaskForMain NO-SOURCE
 > Task :pinwheel-app:generateResourceAccessorsForMain SKIPPED
@@ -18,21 +18,21 @@
 > Task :pinwheel-app:processResources
 > Task :pinwheel-app:convertXmlValueResourcesForTest NO-SOURCE
 > Task :pinwheel-app:copyNonXmlValueResourcesForTest NO-SOURCE
-> Task :pinwheel-core:compileKotlin UP-TO-DATE
 > Task :pinwheel-app:prepareComposeResourcesTaskForTest NO-SOURCE
 > Task :pinwheel-app:generateResourceAccessorsForTest SKIPPED
-> Task :pinwheel-core:compileJava NO-SOURCE
 > Task :pinwheel-app:assembleTestResources UP-TO-DATE
+> Task :pinwheel-app:processTestResources UP-TO-DATE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
 > Task :pinwheel-core:processResources NO-SOURCE
 > Task :pinwheel-core:classes UP-TO-DATE
-> Task :pinwheel-app:processTestResources UP-TO-DATE
 > Task :pinwheel-core:jar UP-TO-DATE
 > Task :pinwheel-photo:compileKotlin NO-SOURCE
 > Task :pinwheel-photo:compileJava NO-SOURCE
 > Task :pinwheel-photo:classes UP-TO-DATE
 > Task :pinwheel-photo:jar UP-TO-DATE
-> Task :pinwheel-media:compileKotlin UP-TO-DATE
 > Task :pinwheel-platform:compileKotlin UP-TO-DATE
+> Task :pinwheel-media:compileKotlin UP-TO-DATE
 > Task :pinwheel-platform:compileJava NO-SOURCE
 > Task :pinwheel-platform:classes UP-TO-DATE
 > Task :pinwheel-media:compileJava UP-TO-DATE
@@ -48,7 +48,7 @@
 > Task :pinwheel-app:classes
 
 > Task :pinwheel-app:p3LabSmoke
-PASS real Player Lab, hardware audio clock, playback through 2.6 s, accurate paused PIP seek; firstFrameMs=1231.1722 seekMs=24.3742
+PASS real Player Lab, hardware audio clock, playback through 2.6 s, accurate paused PIP seek; firstFrameMs=1101.3403 seekMs=29.0187
 
 > Task :pinwheel-app:debugCheck
 PASS debug Plus toggle drives the shared core/export entitlement and sign-in gate

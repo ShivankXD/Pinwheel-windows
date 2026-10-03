@@ -1,0 +1,15 @@
+{
+  "baselineCommit": "3ec3d61a85d6ca3c6fe3bcffa2debd47d39e9021",
+  "limitMs": 150,
+  "firstPipActivationBeforeMs": 204.4237,
+  "firstPipActivationAfterMs": 41.5096,
+  "repeatSeekBeforeMs": 21.2031,
+  "repeatSeekAfterMs": 33.9681,
+  "samplePassed": true,
+  "changes": [
+    "Bounded decoder prefetch on a separate input worker",
+    "Upcoming PIP mask prepared at startup, same mask pixels"
+  ],
+  "scope": "One local 320x240 known-colour mobile PIP fixture; arbitrary cache misses, many layers and Iris Xe not qualified",
+  "framesByteIdentical": true
+}

@@ -1,22 +1,8 @@
 -- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
 -- Configuring done (0.0s)
--- Generating done (0.3s)
+-- Generating done (0.2s)
 -- Build files have been written to: D:/Pinwheel-Windows/native/media/build
 MSBuild version 17.14.40+3e7442088 for .NET Framework
 
-  media_bridge.cpp
-D:\Pinwheel-Windows\native\sdk\ffmpeg\include\libavutil\common.h(213,27): warning C4244: 'return': conversion from 'int' to 'uint8_t', possible loss of data [D:\Pinwheel-Windows\native\media\build\pinwheel_media.vcxproj]
-  (compiling source file '../media_bridge.cpp')
-  
-D:\Pinwheel-Windows\native\sdk\ffmpeg\include\libavutil\common.h(224,34): warning C4244: 'return': conversion from 'int' to 'int8_t', possible loss of data [D:\Pinwheel-Windows\native\media\build\pinwheel_media.vcxproj]
-  (compiling source file '../media_bridge.cpp')
-  
-D:\Pinwheel-Windows\native\sdk\ffmpeg\include\libavutil\common.h(235,29): warning C4244: 'return': conversion from 'int' to 'uint16_t', possible loss of data [D:\Pinwheel-Windows\native\media\build\pinwheel_media.vcxproj]
-  (compiling source file '../media_bridge.cpp')
-  
-D:\Pinwheel-Windows\native\sdk\ffmpeg\include\libavutil\common.h(246,38): warning C4244: 'return': conversion from 'int' to 'int16_t', possible loss of data [D:\Pinwheel-Windows\native\media\build\pinwheel_media.vcxproj]
-  (compiling source file '../media_bridge.cpp')
-  
-     Creating library D:/Pinwheel-Windows/native/media/build/Release/pinwheel_media.lib and object D:/Pinwheel-Windows/native/media/build/Release/pinwheel_media.exp
   pinwheel_media.vcxproj -> D:\Pinwheel-Windows\native\windows-x64\pinwheel_media.dll
 PASS persistent libav JNI bridge built against pinned shared LGPL SDK

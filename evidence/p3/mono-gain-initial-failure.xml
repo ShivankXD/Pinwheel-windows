@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pinwheel.media.LibavDecoderTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2026-10-03T11:45:05.057Z" hostname="SHIVANK" time="1.917">
+  <properties/>
+  <testcase name="stillReusesDecodedPixelsAfterTrimAndSeek()" classname="com.pinwheel.media.LibavDecoderTest" time="0.046"/>
+  <testcase name="rapidSeeksRejectStaleFramesAndLandBeyondPreviousKeyframe()" classname="com.pinwheel.media.LibavDecoderTest" time="0.543"/>
+  <testcase name="cancellationWhileQueuesAreFullReleasesWorkers()" classname="com.pinwheel.media.LibavDecoderTest" time="0.817"/>
+  <testcase name="persistentContextsDecodeHardwareVideoAndStereoAudio()" classname="com.pinwheel.media.LibavDecoderTest" time="0.246"/>
+  <testcase name="mono44100ResamplingDrainsEveryTailSampleAtEndOfStream()" classname="com.pinwheel.media.LibavDecoderTest" time="0.031">
+    <failure message="org.opentest4j.AssertionFailedError: Expected value to be true." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected value to be true.
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at app//kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at app//kotlin.test.Asserter.assertTrue(Assertions.kt:694)
+	at app//kotlin.test.junit5.JUnit5Asserter.assertTrue(JUnitSupport.kt:30)
+	at app//kotlin.test.Asserter.assertTrue(Assertions.kt:704)
+	at app//kotlin.test.junit5.JUnit5Asserter.assertTrue(JUnitSupport.kt:30)
+	at app//kotlin.test.AssertionsKt__AssertionsKt.assertTrue(Assertions.kt:44)
+	at app//kotlin.test.AssertionsKt.assertTrue(Unknown Source)
+	at app//kotlin.test.AssertionsKt__AssertionsKt.assertTrue$default(Assertions.kt:42)
+	at app//kotlin.test.AssertionsKt.assertTrue$default(Unknown Source)
+	at app//com.pinwheel.media.LibavDecoderTest.mono44100ResamplingDrainsEveryTailSampleAtEndOfStream(LibavDecoderTest.kt:65)
+	at java.base@23.0.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@23.0.1/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base@23.0.1/java.util.ArrayList.forEach(ArrayList.java:1597)
+</failure>
+  </testcase>
+  <testcase name="fullVideoQueueCannotBlockAudioAndBothRemainBounded()" classname="com.pinwheel.media.LibavDecoderTest" time="0.201"/>
+  <testcase name="decodesKnownPcmToneWithoutAProcess()" classname="com.pinwheel.media.LibavDecoderTest" time="0.015"/>
+  <testcase name="softwareBackendAndDecodeScaleAreExplicit()" classname="com.pinwheel.media.LibavDecoderTest" time="0.011"/>
+  <system-out><![CDATA[PASS in-process libav: LIBAV_D3D11VA, D3D11VA with CPU transfer for ANGLE upload; video 960x720, 48 kHz stereo
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

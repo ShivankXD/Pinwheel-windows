@@ -9,7 +9,8 @@ pixels, deterministic limits and provisional noise limits remain unchanged.
 - **pinwheel-media:** persistent in-process libav/JNI decoder with D3D11VA and
   reported software fallback, independent bounded video/PCM queues, accurate
   generation-tagged seeks, still reuse and cancellation. VideoFrameSource adds
-  an eight-cursor LRU with separate main/PIP video clocks. TimelineAudioMixer
+  an eight-cursor LRU with separate main/PIP video clocks. Up to two upcoming
+  inputs prepare off the GPU thread, counted inside that same cursor limit. TimelineAudioMixer
   produces 48 kHz stereo float PCM with trim, speed, pitch, volume, fades and
   silence padding. VideoPlayer separates audio and GL workers, uses consumed
   JavaSound PCM frames as its master clock, drops slow video ticks, and coalesces
@@ -35,15 +36,15 @@ pixels, deterministic limits and provisional noise limits remain unchanged.
 ```text
 Core:     205 passed
 Platform:   2 passed
-Media:     15 passed
+Media:     19 passed
 Render:    57 passed
-Total:    279 passed, 0 failures, 0 errors, 0 skipped
+Total:    283 passed, 0 failures, 0 errors, 0 skipped
 All 16 named still-transition playback scenarios passed
-Local engine-only stress: 45.69 fps; maximum frame gap 1555.79 ms
+Local engine-only stress: 55.32 fps; maximum frame gap 142.07 ms
 Unchanged local limits: >=24 fps, <=2500 ms frame gap; PASS
 35 inactive/history/legacy/glow RGBA byte-exact regression comparisons passed
 Real hardware audio-clock playback reached 2.6 s; paused 1.4 s PIP seek passed
-Local Player Lab first frame: 1231.17 ms; warmed seek: 24.37 ms
+Local Player Lab first frame: 1101.34 ms; warmed seek: 29.02 ms
 Source audit: 404 P1 hashes, eight P2 literals/seven source hashes,
              nine P3 sections/assets/nine sources; Sonic DSP unchanged
 ```
@@ -51,6 +52,7 @@ Source audit: 404 P1 hashes, eight P2 literals/seven source hashes,
 [Full runtime output](../evidence/p3/runtime-tests-output.txt),
 [per-module summary](../evidence/p3/test-summary.json),
 [stress metrics and retained limits](../evidence/p3/performance.json),
+[current stress test output](../evidence/p3/stress-current-output.txt),
 [real audio/window output](../evidence/p3/player-lab-output.txt),
 [source audit](../evidence/p3/source-audit.txt).
 
@@ -60,12 +62,18 @@ is retained. Removing unnecessary inactive/neutral full-frame passes raised the
 measured local rate; 35 byte-exact comparisons verify output preservation.
 No shader, active-stage effect or threshold was changed to obtain that result.
 
-The cold first activation of the PIP input took **204.42 ms**, exceeding the
-150 ms seek budget, while its warmed repeat took 21.20 ms in the frame harness
-and 24.37 ms in the real Player Lab. This remains a P3 latency bug: decoder/input
-setup is still on the first-use render path and needs asynchronous prefetch.
-The local 1231 ms first-frame probe is one sample, not broad hardware qualification.
-See [individual frame timings](../evidence/p3/engine-frames.json).
+The initial cold first activation of the PIP input took **204.42 ms**, exceeding
+the unchanged 150 ms seek budget. A separate bounded input worker now prepares
+upcoming decoders while the GPU graph is built; startup also prepares the same
+PIP mask pixels. Current first activation is **41.51 ms** and the repeat is
+33.97 ms. The real Player Lab warmed seek is 29.02 ms. All four PNG files remain
+byte-identical to the published prefetch baseline. This local fixture passes;
+arbitrary cache misses and multi-layer/target hardware latency remain open.
+See [before/after timings](../evidence/p3/latency.json),
+[pixel hashes](../evidence/p3/prefetch-pixel-regression.json),
+[preparation tests](../evidence/p3/prefetch-tests-output.txt) and
+[individual stage timings](../evidence/p3/engine-frames.json).
+The local first-frame probe is one sample, not broad hardware qualification.
 
 Other full failing outputs are retained:
 [initial decoder test](../evidence/p3/decoder-tests-initial-failure.txt) assumed an
@@ -77,9 +85,22 @@ not relaxed. FFmpeg warns about deprecated JPEG pixel format; conversion sets
 colour range explicitly and current pixel assertions pass. SDK headers emit
 conversion warnings but build successfully.
 
+The added mono resampling test exposed a real amplitude mismatch: default
+libswresample mono upmix attenuated the signal, while mobile uses constant gain.
+An explicit unity stereo matrix fixes the bridge; the independent test keeps
+the .25 amplitude requirement and verifies exactly 4800 output frames from
+100 ms of 44.1 kHz input, including resampler drain. Full
+[initial console output](../evidence/p3/mono-gain-initial-failure.txt) and
+[failure stack](../evidence/p3/mono-gain-initial-failure.xml) are retained.
+The [native configure attempt](../evidence/p3/native-configure-initial-failure.txt)
+failed because JAVA_HOME was unset; rerunning with the installed JDK succeeded.
+Bootstrap now validates JNI headers immediately and the README lists this
+requirement.
+
 P3 tests use a bounded injected consumed-PCM clock. The Player Lab separately
 uses real Windows JavaSound output. Local stress is NVIDIA RTX 4060 Laptop/D3D11;
 no Intel Iris Xe result or complete painted heavy-project result is claimed.
+Other multichannel layouts remain unqualified.
 The [test map](P3-TEST-MAP.md) distinguishes retained mobile assertions from
 frame-only adaptations, reduced edit fixtures and future encoder tests.
 
@@ -98,7 +119,7 @@ assets, not fabricated mobile goldens.
 
 [PARITY.md](../PARITY.md) and [P3 test map](P3-TEST-MAP.md) record evidence and gaps.
 P3 remains open for full sticker/title/caption/photo painters, the full heavy
-seek/edit/audio-cut matrices, asynchronous decoder prefetch, HDR-to-SDR tone
+seek/edit/audio-cut matrices, cold cache-miss latency qualification, HDR-to-SDR tone
 mapping, combined voice/speed/DSP output qualification and target hardware
 budgets. HDR PQ/HLG is explicitly rejected currently; silently wrong SDR is not
 accepted. HEIC/EXIF handling and full-size 4K decode budgets remain unqualified.
@@ -124,4 +145,8 @@ Mobile HEAD remains 2a417fd29ef43a8792eb4d58cbe4d102327b11c9 and status exactly
 pinned SHA-256 values. [Read-only audit](../evidence/p3/read-only-inputs.json).
 Every checkpoint uses the owner's configured author/committer identity, no
 em dash or AI attribution trailer, and is pushed immediately. Hosted clean-build
-evidence is recorded after the implementation push.
+evidence for checkpoint 3ec3d61 passed all 15 hosted steps with JDK 17;
+[run 37120115705](https://github.com/ShivankXD/Pinwheel-windows/actions/runs/37120115705)
+and [step/artifact record](../evidence/p3/ci-checkpoint-3ec3d61.json).
+The subsequent prefetch/mono-gain checkpoint receives its own exact-commit CI
+record; the earlier run does not validate later code.

@@ -1,4 +1,5 @@
 $ErrorActionPreference = 'Stop'
+if (!$env:JAVA_HOME -or !(Test-Path -LiteralPath (Join-Path $env:JAVA_HOME 'include/jni.h'))) { throw 'Set JAVA_HOME to a JDK with JNI headers before native bootstrap' }
 $pinwheelRoot = Split-Path -Parent $PSScriptRoot
 $pinwheelManifest = Get-Content -LiteralPath (Join-Path $pinwheelRoot 'native/dependencies.json') -Raw | ConvertFrom-Json
 $pinwheelArchive = Join-Path $pinwheelRoot ('.downloads/' + $pinwheelManifest.ffmpeg.archive)
