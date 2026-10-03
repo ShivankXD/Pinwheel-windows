@@ -19,6 +19,7 @@ not started.
 | pinwheel-app | Debug-only Effect Lab actual-window capture refreshed. Search, fixed times/loop, params and mobile/desktop/heatmap panes remain available; release excludes the Lab and local Plus toggle. |
 | pinwheel-render/qa | New deterministic and sampling probes isolate all seven remaining specs with raw RGBA8, quantization signatures, stored-input replays, crossed backends, precision queries and translated HLSL evidence. They never replace production frames. |
 | pinwheel-render/qa | `p2Storage8Probe` tests four linear 8-bit attachment formats on both backends. All 224 selected effect renders and every channel metric are identical within each backend; BGRA8 does not repair the half-value mismatch. Distinct channel uploads and endpoint storage observations pass. |
+| pinwheel-render/qa | Current-baseline float/rounding controls cover 6752 effect frames and 3088 noise comparisons. Raw RGBA32F captures isolate changed cases; a staged converter passes all 511 byte/boundary controls, while the retained single-pass negative control fails 126. No candidate is adopted because of regressions or unverified precision changes. |
 | scripts | `report-p2-sample-matrix.py` compares all frames against published baseline ddad406, records 21 sample geometries and every channel's before/after metrics. Structural reporting now regenerates `deterministic-failures.csv` to prevent stale manual reports. |
 | scripts | `report-p2-sample-filter.py` decodes and verifies all 1688 PNG hashes and channel metric rows against published baseline 1b7c8a3; the current 21 samples all downscale or use identity sizing. |
 | media / platform / photo | Existing P1 boundaries remain. Playback/audio/evaluation are P3, editor UI P4, export P5 and photo work P6. No subprocess decoding was added to playback. |
@@ -47,6 +48,8 @@ Noise specs: 160 provisional passes, 33 failures
 Sample matrix: 592 changed frame hashes, 37 new strict passes, 0 strict regressions
 Crop filtering: 0 changed frame hashes; all channel metric rows unchanged
 Alternative 8-bit attachments: 224 raw/RGB565 cases unchanged; 8 precision/channel controls passed
+Current conversion experiments: 6752 strict and 3088 structural comparisons
+Staged rounding controls: 511 passed; initial single-pass control: 126 failed, retained
 PASS 404 source, test and asset hashes; all GLSL literals preserved
 PASS 8 unchanged P2 shader literals; 7 pinned mobile runtime source hashes
 PASS 193 noise and 229 deterministic classes; all 422 shader source hashes
@@ -62,6 +65,7 @@ checks pass. See `test-summary.json`, `sample-matrix-runtime-checks.txt`,
 and the successful follow-ups `final-sampling-and-runtime-checks.txt`
 and `sample-filter-runtime-and-frames.txt`
 and `storage8-runtime-checks.txt`
+and `framebuffer-current-runtime-checks.txt`
 under `evidence/p2`.
 
 `goldenCheck` intentionally exits nonzero. **Full current failing output:**
@@ -80,6 +84,7 @@ G 96.116276/157, B 95.700412/157, A 0/0 (MAE8/p99).
 - [Crop filtering correction and negative regression](../evidence/p2/diagnostics/sample-filter/SAMPLE-FILTER-REPORT.md); every supplied PNG and metric remains identical to 1b7c8a3. The initial fractional fixture was an unsuitable exact-colour oracle; its failures are retained and explained in that report.
 - [Seven remaining deterministic specs](../evidence/p2/deterministic-failures.csv) and [parity investigation](P2-PARITY-BUGS.md).
 - [Four 8-bit attachment formats on both backends](../evidence/p2/diagnostics/storage8/STORAGE8-REPORT.md), [all 224 MAE/p99 rows](../evidence/p2/diagnostics/storage8/storage8-metrics.csv) and [full successful task output](../evidence/p2/storage8-probe-output.txt).
+- [Current-baseline conversion review](../evidence/p2/diagnostics/framebuffer-review/FRAMEBUFFER-REVIEW.md), with 8 paired worst-20 galleries, per-spec/per-time channel metrics, raw float signatures and complete negative-control output.
 
 Noise review uses Gaussian sigma 8 px, radius 24, edge clamping and float
 sRGB8; channel histogram Wasserstein-1 and mean errors; Rec.709 mean luminance

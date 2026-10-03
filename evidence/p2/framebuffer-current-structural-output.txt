@@ -1,0 +1,37 @@
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+
+> Task :pinwheel-render:p2FramebufferCurrentProbe
+float32-sized diagnostic frames: 200
+float32-sized diagnostic frames: 400
+float32-sized diagnostic frames: 600
+float32-sized diagnostic frames: 800
+float32-sized diagnostic frames: 1000
+float32-sized diagnostic frames: 1200
+float32-sized diagnostic frames: 1400
+float32-sized diagnostic frames: 1600
+float32-sized diagnostic: 1474 strict passes; 5 new passes; 4 regressions; deterministic 18 failures / 4 regressions
+float32-sized noise: 690 provisional passes; 82 failures; 3 new passes / 1 regressions
+float16 diagnostic frames: 200
+float16 diagnostic frames: 400
+float16 diagnostic frames: 600
+float16 diagnostic frames: 800
+float16 diagnostic frames: 1000
+float16 diagnostic frames: 1200
+float16 diagnostic frames: 1400
+float16 diagnostic frames: 1600
+float16 diagnostic: 1478 strict passes; 5 new passes; 0 regressions; deterministic 14 failures / 0 regressions
+float16 noise: 691 provisional passes; 81 failures; 3 new passes / 0 regressions
+P2 framebuffer diagnostic: D:\Pinwheel-Windows\evidence\p2\diagnostics\framebuffer-current\framebuffer-probe.json
+
+BUILD SUCCESSFUL in 4m 37s
+4 actionable tasks: 2 executed, 2 up-to-date

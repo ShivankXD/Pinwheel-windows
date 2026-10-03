@@ -269,6 +269,43 @@ The seven failing deterministic specs and every time/channel measurement remain
 in the current CSV reports. No deterministic failure has been reclassified
 as noise to remove it from the strict gate.
 
+## Current-baseline conversion and staged rounding follow-up
+
+The float experiments were rerun after the sample matrix/filter repairs,
+preserving the older pre-matrix folder. All current source, metric, frame and
+noise-policy hashes are pinned. Four supported routes cover 6752 strict frame
+comparisons and 3088 noise structural comparisons, with identical owner limits.
+
+| Route | Strict pass / fail | Deterministic fail | Noise fail | Strict regressions | Noise regressions |
+|---|---:|---:|---:|---:|---:|
+| Production RGBA8 | 1473 / 215 | 18 | 84 | baseline | baseline |
+| Float32, half-up conversion | 1474 / 214 | 18 | 82 | 4 | 1 |
+| Float16, half-up conversion | 1478 / 210 | 14 | 81 | 0 | 0 |
+| Float32, single-pass even ties | 1477 / 211 | 15 | 82 | 1 | 1 |
+| Float32, staged even ties | 1476 / 212 | 16 | 82 | 2 | 1 |
+
+The single-pass ties-to-even shader failed 126/511 synthetic controls despite
+passing all 256 normalized-byte round trips. It did not enforce the CPU
+reference's float32 scaling boundary. Storing the scaled values in a separate
+RGBA32F attachment resolves that diagnostic bug: all 256 byte and 255 boundary
+tests pass. Optimizer/evaluation fusion remains a lead, not a proven driver
+conformance failure. The original failed output is preserved.
+
+The staged route still regresses Color Pixel at 0.3 s, Mirror Beat at 0.9 s
+and the noise Tri Split comparison at 0.9 s. The latter's blue blurred MAE is
+above 2/255; its threshold is unchanged. Float16 has zero strict/structural
+pass-to-fail regressions but changes precision, with the phone's medium/low
+behaviour still unknown. None of these routes is adopted. No per-effect
+conversion choice, shader edit, epsilon or threshold relaxation is introduced.
+
+Raw captures distinguish exact stored 0.5 fields from other scaled byte-half
+boundaries and retain desktop default and converted RGBA8 PNGs. These are
+desktop observations, not reconstructed phone raw values. The complete
+[current conversion report](../evidence/p2/diagnostics/framebuffer-review/FRAMEBUFFER-REVIEW.md)
+contains all metrics, changed cases and eight paired worst-20 heatmap galleries.
+Full single-pass failure output is `evidence/p2/framebuffer-rounding-output.txt`;
+the repaired staged run is `evidence/p2/framebuffer-staged-rounding-output.txt`.
+
 ## Deterministic backend and prepared-input controls
 
 The new `p2DeterministicProbe` and `p2SamplingProbe` isolate all seven remaining

@@ -60,6 +60,31 @@ tasks.register<JavaExec>("p2FramebufferProbe") {
     workingDir = rootDir
 }
 
+tasks.register<JavaExec>("p2FramebufferCurrentProbe") {
+    dependsOn("classes")
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("com.pinwheel.render.qa.P2FramebufferProbeKt")
+    args(rootDir.absolutePath, providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"), "framebuffer-current", "structural")
+    workingDir = rootDir
+}
+
+tasks.register<JavaExec>("p2RoundingProbe") {
+    description = "Negative control: single-pass rounding does not enforce staged float32 scaling; expected numeric gate failure."
+    dependsOn("classes")
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("com.pinwheel.render.qa.P2FramebufferProbeKt")
+    args(rootDir.absolutePath, providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"), "framebuffer-rounding", "structural", "even")
+    workingDir = rootDir
+}
+
+tasks.register<JavaExec>("p2StagedRoundingProbe") {
+    dependsOn("classes")
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("com.pinwheel.render.qa.P2FramebufferProbeKt")
+    args(rootDir.absolutePath, providers.gradleProperty("pinwheel.refs").getOrElse("D:/Pinwheel-Windows-refs"), "framebuffer-staged-rounding", "structural", "even", "staged")
+    workingDir = rootDir
+}
+
 tasks.register<JavaExec>("p2DeterministicProbe") {
     dependsOn("classes")
     classpath = sourceSets.main.get().runtimeClasspath

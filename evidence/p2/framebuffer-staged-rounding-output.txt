@@ -1,0 +1,27 @@
+> Task :pinwheel-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :pinwheel-render:processResources NO-SOURCE
+> Task :pinwheel-core:compileKotlin UP-TO-DATE
+> Task :pinwheel-core:compileJava NO-SOURCE
+> Task :pinwheel-core:processResources NO-SOURCE
+> Task :pinwheel-core:classes UP-TO-DATE
+> Task :pinwheel-core:jar UP-TO-DATE
+> Task :pinwheel-render:compileKotlin
+> Task :pinwheel-render:compileJava NO-SOURCE
+> Task :pinwheel-render:classes UP-TO-DATE
+
+> Task :pinwheel-render:p2StagedRoundingProbe
+float32-round-even-staged diagnostic frames: 200
+float32-round-even-staged diagnostic frames: 400
+float32-round-even-staged diagnostic frames: 600
+float32-round-even-staged diagnostic frames: 800
+float32-round-even-staged diagnostic frames: 1000
+float32-round-even-staged diagnostic frames: 1200
+float32-round-even-staged diagnostic frames: 1400
+float32-round-even-staged diagnostic frames: 1600
+float32-round-even-staged diagnostic: 1476 strict passes; 5 new passes; 2 regressions; deterministic 16 failures / 2 regressions
+float32-round-even-staged noise: 690 provisional passes; 82 failures; 3 new passes / 1 regressions
+P2 framebuffer diagnostic: D:\Pinwheel-Windows\evidence\p2\diagnostics\framebuffer-staged-rounding\framebuffer-probe.json
+
+BUILD SUCCESSFUL in 1m 29s
+4 actionable tasks: 2 executed, 2 up-to-date
